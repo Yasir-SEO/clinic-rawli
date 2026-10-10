@@ -93,6 +93,10 @@ const openingHoursJson = JSON.stringify(
 );
 
 /* ---------- Shared values ---------- */
+const addr = config.address || {};
+const mapsQuery = encodeURIComponent(config.mapsQuery || `${addr.town}, ${addr.district}, Pakistan`);
+const mapsSearchUrl = `https://www.google.com/maps/search/?api=1&query=${mapsQuery}`;
+const mapsEmbedUrl = `https://maps.google.com/maps?q=${mapsQuery}&z=15&output=embed`;
 const waDigits = String(config.whatsapp || "").replace(/\D/g, "");
 const waLink = /^\d{10,15}$/.test(waDigits) ? `https://wa.me/${waDigits}` : "https://wa.me/";
 const fee = config.deliveryFee;
@@ -156,6 +160,22 @@ function page({ path: outPath, title, description, content, jsonLd = "", robots 
     siteUrl: SITE,
     businessName: esc(config.businessName),
     businessNameRaw: config.businessName,
+    storeName: esc(config.storeName || ""),
+    clinicName: esc(config.clinicName || ""),
+    addrStreet: esc(addr.street || ""),
+    addrTown: esc(addr.town || "Rohillanwali"),
+    addrDistrict: esc(addr.district || ""),
+    addrRegion: esc(addr.region || "Punjab"),
+    addrPostal: esc(addr.postalCode || ""),
+    addrUrdu: esc(addr.urdu || ""),
+    addrShort: esc([addr.street, addr.town].filter(Boolean).join(", ")),
+    addrStreetRaw: addr.street || "",
+    addrPostalRaw: addr.postalCode || "",
+    storeNameRaw: config.storeName || "",
+    clinicNameRaw: config.clinicName || "",
+    mapsSearchUrl: esc(mapsSearchUrl),
+    mapsSearchUrlRaw: mapsSearchUrl,
+    mapsEmbedUrl: esc(mapsEmbedUrl),
     facebookUrl: esc(config.facebook || "https://www.facebook.com/Adilmedicalstore"),
     instagramUrl: esc(config.instagram || "https://www.instagram.com/adilmedicalstore/"),
     phoneDisplay: esc(config.phoneDisplay),

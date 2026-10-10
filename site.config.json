@@ -9,6 +9,18 @@
   "facebook": "https://www.facebook.com/Adilmedicalstore",
   "instagram": "https://www.instagram.com/adilmedicalstore/",
 
+  "storeName": "Adil Medical Store",
+  "clinicName": "Adil Children Clinic",
+  "address": {
+    "street": "Near Canal Rest House",
+    "town": "Rohillanwali",
+    "district": "Tehsil & District Muzaffargarh",
+    "region": "Punjab",
+    "postalCode": "34400",
+    "urdu": "نزد کینال ریسٹ ہاؤس، روہیلانوالی، تحصیل و ضلع مظفرگڑھ"
+  },
+  "mapsQuery": "Canal Rest House, Rohillanwali, Muzaffargarh, Punjab, Pakistan",
+
   "hours": {
     "monday":    ["09:00", "22:00"],
     "tuesday":   ["09:00", "22:00"],
