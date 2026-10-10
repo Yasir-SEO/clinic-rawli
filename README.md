@@ -71,6 +71,8 @@ Every product shows a drawn pack until you add a real photo. To add one:
 
 The photo then appears on the product card, product page, search suggestions, cart and checkout, and is used as the product's share image. Don't copy photos from other pharmacy websites or Google Images; those belong to someone else.
 
+**Linking to a photo instead:** add `image: "https://..."` to a product in `data/products.js` to show a photo hosted on another site (for example the brand's own website). It is shown on top of the drawn pack; if the link ever breaks, the drawn pack shows instead. Saved photos are still more reliable.
+
 ## Build
 
 After changing `site.config.json`, `data/products.js` or anything in `src/`, run:

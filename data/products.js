@@ -20,6 +20,8 @@
       price     number in rupees, or null to show "Price on request"
       use       one short sentence about what it is used for
       featured  true = show in "Popular medicines" on the home page
+      image     optional link to a product photo on another website (https://...).
+                Photos saved in assets/products/<id>.jpg are better: they never break.
   - After editing, run:  node scripts/build.mjs
 */
 (function (root, factory) {
@@ -89,7 +91,8 @@
     return {
       id: o.id, name: o.name, brand: o.brand, strength: o.strength || "", generic: o.generic,
       form: o.form, unit: o.unit, cat: o.cat, mfr: o.mfr, rx: !!o.rx, kids: !!o.kids,
-      price: o.price == null ? null : o.price, use: o.use, featured: !!o.featured
+      price: o.price == null ? null : o.price, use: o.use, featured: !!o.featured,
+      image: o.image || null
     };
   };
 

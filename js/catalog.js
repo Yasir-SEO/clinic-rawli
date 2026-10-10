@@ -182,16 +182,25 @@
   function setImages(map) { IMAGES = map || {}; }
   function imageFor(p) {
     var runtime = typeof window !== "undefined" && window.PRODUCT_IMAGES;
-    return (runtime && runtime[p.id]) || IMAGES[p.id] || null;
+    return (runtime && runtime[p.id]) || IMAGES[p.id] || p.image || null;
   }
 
-  /* Product photo if one exists, otherwise the drawn pack. */
+  function isRemote(src) { return /^https?:\/\//i.test(src); }
+
+  /* Product photo if one exists, otherwise the drawn pack. A linked (remote) photo
+     sits on top of the drawn pack and removes itself if it fails to load. */
   function media(p, opts) {
     opts = opts || {};
     var src = imageFor(p);
     if (!src) return packArt(p, opts);
-    return '<img class="pack-photo" src="' + esc((opts.root || "") + src) + '" alt="' +
-      (opts.decorative ? "" : esc(p.name)) + '" loading="lazy" decoding="async">';
+    var alt = opts.decorative ? "" : esc(p.name);
+    if (isRemote(src)) {
+      return '<span class="media-wrap">' + packArt(p, { decorative: true }) +
+        '<img class="pack-photo pack-photo--remote" src="' + esc(src) + '" alt="' + alt +
+        '" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></span>';
+    }
+    return '<img class="pack-photo" src="' + esc((opts.root || "") + src) + '" alt="' + alt +
+      '" loading="lazy" decoding="async">';
   }
 
   function indexData(data) {
@@ -300,7 +309,7 @@
   }
 
   return {
-    esc: esc, packArt: packArt, media: media, setImages: setImages, imageFor: imageFor, colorFor: colorFor, indexData: indexData, inCategory: inCategory,
+    esc: esc, packArt: packArt, media: media, isRemote: isRemote, setImages: setImages, imageFor: imageFor, colorFor: colorFor, indexData: indexData, inCategory: inCategory,
     formatPrice: formatPrice, priceHtml: priceHtml, productUrl: productUrl, categoryUrl: categoryUrl,
     brandUrl: brandUrl, badgesHtml: badgesHtml, actionsHtml: actionsHtml, renderCard: renderCard,
     search: search, normalize: normalize, waUrl: waUrl, FORM_NAME: FORM_NAME

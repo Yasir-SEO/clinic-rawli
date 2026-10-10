@@ -1904,3 +1904,8 @@ a.cart-row__name:hover { color: var(--teal-700); }
   .doctor { grid-template-columns: 1fr; }
   .doctor__icon { width: 56px; height: 56px; }
 }
+
+/* Linked (remote) product photos sit over the drawn pack, which shows if the link fails. */
+.media-wrap { position: relative; display: block; width: 100%; height: 100%; }
+.media-wrap > .pack-art { width: 100%; height: 100%; }
+.media-wrap > .pack-photo--remote { position: absolute; inset: 0; width: 100%; height: 100%; padding: 6%; }

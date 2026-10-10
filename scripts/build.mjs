@@ -55,6 +55,7 @@ for (const p of DATA.products) {
   if (!IDX.cat[p.cat] || IDX.cat[p.cat].virtual) throw new Error(`Unknown category "${p.cat}" for ${p.id}`);
   if (!IDX.mfr[p.mfr]) throw new Error(`Unknown manufacturer "${p.mfr}" for ${p.id}`);
   if (p.price != null && !(typeof p.price === "number" && p.price >= 0)) throw new Error(`Invalid price for ${p.id}`);
+  if (p.image && !/^https:\/\/[^\s"'<>]+$/.test(p.image)) throw new Error(`Image link for ${p.id} must start with https:// and contain no spaces`);
 }
 
 /* ---------- Opening hours ---------- */
@@ -207,7 +208,7 @@ function page({ path: outPath, title, description, content, jsonLd = "", robots 
     ogType,
     bodyClass,
     ogImageTags: ogImage
-      ? `  <meta property="og:image" content="${SITE}${ogImage}">`
+      ? `  <meta property="og:image" content="${esc(/^https?:/.test(ogImage) ? ogImage : SITE + ogImage)}">`
       : `  <meta property="og:image" content="${SITE}assets/og-image.png">\n  <meta property="og:image:width" content="1200">\n  <meta property="og:image:height" content="630">`,
     jsonLd: ld,
     content: body,
@@ -501,7 +502,7 @@ for (const p of DATA.products) {
     name: p.name,
     url: `${SITE}medicines/${p.id}.html`,
     description: p.use,
-    ...(IMAGES[p.id] ? { image: SITE + IMAGES[p.id] } : {}),
+    ...(IMAGES[p.id] ? { image: SITE + IMAGES[p.id] } : p.image ? { image: p.image } : {}),
     activeIngredient: p.generic,
     ...(p.strength && /\d/.test(p.strength) ? { strengthValue: p.strength } : {}),
     dosageForm: C.FORM_NAME[p.form] || p.form,
@@ -525,7 +526,7 @@ for (const p of DATA.products) {
     description: `${p.name} (${p.generic})${mfr.hidden ? "" : ` by ${mfr.name}`}. ${p.use} Order online at Adil Child Care Clinic & Pharmacy, Rohillanwali.`.slice(0, 300),
     bodyClass: "page-product",
     ogType: "product",
-    ogImage: IMAGES[p.id] || "",
+    ogImage: IMAGES[p.id] || p.image || "",
     content: PRODUCT,
     jsonLd: ldScript(drug) + "\n" + ldScript(bc.ld),
     priority: "0.6",
