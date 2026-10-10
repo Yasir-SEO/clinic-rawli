@@ -1854,3 +1854,14 @@ a.cart-row__name:hover { color: var(--teal-700); }
   .pcard__actions .stepper { width: 100%; }
   .pcard__actions .stepper__qty { flex: 1; }
 }
+
+/* ---------- Real product photos ---------- */
+.pack-photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #fff;
+}
+.product__media .pack-photo { aspect-ratio: 6 / 5; height: auto; padding: 16px; }
+.product__ask { display: flex; }

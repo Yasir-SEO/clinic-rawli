@@ -61,6 +61,16 @@ P({ id: "panadol-500mg-tablets", name: "Panadol 500mg Tablets", brand: "Panadol"
 - New manufacturers go in the `manufacturers` list at the top of the same file, and they appear in the brand strip automatically.
 - The product picture is drawn automatically from the brand name, strength and form. No photos are needed.
 
+## Product photos
+
+Every product shows a drawn pack until you add a real photo. To add one:
+
+1. Take a clear photo of the pack (from the front, on a plain white background, in good light), or use an official image the company or distributor has supplied to you.
+2. Name it after the product's `id`, for example `panadol-500mg-tablets.jpg` (`.jpg`, `.png` or `.webp`). Keep it around 800 × 800 px and under 200 KB.
+3. Put it in `assets/products/` and rebuild.
+
+The photo then appears on the product card, product page, search suggestions, cart and checkout, and is used as the product's share image. Don't copy photos from other pharmacy websites or Google Images; those belong to someone else.
+
 ## Build
 
 After changing `site.config.json`, `data/products.js` or anything in `src/`, run:

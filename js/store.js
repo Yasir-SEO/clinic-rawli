@@ -129,7 +129,7 @@
   }
 
   function thumb(line) {
-    if (line.product) return C.packArt(line.product, { decorative: true });
+    if (line.product) return C.media(line.product, { decorative: true, root: ROOT });
     return '<span class="thumb-request" aria-hidden="true"><svg class="icon"><use href="#i-file"/></svg></span>';
   }
 
@@ -300,7 +300,7 @@
         box.innerHTML = results.map(function (p, i) {
           var m = IDX.mfr[p.mfr];
           return '<a class="suggest__item" role="option" id="sg-' + i + '" href="' + C.productUrl(p, ROOT) + '">' +
-            '<span class="suggest__thumb">' + C.packArt(p, { decorative: true }) + "</span>" +
+            '<span class="suggest__thumb">' + C.media(p, { decorative: true, root: ROOT }) + "</span>" +
             '<span class="suggest__text"><strong>' + esc(p.name) + "</strong><small>" + esc(p.generic) +
             (m && !m.hidden ? " · " + esc(m.name) : "") + "</small></span>" +
             (p.rx ? '<span class="badge badge--rx">Rx</span>' : "") + "</a>";

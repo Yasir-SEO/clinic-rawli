@@ -15,7 +15,7 @@
   function money(n) { return C.formatPrice(n, SITE.currency); }
 
   function thumb(l) {
-    if (l.product) return C.packArt(l.product, { decorative: true });
+    if (l.product) return C.media(l.product, { decorative: true, root: ROOT });
     return '<span class="thumb-request" aria-hidden="true"><svg class="icon"><use href="#i-file"/></svg></span>';
   }
 
