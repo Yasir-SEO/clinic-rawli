@@ -5,31 +5,7 @@
   var TIME_ZONE = "Asia/Karachi";
   var DAY_NAMES = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
-  /* ---------- Mobile navigation ---------- */
   var header = document.querySelector(".header");
-  var toggle = document.querySelector(".nav-toggle");
-  var nav = document.getElementById("site-nav");
-
-  function setNav(open) {
-    header.classList.toggle("nav-open", open);
-    toggle.setAttribute("aria-expanded", String(open));
-    toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
-  }
-
-  if (header && toggle && nav) {
-    toggle.addEventListener("click", function () {
-      setNav(!header.classList.contains("nav-open"));
-    });
-    nav.addEventListener("click", function (e) {
-      if (e.target.closest("a")) setNav(false);
-    });
-    document.addEventListener("keydown", function (e) {
-      if (e.key === "Escape" && header.classList.contains("nav-open")) {
-        setNav(false);
-        toggle.focus();
-      }
-    });
-  }
 
   /* ---------- Header shadow on scroll ---------- */
   function onScroll() {
@@ -73,12 +49,24 @@
 
   function readHours() {
     var schedule = {};
-    document.querySelectorAll("#hours-table tr[data-day]").forEach(function (row) {
-      var day = parseInt(row.getAttribute("data-day"), 10);
-      schedule[day] = row.getAttribute("data-closed") === "true"
-        ? { closed: true, row: row }
-        : { open: row.getAttribute("data-open"), close: row.getAttribute("data-close"), row: row };
-    });
+    var rows = document.querySelectorAll("#hours-table tr[data-day]");
+    if (rows.length) {
+      rows.forEach(function (row) {
+        var day = parseInt(row.getAttribute("data-day"), 10);
+        schedule[day] = row.getAttribute("data-closed") === "true"
+          ? { closed: true, row: row }
+          : { open: row.getAttribute("data-open"), close: row.getAttribute("data-close"), row: row };
+      });
+      return schedule;
+    }
+    // Pages without the hours table use the hours from site.config.json (js/config.js).
+    var hours = window.SITE && window.SITE.hours;
+    if (hours) {
+      ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"].forEach(function (name, day) {
+        var h = hours[name];
+        schedule[day] = h ? { open: h[0], close: h[1] } : { closed: true };
+      });
+    }
     return schedule;
   }
 
@@ -247,12 +235,13 @@
       if (collect) lines.push("", "Collection: " + collect.value);
     }
 
-    var number = (form.getAttribute("data-whatsapp") || "").replace(/[^\dX]/gi, "");
-    var hasNumber = /^\d{10,15}$/.test(number);
-    if (!hasNumber && window.console) {
-      console.warn("WhatsApp number is not set. Update data-whatsapp on #order-form in index.html.");
+    var number = (window.SITE && window.SITE.whatsapp) || form.getAttribute("data-whatsapp") || "";
+    if (!/^\d{10,15}$/.test(String(number).replace(/\D/g, "")) && window.console) {
+      console.warn("WhatsApp number is not set. Update site.config.json and run the build.");
     }
-    var url = "https://wa.me/" + (hasNumber ? number : "") + "?text=" + encodeURIComponent(lines.join("\n"));
+    var url = window.Catalog
+      ? window.Catalog.waUrl(number, lines.join("\n"))
+      : "https://wa.me/?text=" + encodeURIComponent(lines.join("\n"));
 
     var win = window.open(url, "_blank");
     if (win) win.opener = null;

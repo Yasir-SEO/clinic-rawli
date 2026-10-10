@@ -1,0 +1,49 @@
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span class="topbar__item topbar__loc"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg> Rohillanwali, Muzaffargarh</span>
+      <span class="topbar__item" data-open-status>
+        <svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>
+        <span data-open-text>{{hoursSummary}}</span>
+      </span>
+      <a class="topbar__item topbar__phone" href="tel:{{phoneTel}}"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg> {{phoneDisplay}}</a>
+    </div>
+  </div>
+
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="brand" href="{{root}}index.html" aria-label="{{businessName}} – home">
+        <img class="brand__logo" src="{{root}}assets/favicon.svg" alt="" width="44" height="44">
+        <span class="brand__text">
+          <span class="brand__name">Adil Child Care</span>
+          <span class="brand__sub">Clinic &amp; Pharmacy</span>
+        </span>
+      </a>
+
+      <form class="search" action="{{root}}shop.html" method="get" role="search">
+        <label class="sr-only" for="site-search">Search medicines</label>
+        <svg class="icon search__icon" aria-hidden="true"><use href="#i-search"/></svg>
+        <input id="site-search" class="search__input" name="q" type="search" placeholder="Search medicines, e.g. Panadol, Augmentin…" autocomplete="off" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="search-suggest">
+        <button class="search__btn" type="submit">Search</button>
+        <div class="search__suggest" id="search-suggest" role="listbox" aria-label="Search suggestions" hidden></div>
+      </form>
+
+      <div class="header__actions">
+        <a class="header__wa" href="{{waLink}}" target="_blank" rel="noopener">
+          <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg><span>WhatsApp</span>
+        </a>
+        <a class="cart-btn" href="{{root}}cart.html" data-cart-open aria-label="Open cart">
+          <span class="cart-btn__icon">
+            <svg class="icon icon--lg" aria-hidden="true"><use href="#i-cart"/></svg>
+            <span class="cart-btn__count" data-cart-count hidden>0</span>
+          </span>
+          <span class="cart-btn__label">Cart</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <nav class="navbar" aria-label="Main">
+    <div class="container navbar__inner">
+{{navLinks}}
+    </div>
+  </nav>

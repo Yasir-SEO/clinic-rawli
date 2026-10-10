@@ -1,0 +1,75 @@
+    <div class="page-head page-head--slim">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">{{breadcrumbs}}</nav>
+      </div>
+    </div>
+
+    <section class="product">
+      <div class="container product__inner">
+        <div class="product__media">
+          {{art}}
+          <span class="pcard__badges">{{badges}}</span>
+        </div>
+
+        <div class="product__info">
+          <a class="product__cat" href="{{catUrl}}">{{catName}}</a>
+          <h1 class="product__title">{{name}}</h1>
+          <p class="product__generic">{{generic}}</p>
+          {{mfrLine}}
+          <div class="product__price">{{priceHtml}}</div>
+          {{rxNotice}}
+          <p class="product__use">{{use}}</p>
+
+          <div class="product__buy">
+            <div class="qty">
+              <button type="button" class="qty__btn" data-qty-step="-1" aria-label="Decrease quantity">&minus;</button>
+              <input id="buy-qty" class="qty__input" type="number" min="1" max="99" value="1" inputmode="numeric" aria-label="Quantity">
+              <button type="button" class="qty__btn" data-qty-step="1" aria-label="Increase quantity">+</button>
+            </div>
+            <button type="button" class="btn btn--primary btn--lg product__add" data-add-qty="{{id}}" data-qty-input="buy-qty">
+              <svg class="icon" aria-hidden="true"><use href="#i-cart"/></svg> Add to cart
+            </button>
+          </div>
+          <p class="product__incart" data-incart="{{id}}" hidden></p>
+          <a class="btn btn--whatsapp product__ask" href="{{askUrl}}" target="_blank" rel="noopener">
+            <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg> Ask about this on WhatsApp
+          </a>
+
+          <ul class="perks" role="list">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg> Genuine stock, expiry checked</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-home"/></svg> Pickup from our Rohillanwali shop</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-truck"/></svg> Ask about home delivery</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tight product-details">
+      <div class="container product-details__inner">
+        <div>
+          <h2>Product details</h2>
+          <table class="spec">
+            <tbody>
+{{specRows}}
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <h2>About {{brand}}</h2>
+          {{about}}
+          <p class="disclaimer">This information is for general awareness only. Always read the leaflet and follow the advice of your doctor or pharmacist.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft section--tight" aria-labelledby="related-title">
+      <div class="container">
+        <header class="section__head section__head--row">
+          <h2 id="related-title">More in {{catName}}</h2>
+          <a class="link-more" href="{{catUrl}}">View all <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </header>
+        <div class="product-grid product-grid--4">
+{{related}}
+        </div>
+      </div>
+    </section>

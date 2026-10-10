@@ -1,0 +1,70 @@
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a class="brand brand--light" href="{{root}}index.html">
+          <img class="brand__logo" src="{{root}}assets/favicon.svg" alt="" width="40" height="40">
+          <span class="brand__text">
+            <span class="brand__name">Adil Child Care</span>
+            <span class="brand__sub">Clinic &amp; Pharmacy</span>
+          </span>
+        </a>
+        <p>Children's clinic and pharmacy serving families in Rohillanwali and nearby areas of District Muzaffargarh.</p>
+      </div>
+      <div class="footer__col">
+        <h3>Shop</h3>
+        <ul role="list">
+{{footerCategories}}
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h3>Explore</h3>
+        <ul role="list">
+          <li><a href="{{root}}shop.html">All medicines</a></li>
+          <li><a href="{{root}}index.html#brands">Brands we stock</a></li>
+          <li><a href="{{root}}index.html#clinic">Child Care Clinic</a></li>
+          <li><a href="{{root}}cart.html">Your cart</a></li>
+          <li><a href="{{root}}index.html#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h3>Contact</h3>
+        <ul role="list">
+          <li><a href="tel:{{phoneTel}}">{{phoneDisplay}}</a></li>
+          <li><a href="{{waLink}}" target="_blank" rel="noopener">WhatsApp us</a></li>
+          <li><a href="https://www.facebook.com/Adilmedicalstore" target="_blank" rel="noopener">Facebook page</a></li>
+          <li>Rohillanwali, Muzaffargarh, Punjab</li>
+          <li>{{hoursSummary}}</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span data-year>{{year}}</span> {{businessName}}, Rohillanwali. All rights reserved.</p>
+      <p class="footer__disclaimer">Prescription medicines are supplied only against a valid doctor's prescription. Product information is for general awareness and is not a substitute for medical advice. Brand names and trademarks belong to their respective owners. In an emergency, go to the nearest hospital or call 1122.</p>
+    </div>
+  </footer>
+
+  <!-- Mini cart -->
+  <div class="drawer" id="cart-drawer" hidden>
+    <div class="drawer__overlay" data-cart-close></div>
+    <aside class="drawer__panel" role="dialog" aria-modal="true" aria-labelledby="drawer-title">
+      <header class="drawer__head">
+        <h2 id="drawer-title">Your cart <span class="drawer__count" data-cart-label></span></h2>
+        <button type="button" class="drawer__close icon-btn" data-cart-close aria-label="Close cart">
+          <svg class="icon icon--lg" aria-hidden="true"><use href="#i-close"/></svg>
+        </button>
+      </header>
+      <div class="drawer__body" id="mini-cart"></div>
+      <footer class="drawer__foot" id="mini-cart-foot"></footer>
+    </aside>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <div class="fab">
+    <a class="fab__btn fab__btn--call" href="tel:{{phoneTel}}" aria-label="Call {{businessName}}">
+      <svg class="icon icon--lg" aria-hidden="true"><use href="#i-phone"/></svg>
+    </a>
+    <a class="fab__btn fab__btn--wa" href="{{waLink}}" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+      <svg class="icon icon--lg" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+    </a>
+  </div>

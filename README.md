@@ -1,67 +1,112 @@
 # Adil Child Care Clinic & Pharmacy — Rohillanwali
 
-Website for **Adil Child Care Clinic & Pharmacy** (also known as Adil Medical Store), a children's clinic and pharmacy in Rohillanwali, District Muzaffargarh, Punjab, Pakistan.
+Website and online medicine shop for **Adil Child Care Clinic & Pharmacy** (also known as Adil Medical Store), a children's clinic and pharmacy in Rohillanwali, District Muzaffargarh, Punjab, Pakistan.
 
 Facebook: https://www.facebook.com/Adilmedicalstore
 
-It's a fast, mobile-first static site with no build step and no dependencies, so it can be hosted free on GitHub Pages.
+It's a fast static site: no server, database or monthly fees. It's hosted free on GitHub Pages, and orders arrive on the shop's WhatsApp.
 
 ## What's included
 
-- **Clinic, pharmacy, ordering, timings, location, FAQ** sections in English, with Urdu headings and a full Urdu "About us" section.
-- **WhatsApp ordering form.** The visitor fills in their medicines (or a clinic or general question) and it opens WhatsApp with the message ready to send. Nothing is stored on the site.
-- **Live "Open now / Closed now" status** worked out in Pakistan time from the opening-hours table.
-- **Local SEO:** title and meta description targeting Rohillanwali and Muzaffargarh, `MedicalClinic` + `Pharmacy` structured data (JSON-LD), FAQ rich-result markup, Open Graph share image, `sitemap.xml` and `robots.txt`.
-- Sticky header, mobile menu, and floating Call / WhatsApp buttons on phones.
+**Online shop (WooCommerce-style)**
+- **152 products** in 15 categories: fever & pain, cough & cold, allergy & asthma, stomach, antibiotics, kids' medicines, vitamins, diabetes, heart & BP, skin, eye/ear/nose, baby care, herbal, first aid and medical devices.
+- **Manufacturer strip** of 30 companies (GSK, Haleon, Abbott, Getz, Searle, Sami, Hilton, Novartis, Sanofi and more). Each one has its own brand page.
+- **A page for every medicine:** active ingredient, strength, form, manufacturer, prescription status, related products and structured data for Google.
+- **Shop page features:** live search with suggestions in the header, filters (category, manufacturer, kids, no-prescription), sorting, and "Load more".
+- **Cart:** add to cart with quantity buttons, a slide-out mini cart, a full cart page, and "Request a medicine" for anything not listed.
+- **Checkout:** name and mobile, pickup or home delivery with address, payment method and notes. A prescription confirmation is required for Rx items.
+- **Placing an order** opens WhatsApp with the full order (order number, items, customer details) ready to send. Nothing is stored on the website.
 
-```
-index.html         Main page (content + SEO tags + JSON-LD)
-css/style.css      Styles
-js/main.js         Menu, open/closed status, WhatsApp form
-assets/            Logo, app icons, social share image (og-image.png)
-404.html           Not-found page
-robots.txt, sitemap.xml, site.webmanifest
-```
+**Clinic & local SEO**
+- Clinic services, timings with a live "Open now" status in Pakistan time, map, Urdu section and FAQ.
+- Structured data for Google: `MedicalClinic` + `Pharmacy`, `FAQPage`, `Drug` for each product, breadcrumbs, and the sitemap.
 
 ## Fill in your details (before going live)
 
-The real phone number, exact address and timings aren't online anywhere I could reach, so the site uses placeholders. Use **find and replace across all files** for these:
+Everything shop-wide lives in **`site.config.json`**:
 
-| Find | Replace with | Example |
-| --- | --- | --- |
-| `+92 3XX XXXXXXX` | Phone number as shown to visitors | `+92 300 1234567` |
-| `+923XXXXXXXXX` | Phone number for call links (no spaces) | `+923001234567` |
-| `923XXXXXXXXX` | WhatsApp number (country code, no `+`, no spaces) | `923001234567` |
+```json
+"phoneDisplay": "+92 300 1234567",
+"phoneTel": "+923001234567",
+"whatsapp": "923001234567",
+"hours": { "monday": ["09:00", "22:00"], "friday": ["09:00", "22:00"], "sunday": null },
+"deliveryFee": 100,
+"paymentMethods": ["Cash on delivery", "Pay at the shop", "JazzCash / Easypaisa"]
+```
 
-Then check these in `index.html`:
+- `whatsapp`: country code + number, digits only. All orders are sent here.
+- `hours`: 24-hour times, Pakistan time. Use `null` for a closed day.
+- `deliveryFee`: a number in rupees, `0` for free delivery, or `null` to confirm it on WhatsApp.
 
-1. **Opening hours.** The table under `<!-- Edit hours here -->` uses 24-hour times (`data-open="09:00" data-close="22:00"`). Mark a closed day with `data-closed="true"`. Update the matching `openingHoursSpecification` in the JSON-LD and the FAQ answer "What are your timings?" (it appears twice: in the JSON-LD and in the visible FAQ). The placeholder hours are **9:00 AM – 10:00 PM daily**.
-2. **Address.** Add the street or landmark (e.g. "Main Bazaar, near …") in the Address card. In the JSON-LD `address`, add `"streetAddress"` and, if you know it, `"postalCode"`.
-3. **Map.** Once the shop is on Google Maps, replace the map `<iframe src>` (Google Maps → Share → Embed a map) and the **Get Directions** link with your exact listing. You can also add `"geo": {"@type": "GeoCoordinates", "latitude": …, "longitude": …}` to the JSON-LD.
-4. **Services.** Check the clinic and pharmacy lists (e.g. nebulization, vaccination guidance, home delivery) and remove anything you don't offer.
-5. **Doctor.** If you'd like to name the doctor and their qualifications, add them to the Clinic section.
+Then **rebuild** (see below). The phone, hours and WhatsApp links update on every page.
 
-## Publish on GitHub Pages
+Also check:
+1. **Prices.** All products show **"Price on request"** because current retail prices weren't available. Add a `price` (in rupees) to any product in `data/products.js` and the cart, totals and Google data use it automatically.
+2. **Products.** The catalogue lists common medicines sold in Pakistan with their manufacturers. Remove what you don't stock and add what you do; each product is one line in `data/products.js`. Controlled medicines (sleeping pills, tramadol, codeine syrups, etc.) are deliberately **not** listed for online ordering.
+3. **Address & map.** Add the street or landmark in `src/pages/index.html` (Address card), and the Google Maps link or embed for your exact location.
+4. **Services.** Check the clinic services list in `src/pages/index.html`.
 
-1. Repository **Settings → Pages**.
-2. Under *Build and deployment*, choose **Deploy from a branch**, then select the branch and `/ (root)`.
-3. The site will be live at `https://yasir-seo.github.io/clinic-rawli/`.
+## Editing products
 
-**Using your own domain?** Replace `https://yasir-seo.github.io/clinic-rawli/` everywhere (canonical, Open Graph, JSON-LD, `robots.txt`, `sitemap.xml`), and change the `/clinic-rawli/` paths in `404.html` to `/`.
+Open `data/products.js`. Each product is one line:
 
-## Local SEO checklist
+```js
+P({ id: "panadol-500mg-tablets", name: "Panadol 500mg Tablets", brand: "Panadol", strength: "500mg",
+    generic: "Paracetamol", form: "tablet", unit: "Strip", cat: "fever-pain", mfr: "haleon",
+    price: 45, use: "Relief from fever, headache, toothache and body aches.", featured: true }),
+```
 
-- Create or claim a **Google Business Profile** for "Adil Child Care Clinic & Pharmacy", category *Pharmacy* (plus *Pediatrician* / *Medical clinic*), and link it to this website.
-- Use **exactly the same name, address and phone number** on the website, Google, Facebook and any directory listings.
-- Submit `sitemap.xml` in **Google Search Console**.
-- Link to the website from the Facebook page.
-- Ask happy customers to leave Google reviews.
-- Test the structured data with Google's [Rich Results Test](https://search.google.com/test/rich-results).
+- `rx: true` marks a prescription medicine, and `kids: true` adds it to Kids' Medicines.
+- `featured: true` shows it in "Popular medicines" on the home page.
+- New manufacturers go in the `manufacturers` list at the top of the same file, and they appear in the brand strip automatically.
+- The product picture is drawn automatically from the brand name, strength and form. No photos are needed.
+
+## Build
+
+After changing `site.config.json`, `data/products.js` or anything in `src/`, run:
+
+```bash
+node scripts/build.mjs        # or: npm run build
+```
+
+This regenerates `index.html`, `shop.html`, `cart.html`, `checkout.html`, `categories/`, `brands/`, `medicines/`, `js/config.js`, `sitemap.xml` and `robots.txt`. Commit the result. Don't edit the generated HTML files directly; your changes would be overwritten on the next build.
+
+```
+site.config.json     Phone, WhatsApp, hours, delivery, payment
+data/products.js     Categories, manufacturers, products
+src/layout.html      Page shell (head, scripts)
+src/partials/        Header, footer, icons
+src/pages/           Home, cart, checkout
+src/templates/       Shop/category/brand listing, product page
+scripts/build.mjs    Generator
+css/style.css        Styles
+js/catalog.js        Product pictures, cards, search (shared with the build)
+js/store.js          Cart, mini cart, header search
+js/shop.js           Filters, sorting, load more
+js/checkout.js       Cart page and WhatsApp checkout
+js/main.js           Open/closed status, WhatsApp quick form
+```
 
 ## Preview locally
 
 ```bash
-npx serve .
-# or
-python3 -m http.server 8000
+python3 -m http.server 8000     # then open http://localhost:8000
 ```
+
+## Publish on GitHub Pages
+
+1. Make the repository public (**Settings → General → Change visibility**), or use GitHub Pro.
+2. Go to **Settings → Pages**, choose **Deploy from a branch**, then the branch and `/ (root)`, and save.
+3. The site will be live at `https://yasir-seo.github.io/clinic-rawli/`.
+
+**Using your own domain?** Change `siteUrl` in `site.config.json`, rebuild, and update the `/clinic-rawli/` paths in `404.html`.
+
+## Local SEO checklist
+
+- Create or claim a **Google Business Profile** for "Adil Child Care Clinic & Pharmacy" (category *Pharmacy*, plus *Pediatrician* / *Medical clinic*) and link it to the website.
+- Use **exactly the same name, address and phone number** on the website, Google, Facebook and directories.
+- Submit `sitemap.xml` in **Google Search Console**. It lists every category, brand and medicine page.
+- Link the website from the Facebook page and ask happy customers for Google reviews.
+- Test pages with Google's [Rich Results Test](https://search.google.com/test/rich-results).
+
+Brand names and trademarks belong to their respective owners.

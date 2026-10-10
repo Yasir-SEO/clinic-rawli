@@ -1,0 +1,105 @@
+<!--page {"title": "Checkout | Adil Child Care Clinic & Pharmacy", "description": "Place your medicine order. We confirm availability and price on WhatsApp before you pay.", "path": "checkout.html", "robots": "noindex, follow", "bodyClass": "page-checkout", "scripts": ["js/checkout.js"]} -->
+    <div class="page-head">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="index.html">Home</a></li><li><a href="cart.html">Cart</a></li><li aria-current="page">Checkout</li></ol></nav>
+        <h1>Checkout</h1>
+        <p class="page-head__intro">Place your order and send it to us on WhatsApp. We'll confirm availability, price and pickup or delivery time before you pay.</p>
+      </div>
+    </div>
+
+    <section class="section section--tight">
+      <div class="container checkout" id="checkout-app">
+        <div class="empty-state checkout__empty" id="checkout-empty" hidden>
+          <svg class="icon icon--xl" aria-hidden="true"><use href="#i-cart"/></svg>
+          <h2>Your cart is empty</h2>
+          <p>Add some medicines to your cart first.</p>
+          <a class="btn btn--primary btn--lg" href="shop.html">Browse medicines</a>
+        </div>
+
+        <form class="checkout__form" id="checkout-form" novalidate>
+          <fieldset class="co-section">
+            <legend>1. Your details</legend>
+            <div class="field">
+              <label for="co-name">Full name</label>
+              <input id="co-name" name="name" type="text" autocomplete="name" required>
+              <p class="field__error" id="co-name-error" hidden></p>
+            </div>
+            <div class="field">
+              <label for="co-phone">Mobile number</label>
+              <input id="co-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="03XX XXXXXXX" required>
+              <p class="field__error" id="co-phone-error" hidden></p>
+            </div>
+          </fieldset>
+
+          <fieldset class="co-section">
+            <legend>2. Pickup or delivery</legend>
+            <div class="option-cards">
+              <label class="option-card">
+                <input type="radio" name="delivery" value="pickup" checked>
+                <span class="option-card__body">
+                  <svg class="icon icon--lg" aria-hidden="true"><use href="#i-home"/></svg>
+                  <span><strong>Pickup from shop</strong><small>Rohillanwali · Free</small></span>
+                </span>
+              </label>
+              <label class="option-card">
+                <input type="radio" name="delivery" value="delivery">
+                <span class="option-card__body">
+                  <svg class="icon icon--lg" aria-hidden="true"><use href="#i-truck"/></svg>
+                  <span><strong>Home delivery</strong><small>{{deliveryArea}} · {{deliveryFeeText}}</small></span>
+                </span>
+              </label>
+            </div>
+            <div class="field" id="co-address-field" hidden>
+              <label for="co-address">Delivery address</label>
+              <textarea id="co-address" name="address" rows="3" autocomplete="street-address" placeholder="House, street, mohalla or village, nearby landmark"></textarea>
+              <p class="field__error" id="co-address-error" hidden></p>
+            </div>
+          </fieldset>
+
+          <fieldset class="co-section">
+            <legend>3. Payment</legend>
+            <div class="radios">
+{{paymentOptions}}
+            </div>
+          </fieldset>
+
+          <fieldset class="co-section">
+            <legend>4. Anything else?</legend>
+            <div class="field">
+              <label for="co-notes">Order notes <span class="optional">(optional)</span></label>
+              <textarea id="co-notes" name="notes" rows="3" placeholder="e.g. diaper size, preferred time, or questions for the pharmacist"></textarea>
+            </div>
+            <div class="field" id="co-rx-field" hidden>
+              <label class="check check--box">
+                <input type="checkbox" id="co-rx">
+                <span>Your order has prescription medicines. I will send a photo of the doctor's prescription on WhatsApp.</span>
+              </label>
+              <p class="field__error" id="co-rx-error" hidden></p>
+            </div>
+          </fieldset>
+
+          <button class="btn btn--whatsapp btn--lg btn--block" type="submit">
+            <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg> Place order on WhatsApp
+          </button>
+          <p class="form__hint">WhatsApp opens with your order ready. Tap send to confirm. Nothing is stored on this website.</p>
+        </form>
+
+        <aside class="checkout__review" aria-labelledby="review-title">
+          <h2 id="review-title">Your order</h2>
+          <div id="order-review"></div>
+        </aside>
+
+        <div class="order-success" id="order-success" hidden>
+          <span class="order-success__icon"><svg class="icon icon--xl" aria-hidden="true"><use href="#i-check"/></svg></span>
+          <h2>Thank you! Your order is ready to send.</h2>
+          <p>Order number <strong id="success-id"></strong></p>
+          <p>WhatsApp should have opened with your order. If it didn't, tap the button below and press send. We'll reply to confirm availability and price.</p>
+          <p class="note note--sm" id="success-rx" hidden><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg> Please send a photo of your prescription in the same WhatsApp chat.</p>
+          <ul class="order-success__items" id="success-items" role="list"></ul>
+          <div class="order-success__actions">
+            <a class="btn btn--whatsapp btn--lg" id="success-wa" href="#" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg> Send order on WhatsApp</a>
+            <a class="btn btn--outline btn--lg" href="shop.html">Continue shopping</a>
+          </div>
+        </div>
+      </div>
+    </section>

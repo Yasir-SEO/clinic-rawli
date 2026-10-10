@@ -1,0 +1,90 @@
+    <div class="page-head">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">{{breadcrumbs}}</nav>
+        <h1>{{listingTitle}}</h1>
+        {{listingUrdu}}
+        <p class="page-head__intro">{{listingIntro}}</p>
+      </div>
+    </div>
+
+{{listingBrandStrip}}
+
+    <div class="container shop" id="shop-app" data-cat="{{presetCat}}" data-mfr="{{presetMfr}}">
+      <aside class="shop__sidebar" id="shop-sidebar" aria-label="Filters">
+        <div class="filter-block">
+          <h2 class="filter-block__title">Categories</h2>
+          <ul class="cat-links" role="list">
+{{categoryLinks}}
+          </ul>
+        </div>
+        <div class="filter-block">
+          <h2 class="filter-block__title">Show only</h2>
+          <label class="check"><input type="checkbox" id="f-kids"> Kids' medicines</label>
+          <label class="check"><input type="checkbox" id="f-otc"> No prescription needed</label>
+        </div>
+{{mfrFilterBlock}}
+        <div class="filter-block filter-block--request">
+          <h2 class="filter-block__title">Can't find a medicine?</h2>
+          <p>Add it to your cart as a request. We'll confirm availability on WhatsApp.</p>
+          <form class="request-form" data-request-form>
+            <label class="sr-only" for="side-request">Medicine name</label>
+            <input id="side-request" name="request" type="text" placeholder="Medicine name and strength" autocomplete="off">
+            <button class="btn btn--outline btn--sm" type="submit">Add request</button>
+          </form>
+        </div>
+      </aside>
+
+      <div class="shop__main">
+        <div class="shop__toolbar">
+          <button type="button" class="btn btn--outline btn--sm shop__filter-toggle" id="shop-filter-toggle" aria-expanded="false" aria-controls="shop-sidebar">
+            <svg class="icon" aria-hidden="true"><use href="#i-filter"/></svg> Filters
+          </button>
+          <form class="shop__search" role="search">
+            <label class="sr-only" for="shop-q">Search in {{listingShort}}</label>
+            <svg class="icon" aria-hidden="true"><use href="#i-search"/></svg>
+            <input id="shop-q" type="search" placeholder="Search in {{listingShort}}…" autocomplete="off">
+          </form>
+          <label class="shop__sort">
+            <span class="sr-only">Sort by</span>
+            <select id="shop-sort">
+              <option value="popular">Popular first</option>
+              <option value="az">Name: A to Z</option>
+              <option value="za">Name: Z to A</option>
+              <option value="mfr">Manufacturer</option>
+              <option value="price-asc">Price: low to high</option>
+              <option value="price-desc">Price: high to low</option>
+            </select>
+          </label>
+        </div>
+        <p class="shop__count" id="shop-count" aria-live="polite">{{initialCount}}</p>
+        <div class="chips" id="shop-chips" hidden></div>
+
+        <div class="product-grid" id="shop-grid">
+{{initialGrid}}
+        </div>
+
+        <div class="shop__more">
+          <button type="button" class="btn btn--outline" id="shop-more"{{moreHidden}}>Load more</button>
+        </div>
+
+        <div class="empty-state" id="shop-empty" hidden>
+          <svg class="icon icon--xl" aria-hidden="true"><use href="#i-search"/></svg>
+          <h2>No products found</h2>
+          <p>We may still have it, or we can arrange it for you. Add it to your cart as a request:</p>
+          <form class="request-form request-form--inline" data-request-form>
+            <label class="sr-only" for="empty-request">Medicine name</label>
+            <input id="empty-request" name="request" type="text" placeholder="Medicine name and strength" autocomplete="off">
+            <button class="btn btn--primary" type="submit">Add request to cart</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <section class="section section--soft section--tight az" aria-labelledby="az-title">
+      <div class="container">
+        <h2 id="az-title" class="az__title">{{azTitle}}</h2>
+        <ul class="az__list" role="list">
+{{azList}}
+        </ul>
+      </div>
+    </section>

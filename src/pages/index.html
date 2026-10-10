@@ -1,0 +1,498 @@
+<!--page {"title": "Adil Child Care Clinic & Pharmacy | Online Medicine Store & Child Clinic in Rohillanwali", "description": "Order medicines online from Adil Child Care Clinic & Pharmacy, Rohillanwali, Muzaffargarh. Genuine medicines from GSK, Abbott, Getz and more, baby care and a children's clinic.", "path": "", "bodyClass": "page-home"} -->
+<!--jsonld
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "{{siteUrl}}#website",
+        "url": "{{siteUrl}}",
+        "name": "{{businessNameRaw}}",
+        "inLanguage": ["en", "ur"],
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "{{siteUrl}}shop.html?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": ["MedicalClinic", "Pharmacy"],
+        "@id": "{{siteUrl}}#business",
+        "name": "{{businessNameRaw}}",
+        "alternateName": ["Adil Child Care Clinic and Pharmacy", "Adil Medical Store", "عادل چائلڈ کیئر کلینک اینڈ فارمیسی"],
+        "description": "Children's clinic and pharmacy in Rohillanwali, Muzaffargarh, Punjab. Child check-ups, prescription and everyday medicines, baby care products and online ordering with WhatsApp confirmation.",
+        "url": "{{siteUrl}}",
+        "image": "{{siteUrl}}assets/og-image.png",
+        "logo": "{{siteUrl}}assets/icon-512.png",
+        "telephone": "{{phoneDisplay}}",
+        "medicalSpecialty": "Pediatric",
+        "priceRange": "Rs",
+        "currenciesAccepted": "PKR",
+        "paymentAccepted": "Cash",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Rohillanwali",
+          "addressRegion": "Punjab",
+          "addressCountry": "PK"
+        },
+        "areaServed": [
+          { "@type": "City", "name": "Rohillanwali" },
+          { "@type": "AdministrativeArea", "name": "Muzaffargarh District" }
+        ],
+        "openingHoursSpecification": {{openingHoursJson}},
+        "hasMap": "https://www.google.com/maps/search/?api=1&query=Rohillanwali%2C%20Muzaffargarh%2C%20Punjab%2C%20Pakistan",
+        "sameAs": ["https://www.facebook.com/Adilmedicalstore"]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "{{siteUrl}}#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Where is Adil Child Care Clinic & Pharmacy?",
+            "acceptedAnswer": { "@type": "Answer", "text": "We are in Rohillanwali, Tehsil and District Muzaffargarh, Punjab, Pakistan. Tap Get Directions on our website to open the location in Google Maps." }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I order medicines online?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Add medicines to your cart, go to checkout and tap Place order on WhatsApp. Send the order and we will confirm availability and price before you pay. You can pick it up from the shop or ask about home delivery." }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I order medicines on WhatsApp?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Send us your medicine list or a photo of your prescription on WhatsApp. We will confirm availability and price, and keep your order ready for pickup." }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need a prescription to buy medicines?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Prescription-only medicines such as antibiotics are dispensed only against a valid doctor's prescription. Common over-the-counter medicines and baby care products do not need one." }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you treat newborn babies?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Our clinic sees children of all ages, from newborns to teenagers. For a sick newborn, call us before coming so we can guide you right away." }
+          },
+          {
+            "@type": "Question",
+            "name": "What are your timings?",
+            "acceptedAnswer": { "@type": "Answer", "text": "{{hoursSentence}} Doctor timings at the clinic can vary, so please call before your visit." }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+-->
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="eyebrow"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg> Rohillanwali · District Muzaffargarh</p>
+          <h1 class="hero__title">Adil Child Care Clinic <span class="text-accent">&amp; Pharmacy</span></h1>
+          <p class="hero__urdu urdu" lang="ur" dir="rtl">عادل چائلڈ کیئر کلینک اینڈ فارمیسی — روہیلانوالی</p>
+          <p class="hero__lead">Gentle, careful treatment for your children and a trusted pharmacy for the whole family, right here in Rohillanwali. Genuine medicines, honest advice and a team that knows little patients need a little extra care.</p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary btn--lg" href="shop.html">
+              <svg class="icon" aria-hidden="true"><use href="#i-cart"/></svg> Shop Medicines
+            </a>
+            <a class="btn btn--outline btn--lg" href="tel:{{phoneTel}}">
+              <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg> Call Now
+            </a>
+          </div>
+
+          <ul class="hero__points" role="list">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg> Genuine medicines</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-baby"/></svg> Child-focused care</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-tag"/></svg> Fair prices</li>
+          </ul>
+        </div>
+
+        <aside class="hero__card" aria-label="Today at the clinic">
+          <div class="today">
+            <div class="today__head">
+              <span class="today__title">Today at Adil</span>
+              <span class="status-pill" data-open-pill>Open daily</span>
+            </div>
+            <p class="today__hours"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg> <span data-today-hours>9:00 AM – 10:00 PM</span></p>
+            <ul class="today__list" role="list">
+              <li>
+                <span class="today__icon today__icon--teal"><svg class="icon" aria-hidden="true"><use href="#i-stethoscope"/></svg></span>
+                <span><strong>Child check-ups</strong><small>Newborns to teenagers</small></span>
+              </li>
+              <li>
+                <span class="today__icon today__icon--coral"><svg class="icon" aria-hidden="true"><use href="#i-pill"/></svg></span>
+                <span><strong>Full pharmacy</strong><small>Prescription &amp; everyday medicines</small></span>
+              </li>
+              <li>
+                <span class="today__icon today__icon--sun"><svg class="icon" aria-hidden="true"><use href="#i-cart"/></svg></span>
+                <span><strong>Order online</strong><small>Add to cart, confirm on WhatsApp</small></span>
+              </li>
+            </ul>
+            <a class="today__link" href="#visit">See timings &amp; directions →</a>
+          </div>
+          <div class="hero__blob" aria-hidden="true"></div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- BRANDS -->
+{{brandStrip}}
+
+    <!-- CATEGORIES -->
+    <section class="section section--tight" id="categories" aria-labelledby="cat-title">
+      <div class="container">
+        <header class="section__head section__head--row">
+          <div>
+            <p class="eyebrow">Online pharmacy</p>
+            <h2 id="cat-title">Shop by category</h2>
+          </div>
+          <a class="link-more" href="shop.html">View all {{productCount}} products <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </header>
+        <div class="cat-grid">
+{{categoryGrid}}
+        </div>
+      </div>
+    </section>
+
+    <!-- POPULAR -->
+    <section class="section section--soft section--tight" id="popular" aria-labelledby="popular-title">
+      <div class="container">
+        <header class="section__head section__head--row">
+          <div>
+            <p class="eyebrow">Most ordered</p>
+            <h2 id="popular-title">Popular medicines</h2>
+          </div>
+          <a class="link-more" href="shop.html">Shop all medicines <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </header>
+        <div class="product-grid product-grid--4">
+{{featuredGrid}}
+        </div>
+        <div class="how-order">
+          <div class="how-order__step"><span class="steps__num">1</span><span><strong>Add to cart</strong>Pick medicines or request any medicine not listed.</span></div>
+          <div class="how-order__step"><span class="steps__num">2</span><span><strong>Checkout</strong>Choose pickup or home delivery and tap Place order.</span></div>
+          <div class="how-order__step"><span class="steps__num">3</span><span><strong>We confirm on WhatsApp</strong>We reply with availability and price, then keep it ready.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLINIC -->
+    <section class="section" id="clinic" aria-labelledby="clinic-title">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow">Child Care Clinic</p>
+          <h2 id="clinic-title">Caring treatment for children of every age</h2>
+          <p class="urdu section__urdu" lang="ur" dir="rtl">بچوں کا توجہ اور شفقت سے علاج</p>
+          <p class="section__lead">From a newborn's first check-up to a school-going child's fever, our clinic gives every child calm, careful attention and gives parents clear advice they can follow at home.</p>
+        </header>
+
+        <div class="cards">
+          <article class="card">
+            <span class="card__icon"><svg class="icon" aria-hidden="true"><use href="#i-stethoscope"/></svg></span>
+            <h3>Child check-ups</h3>
+            <p>Consultation and examination for babies, children and teenagers, with simple explanations for parents.</p>
+          </article>
+          <article class="card">
+            <span class="card__icon"><svg class="icon" aria-hidden="true"><use href="#i-thermo"/></svg></span>
+            <h3>Fever, cough &amp; cold</h3>
+            <p>Treatment for fever, flu, chest infections, sore throat, ear pain and other common childhood illnesses.</p>
+          </article>
+          <article class="card">
+            <span class="card__icon"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg></span>
+            <h3>Diarrhoea &amp; stomach problems</h3>
+            <p>Care for loose motions, vomiting and dehydration, including ORS guidance so your child recovers quickly.</p>
+          </article>
+          <article class="card">
+            <span class="card__icon"><svg class="icon" aria-hidden="true"><use href="#i-baby"/></svg></span>
+            <h3>Newborn care</h3>
+            <p>Advice on feeding, jaundice, cord care, sleep and the warning signs every new parent should know.</p>
+          </article>
+          <article class="card">
+            <span class="card__icon"><svg class="icon" aria-hidden="true"><use href="#i-growth"/></svg></span>
+            <h3>Growth &amp; nutrition</h3>
+            <p>Weight and height checks, diet advice for weak or underweight children, and support for picky eaters.</p>
+          </article>
+          <article class="card">
+            <span class="card__icon"><svg class="icon" aria-hidden="true"><use href="#i-syringe"/></svg></span>
+            <h3>Vaccination guidance</h3>
+            <p>Help keeping your child's EPI vaccination schedule on track, with reminders of which vaccine is due next.</p>
+          </article>
+          <article class="card">
+            <span class="card__icon"><svg class="icon" aria-hidden="true"><use href="#i-wind"/></svg></span>
+            <h3>Nebulization</h3>
+            <p>Nebulizer treatment for wheezing and breathing difficulty, given at the clinic when the doctor advises it.</p>
+          </article>
+          <article class="card card--cta">
+            <h3>Is your child unwell?</h3>
+            <p>Call before you come, and we'll tell you when the doctor is available.</p>
+            <a class="btn btn--light" href="tel:{{phoneTel}}"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg> Call the clinic</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PHARMACY -->
+    <section class="section section--soft" id="pharmacy" aria-labelledby="pharmacy-title">
+      <div class="container split">
+        <div class="split__text">
+          <p class="eyebrow">Pharmacy</p>
+          <h2 id="pharmacy-title">Your trusted medical store in Rohillanwali</h2>
+          <p class="urdu section__urdu" lang="ur" dir="rtl">اصلی اور معیاری ادویات، مناسب قیمت پر</p>
+          <p>Our pharmacy keeps the medicines families in Rohillanwali need every day, from children's syrups and drops to regular medicines for parents and grandparents. We check expiry dates, store medicines properly and are happy to explain how to give every dose.</p>
+          <ul class="checklist" role="list">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Medicines from registered companies</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Expiry dates checked before every sale</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Clear dosage advice, especially for children</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Hard-to-find medicine? We'll try to arrange it</li>
+          </ul>
+          <a class="btn btn--primary" href="shop.html"><svg class="icon" aria-hidden="true"><use href="#i-cart"/></svg> Browse all medicines</a>
+        </div>
+
+        <div class="split__grid">
+          <div class="tile">
+            <span class="tile__icon"><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg></span>
+            <h3>Prescription medicines</h3>
+            <p>Antibiotics and other prescribed medicines, dispensed against a valid prescription.</p>
+          </div>
+          <div class="tile">
+            <span class="tile__icon"><svg class="icon" aria-hidden="true"><use href="#i-pill"/></svg></span>
+            <h3>Everyday medicines</h3>
+            <p>Pain relief, fever, allergy, cough, acidity and vitamins.</p>
+          </div>
+          <div class="tile">
+            <span class="tile__icon"><svg class="icon" aria-hidden="true"><use href="#i-baby"/></svg></span>
+            <h3>Baby care</h3>
+            <p>Formula milk, diapers, feeders, baby wipes, lotions and rash creams.</p>
+          </div>
+          <div class="tile">
+            <span class="tile__icon"><svg class="icon" aria-hidden="true"><use href="#i-pulse"/></svg></span>
+            <h3>Diabetes &amp; BP care</h3>
+            <p>Regular medicines, glucometer strips and BP monitors for the family.</p>
+          </div>
+          <div class="tile">
+            <span class="tile__icon"><svg class="icon" aria-hidden="true"><use href="#i-kit"/></svg></span>
+            <h3>First aid</h3>
+            <p>Bandages, antiseptics, thermometers, ORS and home first-aid supplies.</p>
+          </div>
+          <div class="tile">
+            <span class="tile__icon"><svg class="icon" aria-hidden="true"><use href="#i-box"/></svg></span>
+            <h3>Health products</h3>
+            <p>Supplements, personal care and hygiene essentials.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ORDER -->
+    <section class="section" id="order" aria-labelledby="order-title">
+      <div class="container order">
+        <div class="order__intro">
+          <p class="eyebrow">Prefer WhatsApp?</p>
+          <h2 id="order-title">Send your prescription or medicine list.</h2>
+          <p class="urdu section__urdu" lang="ur" dir="rtl">اپنی دوائیوں کی لسٹ یا نسخہ واٹس ایپ پر بھیجیں</p>
+          <ol class="steps">
+            <li><span class="steps__num">1</span><span><strong>Fill in the form</strong>Write the medicines you need, or what you'd like to ask.</span></li>
+            <li><span class="steps__num">2</span><span><strong>Send on WhatsApp</strong>Your message opens in WhatsApp. Attach a photo of the prescription if you have one.</span></li>
+            <li><span class="steps__num">3</span><span><strong>We confirm</strong>We reply with availability and price, and keep your order ready for pickup.</span></li>
+          </ol>
+          <p class="note"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg> Prescription-only medicines are dispensed only against a valid doctor's prescription.</p>
+        </div>
+
+        <form class="order__form" id="order-form" data-whatsapp="{{whatsapp}}" novalidate>
+          <div class="field">
+            <label for="f-type">I want to</label>
+            <select id="f-type" name="type">
+              <option value="medicine">Order medicines</option>
+              <option value="clinic">Ask about a clinic visit</option>
+              <option value="question">Ask a question</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-name">Your name</label>
+            <input id="f-name" name="name" type="text" autocomplete="name" required placeholder="e.g. Muhammad Ali">
+            <p class="field__error" id="f-name-error" hidden>Please write your name.</p>
+          </div>
+          <div class="field" data-show-for="clinic">
+            <label for="f-age">Child's age <span class="optional">(optional)</span></label>
+            <input id="f-age" name="age" type="text" placeholder="e.g. 2 years, 6 months">
+          </div>
+          <div class="field">
+            <label for="f-details" data-details-label>Medicines you need</label>
+            <textarea id="f-details" name="details" rows="5" required placeholder="e.g. Paracetamol syrup 120ml × 1&#10;ORS sachets × 5"></textarea>
+            <p class="field__error" id="f-details-error" hidden>Please write a few details.</p>
+          </div>
+          <fieldset class="field" data-show-for="medicine">
+            <legend>Collection</legend>
+            <div class="radios">
+              <label class="radio"><input type="radio" name="collect" value="I will pick up from the shop" checked> I'll pick up from the shop</label>
+              <label class="radio"><input type="radio" name="collect" value="Please tell me about home delivery"> Ask about home delivery</label>
+            </div>
+          </fieldset>
+          <button class="btn btn--whatsapp btn--lg btn--block" type="submit">
+            <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg> Send on WhatsApp
+          </button>
+          <p class="form__hint">Opens WhatsApp with your message ready to send. Nothing is stored on this website.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- WHY US -->
+    <section class="section section--teal" aria-labelledby="why-title">
+      <div class="container">
+        <header class="section__head section__head--light">
+          <p class="eyebrow">Why families choose us</p>
+          <h2 id="why-title">A clinic and pharmacy under one roof</h2>
+        </header>
+        <div class="why">
+          <div class="why__item">
+            <svg class="icon icon--xl" aria-hidden="true"><use href="#i-stethoscope"/></svg>
+            <h3>See the doctor, get the medicine</h3>
+            <p>No running between shops. After the check-up, the prescribed medicines are right here.</p>
+          </div>
+          <div class="why__item">
+            <svg class="icon icon--xl" aria-hidden="true"><use href="#i-shield"/></svg>
+            <h3>Medicines you can trust</h3>
+            <p>Properly stored stock from registered companies, with expiry dates checked.</p>
+          </div>
+          <div class="why__item">
+            <svg class="icon icon--xl" aria-hidden="true"><use href="#i-smile"/></svg>
+            <h3>Friendly, local and patient</h3>
+            <p>We're part of the Rohillanwali community and we take time to answer your questions.</p>
+          </div>
+          <div class="why__item">
+            <svg class="icon icon--xl" aria-hidden="true"><use href="#i-tag"/></svg>
+            <h3>Honest prices</h3>
+            <p>Medicines sold at fair prices, and we'll suggest a more affordable option when one exists.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VISIT -->
+    <section class="section" id="visit" aria-labelledby="visit-title">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow">Visit us</p>
+          <h2 id="visit-title">Timings &amp; location</h2>
+          <p class="urdu section__urdu" lang="ur" dir="rtl">اوقاتِ کار اور پتہ</p>
+        </header>
+
+        <div class="visit">
+          <div class="visit__info">
+            <div class="info-card">
+              <h3><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg> Opening hours</h3>
+              <!-- Opening hours come from site.config.json -->
+              <table class="hours" id="hours-table">
+                <tbody>
+{{hoursRows}}
+                </tbody>
+              </table>
+              <p class="info-card__note">{{hoursNote}}</p>
+            </div>
+
+            <div class="info-card">
+              <h3><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg> Address</h3>
+              <address>
+                Adil Child Care Clinic &amp; Pharmacy<br>
+                Rohillanwali, Tehsil &amp; District Muzaffargarh<br>
+                Punjab, Pakistan
+              </address>
+              <p class="urdu info-card__urdu" lang="ur" dir="rtl">روہیلانوالی، ضلع مظفرگڑھ، پنجاب</p>
+              <div class="info-card__actions">
+                <a class="btn btn--primary" href="https://www.google.com/maps/search/?api=1&amp;query=Rohillanwali%2C%20Muzaffargarh%2C%20Punjab%2C%20Pakistan" target="_blank" rel="noopener">
+                  <svg class="icon" aria-hidden="true"><use href="#i-nav"/></svg> Get Directions
+                </a>
+                <a class="btn btn--outline" href="tel:{{phoneTel}}">
+                  <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg> {{phoneDisplay}}
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="visit__map">
+            <iframe
+              title="Map showing Rohillanwali, Muzaffargarh"
+              src="https://maps.google.com/maps?q=Rohillanwali%2C%20Muzaffargarh%2C%20Punjab%2C%20Pakistan&amp;z=14&amp;output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- URDU -->
+    <section class="section section--soft" id="urdu" lang="ur" dir="rtl" aria-labelledby="urdu-title">
+      <div class="container urdu-block">
+        <h2 id="urdu-title" class="urdu">ہمارے بارے میں</h2>
+        <p class="urdu">
+          عادل چائلڈ کیئر کلینک اینڈ فارمیسی روہیلانوالی، ضلع مظفرگڑھ میں بچوں کے علاج اور معیاری ادویات کا قابلِ اعتماد مرکز ہے۔
+          یہاں نومولود سے لے کر بڑے بچوں تک کا معائنہ کیا جاتا ہے، اور بخار، نزلہ زکام، کھانسی، دست اور پیٹ کی تکالیف کا علاج کیا جاتا ہے۔
+        </p>
+        <p class="urdu">
+          ہماری فارمیسی پر ڈاکٹری نسخے کی ادویات، روزمرہ کی ادویات، بچوں کے سیرپ اور ڈراپس، دودھ، ڈائپرز اور فرسٹ ایڈ کا سامان دستیاب ہے۔
+          کسی دوائی کی دستیابی معلوم کرنے کے لیے اپنی لسٹ یا نسخے کی تصویر واٹس ایپ پر بھیجیں، ہم آپ کا آرڈر تیار رکھیں گے۔
+        </p>
+        <ul class="urdu urdu-list" role="list">
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> اصلی اور معیاری ادویات</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> بچوں کا توجہ اور شفقت سے علاج</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> واٹس ایپ پر دوائی کا آرڈر</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> مناسب قیمت</li>
+        </ul>
+        <div class="urdu-block__actions">
+          <a class="btn btn--primary btn--lg" href="tel:{{phoneTel}}"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg> <span class="urdu">ابھی کال کریں</span></a>
+          <a class="btn btn--whatsapp btn--lg" href="{{waLink}}" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg> <span class="urdu">واٹس ایپ کریں</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="container faq">
+        <header class="section__head">
+          <p class="eyebrow">FAQ</p>
+          <h2 id="faq-title">Questions parents often ask</h2>
+        </header>
+        <div class="faq__list">
+          <details>
+            <summary>Where is Adil Child Care Clinic &amp; Pharmacy?</summary>
+            <p>We are in Rohillanwali, Tehsil and District Muzaffargarh, Punjab, Pakistan. Tap <a href="#visit">Get Directions</a> to open the location in Google Maps.</p>
+          </details>
+          <details>
+            <summary>How do I order medicines online?</summary>
+            <p>Add medicines to your cart, go to checkout and tap <strong>Place order on WhatsApp</strong>. Your order opens in WhatsApp; send it and we'll confirm availability and price before you pay. You can pick it up from the shop or ask about home delivery.</p>
+          </details>
+          <details>
+            <summary>Can I order medicines on WhatsApp?</summary>
+            <p>Yes. Send us your medicine list or a photo of your prescription on WhatsApp. We will confirm availability and price, and keep your order ready for pickup.</p>
+          </details>
+          <details>
+            <summary>Do I need a prescription to buy medicines?</summary>
+            <p>Prescription-only medicines such as antibiotics are dispensed only against a valid doctor's prescription. Common over-the-counter medicines and baby care products do not need one.</p>
+          </details>
+          <details>
+            <summary>Do you treat newborn babies?</summary>
+            <p>Yes. Our clinic sees children of all ages, from newborns to teenagers. For a sick newborn, call us before coming so we can guide you right away.</p>
+          </details>
+          <details>
+            <summary>What are your timings?</summary>
+            <p>{{hoursSentence}} Doctor timings at the clinic can vary, so please call before your visit.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="cta-band" aria-label="Contact">
+      <div class="container cta-band__inner">
+        <div>
+          <h2>Need a medicine or a check-up for your child?</h2>
+          <p>Order online, call or message us. We're here for you in Rohillanwali.</p>
+        </div>
+        <div class="cta-band__actions">
+          <a class="btn btn--light btn--lg" href="shop.html"><svg class="icon" aria-hidden="true"><use href="#i-cart"/></svg> Shop Medicines</a>
+          <a class="btn btn--whatsapp btn--lg" href="{{waLink}}" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg> WhatsApp</a>
+        </div>
+      </div>
+    </section>
