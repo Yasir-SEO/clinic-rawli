@@ -1,0 +1,14 @@
+{
+  "name": "Adil Child Care Clinic & Pharmacy",
+  "short_name": "Adil Clinic",
+  "description": "Children's clinic and pharmacy in Rohillanwali, Muzaffargarh.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0f766e",
+  "icons": [
+    { "src": "assets/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "assets/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

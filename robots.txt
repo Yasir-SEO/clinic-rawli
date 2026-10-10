@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yasir-seo.github.io/clinic-rawli/sitemap.xml
