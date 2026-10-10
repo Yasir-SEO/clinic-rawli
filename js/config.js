@@ -2,9 +2,9 @@
 window.SITE = {
   "businessName": "Adil Child Care Clinic & Pharmacy",
   "siteUrl": "https://yasir-seo.github.io/clinic-rawli/",
-  "phoneDisplay": "+92 3XX XXXXXXX",
-  "phoneTel": "+923XXXXXXXXX",
-  "whatsapp": "923XXXXXXXXX",
+  "phoneDisplay": "0302 5037681",
+  "phoneTel": "+923025037681",
+  "whatsapp": "923025037681",
   "hours": {
     "monday": [
       "09:00",

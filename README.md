@@ -23,7 +23,7 @@ It's a fast static site: no server, database or monthly fees. It's hosted free o
 
 ## Fill in your details (before going live)
 
-Everything shop-wide lives in **`site.config.json`**:
+Everything shop-wide lives in **`site.config.json`**. The phone/WhatsApp number (0302 5037681), Facebook and Instagram links come from the shop's Facebook Page; opening hours and delivery charges are still placeholders to confirm. Example:
 
 ```json
 "phoneDisplay": "+92 300 1234567",

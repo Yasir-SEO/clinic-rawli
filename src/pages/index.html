@@ -20,7 +20,7 @@
         "@type": ["MedicalClinic", "Pharmacy"],
         "@id": "{{siteUrl}}#business",
         "name": "{{businessNameRaw}}",
-        "alternateName": ["Adil Child Care Clinic and Pharmacy", "Adil Medical Store", "عادل چائلڈ کیئر کلینک اینڈ فارمیسی"],
+        "alternateName": ["Adil Mother and Child Care Clinic Rohillan Wali", "Adil Mother & Child Care Clinic", "Adil Child Care Clinic and Pharmacy", "Adil Medical Store", "عادل چائلڈ کیئر کلینک اینڈ فارمیسی"],
         "description": "Children's clinic and pharmacy in Rohillanwali, Muzaffargarh, Punjab. Child check-ups, prescription and everyday medicines, baby care products and online ordering with WhatsApp confirmation.",
         "url": "{{siteUrl}}",
         "image": "{{siteUrl}}assets/og-image.png",
@@ -42,7 +42,13 @@
         ],
         "openingHoursSpecification": {{openingHoursJson}},
         "hasMap": "https://www.google.com/maps/search/?api=1&query=Rohillanwali%2C%20Muzaffargarh%2C%20Punjab%2C%20Pakistan",
-        "sameAs": ["https://www.facebook.com/Adilmedicalstore"]
+        "sameAs": ["https://www.facebook.com/Adilmedicalstore", "https://www.instagram.com/adilmedicalstore/"],
+        "employee": {
+          "@type": "Physician",
+          "name": "Dr. Rana Muhammad Zubair Ahmad",
+          "medicalSpecialty": "Pediatric",
+          "description": "FCPS (Paediatric Medicine). Nishtar Medical University, Multan. Registrar, Children's Hospital Complex, Multan."
+        }
       },
       {
         "@type": "FAQPage",
@@ -91,7 +97,7 @@
           <p class="eyebrow"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg> Rohillanwali · District Muzaffargarh</p>
           <h1 class="hero__title">Adil Child Care Clinic <span class="text-accent">&amp; Pharmacy</span></h1>
           <p class="hero__urdu urdu" lang="ur" dir="rtl">عادل چائلڈ کیئر کلینک اینڈ فارمیسی — روہیلانوالی</p>
-          <p class="hero__lead">Gentle, careful treatment for your children and a trusted pharmacy for the whole family, right here in Rohillanwali. Genuine medicines, honest advice and a team that knows little patients need a little extra care.</p>
+          <p class="hero__lead">Expert mother &amp; child care with an FCPS child specialist, and a trusted pharmacy for the whole family, right here in Rohillanwali. Genuine medicines, honest advice and a team that knows little patients need a little extra care.</p>
 
           <div class="hero__actions">
             <a class="btn btn--primary btn--lg" href="shop.html">
@@ -184,8 +190,26 @@
           <p class="eyebrow">Child Care Clinic</p>
           <h2 id="clinic-title">Caring treatment for children of every age</h2>
           <p class="urdu section__urdu" lang="ur" dir="rtl">بچوں کا توجہ اور شفقت سے علاج</p>
-          <p class="section__lead">From a newborn's first check-up to a school-going child's fever, our clinic gives every child calm, careful attention and gives parents clear advice they can follow at home.</p>
+          <p class="section__lead">From a newborn's first check-up to a school-going child's fever, our mother &amp; child care clinic gives every child calm, careful attention and gives parents clear advice they can follow at home.</p>
         </header>
+
+        <article class="doctor" aria-labelledby="doctor-name">
+          <span class="doctor__icon" aria-hidden="true"><svg class="icon"><use href="#i-stethoscope"/></svg></span>
+          <div class="doctor__body">
+            <p class="eyebrow">Our child specialist</p>
+            <h3 id="doctor-name" class="doctor__name">Dr. Rana Muhammad Zubair Ahmad</h3>
+            <p class="doctor__urdu urdu" lang="ur" dir="rtl">ڈاکٹر رانا محمد زبیر احمد</p>
+            <ul class="doctor__creds" role="list">
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> FCPS (Paediatric Medicine)</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Nishtar Medical University, Multan</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Registrar, Children's Hospital Complex, Multan</li>
+            </ul>
+          </div>
+          <div class="doctor__cta">
+            <p>Please call to confirm the doctor's clinic timings before your visit.</p>
+            <a class="btn btn--primary" href="tel:{{phoneTel}}"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg> {{phoneDisplay}}</a>
+          </div>
+        </article>
 
         <div class="cards">
           <article class="card">

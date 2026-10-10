@@ -156,6 +156,8 @@ function page({ path: outPath, title, description, content, jsonLd = "", robots 
     siteUrl: SITE,
     businessName: esc(config.businessName),
     businessNameRaw: config.businessName,
+    facebookUrl: esc(config.facebook || "https://www.facebook.com/Adilmedicalstore"),
+    instagramUrl: esc(config.instagram || "https://www.instagram.com/adilmedicalstore/"),
     phoneDisplay: esc(config.phoneDisplay),
     phoneTel: esc(config.phoneTel),
     whatsapp: esc(config.whatsapp),

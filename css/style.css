@@ -1865,3 +1865,42 @@ a.cart-row__name:hover { color: var(--teal-700); }
 }
 .product__media .pack-photo { aspect-ratio: 6 / 5; height: auto; padding: 16px; }
 .product__ask { display: flex; }
+
+/* ---------- Doctor card ---------- */
+.doctor {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 20px 28px;
+  margin: 0 0 32px;
+  padding: 24px 28px;
+  background: linear-gradient(135deg, var(--teal-50), #fff);
+  border: 1px solid var(--teal-100);
+  border-radius: var(--radius-lg);
+}
+.doctor__icon {
+  display: grid;
+  place-items: center;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: var(--teal-700);
+  color: #fff;
+}
+.doctor__icon .icon { width: 34px; height: 34px; }
+.doctor .eyebrow { margin-bottom: 4px; }
+.doctor__name { margin: 0; font-size: clamp(1.2rem, 1rem + .8vw, 1.5rem); }
+.doctor__urdu { margin: 0 0 6px; color: var(--teal-800); text-align: left; }
+.doctor__creds { display: grid; gap: 4px; font-size: .95rem; }
+.doctor__creds li { display: flex; align-items: center; gap: 8px; }
+.doctor__creds .icon { color: var(--teal-700); stroke-width: 3; }
+.doctor__cta { max-width: 240px; }
+.doctor__cta p { margin: 0 0 10px; color: var(--muted); font-size: .88rem; }
+@media (max-width: 860px) {
+  .doctor { grid-template-columns: auto minmax(0, 1fr); padding: 20px; }
+  .doctor__cta { grid-column: 1 / -1; max-width: none; }
+}
+@media (max-width: 480px) {
+  .doctor { grid-template-columns: 1fr; }
+  .doctor__icon { width: 56px; height: 56px; }
+}
