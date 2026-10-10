@@ -59,7 +59,7 @@
     var list = DATA.products.filter(function (p) {
       if (!C.inCategory(p, state.cat)) return false;
       if (state.mfr.length && state.mfr.indexOf(p.mfr) === -1) return false;
-      if (state.kids && !p.kids) return false;
+      if (state.kids && !C.inCategory(p, "kids")) return false;
       if (state.otc && p.rx) return false;
       return true;
     });

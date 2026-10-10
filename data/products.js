@@ -10,7 +10,8 @@
       generic   active ingredient(s)
       form      tablet | capsule | syrup | suspension | drops | spray | cream | ointment | gel |
                 inhaler | nebule | sachet | lozenge | effervescent | vial | tin | pack | jar |
-                bottle | device | supply
+                bottle | device | supply | toothpaste | toothbrush | mouthwash | soap |
+                shampoo | lotion | handwash | sanitizer | powder | diaper | wipes | pads | razor
       unit      what one cart item means: Strip, Bottle, Tube, Pack, Box, Tin, Piece, Jar, Sachet
       cat       category id (see `categories`)
       mfr       manufacturer id (see `manufacturers`)
@@ -38,9 +39,12 @@
     { id: "vitamins", name: "Vitamins & Nutrition", urdu: "وٹامنز اور غذائیت", icon: "sparkle" },
     { id: "diabetes", name: "Diabetes Care", urdu: "شوگر", icon: "droplet" },
     { id: "heart-bp", name: "Heart & Blood Pressure", urdu: "دل اور بلڈ پریشر", icon: "heart" },
-    { id: "skin", name: "Skin & Personal Care", urdu: "جلد اور ذاتی نگہداشت", icon: "bandage" },
+    { id: "skin", name: "Skin Care", urdu: "جلد کی نگہداشت", icon: "bandage" },
     { id: "eye-ear-nose", name: "Eye, Ear & Nose", urdu: "آنکھ، کان اور ناک", icon: "eye" },
     { id: "baby", name: "Baby Care", urdu: "نومولود کی دیکھ بھال", icon: "bottle" },
+    { id: "diapers", name: "Diapers & Wipes", urdu: "ڈائپرز اور وائپس", icon: "baby" },
+    { id: "oral-care", name: "Oral Care", urdu: "دانتوں کی صفائی", icon: "smile" },
+    { id: "personal-care", name: "Personal Care & Hygiene", urdu: "ذاتی صفائی", icon: "droplet" },
     { id: "herbal", name: "Herbal & Desi Remedies", urdu: "دیسی اور ہربل", icon: "leaf" },
     { id: "first-aid", name: "First Aid & Supplies", urdu: "فرسٹ ایڈ", icon: "kit" },
     { id: "devices", name: "Medical Devices", urdu: "طبی آلات", icon: "pulse" }
@@ -75,6 +79,7 @@
     { id: "omron", name: "Omron", full: "Omron Healthcare" },
     { id: "beiersdorf", name: "Beiersdorf", full: "Beiersdorf (Nivea, Hansaplast)" },
     { id: "unilever", name: "Unilever", full: "Unilever Pakistan" },
+    { id: "colgate", name: "Colgate-Palmolive", full: "Colgate-Palmolive Pakistan" },
     { id: "hayat", name: "Hayat Kimya", full: "Hayat Kimya (Molfix)" },
     { id: "pigeon", name: "Pigeon", full: "Pigeon Corporation" },
     { id: "various", name: "Various", full: "Various manufacturers", hidden: true }
@@ -217,7 +222,7 @@
     P({ id: "canesten-cream", name: "Canesten Cream 1%", brand: "Canesten", strength: "1%", generic: "Clotrimazole", form: "cream", unit: "Tube", cat: "skin", mfr: "bayer", use: "Fungal skin infections such as ringworm and athlete's foot." }),
     P({ id: "vaseline-petroleum-jelly", name: "Vaseline Pure Petroleum Jelly", brand: "Vaseline", generic: "Petroleum jelly", form: "jar", unit: "Jar", cat: "skin", mfr: "unilever", use: "Protects and soothes dry, cracked skin." }),
     P({ id: "nivea-creme", name: "Nivea Creme", brand: "Nivea", strength: "Creme", generic: "Moisturising cream", form: "jar", unit: "Tin", cat: "skin", mfr: "beiersdorf", use: "Moisturising cream for face, hands and body." }),
-    P({ id: "sensodyne-toothpaste", name: "Sensodyne Toothpaste", brand: "Sensodyne", generic: "Toothpaste for sensitive teeth", form: "cream", unit: "Tube", cat: "skin", mfr: "haleon", use: "Daily toothpaste for sensitive teeth." }),
+    P({ id: "sensodyne-toothpaste", name: "Sensodyne Toothpaste", brand: "Sensodyne", generic: "Toothpaste for sensitive teeth", form: "toothpaste", unit: "Tube", cat: "oral-care", mfr: "haleon", use: "Daily toothpaste for sensitive teeth." }),
 
     /* ---------- Eye, Ear & Nose ---------- */
     P({ id: "otrivin-0-1-nasal-drops", name: "Otrivin 0.1% Nasal Drops", brand: "Otrivin", strength: "0.1%", generic: "Xylometazoline", form: "drops", unit: "Bottle", cat: "eye-ear-nose", mfr: "haleon", use: "Fast relief from blocked nose in adults." }),
@@ -233,17 +238,17 @@
     P({ id: "lactogen-2", name: "Nestlé Lactogen 2 Follow-up Formula", brand: "Lactogen", strength: "Stage 2", generic: "Follow-up formula (6–12 months)", form: "tin", unit: "Tin", cat: "baby", mfr: "nestle", kids: true, use: "Follow-up formula for babies from 6 months." }),
     P({ id: "cerelac-wheat", name: "Nestlé Cerelac Wheat", brand: "Cerelac", strength: "Wheat", generic: "Infant cereal (from 6 months)", form: "pack", unit: "Pack", cat: "baby", mfr: "nestle", kids: true, use: "Iron-fortified cereal for babies starting solid food." }),
     P({ id: "cerelac-rice", name: "Nestlé Cerelac Rice", brand: "Cerelac", strength: "Rice", generic: "Infant cereal (from 6 months)", form: "pack", unit: "Pack", cat: "baby", mfr: "nestle", kids: true, use: "Gentle first cereal for babies from 6 months." }),
-    P({ id: "pampers-baby-dry-size-3", name: "Pampers Baby-Dry Diapers Size 3 (Midi)", brand: "Pampers", strength: "Size 3 · Midi", generic: "Baby diapers", form: "pack", unit: "Pack", cat: "baby", mfr: "pg", kids: true, use: "Soft, absorbent diapers for overnight dryness." }),
-    P({ id: "pampers-baby-dry-size-4", name: "Pampers Baby-Dry Diapers Size 4 (Maxi)", brand: "Pampers", strength: "Size 4 · Maxi", generic: "Baby diapers", form: "pack", unit: "Pack", cat: "baby", mfr: "pg", kids: true, use: "Soft, absorbent diapers for overnight dryness." }),
-    P({ id: "pampers-baby-dry-size-5", name: "Pampers Baby-Dry Diapers Size 5 (Junior)", brand: "Pampers", strength: "Size 5 · Junior", generic: "Baby diapers", form: "pack", unit: "Pack", cat: "baby", mfr: "pg", kids: true, use: "Soft, absorbent diapers for overnight dryness." }),
-    P({ id: "molfix-size-3", name: "Molfix Diapers Size 3 (Midi)", brand: "Molfix", strength: "Size 3 · Midi", generic: "Baby diapers", form: "pack", unit: "Pack", cat: "baby", mfr: "hayat", kids: true, use: "Comfortable, leak-protection diapers." }),
-    P({ id: "molfix-size-4", name: "Molfix Diapers Size 4 (Maxi)", brand: "Molfix", strength: "Size 4 · Maxi", generic: "Baby diapers", form: "pack", unit: "Pack", cat: "baby", mfr: "hayat", kids: true, use: "Comfortable, leak-protection diapers." }),
-    P({ id: "molfix-size-5", name: "Molfix Diapers Size 5 (Junior)", brand: "Molfix", strength: "Size 5 · Junior", generic: "Baby diapers", form: "pack", unit: "Pack", cat: "baby", mfr: "hayat", kids: true, use: "Comfortable, leak-protection diapers." }),
-    P({ id: "pampers-baby-wipes", name: "Pampers Baby Wipes", brand: "Pampers", strength: "Wipes", generic: "Baby wipes", form: "pack", unit: "Pack", cat: "baby", mfr: "pg", kids: true, use: "Gentle wipes for nappy changes." }),
+    P({ id: "pampers-baby-dry-size-3", name: "Pampers Baby-Dry Diapers Size 3 (Midi)", brand: "Pampers", strength: "Size 3 · Midi", generic: "Baby diapers", form: "diaper", unit: "Pack", cat: "diapers", mfr: "pg", kids: true, use: "Soft, absorbent diapers for overnight dryness." }),
+    P({ id: "pampers-baby-dry-size-4", name: "Pampers Baby-Dry Diapers Size 4 (Maxi)", brand: "Pampers", strength: "Size 4 · Maxi", generic: "Baby diapers", form: "diaper", unit: "Pack", cat: "diapers", mfr: "pg", kids: true, use: "Soft, absorbent diapers for overnight dryness." }),
+    P({ id: "pampers-baby-dry-size-5", name: "Pampers Baby-Dry Diapers Size 5 (Junior)", brand: "Pampers", strength: "Size 5 · Junior", generic: "Baby diapers", form: "diaper", unit: "Pack", cat: "diapers", mfr: "pg", kids: true, use: "Soft, absorbent diapers for overnight dryness." }),
+    P({ id: "molfix-size-3", name: "Molfix Diapers Size 3 (Midi)", brand: "Molfix", strength: "Size 3 · Midi", generic: "Baby diapers", form: "diaper", unit: "Pack", cat: "diapers", mfr: "hayat", kids: true, use: "Comfortable, leak-protection diapers." }),
+    P({ id: "molfix-size-4", name: "Molfix Diapers Size 4 (Maxi)", brand: "Molfix", strength: "Size 4 · Maxi", generic: "Baby diapers", form: "diaper", unit: "Pack", cat: "diapers", mfr: "hayat", kids: true, use: "Comfortable, leak-protection diapers." }),
+    P({ id: "molfix-size-5", name: "Molfix Diapers Size 5 (Junior)", brand: "Molfix", strength: "Size 5 · Junior", generic: "Baby diapers", form: "diaper", unit: "Pack", cat: "diapers", mfr: "hayat", kids: true, use: "Comfortable, leak-protection diapers." }),
+    P({ id: "pampers-baby-wipes", name: "Pampers Baby Wipes", brand: "Pampers", strength: "Wipes", generic: "Baby wipes", form: "wipes", unit: "Pack", cat: "diapers", mfr: "pg", kids: true, use: "Gentle wipes for nappy changes." }),
     P({ id: "johnsons-baby-shampoo", name: "Johnson's Baby Shampoo", brand: "Johnson's", strength: "Shampoo", generic: "No-more-tears baby shampoo", form: "bottle", unit: "Bottle", cat: "baby", mfr: "kenvue", kids: true, use: "Mild, tear-free shampoo for babies." }),
     P({ id: "johnsons-baby-lotion", name: "Johnson's Baby Lotion", brand: "Johnson's", strength: "Lotion", generic: "Baby moisturising lotion", form: "bottle", unit: "Bottle", cat: "baby", mfr: "kenvue", kids: true, use: "Keeps baby's skin soft and moisturised." }),
     P({ id: "johnsons-baby-oil", name: "Johnson's Baby Oil", brand: "Johnson's", strength: "Oil", generic: "Baby massage oil", form: "bottle", unit: "Bottle", cat: "baby", mfr: "kenvue", kids: true, use: "Gentle oil for baby massage." }),
-    P({ id: "johnsons-baby-powder", name: "Johnson's Baby Powder", brand: "Johnson's", strength: "Powder", generic: "Baby powder", form: "bottle", unit: "Bottle", cat: "baby", mfr: "kenvue", kids: true, use: "Keeps baby's skin dry and fresh." }),
+    P({ id: "johnsons-baby-powder", name: "Johnson's Baby Powder", brand: "Johnson's", strength: "Powder", generic: "Baby powder", form: "powder", unit: "Bottle", cat: "baby", mfr: "kenvue", kids: true, use: "Keeps baby's skin dry and fresh." }),
     P({ id: "pigeon-feeding-bottle", name: "Pigeon Feeding Bottle", brand: "Pigeon", strength: "Feeder", generic: "Baby feeding bottle", form: "bottle", unit: "Piece", cat: "baby", mfr: "pigeon", kids: true, use: "Easy-to-clean feeding bottle for babies." }),
     P({ id: "pigeon-silicone-nipple", name: "Pigeon Silicone Nipple", brand: "Pigeon", strength: "Nipple", generic: "Feeding bottle nipple", form: "pack", unit: "Pack", cat: "baby", mfr: "pigeon", kids: true, use: "Soft replacement nipple for feeding bottles." }),
 
@@ -267,7 +272,54 @@
     P({ id: "omron-m2-basic-bp-monitor", name: "Omron M2 Basic BP Monitor", brand: "Omron", strength: "M2 Basic", generic: "Automatic blood pressure monitor", form: "device", unit: "Piece", cat: "devices", mfr: "omron", use: "Check your blood pressure accurately at home.", featured: true }),
     P({ id: "omron-digital-thermometer", name: "Omron Digital Thermometer", brand: "Omron", strength: "Thermometer", generic: "Digital thermometer", form: "device", unit: "Piece", cat: "devices", mfr: "omron", use: "Quick and accurate temperature readings for the whole family." }),
     P({ id: "omron-ne-c101-nebulizer", name: "Omron NE-C101 Compressor Nebulizer", brand: "Omron", strength: "Nebulizer", generic: "Compressor nebulizer", form: "device", unit: "Piece", cat: "devices", mfr: "omron", use: "Home nebulizer for asthma and breathing problems." }),
-    P({ id: "pulse-oximeter", name: "Fingertip Pulse Oximeter", brand: "Oximeter", generic: "Pulse oximeter (SpO2)", form: "device", unit: "Piece", cat: "devices", mfr: "various", use: "Measures oxygen level and pulse rate in seconds." })
+    P({ id: "pulse-oximeter", name: "Fingertip Pulse Oximeter", brand: "Oximeter", generic: "Pulse oximeter (SpO2)", form: "device", unit: "Piece", cat: "devices", mfr: "various", use: "Measures oxygen level and pulse rate in seconds." }),
+
+    /* ---------- Diapers & Wipes ---------- */
+    P({ id: "pampers-baby-dry-size-1", name: "Pampers Baby-Dry Diapers Size 1 (Newborn)", brand: "Pampers", strength: "Size 1 · Newborn", generic: "Baby diapers", form: "diaper", unit: "Pack", cat: "diapers", mfr: "pg", kids: true, use: "Soft, absorbent diapers for newborn babies." }),
+    P({ id: "pampers-baby-dry-size-2", name: "Pampers Baby-Dry Diapers Size 2 (Mini)", brand: "Pampers", strength: "Size 2 · Mini", generic: "Baby diapers", form: "diaper", unit: "Pack", cat: "diapers", mfr: "pg", kids: true, use: "Soft, absorbent diapers for overnight dryness." }),
+    P({ id: "pampers-baby-dry-size-6", name: "Pampers Baby-Dry Diapers Size 6 (Extra Large)", brand: "Pampers", strength: "Size 6 · XL", generic: "Baby diapers", form: "diaper", unit: "Pack", cat: "diapers", mfr: "pg", kids: true, use: "Soft, absorbent diapers for bigger toddlers." }),
+    P({ id: "molfix-size-1", name: "Molfix Diapers Size 1 (Newborn)", brand: "Molfix", strength: "Size 1 · Newborn", generic: "Baby diapers", form: "diaper", unit: "Pack", cat: "diapers", mfr: "hayat", kids: true, use: "Gentle diapers for newborn babies." }),
+    P({ id: "molfix-size-2", name: "Molfix Diapers Size 2 (Mini)", brand: "Molfix", strength: "Size 2 · Mini", generic: "Baby diapers", form: "diaper", unit: "Pack", cat: "diapers", mfr: "hayat", kids: true, use: "Comfortable, leak-protection diapers." }),
+    P({ id: "molfix-size-6", name: "Molfix Diapers Size 6 (Extra Large)", brand: "Molfix", strength: "Size 6 · XL", generic: "Baby diapers", form: "diaper", unit: "Pack", cat: "diapers", mfr: "hayat", kids: true, use: "Comfortable, leak-protection diapers for bigger toddlers." }),
+    P({ id: "molfix-baby-wipes", name: "Molfix Baby Wipes", brand: "Molfix", strength: "Wipes", generic: "Baby wet wipes", form: "wipes", unit: "Pack", cat: "diapers", mfr: "hayat", kids: true, use: "Soft wet wipes for nappy changes and clean hands." }),
+    P({ id: "pigeon-baby-wipes", name: "Pigeon Baby Wipes", brand: "Pigeon", strength: "Wipes", generic: "Baby wet wipes", form: "wipes", unit: "Pack", cat: "diapers", mfr: "pigeon", kids: true, use: "Gentle wipes for baby's delicate skin." }),
+
+    /* ---------- Oral Care ---------- */
+    P({ id: "colgate-maximum-cavity-protection", name: "Colgate Maximum Cavity Protection Toothpaste", brand: "Colgate", strength: "Cavity Protection", generic: "Fluoride toothpaste", form: "toothpaste", unit: "Tube", cat: "oral-care", mfr: "colgate", use: "Everyday fluoride toothpaste that helps prevent cavities.", featured: true }),
+    P({ id: "colgate-maxfresh-toothpaste", name: "Colgate MaxFresh Toothpaste", brand: "Colgate", strength: "MaxFresh", generic: "Fluoride gel toothpaste", form: "toothpaste", unit: "Tube", cat: "oral-care", mfr: "colgate", use: "Fresh breath and cavity protection." }),
+    P({ id: "colgate-herbal-toothpaste", name: "Colgate Herbal Toothpaste", brand: "Colgate", strength: "Herbal", generic: "Herbal fluoride toothpaste", form: "toothpaste", unit: "Tube", cat: "oral-care", mfr: "colgate", use: "Toothpaste with herbal ingredients for healthy teeth and gums." }),
+    P({ id: "closeup-toothpaste", name: "Closeup Toothpaste", brand: "Closeup", generic: "Fluoride gel toothpaste", form: "toothpaste", unit: "Tube", cat: "oral-care", mfr: "unilever", use: "Gel toothpaste for fresh breath and cavity protection." }),
+    P({ id: "sensodyne-rapid-relief", name: "Sensodyne Rapid Relief Toothpaste", brand: "Sensodyne", strength: "Rapid Relief", generic: "Toothpaste for sensitive teeth", form: "toothpaste", unit: "Tube", cat: "oral-care", mfr: "haleon", use: "Fast relief for sensitive teeth." }),
+    P({ id: "sensodyne-repair-protect", name: "Sensodyne Repair & Protect Toothpaste", brand: "Sensodyne", strength: "Repair & Protect", generic: "Toothpaste for sensitive teeth", form: "toothpaste", unit: "Tube", cat: "oral-care", mfr: "haleon", use: "Daily protection for sensitive teeth." }),
+    P({ id: "colgate-toothbrush", name: "Colgate Toothbrush (Medium)", brand: "Colgate", strength: "Toothbrush", generic: "Manual toothbrush", form: "toothbrush", unit: "Piece", cat: "oral-care", mfr: "colgate", use: "Everyday toothbrush for a clean mouth." }),
+    P({ id: "oral-b-toothbrush", name: "Oral-B Toothbrush", brand: "Oral-B", strength: "Toothbrush", generic: "Manual toothbrush", form: "toothbrush", unit: "Piece", cat: "oral-care", mfr: "pg", use: "Toothbrush that reaches back teeth and gum lines." }),
+    P({ id: "sensodyne-soft-toothbrush", name: "Sensodyne Soft Toothbrush", brand: "Sensodyne", strength: "Soft brush", generic: "Soft toothbrush for sensitive teeth", form: "toothbrush", unit: "Piece", cat: "oral-care", mfr: "haleon", use: "Extra-soft bristles, gentle on sensitive teeth and gums." }),
+    P({ id: "kids-soft-toothbrush", name: "Kids Soft Toothbrush", brand: "Kids", strength: "Toothbrush", generic: "Soft children's toothbrush", form: "toothbrush", unit: "Piece", cat: "oral-care", mfr: "various", kids: true, use: "Small, soft toothbrush for children." }),
+    P({ id: "listerine-cool-mint", name: "Listerine Cool Mint Mouthwash", brand: "Listerine", strength: "Cool Mint", generic: "Antiseptic mouthwash", form: "mouthwash", unit: "Bottle", cat: "oral-care", mfr: "kenvue", use: "Kills germs that cause bad breath and plaque." }),
+    P({ id: "colgate-plax-mouthwash", name: "Colgate Plax Mouthwash", brand: "Colgate Plax", generic: "Mouthwash", form: "mouthwash", unit: "Bottle", cat: "oral-care", mfr: "colgate", use: "Mouthwash for fresh breath and cleaner teeth." }),
+
+    /* ---------- Personal Care & Hygiene ---------- */
+    P({ id: "dettol-original-soap", name: "Dettol Original Soap", brand: "Dettol", strength: "Soap", generic: "Antibacterial soap", form: "soap", unit: "Piece", cat: "personal-care", mfr: "reckitt", use: "Antibacterial bathing soap for everyday hygiene.", featured: true }),
+    P({ id: "safeguard-soap", name: "Safeguard Soap", brand: "Safeguard", strength: "Soap", generic: "Germ-protection soap", form: "soap", unit: "Piece", cat: "personal-care", mfr: "pg", use: "Germ-protection soap for the whole family." }),
+    P({ id: "lifebuoy-soap", name: "Lifebuoy Soap", brand: "Lifebuoy", strength: "Soap", generic: "Germ-protection soap", form: "soap", unit: "Piece", cat: "personal-care", mfr: "unilever", use: "Germ-protection soap for everyday hygiene." }),
+    P({ id: "lux-soap", name: "Lux Soap", brand: "Lux", strength: "Soap", generic: "Beauty soap", form: "soap", unit: "Piece", cat: "personal-care", mfr: "unilever", use: "Fragrant beauty soap." }),
+    P({ id: "dove-beauty-bar", name: "Dove Beauty Bar", brand: "Dove", strength: "Beauty Bar", generic: "Moisturising beauty bar", form: "soap", unit: "Piece", cat: "personal-care", mfr: "unilever", use: "Gentle cleansing bar with moisturising cream." }),
+    P({ id: "dettol-liquid-handwash", name: "Dettol Liquid Handwash", brand: "Dettol", strength: "Handwash", generic: "Antibacterial handwash", form: "handwash", unit: "Bottle", cat: "personal-care", mfr: "reckitt", use: "Antibacterial liquid handwash." }),
+    P({ id: "lifebuoy-handwash", name: "Lifebuoy Handwash", brand: "Lifebuoy", strength: "Handwash", generic: "Germ-protection handwash", form: "handwash", unit: "Bottle", cat: "personal-care", mfr: "unilever", use: "Germ-protection liquid handwash." }),
+    P({ id: "dettol-hand-sanitizer", name: "Dettol Hand Sanitizer", brand: "Dettol", strength: "Sanitizer", generic: "Alcohol hand sanitizer", form: "sanitizer", unit: "Bottle", cat: "personal-care", mfr: "reckitt", use: "Kills germs on hands without water." }),
+    P({ id: "head-and-shoulders-shampoo", name: "Head & Shoulders Anti-Dandruff Shampoo", brand: "Head & Shoulders", strength: "Shampoo", generic: "Anti-dandruff shampoo", form: "shampoo", unit: "Bottle", cat: "personal-care", mfr: "pg", use: "Anti-dandruff shampoo for a clean, flake-free scalp." }),
+    P({ id: "pantene-shampoo", name: "Pantene Shampoo", brand: "Pantene", strength: "Shampoo", generic: "Hair care shampoo", form: "shampoo", unit: "Bottle", cat: "personal-care", mfr: "pg", use: "Shampoo for strong, smooth hair." }),
+    P({ id: "sunsilk-shampoo", name: "Sunsilk Shampoo", brand: "Sunsilk", strength: "Shampoo", generic: "Hair care shampoo", form: "shampoo", unit: "Bottle", cat: "personal-care", mfr: "unilever", use: "Everyday shampoo for soft, shiny hair." }),
+    P({ id: "clear-anti-dandruff-shampoo", name: "Clear Anti-Dandruff Shampoo", brand: "Clear", strength: "Shampoo", generic: "Anti-dandruff shampoo", form: "shampoo", unit: "Bottle", cat: "personal-care", mfr: "unilever", use: "Anti-dandruff shampoo." }),
+    P({ id: "always-sanitary-pads", name: "Always Sanitary Pads", brand: "Always", strength: "Pads", generic: "Sanitary napkins", form: "pads", unit: "Pack", cat: "personal-care", mfr: "pg", use: "Comfortable, absorbent sanitary pads." }),
+    P({ id: "gillette-disposable-razors", name: "Gillette Disposable Razors", brand: "Gillette", strength: "Razors", generic: "Disposable shaving razors", form: "razor", unit: "Pack", cat: "personal-care", mfr: "pg", use: "Disposable razors for a smooth shave." }),
+
+    /* ---------- More skin & baby care ---------- */
+    P({ id: "vaseline-body-lotion", name: "Vaseline Intensive Care Body Lotion", brand: "Vaseline", strength: "Body Lotion", generic: "Moisturising body lotion", form: "lotion", unit: "Bottle", cat: "skin", mfr: "unilever", use: "Moisturising lotion for dry skin." }),
+    P({ id: "ponds-cold-cream", name: "Pond's Cold Cream", brand: "Pond's", strength: "Cold Cream", generic: "Moisturising cold cream", form: "jar", unit: "Jar", cat: "skin", mfr: "unilever", use: "Rich cream for dry skin in winter." }),
+    P({ id: "johnsons-baby-soap", name: "Johnson's Baby Soap", brand: "Johnson's", strength: "Baby Soap", generic: "Mild baby soap", form: "soap", unit: "Piece", cat: "baby", mfr: "kenvue", kids: true, use: "Mild soap for baby's bath time." }),
+    P({ id: "pigeon-baby-powder", name: "Pigeon Baby Powder", brand: "Pigeon", strength: "Baby Powder", generic: "Baby powder", form: "powder", unit: "Bottle", cat: "baby", mfr: "pigeon", kids: true, use: "Keeps baby's skin dry and comfortable." }),
+    P({ id: "pigeon-baby-shampoo", name: "Pigeon Baby Shampoo", brand: "Pigeon", strength: "Baby Shampoo", generic: "Gentle baby shampoo", form: "shampoo", unit: "Bottle", cat: "baby", mfr: "pigeon", kids: true, use: "Gentle shampoo for baby's hair." })
   ];
 
   return { categories: categories, manufacturers: manufacturers, products: products };

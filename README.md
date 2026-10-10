@@ -9,8 +9,8 @@ It's a fast static site: no server, database or monthly fees. It's hosted free o
 ## What's included
 
 **Online shop (WooCommerce-style)**
-- **152 products** in 15 categories: fever & pain, cough & cold, allergy & asthma, stomach, antibiotics, kids' medicines, vitamins, diabetes, heart & BP, skin, eye/ear/nose, baby care, herbal, first aid and medical devices.
-- **Manufacturer strip** of 30 companies (GSK, Haleon, Abbott, Getz, Searle, Sami, Hilton, Novartis, Sanofi and more). Each one has its own brand page.
+- **191 products** in 18 categories: fever & pain, cough & cold, allergy & asthma, stomach, antibiotics, kids' medicines, vitamins, diabetes, heart & BP, skin care, eye/ear/nose, baby care, diapers & wipes, oral care (toothpaste, toothbrushes, mouthwash), personal care & hygiene (soaps, handwash, shampoo, pads, razors), herbal, first aid and medical devices.
+- **Manufacturer strip** of 31 companies (GSK, Haleon, Abbott, Getz, Searle, Sami, Hilton, Novartis, Sanofi, Colgate-Palmolive, Unilever, P&G, Reckitt and more). Each one has its own brand page.
 - **A page for every medicine:** active ingredient, strength, form, manufacturer, prescription status, related products and structured data for Google.
 - **Shop page features:** live search with suggestions in the header, filters (category, manufacturer, kids, no-prescription), sorting, and "Load more".
 - **Cart:** add to cart with quantity buttons, a slide-out mini cart, a full cart page, and "Request a medicine" for anything not listed.

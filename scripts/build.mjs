@@ -114,9 +114,9 @@ const NAV = [
   ["categories/cough-cold.html", "Cough & Cold"],
   ["categories/kids.html", "Kids' Medicines"],
   ["categories/baby.html", "Baby Care"],
+  ["categories/diapers.html", "Diapers"],
+  ["categories/personal-care.html", "Personal Care"],
   ["categories/vitamins.html", "Vitamins"],
-  ["categories/antibiotics.html", "Antibiotics"],
-  ["categories/diabetes.html", "Diabetes"],
   ["index.html#clinic", "Clinic"],
   ["index.html#visit", "Contact"],
 ];
@@ -129,7 +129,7 @@ function navLinks(root, current) {
 }
 
 function footerCategories(root) {
-  return ["fever-pain", "cough-cold", "kids", "baby", "vitamins", "first-aid"]
+  return ["fever-pain", "cough-cold", "kids", "baby", "diapers", "oral-care", "personal-care", "vitamins"]
     .map((id) => `          <li><a href="${root}categories/${id}.html">${esc(IDX.cat[id].name)}</a></li>`)
     .join("\n");
 }
@@ -418,7 +418,7 @@ listing({
 });
 
 const categoryLabel = (c) =>
-  /medicines|devices|care|supplies|nutrition|remedies|antibiotics/i.test(c.name) ? c.name : `${c.name} Medicines`;
+  /medicines|devices|care|supplies|nutrition|remedies|antibiotics|hygiene|wipes/i.test(c.name) ? c.name : `${c.name} Medicines`;
 
 for (const c of DATA.categories) {
   const products = DATA.products.filter((p) => C.inCategory(p, c.id));

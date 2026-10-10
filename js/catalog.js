@@ -24,7 +24,10 @@
     "baby": ["#e0568f", "#fdeaf2", "#a63766"],
     "herbal": ["#4d8a1f", "#edf6e5", "#355f13"],
     "first-aid": ["#16a34a", "#e6f6ec", "#0f7535"],
-    "devices": ["#475569", "#edf0f4", "#2f3a48"]
+    "devices": ["#475569", "#edf0f4", "#2f3a48"],
+    "diapers": ["#6d5bd0", "#efecfb", "#4a3aa6"],
+    "oral-care": ["#0d9bd8", "#e3f4fc", "#09709c"],
+    "personal-care": ["#7c8b2e", "#f1f4e2", "#58631f"]
   };
   var DEFAULT_COLOR = ["#0f766e", "#e3f6f3", "#0b524c"];
 
@@ -40,15 +43,24 @@
     effervescent: "Effervescent tablets", vial: "Oral suspension vials", syrup: "Syrup",
     suspension: "Suspension", drops: "Drops", spray: "Spray", cream: "Cream", ointment: "Ointment",
     gel: "Gel", inhaler: "Inhaler", sachet: "Sachet", tin: "Powder (tin)", pack: "Pack",
-    jar: "Jar", bottle: "Bottle", device: "Device", supply: "Medical supply"
+    jar: "Jar", bottle: "Bottle", device: "Device", supply: "Medical supply",
+    toothpaste: "Toothpaste", toothbrush: "Toothbrush", mouthwash: "Mouthwash", soap: "Soap bar",
+    shampoo: "Shampoo", lotion: "Lotion", handwash: "Handwash", sanitizer: "Hand sanitizer",
+    powder: "Powder", diaper: "Diapers", wipes: "Wet wipes", pads: "Sanitary pads", razor: "Razors"
   };
 
   var SHAPE = {
     tablet: "box", capsule: "box", lozenge: "box", nebule: "box", vial: "box", supply: "box",
     effervescent: "box", syrup: "bottle", suspension: "bottle", bottle: "bottle",
     drops: "dropper", spray: "dropper", cream: "tube", ointment: "tube", gel: "tube",
-    tin: "tin", jar: "jar", pack: "pack", sachet: "sachet", inhaler: "inhaler", device: "device"
+    tin: "tin", jar: "jar", pack: "pack", sachet: "sachet", inhaler: "inhaler", device: "device",
+    toothpaste: "tube", toothbrush: "pack", mouthwash: "bottle", soap: "box", shampoo: "bottle",
+    lotion: "bottle", handwash: "bottle", sanitizer: "bottle", powder: "bottle", diaper: "pack",
+    wipes: "pack", pads: "pack", razor: "pack"
   };
+
+  /* Categories that are not medicines (kept out of "Kids' Medicines"). */
+  var NON_MEDICINE = { baby: true, diapers: true, "oral-care": true, "personal-care": true };
 
   function esc(s) {
     return String(s == null ? "" : s)
@@ -195,7 +207,7 @@
 
   function inCategory(p, catId) {
     if (!catId) return true;
-    if (catId === "kids") return p.kids;
+    if (catId === "kids") return p.kids && !NON_MEDICINE[p.cat];
     return p.cat === catId;
   }
 
