@@ -32,4 +32,5 @@ jobs:
           git add tools/fetched
           if git diff --cached --quiet; then echo "Nothing new"; exit 0; fi
           git commit -m "Fetched web pages for the site"
-          git push
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"

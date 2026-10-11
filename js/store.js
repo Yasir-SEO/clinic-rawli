@@ -219,8 +219,18 @@
 
   /* ---------- Click handling ---------- */
   document.addEventListener("click", function (e) {
-    var t = e.target.closest("[data-add],[data-inc],[data-dec],[data-remove],[data-cart-open],[data-cart-close],[data-add-qty],[data-qty-step]");
+    var t = e.target.closest("[data-add],[data-inc],[data-dec],[data-remove],[data-cart-open],[data-cart-close],[data-add-qty],[data-qty-step],[data-request-name]");
     if (!t) return;
+
+    if (t.hasAttribute("data-request-name")) {
+      var reqName = t.getAttribute("data-request-name");
+      Cart.addRequest(reqName, 1);
+      t.textContent = "Added ✓";
+      t.disabled = true;
+      toast('<svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span><strong>' + esc(reqName) +
+        '</strong> added as a request. We\'ll confirm availability and price on WhatsApp.</span><button type="button" class="toast__link" data-cart-open>View cart</button>');
+      return;
+    }
 
     if (t.hasAttribute("data-qty-step")) {
       var box = t.closest(".qty");
@@ -279,6 +289,54 @@
       '</strong> added as a request. We\'ll confirm availability on WhatsApp.</span><button type="button" class="toast__link" data-cart-open>View cart</button>');
   });
 
+  /* ---------- Full medicine list for "request any medicine" ---------- */
+  var MedIndex = (function () {
+    var data = null, norm = null, loading = null;
+    function load() {
+      if (data) return Promise.resolve(data);
+      if (!loading) {
+        loading = fetch(ROOT + "data/all-medicines.json")
+          .then(function (r) { return r.ok ? r.json() : null; })
+          .then(function (d) {
+            if (d && d.items) {
+              data = d;
+              norm = d.items.map(function (it) { return C.normalize(it[0] + " " + d.makers[it[1]]); });
+            }
+            return data;
+          })
+          .catch(function () { return null; });
+      }
+      return loading;
+    }
+    function label(it) {
+      var maker = data.makers[it[1]];
+      return it[0] + (maker ? " – " + maker : "") + (it[2] ? " (" + it[2] + ")" : "");
+    }
+    function search(q, limit) {
+      if (!data) return [];
+      var terms = C.normalize(q).split(" ").filter(Boolean);
+      if (!terms.length) return [];
+      var hits = [];
+      for (var i = 0; i < norm.length; i++) {
+        var n = norm[i], ok = true;
+        for (var t = 0; t < terms.length; t++) { if (n.indexOf(terms[t]) === -1) { ok = false; break; } }
+        if (ok) hits.push({ i: i, s: n.indexOf(terms[0]) === 0 ? 2 : 1 });
+      }
+      hits.sort(function (a, b) { return b.s - a.s || a.i - b.i; });
+      return hits.slice(0, limit || 20).map(function (h) {
+        var it = data.items[h.i];
+        return { name: it[0], maker: data.makers[it[1]], pack: it[2], label: label(it) };
+      });
+    }
+    function rowHtml(m) {
+      return '<div class="req-row"><span class="req-row__text"><strong>' + esc(m.name) + "</strong><small>" +
+        esc([m.maker, m.pack].filter(Boolean).join(" · ")) + "</small></span>" +
+        '<button type="button" class="req-row__btn" data-request-name="' + esc(m.label) + '">Request</button></div>';
+    }
+    return { load: load, search: search, rowHtml: rowHtml };
+  })();
+  window.MedIndex = MedIndex;
+
   /* ---------- Header search suggestions ---------- */
   (function () {
     var input = document.getElementById("site-search");
@@ -310,6 +368,18 @@
       box.hidden = false;
       input.setAttribute("aria-expanded", "true");
       active = -1;
+
+      var shown = {};
+      results.forEach(function (p) { shown[C.normalize(p.name)] = true; });
+      MedIndex.load().then(function () {
+        if (input.value.trim() !== q || box.hidden) return;
+        var extra = MedIndex.search(q, 12).filter(function (m) { return !shown[C.normalize(m.name)]; }).slice(0, 5);
+        if (!extra.length) return;
+        var empty = box.querySelector(".suggest__empty");
+        if (empty) empty.remove();
+        box.insertAdjacentHTML("beforeend", '<div class="suggest__group">Not in our online shop? Request it and we\'ll arrange it:</div>' +
+          extra.map(MedIndex.rowHtml).join(""));
+      });
     }
 
     function highlight(i) {

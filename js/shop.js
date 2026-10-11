@@ -136,6 +136,24 @@
     }
     renderChips();
     syncUrl();
+    renderRequests();
+  }
+
+  /* Medicines from the full list that aren't in the online shop: request them. */
+  var reqBox = document.getElementById("shop-requests");
+  function renderRequests() {
+    if (!reqBox) return;
+    var q = state.q;
+    if (!q || q.length < 2 || !window.MedIndex) { reqBox.hidden = true; return; }
+    window.MedIndex.load().then(function () {
+      if (state.q !== q) return;
+      var matches = window.MedIndex.search(q, 30);
+      if (!matches.length) { reqBox.hidden = true; return; }
+      reqBox.innerHTML = '<h2 class="req-results__title">More medicines we can arrange</h2>' +
+        '<p class="req-results__intro">These aren\'t in our online shop yet. Tap <strong>Request</strong> and we\'ll confirm availability and price on WhatsApp.</p>' +
+        '<div class="req-results__list">' + matches.map(window.MedIndex.rowHtml).join("") + "</div>";
+      reqBox.hidden = false;
+    });
   }
 
   /* ---------- Events ---------- */
