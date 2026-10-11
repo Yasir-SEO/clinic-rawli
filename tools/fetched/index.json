@@ -1,41 +1,62 @@
 [
   {
-    "name": "img_logo_nestle",
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Nestle_textlogo_blue.svg/500px-Nestle_textlogo_blue.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "name": "img_montiget-4mg-granules",
+    "url": "https://getzpharma.com/wp-content/uploads/2020/01/Montiget-4mg_1-scaled.jpg",
     "status": 200,
-    "final_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Nestle_textlogo_blue.svg/500px-Nestle_textlogo_blue.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "content_type": "image/webp",
-    "bytes": 4734,
-    "file": "fetched/img_logo_nestle.webp"
+    "final_url": "https://getzpharma.com/wp-content/uploads/2020/01/Montiget-4mg_1-scaled.jpg",
+    "content_type": "image/jpeg",
+    "bytes": 191397,
+    "file": "fetched/img_montiget-4mg-granules.jpg"
   },
   {
-    "name": "api_osm_banks",
-    "url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A50%5D%3B%0A%28%0A%20%20nwr%28around%3A4000%2C29.7673621%2C71.0685101%29%5B%22amenity%22~%22bank%7Catm%22%5D%3B%0A%20%20nwr%28around%3A4000%2C29.7673621%2C71.0685101%29%5B%22name%22~%22meezan%7Cbank%22%2Ci%5D%3B%0A%29%3B%0Aout%20center%20tags%3B",
-    "status": null,
-    "error": "TimeoutError: The read operation timed out"
-  },
-  {
-    "name": "meezan_locator",
-    "url": "https://www.meezanbank.com/branch-locator/",
+    "name": "img_montiget-5mg-chewable",
+    "url": "https://getzpharma.com/wp-content/uploads/2020/01/Montiget-5mg_1-scaled.jpg",
     "status": 200,
-    "final_url": "https://www.meezanbank.com/branch-locator/",
-    "content_type": "text/html",
-    "bytes": 699484,
-    "file": "fetched/meezan_locator.html"
+    "final_url": "https://getzpharma.com/wp-content/uploads/2020/01/Montiget-5mg_1-scaled.jpg",
+    "content_type": "image/jpeg",
+    "bytes": 236788,
+    "file": "fetched/img_montiget-5mg-chewable.jpg"
   },
   {
-    "name": "meezan_locator2",
-    "url": "https://www.meezanbank.com/locator/",
-    "status": 404,
-    "error": "HTTP Error 404: Not Found"
-  },
-  {
-    "name": "api_nominatim_meezan",
-    "url": "https://nominatim.openstreetmap.org/search?q=Meezan%20Bank%20Rohilanwali&format=jsonv2&limit=5",
+    "name": "api_pigeon_products",
+    "url": "https://pigeon.com.pk/products.json?limit=250",
     "status": 200,
-    "final_url": "https://nominatim.openstreetmap.org/search?q=Meezan%20Bank%20Rohilanwali&format=jsonv2&limit=5",
+    "final_url": "https://pigeon.com.pk/products.json?limit=250",
     "content_type": "application/json",
-    "bytes": 2,
-    "file": "fetched/api_nominatim_meezan.json"
+    "bytes": 825902,
+    "file": "fetched/api_pigeon_products.json"
+  },
+  {
+    "name": "photo_leflox-500mg",
+    "url": "https://getzpharma.com/product/leflox/",
+    "status": 200,
+    "final_url": "https://getzpharma.com/product/leflox/",
+    "title": "Getz Pharma - We Care For Your\u00a0Health",
+    "candidates": [
+      "https://getzpharma.com/wp-content/uploads/2025/01/ogimage.png",
+      "https://getzpharma.com/wp-content/themes/gp-child/media/icons/base/breadcrumbicon.png",
+      "https://getzpharma.com/wp-content/uploads/2018/03/Leflox-250mg_1.jpg",
+      "https://getzpharma.com/wp-content/uploads/2018/03/Leflox-750mg_3-scaled.jpg",
+      "https://getzpharma.com/wp-content/uploads/2018/03/Leflox-750mg_1.jpg",
+      "https://getzpharma.com/wp-content/uploads/2018/03/Leflox-500mg2_3.jpg",
+      "https://getzpharma.com/wp-content/uploads/2018/03/Leflox-500mg2_1-scaled.jpg",
+      "https://getzpharma.com/wp-content/uploads/2018/03/Leflox-500mg1_5-scaled.jpg",
+      "https://getzpharma.com/wp-content/uploads/2018/03/Leflox-500mg1_2.jpg",
+      "https://getzpharma.com/wp-content/uploads/2018/03/Leflox-500mg1_1.jpg",
+      "https://getzpharma.com/wp-content/uploads/2018/03/Leflox-500mg_4-scaled.jpg",
+      "https://getzpharma.com/wp-content/uploads/2018/03/Leflox-500mg_2-scaled.jpg",
+      "https://getzpharma.com/wp-content/uploads/2018/03/Leflox-500mg_1-scaled.jpg",
+      "https://getzpharma.com/wp-content/uploads/2018/03/Leflox-250mg_2-scaled.jpg",
+      "https://getzpharma.com/wp-content/themes/gp-child/media/images/products/adbanner.png",
+      "https://getzpharma.com/wp-content/themes/gp-child/media/images/web/facebook.png",
+      "https://getzpharma.com/wp-content/themes/gp-child/media/images/web/vfacebook.png",
+      "https://getzpharma.com/wp-content/themes/gp-child/media/images/web/twitter.png",
+      "https://getzpharma.com/wp-content/themes/gp-child/media/images/web/vtwitter.png",
+      "https://getzpharma.com/wp-content/themes/gp-child/media/images/web/linkedin.png"
+    ],
+    "image": "https://getzpharma.com/wp-content/uploads/2025/01/ogimage.png",
+    "image_type": "image/webp",
+    "bytes": 6050,
+    "file": "fetched/img_leflox-500mg.webp"
   }
 ]
