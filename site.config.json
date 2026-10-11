@@ -37,7 +37,6 @@
   "doctorName": "Dr. Rana Muhammad Zubair Ahmad",
   "doctorDays": ["saturday", "sunday"],
   "gynae": { "name": "Dr. Saima Zubair Rao", "days": ["sunday"], "hours": ["10:00", "17:00"] },
-  "clinicPhones": ["0303 7553165", "0333 7725926"],
   "hoursNote": "Child specialist: Saturday & Sunday. Lady gynaecologist: Sunday, 10 AM to 5 PM. Call or WhatsApp to book a time.",
 
   "currency": "Rs",

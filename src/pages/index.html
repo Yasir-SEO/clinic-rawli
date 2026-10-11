@@ -75,7 +75,7 @@
           {
             "@type": "Question",
             "name": "Is there a lady doctor (gynaecologist)?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Yes. {{gynaeSentenceRaw}} She offers pregnancy care, infertility treatment (including ovulation induction and IUI) and treatment for women's health problems. Call {{clinicPhonesRaw}} to book." }
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. {{gynaeSentenceRaw}} She offers pregnancy care, infertility treatment (including ovulation induction and IUI) and treatment for women's health problems. Call or WhatsApp {{phoneDisplay}} to book." }
           },
           {
             "@type": "Question",
@@ -222,9 +222,9 @@
           </div>
           <div class="doctor__cta">
             <p class="doctor__days"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg> {{gynaeDaysText}}, {{gynaeHoursText}}</p>
-            <p>Appointments: {{clinicPhonesText}}</p>
+            <p>Call or WhatsApp to book a time.</p>
             <div class="doctor__btns">
-              <a class="btn btn--primary" href="tel:{{clinicPhone1Tel}}"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg> {{clinicPhone1}}</a>
+              <a class="btn btn--primary" href="tel:{{phoneTel}}"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg> {{phoneDisplay}}</a>
               <a class="btn btn--whatsapp" href="{{waBookGynaeUrl}}" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg> Book on WhatsApp</a>
             </div>
           </div>
@@ -537,7 +537,6 @@
               </address>
               <p class="info-card__landmark"><svg class="icon" aria-hidden="true"><use href="#i-nav"/></svg> {{landmark}}</p>
               <p class="urdu info-card__urdu" lang="ur" dir="rtl">{{addrUrdu}}<br>{{landmarkUrdu}}</p>
-              <p class="info-card__email"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg> Clinic appointments: <a href="tel:{{clinicPhone1Tel}}">{{clinicPhone1}}</a> · <a href="tel:{{clinicPhone2Tel}}">{{clinicPhone2}}</a></p>
               <p class="info-card__email"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg> <a href="mailto:{{email}}">{{email}}</a></p>
               <div class="info-card__actions">
                 <a class="btn btn--primary" href="{{mapsDirectionsUrl}}" target="_blank" rel="noopener">
@@ -577,7 +576,7 @@
           بچوں کے ماہر ڈاکٹر رانا محمد زبیر احمد (ایف سی پی ایس) ہر ہفتہ اور اتوار کو کلینک میں بچوں کا معائنہ کرتے ہیں۔ وقت لینے کے لیے کال یا واٹس ایپ کریں۔
         </p>
         <p class="urdu">
-          ماہرِ امراضِ نسواں، زچگی اور بانجھ پن ڈاکٹر صائمہ زبیر راؤ (ایم بی بی ایس، ایف سی پی ایس) ہر اتوار صبح 10 سے شام 5 بجے تک کلینک میں مریض دیکھتی ہیں۔ رابطہ: 0303 7553165، 0333 7725926۔
+          ماہرِ امراضِ نسواں، زچگی اور بانجھ پن ڈاکٹر صائمہ زبیر راؤ (ایم بی بی ایس، ایف سی پی ایس) ہر اتوار صبح 10 سے شام 5 بجے تک کلینک میں مریض دیکھتی ہیں۔ رابطہ: 0302 5037681۔
         </p>
         <p class="urdu">
           ہماری فارمیسی پر ڈاکٹری نسخے کی ادویات، روزمرہ کی ادویات، بچوں کے سیرپ اور ڈراپس، دودھ، ڈائپرز اور فرسٹ ایڈ کا سامان دستیاب ہے۔
@@ -613,7 +612,7 @@
           </details>
           <details>
             <summary>Is there a lady doctor (gynaecologist)?</summary>
-            <p>Yes. {{gynaeSentence}} She offers pregnancy care, infertility treatment (including ovulation induction and IUI) and treatment for women's health problems. Call {{clinicPhonesText}} to book.</p>
+            <p>Yes. {{gynaeSentence}} She offers pregnancy care, infertility treatment (including ovulation induction and IUI) and treatment for women's health problems. Call or WhatsApp {{phoneDisplay}} to book.</p>
           </details>
           <details>
             <summary>Where is Adil Child Care Clinic &amp; Pharmacy?</summary>

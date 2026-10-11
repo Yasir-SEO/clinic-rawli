@@ -113,8 +113,6 @@ const gynaeDaysText = listText(gynaeDays.map(cap), "&");
 const gynaeSentence = gynae
   ? `Our lady gynaecologist, ${gynae.name}, sees patients every ${listText(gynaeDays.map(cap), "and")}${gynaeHoursText ? ` from ${time12(gynae.hours[0])} to ${time12(gynae.hours[1])}` : ""}.`
   : "";
-const clinicPhones = config.clinicPhones || [];
-const telOf = (n) => "+92" + String(n).replace(/\D/g, "").replace(/^0/, "");
 const hoursRows = DAYS.map((d) => {
   const h = hours[d];
   const attrs = h ? `data-open="${h[0]}" data-close="${h[1]}"` : `data-closed="true"`;
@@ -326,12 +324,6 @@ function page({ path: outPath, title, description, content, jsonLd = "", robots 
     gynaeDaysNums: gynaeDays.map((d) => DAY_NUM[d]).join(","),
     gynaeSentence: esc(gynaeSentence),
     gynaeSentenceRaw: gynaeSentence,
-    clinicPhone1: esc(clinicPhones[0] || config.phoneDisplay),
-    clinicPhone1Tel: esc(clinicPhones[0] ? telOf(clinicPhones[0]) : config.phoneTel),
-    clinicPhone2: esc(clinicPhones[1] || ""),
-    clinicPhone2Tel: esc(clinicPhones[1] ? telOf(clinicPhones[1]) : ""),
-    clinicPhonesText: esc(clinicPhones.join(" · ")),
-    clinicPhonesRaw: clinicPhones.join(" or "),
     waBookGynaeUrl: esc(C.waUrl(config.whatsapp, `Assalam-o-Alaikum! I'd like to book a visit with the lady gynaecologist${gynae ? `, ${gynae.name}` : ""}. (from your website)`)),
     doctorDaysNums: doctorDays.map((d) => DAY_NUM[d]).join(","),
     waBookUrl: esc(C.waUrl(config.whatsapp, "Assalam-o-Alaikum! I'd like to book a visit with the child specialist. (from your website)")),
