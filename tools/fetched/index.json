@@ -1,248 +1,80 @@
 [
   {
-    "name": "img_brufen-syrup",
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Child_holding_a_bottle_of_Brufen_syrup_containing_ibuprofen_in_a_home_setting_during_daylight_hours.jpg/960px-Child_holding_a_bottle_of_Brufen_syrup_containing_ibuprofen_in_a_home_setting_during_daylight_hours.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "name": "api_rdap_adilclinic",
+    "url": "https://rdap.verisign.com/com/v1/domain/adilclinic.com",
     "status": 200,
-    "final_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Child_holding_a_bottle_of_Brufen_syrup_containing_ibuprofen_in_a_home_setting_during_daylight_hours.jpg/960px-Child_holding_a_bottle_of_Brufen_syrup_containing_ibuprofen_in_a_home_setting_during_daylight_hours.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "content_type": "image/jpeg",
-    "bytes": 44247,
-    "file": "fetched/img_brufen-syrup.jpg"
+    "final_url": "https://rdap.verisign.com/com/v1/domain/adilclinic.com",
+    "content_type": "application/rdap+json",
+    "bytes": 2583,
+    "file": "fetched/api_rdap_adilclinic.bin"
   },
   {
-    "name": "img_ventolin-inhaler",
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Ventolin_CFC.JPG/960px-Ventolin_CFC.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "name": "api_rdap_adilmedicalstore",
+    "url": "https://rdap.verisign.com/com/v1/domain/adilmedicalstore.com",
+    "status": 404,
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "name": "api_rdap_adilchildcare",
+    "url": "https://rdap.verisign.com/com/v1/domain/adilchildcare.com",
+    "status": 404,
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "name": "api_rdap_adilchildclinic",
+    "url": "https://rdap.verisign.com/com/v1/domain/adilchildclinic.com",
+    "status": 404,
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "name": "api_rdap_adilclinicpharmacy",
+    "url": "https://rdap.verisign.com/com/v1/domain/adilclinicpharmacy.com",
+    "status": 404,
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "name": "api_rdap_adilpharmacy",
+    "url": "https://rdap.verisign.com/com/v1/domain/adilpharmacy.com",
     "status": 200,
-    "final_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Ventolin_CFC.JPG/960px-Ventolin_CFC.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "content_type": "image/jpeg",
-    "bytes": 425036,
-    "file": "fetched/img_ventolin-inhaler.jpg"
+    "final_url": "https://rdap.verisign.com/com/v1/domain/adilpharmacy.com",
+    "content_type": "application/rdap+json",
+    "bytes": 2611,
+    "file": "fetched/api_rdap_adilpharmacy.bin"
   },
   {
-    "name": "img_colofac-135mg",
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Mebeverine%28Colofac%29_135mg_UK.jpg/960px-Mebeverine%28Colofac%29_135mg_UK.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "status": 200,
-    "final_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Mebeverine%28Colofac%29_135mg_UK.jpg/960px-Mebeverine%28Colofac%29_135mg_UK.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "content_type": "image/jpeg",
-    "bytes": 187357,
-    "file": "fetched/img_colofac-135mg.jpg"
+    "name": "api_rdap_adilchildcareclinic",
+    "url": "https://rdap.verisign.com/com/v1/domain/adilchildcareclinic.com",
+    "status": 404,
+    "error": "HTTP Error 404: Not Found"
   },
   {
-    "name": "img_enterogermina-suspension",
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Enterogermina.jpg/960px-Enterogermina.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "status": 200,
-    "final_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Enterogermina.jpg/960px-Enterogermina.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "content_type": "image/jpeg",
-    "bytes": 61113,
-    "file": "fetched/img_enterogermina-suspension.jpg"
+    "name": "api_rdap_adilmedical",
+    "url": "https://rdap.verisign.com/com/v1/domain/adilmedical.com",
+    "status": 404,
+    "error": "HTTP Error 404: Not Found"
   },
   {
-    "name": "img_enterogermina-suspension__2",
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Bacillus_clausii_Enterogermina.png/960px-Bacillus_clausii_Enterogermina.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "status": 200,
-    "final_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Bacillus_clausii_Enterogermina.png/960px-Bacillus_clausii_Enterogermina.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "content_type": "image/png",
-    "bytes": 1073865,
-    "file": "fetched/img_enterogermina-suspension__2.png"
+    "name": "api_rdap_adilclinicpk",
+    "url": "https://rdap.verisign.com/com/v1/domain/adilclinicpk.com",
+    "status": 404,
+    "error": "HTTP Error 404: Not Found"
   },
   {
-    "name": "img_ors-sachets",
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Oral_rehydration_salts_-_Packet.jpg/960px-Oral_rehydration_salts_-_Packet.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "status": 200,
-    "final_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Oral_rehydration_salts_-_Packet.jpg/960px-Oral_rehydration_salts_-_Packet.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "content_type": "image/jpeg",
-    "bytes": 263208,
-    "file": "fetched/img_ors-sachets.jpg"
+    "name": "api_rdap_adilhealth",
+    "url": "https://rdap.verisign.com/com/v1/domain/adilhealth.com",
+    "status": 404,
+    "error": "HTTP Error 404: Not Found"
   },
   {
-    "name": "img_ors-sachets__2",
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Oral_rehydration_salts_%28ORS%29_-_Packet.jpg/960px-Oral_rehydration_salts_%28ORS%29_-_Packet.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "status": 200,
-    "final_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Oral_rehydration_salts_%28ORS%29_-_Packet.jpg/960px-Oral_rehydration_salts_%28ORS%29_-_Packet.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "content_type": "image/jpeg",
-    "bytes": 291203,
-    "file": "fetched/img_ors-sachets__2.jpg"
+    "name": "api_rdap_adilkids",
+    "url": "https://rdap.verisign.com/com/v1/domain/adilkids.com",
+    "status": 404,
+    "error": "HTTP Error 404: Not Found"
   },
   {
-    "name": "img_augmentin-1g",
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Augmentin_1_g_tbl.jpg/960px-Augmentin_1_g_tbl.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "status": 200,
-    "final_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Augmentin_1_g_tbl.jpg/960px-Augmentin_1_g_tbl.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "content_type": "image/jpeg",
-    "bytes": 161543,
-    "file": "fetched/img_augmentin-1g.jpg"
-  },
-  {
-    "name": "img_augmentin-156mg-suspension",
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Co-amoxiclav_powder_for_oral_suspension.jpg/960px-Co-amoxiclav_powder_for_oral_suspension.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "status": 200,
-    "final_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Co-amoxiclav_powder_for_oral_suspension.jpg/960px-Co-amoxiclav_powder_for_oral_suspension.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "content_type": "image/jpeg",
-    "bytes": 219128,
-    "file": "fetched/img_augmentin-156mg-suspension.jpg"
-  },
-  {
-    "name": "img_zithromax-250mg",
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Zithromax_%28Azithromycin%29_tablets.jpg/960px-Zithromax_%28Azithromycin%29_tablets.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "status": 200,
-    "final_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Zithromax_%28Azithromycin%29_tablets.jpg/960px-Zithromax_%28Azithromycin%29_tablets.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "content_type": "image/jpeg",
-    "bytes": 208968,
-    "file": "fetched/img_zithromax-250mg.jpg"
-  },
-  {
-    "name": "img_berocca-effervescent",
-    "url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Berocca_Varieties.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "status": 200,
-    "final_url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Berocca_Varieties.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "content_type": "image/jpeg",
-    "bytes": 123243,
-    "file": "fetched/img_berocca-effervescent.jpg"
-  },
-  {
-    "name": "img_berocca-effervescent__2",
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Berocca_tablet_and_drink.jpg/960px-Berocca_tablet_and_drink.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "status": 200,
-    "final_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Berocca_tablet_and_drink.jpg/960px-Berocca_tablet_and_drink.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "content_type": "image/jpeg",
-    "bytes": 264371,
-    "file": "fetched/img_berocca-effervescent__2.jpg"
-  },
-  {
-    "name": "img_calcium-vitamin-d3-tablets",
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/500_mg_calcium_supplements_with_vitamin_D.jpg/960px-500_mg_calcium_supplements_with_vitamin_D.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "status": 200,
-    "final_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/500_mg_calcium_supplements_with_vitamin_D.jpg/960px-500_mg_calcium_supplements_with_vitamin_D.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "content_type": "image/jpeg",
-    "bytes": 60748,
-    "file": "fetched/img_calcium-vitamin-d3-tablets.jpg"
-  },
-  {
-    "name": "img_co-diovan-80-12-5",
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Two_boxes_and_a_blister_pack_of_Co-Diovan_%28Valsartan_and_hydrochlorothiazide%29%2C_Singapore_-_20150210.jpg/960px-Two_boxes_and_a_blister_pack_of_Co-Diovan_%28Valsartan_and_hydrochlorothiazide%29%2C_Singapore_-_20150210.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "status": 200,
-    "final_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Two_boxes_and_a_blister_pack_of_Co-Diovan_%28Valsartan_and_hydrochlorothiazide%29%2C_Singapore_-_20150210.jpg/960px-Two_boxes_and_a_blister_pack_of_Co-Diovan_%28Valsartan_and_hydrochlorothiazide%29%2C_Singapore_-_20150210.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "content_type": "image/jpeg",
-    "bytes": 121321,
-    "file": "fetched/img_co-diovan-80-12-5.jpg"
-  },
-  {
-    "name": "img_co-diovan-80-12-5__2",
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Opened_and_unopened_blister_packs_of_Co-Diovan_%28Valsartan_and_hydrochlorothiazide%29%2C_Singapore_-_20150223-02.jpg/960px-Opened_and_unopened_blister_packs_of_Co-Diovan_%28Valsartan_and_hydrochlorothiazide%29%2C_Singapore_-_20150223-02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "status": 200,
-    "final_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Opened_and_unopened_blister_packs_of_Co-Diovan_%28Valsartan_and_hydrochlorothiazide%29%2C_Singapore_-_20150223-02.jpg/960px-Opened_and_unopened_blister_packs_of_Co-Diovan_%28Valsartan_and_hydrochlorothiazide%29%2C_Singapore_-_20150223-02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "content_type": "image/jpeg",
-    "bytes": 100976,
-    "file": "fetched/img_co-diovan-80-12-5__2.jpg"
-  },
-  {
-    "name": "img_exforge-5-80",
-    "url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Exforge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "status": 200,
-    "final_url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Exforge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "content_type": "image/jpeg",
-    "bytes": 73463,
-    "file": "fetched/img_exforge-5-80.jpg"
-  },
-  {
-    "name": "img_fucidin-cream",
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Fucidin_2pct_15g.jpg/960px-Fucidin_2pct_15g.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "status": 200,
-    "final_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Fucidin_2pct_15g.jpg/960px-Fucidin_2pct_15g.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "content_type": "image/jpeg",
-    "bytes": 104866,
-    "file": "fetched/img_fucidin-cream.jpg"
-  },
-  {
-    "name": "img_refresh-tears",
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Refresh_Tears_Lubricant_Eye_Drops.jpg/960px-Refresh_Tears_Lubricant_Eye_Drops.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "status": 200,
-    "final_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Refresh_Tears_Lubricant_Eye_Drops.jpg/960px-Refresh_Tears_Lubricant_Eye_Drops.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "content_type": "image/jpeg",
-    "bytes": 248947,
-    "file": "fetched/img_refresh-tears.jpg"
-  },
-  {
-    "name": "img_crepe-bandage",
-    "url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Crepe_Bandage.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "status": 200,
-    "final_url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Crepe_Bandage.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "content_type": "image/jpeg",
-    "bytes": 44405,
-    "file": "fetched/img_crepe-bandage.jpg"
-  },
-  {
-    "name": "img_disposable-gloves",
-    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Disposable_nitrile_glove_with_transparent_background.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "status": 429,
-    "error": "HTTP Error 429: Too many requests (f061ab2)"
-  },
-  {
-    "name": "img_disposable-gloves__2",
-    "url": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Disposable_nitrile_glove.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "status": 429,
-    "error": "HTTP Error 429: Too many requests (f061ab2)"
-  },
-  {
-    "name": "img_pulse-oximeter",
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/FingertipPulseOximeterMD300C2.jpg/960px-FingertipPulseOximeterMD300C2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "status": 200,
-    "final_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/FingertipPulseOximeterMD300C2.jpg/960px-FingertipPulseOximeterMD300C2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "content_type": "image/jpeg",
-    "bytes": 57974,
-    "file": "fetched/img_pulse-oximeter.jpg"
-  },
-  {
-    "name": "img_safeguard-soap",
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Bar_of_Safeguard_deodorant_soap.JPG/960px-Bar_of_Safeguard_deodorant_soap.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "status": 200,
-    "final_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Bar_of_Safeguard_deodorant_soap.JPG/960px-Bar_of_Safeguard_deodorant_soap.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "content_type": "image/jpeg",
-    "bytes": 54007,
-    "file": "fetched/img_safeguard-soap.jpg"
-  },
-  {
-    "name": "img_no-spa-40mg",
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/%D0%94%D1%80%D0%BE%D1%82%D0%B0%D0%B2%D0%B5%D1%80%D0%B8%D0%BD_%28Drotaverine%2C_Drotaverinum%29.jpg/960px-%D0%94%D1%80%D0%BE%D1%82%D0%B0%D0%B2%D0%B5%D1%80%D0%B8%D0%BD_%28Drotaverine%2C_Drotaverinum%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "status": 200,
-    "final_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/%D0%94%D1%80%D0%BE%D1%82%D0%B0%D0%B2%D0%B5%D1%80%D0%B8%D0%BD_%28Drotaverine%2C_Drotaverinum%29.jpg/960px-%D0%94%D1%80%D0%BE%D1%82%D0%B0%D0%B2%D0%B5%D1%80%D0%B8%D0%BD_%28Drotaverine%2C_Drotaverinum%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "content_type": "image/jpeg",
-    "bytes": 209219,
-    "file": "fetched/img_no-spa-40mg.jpg"
-  },
-  {
-    "name": "img_lasix-40mg",
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Furosemide_%28cropped%29.jpg/960px-Furosemide_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "status": 200,
-    "final_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Furosemide_%28cropped%29.jpg/960px-Furosemide_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "content_type": "image/jpeg",
-    "bytes": 93128,
-    "file": "fetched/img_lasix-40mg.jpg"
-  },
-  {
-    "name": "img_gauze-swabs",
-    "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Eizai.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "status": 200,
-    "final_url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Eizai.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "content_type": "image/jpeg",
-    "bytes": 119972,
-    "file": "fetched/img_gauze-swabs.jpg"
-  },
-  {
-    "name": "img_johnsons-baby-powder",
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Johnsons_Baby_Powder_1%2C5_OZS_talc%2C_pic3.JPG/960px-Johnsons_Baby_Powder_1%2C5_OZS_talc%2C_pic3.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "status": 200,
-    "final_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Johnsons_Baby_Powder_1%2C5_OZS_talc%2C_pic3.JPG/960px-Johnsons_Baby_Powder_1%2C5_OZS_talc%2C_pic3.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "content_type": "image/jpeg",
-    "bytes": 213240,
-    "file": "fetched/img_johnsons-baby-powder.jpg"
-  },
-  {
-    "name": "img_dettol-antiseptic-liquid",
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Half-gallon_Dettol_tin_-_Southern_Moreton_Bay_Islands_Museum%2C_Russell_Island%2C_Moreton_Bay%2C_Queensland%2C_2012.jpg/960px-Half-gallon_Dettol_tin_-_Southern_Moreton_Bay_Islands_Museum%2C_Russell_Island%2C_Moreton_Bay%2C_Queensland%2C_2012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "status": 200,
-    "final_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Half-gallon_Dettol_tin_-_Southern_Moreton_Bay_Islands_Museum%2C_Russell_Island%2C_Moreton_Bay%2C_Queensland%2C_2012.jpg/960px-Half-gallon_Dettol_tin_-_Southern_Moreton_Bay_Islands_Museum%2C_Russell_Island%2C_Moreton_Bay%2C_Queensland%2C_2012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "content_type": "image/jpeg",
-    "bytes": 270582,
-    "file": "fetched/img_dettol-antiseptic-liquid.jpg"
+    "name": "api_rdap_adilmedicalstorepk",
+    "url": "https://rdap.verisign.com/com/v1/domain/adilmedicalstorepk.com",
+    "status": 404,
+    "error": "HTTP Error 404: Not Found"
   }
 ]
