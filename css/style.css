@@ -1052,14 +1052,16 @@ address { font-style: normal; }
 }
 .footer__inner {
   display: grid;
-  grid-template-columns: 1.4fr 1fr 1fr 1fr;
-  gap: 32px;
-  padding-bottom: 32px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 28px;
+  padding-bottom: 28px;
   border-bottom: 1px solid rgba(255, 255, 255, .1);
 }
 .footer__brand p { margin: 16px 0 0; max-width: 360px; }
 .footer h3 { color: #fff; font-size: 1rem; margin-bottom: 14px; }
 .footer__col ul { display: grid; gap: 8px; }
+.footer__contact a { display: inline-flex; align-items: flex-start; gap: 8px; }
+.footer__contact .icon { flex: none; width: 16px; height: 16px; margin-top: 3px; color: #8fd8cc; }
 .footer a { color: #e2f5f2; text-decoration: none; }
 .footer a:hover { text-decoration: underline; }
 .footer__bottom { padding-top: 20px; font-size: .85rem; }
@@ -1067,11 +1069,13 @@ address { font-style: normal; }
 .footer__disclaimer { color: #8fbdb7; }
 
 @media (max-width: 760px) {
-  .footer__inner { grid-template-columns: 1fr 1fr; }
+  .footer__inner { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px 20px; }
   .footer__brand { grid-column: 1 / -1; }
 }
-@media (max-width: 420px) {
-  .footer__inner { grid-template-columns: 1fr; }
+@media (max-width: 560px) {
+  .footer__inner { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .footer__col:last-child { grid-column: 1 / -1; }
+  .footer__contact { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 20px; }
 }
 
 /* ---------- Floating action buttons ---------- */
@@ -2192,6 +2196,10 @@ a.cart-row__name:hover { color: var(--teal-700); }
 .tips__more { margin-top: 10px; }
 @media (max-width: 900px) { .tips__grid { grid-template-columns: 1fr; } .poster img { height: 180px; } }
 @media (max-width: 480px) {
+  .visit { grid-template-columns: minmax(0, 1fr); }
+  .info-card { padding: 18px; }
+  .hours th, .hours td { padding: 8px 6px; }
   .hours td .hours__doc { margin: 3px 0 0 4px; }
   .hours td { white-space: normal; }
+  .hours tr.is-today th::after { display: inline-block; margin-left: 0; }
 }

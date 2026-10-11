@@ -27,27 +27,23 @@
           <li><a href="{{root}}shop.html">All medicines</a></li>
           <li><a href="{{root}}index.html#brands">Brands we stock</a></li>
           <li><a href="{{root}}index.html#clinic">Child Care Clinic</a></li>
+          <li><a href="{{root}}index.html#order">How to order</a></li>
           <li><a href="{{root}}index.html#tips">Health tips</a></li>
-          <li><a href="{{root}}cart.html">Your cart</a></li>
           <li><a href="{{root}}index.html#faq">FAQ</a></li>
-          <li><a href="{{root}}credits.html">Photo credits</a></li>
         </ul>
       </div>
       <div class="footer__col">
         <h3>Contact</h3>
-        <ul role="list">
-          <li><a href="tel:{{phoneTel}}">{{phoneDisplay}}</a></li>
-          <li><a href="{{waLink}}" target="_blank" rel="noopener">WhatsApp us</a></li>
-          <li><a href="mailto:{{email}}">{{email}}</a></li>
-          <li><a href="{{facebookUrl}}" target="_blank" rel="noopener">Facebook page</a></li>
-          <li><a href="{{instagramUrl}}" target="_blank" rel="noopener">Instagram @adilmedicalstore</a></li>
-          <li>{{storeName}} &amp; {{clinicName}}<br>{{addrStreet}}, {{addrTown}}<br>{{addrDistrict}}<br>{{addrRegion}} {{addrPostal}}, Pakistan</li>
-          <li>Pharmacy: {{hoursSummary}}<br>Child specialist: {{doctorDaysText}}</li>
+        <ul class="footer__contact" role="list">
+          <li><a href="tel:{{phoneTel}}"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg> {{phoneDisplay}}</a></li>
+          <li><a href="{{waLink}}" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg> WhatsApp us</a></li>
+          <li><a href="mailto:{{email}}"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg> Email us</a></li>
+          <li><a href="{{mapsDirectionsUrl}}" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg> {{addrStreet}}, {{addrTown}}</a></li>
         </ul>
       </div>
     </div>
     <div class="container footer__bottom">
-      <p>© <span data-year>{{year}}</span> {{businessName}}, Rohillanwali. All rights reserved.</p>
+      <p>© <span data-year>{{year}}</span> {{businessName}}, Rohillanwali. All rights reserved. · <a href="{{root}}credits.html">Photo credits</a></p>
       <p class="footer__disclaimer">Prescription medicines are supplied only against a valid doctor's prescription. Product information is for general awareness and is not a substitute for medical advice. Brand names and trademarks belong to their respective owners. In an emergency, go to the nearest hospital or call 1122.</p>
     </div>
   </footer>

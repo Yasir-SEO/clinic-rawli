@@ -218,7 +218,7 @@ ${items.join("\n")}
 }
 
 function footerCategories(root) {
-  return ["kids", "kids-fever-pain", "baby-kids", "diapers", "baby-feeding", "adult", "personal-care", "care-health"]
+  return ["kids", "baby-kids", "diapers", "baby-feeding", "adult", "care-health"]
     .map((id) => `          <li><a href="${root}categories/${id}.html">${esc(IDX.cat[id].name)}</a></li>`)
     .join("\n");
 }
