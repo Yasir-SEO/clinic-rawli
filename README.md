@@ -67,13 +67,15 @@ P({ id: "panadol-500mg-tablets", name: "Panadol 500mg Tablets", brand: "Panadol"
 
 ## Product photos
 
-Every product shows a drawn pack until you add a real photo. To add one:
+42 products show a real photo: 29 saved in `assets/products/` from the brands' own websites (Getz Pharma, Haleon/Sensodyne, Calpol, P&G, Unilever, Abbott, Omron, Pigeon, Molfix, Bayer, Brookes and Highnoon), plus 13 Colgate photos linked from colgate.com.pk. Some are the brand's international pack, which can look a little different from the Pakistani one; replace any with your own photo if you prefer. The rest show a drawn pack until you add a real photo. To add one:
 
 1. Take a clear photo of the pack (from the front, on a plain white background, in good light), or use an official image the company or distributor has supplied to you.
 2. Name it after the product's `id`, for example `panadol-500mg-tablets.jpg` (`.jpg`, `.png` or `.webp`). Keep it around 800 × 800 px and under 200 KB.
 3. Put it in `assets/products/` and rebuild.
 
 The photo then appears on the product card, product page, search suggestions, cart and checkout, and is used as the product's share image. Don't copy photos from other pharmacy websites or Google Images; those belong to someone else.
+
+**Getting photos from brand websites:** list the brand's product pages in `tools/fetch-list.txt` as `photo_<product-id> | https://...` and push. The GitHub "Fetch web pages" job saves each page's main product photo as `tools/fetched/img_<product-id>.*`. Check them, then run `python3 tools/process_images.py` to turn them into `assets/products/<product-id>.jpg`.
 
 **Linking to a photo instead:** add `image: "https://..."` to a product in `data/products.js` to show a photo hosted on another site (for example the brand's own website). It is shown on top of the drawn pack; if the link ever breaks, the drawn pack shows instead. Saved photos are still more reliable.
 

@@ -1982,3 +1982,19 @@ a.cart-row__name:hover { color: var(--teal-700); }
 .req-results__title { margin: 0 0 4px; font-size: 1.15rem; }
 .req-results__intro { margin: 0 0 12px; color: var(--muted); font-size: .9rem; }
 .req-results__list { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 4px 16px; }
+
+/* ---------- Compact home page ---------- */
+.page-home .hero { padding: clamp(24px, 3vw, 40px) 0 clamp(28px, 3.5vw, 44px); }
+.page-home .hero__actions { margin: 20px 0; }
+.page-home .hero__shop { margin-top: 14px; }
+.page-home .section { padding: clamp(32px, 4vw, 52px) 0; }
+.page-home .section--tight { padding: clamp(28px, 3.5vw, 40px) 0; }
+.page-home .section__head { margin-bottom: clamp(20px, 2.5vw, 28px); }
+.page-home .section__head--row { margin-bottom: 18px; }
+.page-home .section__lead { margin-bottom: 0; }
+.page-home .brands { padding: 18px 0 20px; }
+.page-home .brands__head { margin-bottom: 12px; }
+.page-home .doctor { margin-bottom: 20px; }
+.page-home .cards { gap: 14px; }
+.page-home .how-order { margin-top: 20px; }
+.page-home .cta-band { padding: 32px 0; }
