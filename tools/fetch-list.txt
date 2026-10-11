@@ -1,6 +1,12 @@
 # name | url   (edit this file and push to run the GitHub "Fetch web pages" job)
-# Product photos, round 3: Getz Pharma pack shots and Pigeon Pakistan's product list
-img_montiget-4mg-granules | https://getzpharma.com/wp-content/uploads/2020/01/Montiget-4mg_1-scaled.jpg
-img_montiget-5mg-chewable | https://getzpharma.com/wp-content/uploads/2020/01/Montiget-5mg_1-scaled.jpg
-api_pigeon_products | https://pigeon.com.pk/products.json?limit=250
-photo_leflox-500mg | https://getzpharma.com/product/leflox/
+# Product photos, round 4: Pigeon Pakistan, Getz Leflox, Omron, Accu-Chek, Glucerna, Molfix
+img_pigeon-silicone-nipple | https://cdn.shopify.com/s/files/1/0621/2786/5954/files/StandardNeckTeatsPigeonPk-2.webp?v=1759232186
+img_pigeon-baby-wipes | https://cdn.shopify.com/s/files/1/0621/2786/5954/files/baby-wipes-p78101.jpg?v=1759226158
+img_pigeon-baby-powder | https://cdn.shopify.com/s/files/1/0621/2786/5954/files/BABY-POWDER-78415.jpg?v=1758958063
+img_leflox-500mg | https://getzpharma.com/wp-content/uploads/2018/03/Leflox-500mg_2-scaled.jpg
+img_leflox-500mg-alt | https://getzpharma.com/wp-content/uploads/2018/03/Leflox-500mg1_1.jpg
+photo_omron-m2-basic-bp-monitor | https://www.omronhealthcare-ap.com/ap/product/1717-hem-7121j-e
+photo_accu-chek-instant-meter | https://www.accu-cheklatam.com/en/products/blood-glucose-monitoring/meters-test-strips/instant
+photo_glucerna-vanilla-400g | https://abbottfamily.com.sg/products/page/glucerna-triple-care
+img_molfix-size-3 | https://cdn.hayat.com.tr/images/52f85e4e-d3c2-40e3-b627-b0d9e9595c27.jpg
+img_molfix-size-3-alt | https://www.molfix.com/dist/media/img/product-detail/products-tr/taped-3d-newborn.png
