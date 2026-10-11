@@ -1,0 +1,236 @@
+[
+  {
+    "name": "dawaai_a",
+    "url": "https://dawaai.pk/all-medicines/a",
+    "status": 200,
+    "final_url": "https://dawaai.pk/all-medicines/a",
+    "content_type": "text/html",
+    "bytes": 3167422,
+    "file": "fetched/dawaai_a.html"
+  },
+  {
+    "name": "dawaai_b",
+    "url": "https://dawaai.pk/all-medicines/b",
+    "status": 200,
+    "final_url": "https://dawaai.pk/all-medicines/b",
+    "content_type": "text/html",
+    "bytes": 1382040,
+    "file": "fetched/dawaai_b.html"
+  },
+  {
+    "name": "dawaai_c",
+    "url": "https://dawaai.pk/all-medicines/c",
+    "status": 200,
+    "final_url": "https://dawaai.pk/all-medicines/c",
+    "content_type": "text/html",
+    "bytes": 3753746,
+    "file": "fetched/dawaai_c.html"
+  },
+  {
+    "name": "dawaai_d",
+    "url": "https://dawaai.pk/all-medicines/d",
+    "status": 200,
+    "final_url": "https://dawaai.pk/all-medicines/d",
+    "content_type": "text/html",
+    "bytes": 2100417,
+    "file": "fetched/dawaai_d.html"
+  },
+  {
+    "name": "dawaai_e",
+    "url": "https://dawaai.pk/all-medicines/e",
+    "status": 200,
+    "final_url": "https://dawaai.pk/all-medicines/e",
+    "content_type": "text/html",
+    "bytes": 1836282,
+    "file": "fetched/dawaai_e.html"
+  },
+  {
+    "name": "dawaai_f",
+    "url": "https://dawaai.pk/all-medicines/f",
+    "status": 200,
+    "final_url": "https://dawaai.pk/all-medicines/f",
+    "content_type": "text/html",
+    "bytes": 1665121,
+    "file": "fetched/dawaai_f.html"
+  },
+  {
+    "name": "dawaai_g",
+    "url": "https://dawaai.pk/all-medicines/g",
+    "status": 200,
+    "final_url": "https://dawaai.pk/all-medicines/g",
+    "content_type": "text/html",
+    "bytes": 1318786,
+    "file": "fetched/dawaai_g.html"
+  },
+  {
+    "name": "dawaai_h",
+    "url": "https://dawaai.pk/all-medicines/h",
+    "status": 200,
+    "final_url": "https://dawaai.pk/all-medicines/h",
+    "content_type": "text/html",
+    "bytes": 828946,
+    "file": "fetched/dawaai_h.html"
+  },
+  {
+    "name": "dawaai_i",
+    "url": "https://dawaai.pk/all-medicines/i",
+    "status": 200,
+    "final_url": "https://dawaai.pk/all-medicines/i",
+    "content_type": "text/html",
+    "bytes": 956545,
+    "file": "fetched/dawaai_i.html"
+  },
+  {
+    "name": "dawaai_j",
+    "url": "https://dawaai.pk/all-medicines/j",
+    "status": 200,
+    "final_url": "https://dawaai.pk/all-medicines/j",
+    "content_type": "text/html",
+    "bytes": 332626,
+    "file": "fetched/dawaai_j.html"
+  },
+  {
+    "name": "dawaai_k",
+    "url": "https://dawaai.pk/all-medicines/k",
+    "status": 200,
+    "final_url": "https://dawaai.pk/all-medicines/k",
+    "content_type": "text/html",
+    "bytes": 799125,
+    "file": "fetched/dawaai_k.html"
+  },
+  {
+    "name": "dawaai_l",
+    "url": "https://dawaai.pk/all-medicines/l",
+    "status": 200,
+    "final_url": "https://dawaai.pk/all-medicines/l",
+    "content_type": "text/html",
+    "bytes": 1794095,
+    "file": "fetched/dawaai_l.html"
+  },
+  {
+    "name": "dawaai_m",
+    "url": "https://dawaai.pk/all-medicines/m",
+    "status": 200,
+    "final_url": "https://dawaai.pk/all-medicines/m",
+    "content_type": "text/html",
+    "bytes": 2247573,
+    "file": "fetched/dawaai_m.html"
+  },
+  {
+    "name": "dawaai_n",
+    "url": "https://dawaai.pk/all-medicines/n",
+    "status": 200,
+    "final_url": "https://dawaai.pk/all-medicines/n",
+    "content_type": "text/html",
+    "bytes": 1534707,
+    "file": "fetched/dawaai_n.html"
+  },
+  {
+    "name": "dawaai_o",
+    "url": "https://dawaai.pk/all-medicines/o",
+    "status": 200,
+    "final_url": "https://dawaai.pk/all-medicines/o",
+    "content_type": "text/html",
+    "bytes": 1184473,
+    "file": "fetched/dawaai_o.html"
+  },
+  {
+    "name": "dawaai_p",
+    "url": "https://dawaai.pk/all-medicines/p",
+    "status": 200,
+    "final_url": "https://dawaai.pk/all-medicines/p",
+    "content_type": "text/html",
+    "bytes": 2161071,
+    "file": "fetched/dawaai_p.html"
+  },
+  {
+    "name": "dawaai_q",
+    "url": "https://dawaai.pk/all-medicines/q",
+    "status": 200,
+    "final_url": "https://dawaai.pk/all-medicines/q",
+    "content_type": "text/html",
+    "bytes": 329086,
+    "file": "fetched/dawaai_q.html"
+  },
+  {
+    "name": "dawaai_r",
+    "url": "https://dawaai.pk/all-medicines/r",
+    "status": 200,
+    "final_url": "https://dawaai.pk/all-medicines/r",
+    "content_type": "text/html",
+    "bytes": 1431733,
+    "file": "fetched/dawaai_r.html"
+  },
+  {
+    "name": "dawaai_s",
+    "url": "https://dawaai.pk/all-medicines/s",
+    "status": 200,
+    "final_url": "https://dawaai.pk/all-medicines/s",
+    "content_type": "text/html",
+    "bytes": 1979933,
+    "file": "fetched/dawaai_s.html"
+  },
+  {
+    "name": "dawaai_t",
+    "url": "https://dawaai.pk/all-medicines/t",
+    "status": 200,
+    "final_url": "https://dawaai.pk/all-medicines/t",
+    "content_type": "text/html",
+    "bytes": 1545145,
+    "file": "fetched/dawaai_t.html"
+  },
+  {
+    "name": "dawaai_u",
+    "url": "https://dawaai.pk/all-medicines/u",
+    "status": 200,
+    "final_url": "https://dawaai.pk/all-medicines/u",
+    "content_type": "text/html",
+    "bytes": 379539,
+    "file": "fetched/dawaai_u.html"
+  },
+  {
+    "name": "dawaai_v",
+    "url": "https://dawaai.pk/all-medicines/v",
+    "status": 200,
+    "final_url": "https://dawaai.pk/all-medicines/v",
+    "content_type": "text/html",
+    "bytes": 1074009,
+    "file": "fetched/dawaai_v.html"
+  },
+  {
+    "name": "dawaai_w",
+    "url": "https://dawaai.pk/all-medicines/w",
+    "status": 200,
+    "final_url": "https://dawaai.pk/all-medicines/w",
+    "content_type": "text/html",
+    "bytes": 376148,
+    "file": "fetched/dawaai_w.html"
+  },
+  {
+    "name": "dawaai_x",
+    "url": "https://dawaai.pk/all-medicines/x",
+    "status": 200,
+    "final_url": "https://dawaai.pk/all-medicines/x",
+    "content_type": "text/html",
+    "bytes": 494468,
+    "file": "fetched/dawaai_x.html"
+  },
+  {
+    "name": "dawaai_y",
+    "url": "https://dawaai.pk/all-medicines/y",
+    "status": 200,
+    "final_url": "https://dawaai.pk/all-medicines/y",
+    "content_type": "text/html",
+    "bytes": 149975,
+    "file": "fetched/dawaai_y.html"
+  },
+  {
+    "name": "dawaai_z",
+    "url": "https://dawaai.pk/all-medicines/z",
+    "status": 200,
+    "final_url": "https://dawaai.pk/all-medicines/z",
+    "content_type": "text/html",
+    "bytes": 947935,
+    "file": "fetched/dawaai_z.html"
+  }
+]
