@@ -1,124 +1,283 @@
 [
   {
-    "name": "img_pigeon-silicone-nipple",
-    "url": "https://cdn.shopify.com/s/files/1/0621/2786/5954/files/StandardNeckTeatsPigeonPk-2.webp?v=1759232186",
+    "name": "photo_nuberol-tablets",
+    "url": "https://searlecompany.com/products/nuberol/",
     "status": 200,
-    "final_url": "https://cdn.shopify.com/s/files/1/0621/2786/5954/files/StandardNeckTeatsPigeonPk-2.webp?v=1759232186",
-    "content_type": "image/jpeg",
-    "bytes": 36088,
-    "file": "fetched/img_pigeon-silicone-nipple.jpg"
-  },
-  {
-    "name": "img_pigeon-baby-wipes",
-    "url": "https://cdn.shopify.com/s/files/1/0621/2786/5954/files/baby-wipes-p78101.jpg?v=1759226158",
-    "status": 200,
-    "final_url": "https://cdn.shopify.com/s/files/1/0621/2786/5954/files/baby-wipes-p78101.jpg?v=1759226158",
-    "content_type": "image/webp",
-    "bytes": 50510,
-    "file": "fetched/img_pigeon-baby-wipes.webp"
-  },
-  {
-    "name": "img_pigeon-baby-powder",
-    "url": "https://cdn.shopify.com/s/files/1/0621/2786/5954/files/BABY-POWDER-78415.jpg?v=1758958063",
-    "status": 200,
-    "final_url": "https://cdn.shopify.com/s/files/1/0621/2786/5954/files/BABY-POWDER-78415.jpg?v=1758958063",
-    "content_type": "image/webp",
-    "bytes": 27520,
-    "file": "fetched/img_pigeon-baby-powder.webp"
-  },
-  {
-    "name": "img_leflox-500mg",
-    "url": "https://getzpharma.com/wp-content/uploads/2018/03/Leflox-500mg_2-scaled.jpg",
-    "status": 200,
-    "final_url": "https://getzpharma.com/wp-content/uploads/2018/03/Leflox-500mg_2-scaled.jpg",
-    "content_type": "image/jpeg",
-    "bytes": 240260,
-    "file": "fetched/img_leflox-500mg.jpg"
-  },
-  {
-    "name": "img_leflox-500mg-alt",
-    "url": "https://getzpharma.com/wp-content/uploads/2018/03/Leflox-500mg1_1.jpg",
-    "status": 200,
-    "final_url": "https://getzpharma.com/wp-content/uploads/2018/03/Leflox-500mg1_1.jpg",
-    "content_type": "image/jpeg",
-    "bytes": 178762,
-    "file": "fetched/img_leflox-500mg-alt.jpg"
-  },
-  {
-    "name": "photo_omron-m2-basic-bp-monitor",
-    "url": "https://www.omronhealthcare-ap.com/ap/product/1717-hem-7121j-e",
-    "status": 200,
-    "final_url": "https://www.omronhealthcare-ap.com/ap/product/1717-hem-7121j-e",
-    "title": "M2 Basic (HEM-7121J-E) - Blood Pressure Monitors (Upper Arm) - Omron Healthcare Asia Pacific",
+    "final_url": "https://searlecompany.com/products/nuberol/",
+    "title": "",
     "candidates": [
-      "https://www.omronhealthcare-ap.com/Content/images/ot_persistent_cookie_icon.png",
-      "https://www.omronhealthcare-ap.com/Content/images/menu_close-white.png",
-      "https://www.omronhealthcare-ap.com/Content/uploads/products/ef543f9b321149f6926e70d6a3d0224c.png",
-      "https://www.omronhealthcare-ap.com/Content/uploads/products/d1fe30ea79554b85bee8dad0e08abd63.jpg",
-      "https://www.omronhealthcare-ap.com/Content/uploads/products/ad01041b3f24411a966e05cbd2cc9663.png",
-      "https://www.omronhealthcare-ap.com/Content/uploads/products/d7b60569215d480bb04e1087e88c2ab8.png",
-      "https://www.omronhealthcare-ap.com/Content/uploads/products/03b59712ee8a4461823abf58a1a8d6c5.png",
-      "https://www.omronhealthcare-ap.com/Content/uploads/2fafd66ced9c4cc4b055f75d7a280ba8.png",
-      "https://www.omronhealthcare-ap.com/Content/uploads/products/acdf17807f68470eb18593450f90c986.png",
-      "https://www.omronhealthcare-ap.com/Content/uploads/ProductAccessories/457aef42-f3f6-4c15-b241-e2ac680a023d.jpg",
-      "https://www.omronhealthcare-ap.com/Content/uploads/ProductAccessories/86341ef2-d06f-4691-8a91-c2374a909cfd.png",
-      "https://www.omronhealthcare-ap.com/Content/uploads/ProductAccessories/48aa1568-729a-4717-8789-c7996589231c.jpg",
-      "https://www.omronhealthcare-ap.com/Content/images/faq/bpm1.png"
+      "https://searlecompany.com/wp-content/uploads/2022/06/searle-logo-1.png",
+      "https://searlecompany.com/wp-content/uploads/2021/09/68.jpg",
+      "https://www.searlecompany.com/wp-content/uploads/2021/07/service-desk-06.jpg"
     ],
-    "image": "https://www.omronhealthcare-ap.com/Content/images/ot_persistent_cookie_icon.png",
+    "image": "https://searlecompany.com/wp-content/uploads/2022/06/searle-logo-1.png",
     "image_type": "image/png",
-    "bytes": 5670,
-    "file": "fetched/img_omron-m2-basic-bp-monitor.png"
+    "bytes": 83861,
+    "file": "fetched/img_nuberol-tablets.png"
   },
   {
-    "name": "photo_accu-chek-instant-meter",
-    "url": "https://www.accu-cheklatam.com/en/products/blood-glucose-monitoring/meters-test-strips/instant",
-    "status": 403,
-    "error": "HTTP Error 403: Forbidden"
+    "name": "photo_nuberol-forte-tablets",
+    "url": "https://searlecompany.com/products/nuberol-forte/",
+    "status": 200,
+    "final_url": "https://searlecompany.com/products/nuberol-forte/",
+    "title": "",
+    "candidates": [
+      "https://searlecompany.com/wp-content/uploads/2022/06/searle-logo-1.png",
+      "https://searlecompany.com/wp-content/uploads/2021/09/67.jpg",
+      "https://www.searlecompany.com/wp-content/uploads/2021/07/service-desk-06.jpg"
+    ],
+    "image": "https://searlecompany.com/wp-content/uploads/2022/06/searle-logo-1.png",
+    "image_type": "image/png",
+    "bytes": 83861,
+    "file": "fetched/img_nuberol-forte-tablets.png"
   },
   {
-    "name": "photo_glucerna-vanilla-400g",
-    "url": "https://abbottfamily.com.sg/products/page/glucerna-triple-care",
+    "name": "photo_hydryllin-syrup",
+    "url": "https://searlecompany.com/product/hydryllin",
+    "status": 200,
+    "final_url": "https://searlecompany.com/hydryllin/",
+    "title": "",
+    "candidates": [
+      "https://searlecompany.com/wp-content/uploads/2021/04/logo.png",
+      "https://searlecompany.com/wp-content/uploads/2021/05/600x600.png",
+      "https://searlecompany.com/wp-content/uploads/2021/05/certificate.jpg",
+      "https://www.searlecompany.com/wp-content/uploads/2021/07/service-desk-06.jpg",
+      "https://searlecompany.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/en.png"
+    ],
+    "image": "https://searlecompany.com/wp-content/uploads/2021/04/logo.png",
+    "image_type": "image/png",
+    "bytes": 6450,
+    "file": "fetched/img_hydryllin-syrup.png"
+  },
+  {
+    "name": "photo_gravinate-50mg",
+    "url": "https://searlecompany.com/products/gravinate/",
+    "status": 200,
+    "final_url": "https://searlecompany.com/products/gravinate/",
+    "title": "",
+    "candidates": [
+      "https://searlecompany.com/wp-content/uploads/2022/06/searle-logo-1.png",
+      "https://searlecompany.com/wp-content/uploads/2021/09/gravinate.jpg",
+      "https://www.searlecompany.com/wp-content/uploads/2021/07/service-desk-06.jpg"
+    ],
+    "image": "https://searlecompany.com/wp-content/uploads/2022/06/searle-logo-1.png",
+    "image_type": "image/png",
+    "bytes": 83861,
+    "file": "fetched/img_gravinate-50mg.png"
+  },
+  {
+    "name": "photo_peditral-ors-sachets",
+    "url": "https://searlecompany.com/products/peditral/",
+    "status": 200,
+    "final_url": "https://searlecompany.com/products/peditral/",
+    "title": "",
+    "candidates": [
+      "https://searlecompany.com/wp-content/uploads/2022/06/searle-logo-1.png",
+      "https://searlecompany.com/wp-content/uploads/2021/09/peditral.jpg",
+      "https://www.searlecompany.com/wp-content/uploads/2021/07/service-desk-06.jpg"
+    ],
+    "image": "https://searlecompany.com/wp-content/uploads/2022/06/searle-logo-1.png",
+    "image_type": "image/png",
+    "bytes": 83861,
+    "file": "fetched/img_peditral-ors-sachets.png"
+  },
+  {
+    "name": "photo_peditral-500ml",
+    "url": "https://searlecompany.com/peditral-peditral-liquid-o-r-s/",
+    "status": 200,
+    "final_url": "https://searlecompany.com/peditral-peditral-liquid-o-r-s/",
+    "title": "",
+    "candidates": [
+      "https://searlecompany.com/wp-content/uploads/2021/04/logo.png",
+      "https://searlecompany.com/wp-content/uploads/2021/05/600x600.png",
+      "https://searlecompany.com/wp-content/uploads/2021/05/certificate.jpg",
+      "https://www.searlecompany.com/wp-content/uploads/2021/07/service-desk-06.jpg",
+      "https://searlecompany.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/en.png"
+    ],
+    "image": "https://searlecompany.com/wp-content/uploads/2021/04/logo.png",
+    "image_type": "image/png",
+    "bytes": 6450,
+    "file": "fetched/img_peditral-500ml.png"
+  },
+  {
+    "name": "photo_novidat-500mg",
+    "url": "https://samipharma.com/Products/novidat-ciprofloxacin-hcl/",
+    "status": 200,
+    "final_url": "https://samipharma.com/Products/novidat-ciprofloxacin-hcl/",
+    "title": "Novidat (Ciprofloxacin HCl) - SAMI Pharmaceuticals (Pvt.) Ltd.",
+    "candidates": [
+      "https://samipharma.com/wp-content/uploads/2024/03/sami-logo-black.png",
+      "https://samipharma.com/wp-content/uploads/2024/08/NOVIDAT-Family-1-768x583.jpg",
+      "https://samipharma.com/wp-content/uploads/2024/09/download-.png"
+    ],
+    "image": "https://samipharma.com/wp-content/uploads/2024/03/sami-logo-black.png",
+    "image_type": "image/png",
+    "bytes": 1880,
+    "file": "fetched/img_novidat-500mg.png"
+  },
+  {
+    "name": "photo_myteka-10mg",
+    "url": "https://hiltonpharma.com/human_products/myteka/",
+    "status": 200,
+    "final_url": "https://hiltonpharma.com/human_products/myteka/",
+    "title": "",
+    "candidates": [
+      "https://hiltonpharma.com/wp-content/uploads/2020/09/logo.png",
+      "https://hiltonpharma.com/wp-content/themes/hilton/assets/images/logo_footer.png"
+    ],
+    "image": "https://hiltonpharma.com/wp-content/uploads/2020/09/logo.png",
+    "image_type": "image/png",
+    "bytes": 3693,
+    "file": "fetched/img_myteka-10mg.png"
+  },
+  {
+    "name": "photo_loprin-75mg",
+    "url": "https://highnoon-labs.com/hi_products/loprin/",
+    "status": 200,
+    "final_url": "https://highnoon-labs.com/hi_products/loprin/",
+    "title": "Highnoon \u2013 Leading Pakistan to a healthier tomorrow",
+    "candidates": [
+      "https://highnoon-labs.com/wp-content/themes/high/img/banners/Environmental.png",
+      "https://highnoon-labs.com/wp-content/themes/high/img/LogoHighnoon.png",
+      "https://highnoon-labs.com/wp-content/themes/high/img/sub.png",
+      "https://highnoon-labs.com/wp-content/themes/high/img/products/10.png",
+      "https://highnoon-labs.com/wp-content/themes/high/img/products-container-image/Loprin.png",
+      "https://highnoon-labs.com/wp-content/uploads/2022/12/Loprin2.png",
+      "https://highnoon-labs.com/wp-content/themes/high/img/jamapunji.png",
+      "https://highnoon-labs.com/wp-content/themes/high/img/agahi.webp"
+    ],
+    "image": "https://highnoon-labs.com/wp-content/themes/high/img/banners/Environmental.png",
+    "image_type": "image/webp",
+    "bytes": 55400,
+    "file": "fetched/img_loprin-75mg.webp"
+  },
+  {
+    "name": "photo_pediasure-vanilla-400g",
+    "url": "https://www.family.abbott/pk-en/pediasure/products/pediasure-vanilla.html",
     "status": 404,
-    "final_url": "https://www.family.abbott/sg-en/glucerna/products/glucerna-triple-care.html",
-    "title": "Glucerna\u00ae Triple Care - Abbott Family",
+    "final_url": "https://www.family.abbott/pk-en/pediasure/products/pediasure-vanilla.html",
+    "title": "PediaSure\u00ae Pakistan | Balanced Nutrition for Growth",
     "candidates": [
       "https://www.family.abbott/etc.clientlibs/abbott-platform/clientlibs/clientlib-site/resources/images/abbott-logo.png",
-      "https://www.family.abbott/adobe/dynamicmedia/deliver/dm-aid--6679d46c-5e57-46d7-ac1a-ecd42791f3c7/glucerna-vanilla-800g-packshot-front-removebg-preview.png?preferwebp=true&quality=85",
-      "https://www.family.abbott/adobe/dynamicmedia/deliver/dm-aid--d6df7439-6bdd-424a-a4e8-7a8f9dc1e9df/glucerna-vanilla-800g-packshot-back-removebg-preview.png?preferwebp=true&quality=85",
-      "https://www.family.abbott/adobe/dynamicmedia/deliver/dm-aid--4b91c5ab-99d0-44f1-b14a-157f85514245/glucerna-vanilla-800g-packshot-side-removebg-preview.png?preferwebp=true&quality=85",
-      "https://www.family.abbott/adobe/dynamicmedia/deliver/dm-aid--0812daeb-ec20-446e-af70-5143cd733014/flavour---vanilla.png?preferwebp=true&quality=85",
-      "https://www.family.abbott/adobe/dynamicmedia/deliver/dm-aid--36f83159-d1ee-45c9-9dd1-e6f38a39a45f/flavour-wheat.png?preferwebp=true&quality=85",
-      "https://www.family.abbott/adobe/dynamicmedia/deliver/dm-aid--b32616c9-0ed4-4917-80db-fce70ddcf66b/flavour---chocolate.png?preferwebp=true&quality=85",
-      "https://www.family.abbott/sg-en/glucerna/products/glucerna-triple-care/_jcr_content/root/container_73840106/productsection_copy_/product-section-image.coreimg.jpeg/1664272403807/rtb-1--1-.jpeg",
-      "https://www.family.abbott/sg-en/glucerna/products/glucerna-triple-care/_jcr_content/root/container_73840106/productsection_copy__1754158312/product-section-image.coreimg.jpeg/1664272411087/rtb-2--1-.jpeg",
-      "https://www.family.abbott/sg-en/glucerna/products/glucerna-triple-care/_jcr_content/root/container_73840106/productsection_copy__263188189/product-section-image.coreimg.jpeg/1664272414979/rtb-3--1-.jpeg",
-      "https://www.family.abbott/adobe/dynamicmedia/deliver/dm-aid--a81f51d0-6e94-4fde-8604-73c3988e7013/use-it-right-overweight-obese.png?preferwebp=true&quality=85",
-      "https://www.family.abbott/content/dam/an/familyabbott/sg-en/glucerna/products/glucerna-master/Use_it_Right_Overweight_Obese_mobile.png",
-      "https://www.family.abbott/adobe/dynamicmedia/deliver/dm-aid--b08bec9e-9614-4a5d-93d0-19d8ee76c3c7/use-it-right-underweight-malnourished.png?preferwebp=true&quality=85",
-      "https://www.family.abbott/content/dam/an/familyabbott/sg-en/glucerna/products/glucerna-master/Use_it_Right_Underweight_Malnourished_mobile.png",
-      "https://www.family.abbott/content/dam/an/familyabbott/sg-en/glucerna/managing-diabetes-made-easy/guides-to-managing-type-2-diabetes/healthy-diet/recipes/black-sesame-drink/SN275_Thumbnail.jpg",
-      "https://www.family.abbott/content/dam/an/familyabbott/sg-en/glucerna/managing-diabetes-made-easy/guides-to-managing-type-2-diabetes/healthy-diet/recipes/dragonfruit-and-berries-smoothie-bowl/SN277_Thumbnail.jpg",
-      "https://www.family.abbott/content/dam/an/familyabbott/sg-en/glucerna/managing-diabetes-made-easy/guides-to-managing-type-2-diabetes/healthy-diet/recipes/green-tea-popsicle/SN286_Thumbnail.jpg",
-      "https://www.family.abbott/adobe/dynamicmedia/deliver/dm-aid--bbfb5f97-c134-4c24-8d26-ae938e0bc0e9/fairprice-online.jpg?preferwebp=true&quality=85",
-      "https://www.family.abbott/adobe/dynamicmedia/deliver/dm-aid--fbc9a50a-cc78-4494-9927-1dd8d1a89b95/lazada.jpg?preferwebp=true&quality=85",
-      "https://www.family.abbott/adobe/dynamicmedia/deliver/dm-aid--774ad6ea-9e44-4860-bba1-9e9b50e68b45/shopee.jpg?preferwebp=true&quality=85"
+      "https://www.family.abbott/content/dam/an/familyabbott/ae-en/abbott-family/logo/Missing-Brand-Logos-for-PhoenixPediaSure-Desktop.png",
+      "https://www.family.abbott/content/dam/an/familyabbott/ae-en/abbott-family/logo/Missing-Brand-Logos-for-PhoenixPediaSure-Mobile.png",
+      "https://www.family.abbott/content/dam/an/familyabbott/general/Abbott-Header-Logo.png",
+      "https://www.family.abbott/adobe/dynamicmedia/deliver/dm-aid--cd77058e-b296-4141-ba90-a12d7323888e/pediasure-pak-vanilla-400g.png?quality=85&preferwebp=true",
+      "https://www.family.abbott/content/dam/an/familyabbott/pk-en/pediasure/products/new-packshot-13aug24/Pediasure%20PAK_Vanilla_400g.png",
+      "https://www.family.abbott/adobe/dynamicmedia/deliver/dm-aid--be85f641-fc2b-4457-8ecd-42f3f8405035/pediasure-pak-vanilla-850g.png?quality=85&preferwebp=true",
+      "https://www.family.abbott/content/dam/an/familyabbott/pk-en/pediasure/products/new-packshot-13aug24/Pediasure%20PAK_Vanilla_850g.png",
+      "https://www.family.abbott/adobe/dynamicmedia/deliver/dm-aid--cf24f132-55dd-44a0-84c8-93adaf9f58d5/pediasure-pak-vanilla-1600g.png?quality=85&preferwebp=true",
+      "https://www.family.abbott/content/dam/an/familyabbott/pk-en/pediasure/products/new-packshot-13aug24/Pediasure%20PAK_Vanilla_1600g.png",
+      "https://www.family.abbott/adobe/dynamicmedia/deliver/dm-aid--13b2f054-0765-4dfb-ab2a-e583584e4e41/flavour---vanilla.png?quality=85&preferwebp=true",
+      "https://www.family.abbott/adobe/dynamicmedia/deliver/dm-aid--b32616c9-0ed4-4917-80db-fce70ddcf66b/flavour---chocolate.png?quality=85&preferwebp=true",
+      "https://www.family.abbott/adobe/dynamicmedia/deliver/dm-aid--e23ebc6f-19ee-42b1-96a9-97724a68952a/flavour---strawberry.png?quality=85&preferwebp=true",
+      "https://www.family.abbott/adobe/dynamicmedia/deliver/dm-aid--7d6cd417-29c3-40d0-97c5-0f480866e83b/sn96-pediasure-complete-01.png?quality=85&preferwebp=true",
+      "https://www.family.abbott/adobe/dynamicmedia/deliver/dm-aid--76d3e43e-adbb-4cd3-85cd-3b7c11217395/sn96-pediasure-complete-02.png?quality=85&preferwebp=true",
+      "https://www.family.abbott/adobe/dynamicmedia/deliver/dm-aid--cb523c55-e88b-4e23-bec1-97cf6b2c9526/sn96-pediasure-complete-03.png?quality=85&preferwebp=true",
+      "https://www.family.abbott/adobe/dynamicmedia/deliver/dm-aid--0f197b5d-4e75-4859-8486-5dec5da4ab0e/sn96-pediasure-complete-04.png?quality=85&preferwebp=true"
     ],
     "error": "HTTP Error 404: Not Found"
   },
   {
-    "name": "img_molfix-size-3",
-    "url": "https://cdn.hayat.com.tr/images/52f85e4e-d3c2-40e3-b627-b0d9e9595c27.jpg",
-    "status": null,
-    "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>"
+    "name": "photo_glucerna-vanilla-400g",
+    "url": "https://www.family.abbott/pk-en/glucerna/products/glucerna-powder-vanilla.html",
+    "status": 404,
+    "final_url": "https://www.family.abbott/pk-en/glucerna/products/glucerna-powder-vanilla.html",
+    "title": "Glucerna\u00ae Powder Pakistan | Balanced Nutrition and Blood Sugar Control",
+    "candidates": [
+      "https://www.family.abbott/etc.clientlibs/abbott-platform/clientlibs/clientlib-site/resources/images/abbott-logo.png",
+      "https://www.family.abbott/content/dam/an/familyabbott/ae-en/glucerna/common/Updated-Logos-for-PhoenixDesktop-Reverse.png",
+      "https://www.family.abbott/adobe/dynamicmedia/deliver/dm-aid--4f92f559-b584-4914-a7de-8cca57e98c73/glucerna-400-vanilla-444x468.png?quality=85&preferwebp=true",
+      "https://www.family.abbott/content/dam/an/familyabbott/pk-en/glucerna/products/Glucerna-400-Vanilla-444x468.png",
+      "https://www.family.abbott/adobe/dynamicmedia/deliver/dm-aid--ea352f09-8b79-473a-b5dc-8781af9e22c1/sn708-ensure-product-details-ensure-protein-max-abbott-vanilla-90x49-2x.png?quality=85&preferwebp=true",
+      "https://www.family.abbott/adobe/dynamicmedia/deliver/dm-aid--efe9fe45-c6de-41d2-94c6-2dc3319c5d90/sn708-ensure-product-details-ensure-protein-max-chocoflavor-90x49-2x.png?quality=85&preferwebp=true",
+      "https://www.family.abbott/pk-en/glucerna/products/glucerna-powder-vanilla/_jcr_content/root/container_73840106_c/productsection_copy_/product-section-image.coreimg.jpeg/1722860367202/sn1002-glucerna-product-details-glucerna-powder-glycaemic-rtb-image-copy.jpeg",
+      "https://www.family.abbott/content/dam/an/familyabbott/pk-en/glucerna/tools-and-resources/SN1010_Glucerna_Homepage_Articles-2-672x672-2x%20V2.jpg",
+      "https://www.family.abbott/content/dam/an/familyabbott/pk-en/glucerna/tools-and-resources/SN1010_Glucerna_Homepage_Articles-1-672x672-2x%20V2.jpg",
+      "https://www.family.abbott/content/dam/an/familyabbott/ae-en/glucerna/about-glucerna/articles/SN1010_Glucerna_Homepage_Articles-3-672x672-2x.jpg",
+      "https://www.family.abbott/content/dam/adc/navecomm/global/logos/AbbottLogoWhite.png"
+    ],
+    "error": "HTTP Error 404: Not Found"
   },
   {
-    "name": "img_molfix-size-3-alt",
-    "url": "https://www.molfix.com/dist/media/img/product-detail/products-tr/taped-3d-newborn.png",
+    "name": "photo_duphalac-syrup",
+    "url": "https://medicines.abbott.com/product/duphalac/",
     "status": 200,
-    "final_url": "https://www.molfix.com/dist/media/img/product-detail/products-tr/taped-3d-newborn.png",
+    "final_url": "https://medicines.abbott.com/product/duphalac/",
+    "title": "Duphalac - Abbott | Medicines GLOBAL",
+    "candidates": [
+      "https://medicines.abbott.com/wp-content/uploads/2025/06/cropped-Abbott_Laboratories_logo_bco.webp",
+      "https://medicines.abbott.com/wp-content/themes/abbottglobal/src/img/close.png",
+      "https://medicines.abbott.com/wp-content/themes/abbottglobal/src/img/logo_abbot.png",
+      "https://medicines.abbott.com/wp-content/uploads/2026/02/DUPHALAC_66.7g-per-100mL_CartonBottle_200mL_GLO_result.webp",
+      "https://medicines.abbott.com/wp-content/uploads/2025/03/svgexport-1.png",
+      "https://medicines.abbott.com/wp-content/uploads/2025/03/fb-hover-abbott.png",
+      "https://medicines.abbott.com/wp-content/uploads/2025/03/svgexport-2.png",
+      "https://medicines.abbott.com/wp-content/uploads/2025/03/svgexport-2-1.png",
+      "https://medicines.abbott.com/wp-content/uploads/2025/03/svgexport-3.png",
+      "https://medicines.abbott.com/wp-content/uploads/2025/03/svgexport-3-1.png",
+      "https://medicines.abbott.com/wp-content/uploads/2025/03/svgexport-4.png",
+      "https://medicines.abbott.com/wp-content/uploads/2025/03/svgexport-4-1.png",
+      "https://medicines.abbott.com/wp-content/uploads/2025/03/svgexport-5.png",
+      "https://medicines.abbott.com/wp-content/uploads/2025/03/svgexport-5-1.png"
+    ],
+    "image": "https://medicines.abbott.com/wp-content/uploads/2025/06/cropped-Abbott_Laboratories_logo_bco.webp",
+    "image_type": "image/webp",
+    "bytes": 2822,
+    "file": "fetched/img_duphalac-syrup.webp"
+  },
+  {
+    "name": "img_omron-m2-basic-bp-monitor-1",
+    "url": "https://www.omronhealthcare-ap.com/Content/uploads/products/ef543f9b321149f6926e70d6a3d0224c.png",
+    "status": 200,
+    "final_url": "https://www.omronhealthcare-ap.com/Content/uploads/products/ef543f9b321149f6926e70d6a3d0224c.png",
     "content_type": "image/png",
-    "bytes": 209814,
-    "file": "fetched/img_molfix-size-3-alt.png"
+    "bytes": 19016,
+    "file": "fetched/img_omron-m2-basic-bp-monitor-1.png"
+  },
+  {
+    "name": "img_omron-m2-basic-bp-monitor-2",
+    "url": "https://www.omronhealthcare-ap.com/Content/uploads/products/d1fe30ea79554b85bee8dad0e08abd63.jpg",
+    "status": 200,
+    "final_url": "https://www.omronhealthcare-ap.com/Content/uploads/products/d1fe30ea79554b85bee8dad0e08abd63.jpg",
+    "content_type": "image/jpeg",
+    "bytes": 42941,
+    "file": "fetched/img_omron-m2-basic-bp-monitor-2.jpg"
+  },
+  {
+    "name": "img_omron-m2-basic-bp-monitor-3",
+    "url": "https://www.omronhealthcare-ap.com/Content/uploads/products/ad01041b3f24411a966e05cbd2cc9663.png",
+    "status": 200,
+    "final_url": "https://www.omronhealthcare-ap.com/Content/uploads/products/ad01041b3f24411a966e05cbd2cc9663.png",
+    "content_type": "image/png",
+    "bytes": 874,
+    "file": "fetched/img_omron-m2-basic-bp-monitor-3.png"
+  },
+  {
+    "name": "img_omron-m2-basic-bp-monitor-4",
+    "url": "https://www.omronhealthcare-ap.com/Content/uploads/products/d7b60569215d480bb04e1087e88c2ab8.png",
+    "status": 200,
+    "final_url": "https://www.omronhealthcare-ap.com/Content/uploads/products/d7b60569215d480bb04e1087e88c2ab8.png",
+    "content_type": "image/png",
+    "bytes": 769,
+    "file": "fetched/img_omron-m2-basic-bp-monitor-4.png"
+  },
+  {
+    "name": "img_omron-m2-basic-bp-monitor-5",
+    "url": "https://www.omronhealthcare-ap.com/Content/uploads/products/03b59712ee8a4461823abf58a1a8d6c5.png",
+    "status": 200,
+    "final_url": "https://www.omronhealthcare-ap.com/Content/uploads/products/03b59712ee8a4461823abf58a1a8d6c5.png",
+    "content_type": "image/png",
+    "bytes": 671,
+    "file": "fetched/img_omron-m2-basic-bp-monitor-5.png"
+  },
+  {
+    "name": "img_glucerna-vanilla-400g-sg",
+    "url": "https://www.family.abbott/adobe/dynamicmedia/deliver/dm-aid--6679d46c-5e57-46d7-ac1a-ecd42791f3c7/glucerna-vanilla-800g-packshot-front-removebg-preview.png?preferwebp=true&quality=85",
+    "status": 200,
+    "final_url": "https://www.family.abbott/adobe/dynamicmedia/deliver/dm-aid--6679d46c-5e57-46d7-ac1a-ecd42791f3c7/glucerna-vanilla-800g-packshot-front-removebg-preview.png?preferwebp=true&quality=85",
+    "content_type": "image/png",
+    "bytes": 217826,
+    "file": "fetched/img_glucerna-vanilla-400g-sg.png"
   }
 ]
