@@ -230,13 +230,13 @@ const assetVersions = {};
 const assetVersion = (file) =>
   (assetVersions[file] ??= crypto.createHash("md5").update(read(file)).digest("hex").slice(0, 8));
 const versionAssets = (html) =>
-  html.replace(/(href|src)="((?:\.\.\/)*)((?:css|js|data)\/[\w.-]+\.(?:css|js))"/g,
+  html.replace(/(href|src)="((?:\.\.\/)*)((?:css|js|data|vendor\/[\w-]+)\/[\w.-]+\.(?:css|js))"/g,
     (m, attr, up, file) => `${attr}="${up}${file}?v=${assetVersion(file)}"`);
 
 const LAYOUT = read("src/layout.html");
 const builtPages = [];
 
-function page({ path: outPath, title, description, content, jsonLd = "", robots = "index, follow", bodyClass = "", scripts = [], ogType = "website", ogImage = "", current = "", vars = {}, sitemap = true, priority = "0.6" }) {
+function page({ path: outPath, title, description, content, jsonLd = "", robots = "index, follow", bodyClass = "", scripts = [], styles = [], ogType = "website", ogImage = "", current = "", vars = {}, sitemap = true, priority = "0.6" }) {
   const depth = outPath.split("/").length - 1;
   const root = depth ? "../".repeat(depth) : "";
   const base = {
@@ -261,6 +261,8 @@ function page({ path: outPath, title, description, content, jsonLd = "", robots 
     mapsSearchUrlRaw: mapsSearchUrl,
     mapsEmbedUrl: esc(mapsEmbedUrl),
     mapsDirectionsUrl: esc(mapsDirectionsUrl),
+    geoLat: geo ? String(geo.lat) : "",
+    geoLng: geo ? String(geo.lng) : "",
     landmark: esc(config.landmark || ""),
     landmarkRaw: config.landmark || "",
     landmarkUrdu: esc(config.landmarkUrdu || ""),
@@ -309,6 +311,7 @@ function page({ path: outPath, title, description, content, jsonLd = "", robots 
     jsonLd: ld,
     content: body,
     pageScripts: scripts.map((s) => `  <script src="${root}${s}" defer></script>`).join("\n"),
+    pageStyles: styles.map((s) => `  <link rel="stylesheet" href="${root}${s}">`).join("\n"),
   });
   write(outPath, versionAssets(html));
   if (sitemap && robots.startsWith("index")) builtPages.push({ loc: canonical, priority });
@@ -407,6 +410,8 @@ function parsePage(file) {
     title: meta.title,
     description: meta.description,
     bodyClass: meta.bodyClass,
+    scripts: meta.scripts || [],
+    styles: meta.styles || [],
     content,
     jsonLd,
     current: "index.html",

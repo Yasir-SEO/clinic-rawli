@@ -29,7 +29,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600&family=Poppins:wght@400;500;600;700&display=swap">
-  <link rel="stylesheet" href="css/style.css?v=e665ffac">
+  <link rel="stylesheet" href="css/style.css?v=dc08d122">
+  <link rel="stylesheet" href="vendor/leaflet/leaflet.css?v=c02c12fe">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -816,12 +817,15 @@
           </div>
 
           <div class="visit__map">
-            <iframe
-              title="Map: Near Canal Rest House, Rohillanwali, Muzaffargarh"
-              src="https://maps.google.com/maps?q=29.768201,71.068559&amp;z=17&amp;output=embed"
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              allowfullscreen></iframe>
+            <div class="shop-map" id="shop-map" data-lat="29.768201" data-lng="71.068559" data-name="Adil Medical Store &amp; Adil Children Clinic" data-note="Opposite Canal Rest House, 15–20 m past Meezan Bank (Rohillanwali branch)" role="region" aria-label="Map showing Adil Medical Store &amp; Adil Children Clinic, Rohillanwali">
+              <iframe
+                title="Map: Adil Medical Store &amp; Adil Children Clinic, Rohillanwali"
+                src="https://maps.google.com/maps?q=29.768201,71.068559&amp;z=17&amp;output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen></iframe>
+            </div>
+            <a class="shop-map__open" href="https://www.google.com/maps/search/?api=1&amp;query=29.768201,71.068559" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg> Open in Google Maps</a>
           </div>
         </div>
       </div>
@@ -997,6 +1001,7 @@
   <script src="js/catalog.js?v=826a104a" defer></script>
   <script src="js/main.js?v=df14e5b8" defer></script>
   <script src="js/store.js?v=a41b3da7" defer></script>
-
+  <script src="vendor/leaflet/leaflet.js?v=4c58d6ab" defer></script>
+  <script src="js/map.js?v=a8b96db3" defer></script>
 </body>
 </html>

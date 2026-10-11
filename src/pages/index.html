@@ -1,4 +1,4 @@
-<!--page {"title": "Adil Child Care Clinic & Pharmacy | Child Specialist & Medical Store in Rohillanwali", "description": "Children's clinic in Rohillanwali, Muzaffargarh, with FCPS child specialist Dr. Rana Muhammad Zubair Ahmad every Saturday and Sunday, plus a pharmacy open daily. Order medicines online and confirm on WhatsApp.", "path": "", "bodyClass": "page-home"} -->
+<!--page {"title": "Adil Child Care Clinic & Pharmacy | Child Specialist & Medical Store in Rohillanwali", "description": "Children's clinic in Rohillanwali, Muzaffargarh, with FCPS child specialist Dr. Rana Muhammad Zubair Ahmad every Saturday and Sunday, plus a pharmacy open daily. Order medicines online and confirm on WhatsApp.", "path": "", "bodyClass": "page-home", "styles": ["vendor/leaflet/leaflet.css"], "scripts": ["vendor/leaflet/leaflet.js", "js/map.js"]} -->
 <!--jsonld
   <script type="application/ld+json">
   {
@@ -461,12 +461,15 @@
           </div>
 
           <div class="visit__map">
-            <iframe
-              title="Map: {{addrStreet}}, {{addrTown}}, Muzaffargarh"
-              src="{{mapsEmbedUrl}}"
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              allowfullscreen></iframe>
+            <div class="shop-map" id="shop-map" data-lat="{{geoLat}}" data-lng="{{geoLng}}" data-name="{{storeName}} &amp; {{clinicName}}" data-note="{{landmark}}" role="region" aria-label="Map showing {{storeName}} &amp; {{clinicName}}, {{addrTown}}">
+              <iframe
+                title="Map: {{storeName}} &amp; {{clinicName}}, {{addrTown}}"
+                src="{{mapsEmbedUrl}}"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen></iframe>
+            </div>
+            <a class="shop-map__open" href="{{mapsSearchUrl}}" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg> Open in Google Maps</a>
           </div>
         </div>
       </div>

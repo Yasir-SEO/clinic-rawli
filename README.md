@@ -43,6 +43,7 @@ Everything shop-wide lives in **`site.config.json`**. The phone/WhatsApp number 
 
 - `whatsapp`: country code + number, digits only. All orders are sent here.
 - `geo`: the shop's map position (latitude, longitude), set to the Meezan Bank Rohillanwali branch from the bank's branch locator (the shop is 15–20 m past it, opposite Canal Rest House). `landmark` / `landmarkUrdu` describe this on the contact card. To move the pin, right-click the exact spot in Google Maps (or press and hold on a phone), copy the two numbers and put them here.
+- The home page map (Timings & location) is an OpenStreetMap map drawn with Leaflet (`vendor/leaflet/`, `js/map.js`). It shows a pin labelled with the shop and clinic names and the `landmark` text. **Open in Google Maps** and **Get Directions** go to Google Maps. If the map script can't load, a Google Maps frame shows instead.
 - `hours`: 24-hour times, Pakistan time. Use `null` for a closed day.
 - `doctorDays`: the days the child specialist sees patients, e.g. `["saturday", "sunday"]`. They show on the home page, the timings table and in the FAQ (the Urdu text on the home page is in `src/pages/index.html`).
 - `deliveryFee`: a number in rupees, `0` for free delivery, or `null` to confirm it on WhatsApp.
