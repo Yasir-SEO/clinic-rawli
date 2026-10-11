@@ -22,8 +22,8 @@
   },
   "mapsQuery": "Canal Rest House, Rohillanwali, Muzaffargarh, Punjab, Pakistan",
   "geo": { "lat": 29.768201, "lng": 71.068559 },
-  "landmark": "Opposite Canal Rest House, 15–20 m past Meezan Bank (Rohillanwali branch)",
-  "landmarkUrdu": "کینال ریسٹ ہاؤس کے سامنے، میزان بینک (روہیلانوالی برانچ) سے 15 تا 20 میٹر آگے",
+  "landmark": "Opposite Canal Rest House, near Meezan Bank",
+  "landmarkUrdu": "کینال ریسٹ ہاؤس کے سامنے، میزان بینک کے قریب",
 
   "hours": {
     "monday":    ["09:00", "22:00"],
