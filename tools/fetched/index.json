@@ -1,38 +1,35 @@
 [
   {
     "name": "api_osm_places",
-    "url": "https://overpass-api.de/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A25%5D%3B%0A%28%0A%20%20nwr%28around%3A5000%2C29.76528%2C71.06917%29%5B%22name%22~%22rest%20%3Fhouse%7Ccanal%7Cirrigation%7Cadil%22%2Ci%5D%3B%0A%20%20nwr%28around%3A5000%2C29.76528%2C71.06917%29%5B%22tourism%22~%22guest_house%7Chotel%22%5D%3B%0A%20%20nwr%28around%3A5000%2C29.76528%2C71.06917%29%5B%22amenity%22~%22pharmacy%7Cclinic%7Cdoctors%7Chospital%7Cpolice%7Cbus_station%7Cschool%7Ccollege%7Cmarketplace%22%5D%3B%0A%20%20nwr%28around%3A5000%2C29.76528%2C71.06917%29%5B%22shop%22~%22chemist%7Cmedical_supply%22%5D%3B%0A%20%20node%28around%3A8000%2C29.76528%2C71.06917%29%5B%22place%22%5D%3B%0A%29%3B%0Aout%20center%20tags%3B",
-    "status": 504,
-    "error": "HTTP Error 504: Gateway Timeout"
+    "url": "https://overpass.kumi.systems/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A60%5D%3B%0A%28%0A%20%20nwr%28around%3A3000%2C29.7673621%2C71.0685101%29%5B%22name%22~%22rest%7Ccanal%7Cirrigation%7Cadil%7Cmedical%7Cclinic%22%2Ci%5D%3B%0A%20%20nwr%28around%3A3000%2C29.7673621%2C71.0685101%29%5B%22amenity%22%5D%3B%0A%20%20nwr%28around%3A3000%2C29.7673621%2C71.0685101%29%5B%22tourism%22%5D%3B%0A%20%20nwr%28around%3A3000%2C29.7673621%2C71.0685101%29%5B%22shop%22%5D%3B%0A%20%20nwr%28around%3A3000%2C29.7673621%2C71.0685101%29%5B%22building%22%3D%22government%22%5D%3B%0A%29%3B%0Aout%20center%20tags%3B",
+    "status": 500,
+    "error": "HTTP Error 500: Internal Server Error"
   },
   {
     "name": "api_osm_canals",
-    "url": "https://overpass-api.de/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A25%5D%3B%0Away%28around%3A4000%2C29.76528%2C71.06917%29%5B%22waterway%22~%22canal%7Criver%22%5D%3B%0Aout%20tags%20geom%3B",
-    "status": 504,
-    "error": "HTTP Error 504: Gateway Timeout"
+    "url": "https://overpass.kumi.systems/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A60%5D%3B%0Away%28around%3A3000%2C29.7673621%2C71.0685101%29%5B%22waterway%22%5D%3B%0Aout%20tags%20geom%3B",
+    "status": 500,
+    "error": "HTTP Error 500: Internal Server Error"
   },
   {
     "name": "api_osm_roads",
-    "url": "https://overpass-api.de/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A25%5D%3B%0Away%28around%3A1500%2C29.76528%2C71.06917%29%5B%22highway%22~%22primary%7Csecondary%7Ctertiary%7Ctrunk%22%5D%3B%0Aout%20tags%20geom%3B",
-    "status": 504,
-    "error": "HTTP Error 504: Gateway Timeout"
+    "url": "https://overpass.kumi.systems/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A60%5D%3B%0Away%28around%3A2000%2C29.7673621%2C71.0685101%29%5B%22highway%22~%22trunk%7Cprimary%7Csecondary%7Ctertiary%7Cunclassified%7Cresidential%22%5D%5B%22name%22%5D%3B%0Aout%20tags%20center%3B",
+    "status": 500,
+    "error": "HTTP Error 500: Internal Server Error"
   },
   {
-    "name": "api_nominatim_resthouse",
-    "url": "https://nominatim.openstreetmap.org/search?q=Canal%20Rest%20House%20Rohilanwali&format=jsonv2&limit=5",
-    "status": 200,
-    "final_url": "https://nominatim.openstreetmap.org/search?q=Canal%20Rest%20House%20Rohilanwali&format=jsonv2&limit=5",
-    "content_type": "application/json",
-    "bytes": 2,
-    "file": "fetched/api_nominatim_resthouse.json"
+    "name": "api_osm_places2",
+    "url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A60%5D%3B%0A%28%0A%20%20nwr%28around%3A3000%2C29.7673621%2C71.0685101%29%5B%22name%22~%22rest%7Ccanal%7Cirrigation%7Cadil%7Cmedical%7Cclinic%22%2Ci%5D%3B%0A%20%20nwr%28around%3A3000%2C29.7673621%2C71.0685101%29%5B%22amenity%22%5D%3B%0A%20%20nwr%28around%3A3000%2C29.7673621%2C71.0685101%29%5B%22tourism%22%5D%3B%0A%20%20nwr%28around%3A3000%2C29.7673621%2C71.0685101%29%5B%22shop%22%5D%3B%0A%20%20nwr%28around%3A3000%2C29.7673621%2C71.0685101%29%5B%22building%22%3D%22government%22%5D%3B%0A%29%3B%0Aout%20center%20tags%3B",
+    "status": null,
+    "error": "TimeoutError: The read operation timed out"
   },
   {
-    "name": "api_nominatim_town",
-    "url": "https://nominatim.openstreetmap.org/search?q=Rohilanwali%2C%20Muzaffargarh%2C%20Pakistan&format=jsonv2&limit=5",
+    "name": "api_osm_canals2",
+    "url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A60%5D%3B%0Away%28around%3A3000%2C29.7673621%2C71.0685101%29%5B%22waterway%22%5D%3B%0Aout%20tags%20geom%3B",
     "status": 200,
-    "final_url": "https://nominatim.openstreetmap.org/search?q=Rohilanwali%2C%20Muzaffargarh%2C%20Pakistan&format=jsonv2&limit=5",
+    "final_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A60%5D%3B%0Away%28around%3A3000%2C29.7673621%2C71.0685101%29%5B%22waterway%22%5D%3B%0Aout%20tags%20geom%3B",
     "content_type": "application/json",
-    "bytes": 500,
-    "file": "fetched/api_nominatim_town.json"
+    "bytes": 3175,
+    "file": "fetched/api_osm_canals2.json"
   }
 ]
