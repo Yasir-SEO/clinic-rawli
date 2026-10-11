@@ -1,0 +1,33 @@
+# Fetches the pages/images listed in tools/fetch-list.txt (GitHub runners have
+# normal internet access) and commits them to tools/fetched/ on this branch.
+name: Fetch web pages
+
+on:
+  push:
+    paths:
+      - tools/fetch-list.txt
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fetch-web-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download listed pages
+        run: python3 tools/fetch.py
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add tools/fetched
+          if git diff --cached --quiet; then echo "Nothing new"; exit 0; fi
+          git commit -m "Fetched web pages for the site"
+          git push
