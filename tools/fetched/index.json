@@ -1,35 +1,47 @@
 [
   {
-    "name": "api_osm_places",
-    "url": "https://overpass.kumi.systems/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A60%5D%3B%0A%28%0A%20%20nwr%28around%3A3000%2C29.7673621%2C71.0685101%29%5B%22name%22~%22rest%7Ccanal%7Cirrigation%7Cadil%7Cmedical%7Cclinic%22%2Ci%5D%3B%0A%20%20nwr%28around%3A3000%2C29.7673621%2C71.0685101%29%5B%22amenity%22%5D%3B%0A%20%20nwr%28around%3A3000%2C29.7673621%2C71.0685101%29%5B%22tourism%22%5D%3B%0A%20%20nwr%28around%3A3000%2C29.7673621%2C71.0685101%29%5B%22shop%22%5D%3B%0A%20%20nwr%28around%3A3000%2C29.7673621%2C71.0685101%29%5B%22building%22%3D%22government%22%5D%3B%0A%29%3B%0Aout%20center%20tags%3B",
-    "status": 500,
-    "error": "HTTP Error 500: Internal Server Error"
+    "name": "api_commons_rohilanwali",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Rohilanwali&gsrnamespace=6&gsrlimit=30&prop=coordinates%7Cimageinfo&iiprop=url%7Cmetadata&format=json",
+    "status": 200,
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Rohilanwali&gsrnamespace=6&gsrlimit=30&prop=coordinates%7Cimageinfo&iiprop=url%7Cmetadata&format=json",
+    "content_type": "application/json",
+    "bytes": 3256,
+    "file": "fetched/api_commons_rohilanwali.json"
   },
   {
-    "name": "api_osm_canals",
-    "url": "https://overpass.kumi.systems/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A60%5D%3B%0Away%28around%3A3000%2C29.7673621%2C71.0685101%29%5B%22waterway%22%5D%3B%0Aout%20tags%20geom%3B",
-    "status": 500,
-    "error": "HTTP Error 500: Internal Server Error"
+    "name": "api_commons_rohillanwali",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Rohillanwali&gsrnamespace=6&gsrlimit=30&prop=coordinates%7Cimageinfo&iiprop=url&format=json",
+    "status": 200,
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Rohillanwali&gsrnamespace=6&gsrlimit=30&prop=coordinates%7Cimageinfo&iiprop=url&format=json",
+    "content_type": "application/json",
+    "bytes": 20,
+    "file": "fetched/api_commons_rohillanwali.json"
+  },
+  {
+    "name": "api_wiki_rohilanwali",
+    "url": "https://en.wikipedia.org/w/api.php?action=query&titles=Rohilanwali&prop=images%7Ccoordinates&imlimit=50&format=json",
+    "status": 200,
+    "final_url": "https://en.wikipedia.org/w/api.php?action=query&titles=Rohilanwali&prop=images%7Ccoordinates&imlimit=50&format=json",
+    "content_type": "application/json",
+    "bytes": 355,
+    "file": "fetched/api_wiki_rohilanwali.json"
   },
   {
     "name": "api_osm_roads",
-    "url": "https://overpass.kumi.systems/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A60%5D%3B%0Away%28around%3A2000%2C29.7673621%2C71.0685101%29%5B%22highway%22~%22trunk%7Cprimary%7Csecondary%7Ctertiary%7Cunclassified%7Cresidential%22%5D%5B%22name%22%5D%3B%0Aout%20tags%20center%3B",
-    "status": 500,
-    "error": "HTTP Error 500: Internal Server Error"
-  },
-  {
-    "name": "api_osm_places2",
-    "url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A60%5D%3B%0A%28%0A%20%20nwr%28around%3A3000%2C29.7673621%2C71.0685101%29%5B%22name%22~%22rest%7Ccanal%7Cirrigation%7Cadil%7Cmedical%7Cclinic%22%2Ci%5D%3B%0A%20%20nwr%28around%3A3000%2C29.7673621%2C71.0685101%29%5B%22amenity%22%5D%3B%0A%20%20nwr%28around%3A3000%2C29.7673621%2C71.0685101%29%5B%22tourism%22%5D%3B%0A%20%20nwr%28around%3A3000%2C29.7673621%2C71.0685101%29%5B%22shop%22%5D%3B%0A%20%20nwr%28around%3A3000%2C29.7673621%2C71.0685101%29%5B%22building%22%3D%22government%22%5D%3B%0A%29%3B%0Aout%20center%20tags%3B",
-    "status": null,
-    "error": "TimeoutError: The read operation timed out"
-  },
-  {
-    "name": "api_osm_canals2",
-    "url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A60%5D%3B%0Away%28around%3A3000%2C29.7673621%2C71.0685101%29%5B%22waterway%22%5D%3B%0Aout%20tags%20geom%3B",
+    "url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A50%5D%3B%0Away%28around%3A1800%2C29.7673621%2C71.0685101%29%5B%22highway%22~%22trunk%7Cprimary%7Csecondary%7Ctertiary%22%5D%3B%0Aout%20tags%20geom%3B",
     "status": 200,
-    "final_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A60%5D%3B%0Away%28around%3A3000%2C29.7673621%2C71.0685101%29%5B%22waterway%22%5D%3B%0Aout%20tags%20geom%3B",
+    "final_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A50%5D%3B%0Away%28around%3A1800%2C29.7673621%2C71.0685101%29%5B%22highway%22~%22trunk%7Cprimary%7Csecondary%7Ctertiary%22%5D%3B%0Aout%20tags%20geom%3B",
     "content_type": "application/json",
-    "bytes": 3175,
-    "file": "fetched/api_osm_canals2.json"
+    "bytes": 21665,
+    "file": "fetched/api_osm_roads.json"
+  },
+  {
+    "name": "api_osm_named",
+    "url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A50%5D%3B%0A%28%0A%20%20nwr%28around%3A1500%2C29.7673621%2C71.0685101%29%5B%22name%22%5D%3B%0A%29%3B%0Aout%20center%20tags%3B",
+    "status": 200,
+    "final_url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A50%5D%3B%0A%28%0A%20%20nwr%28around%3A1500%2C29.7673621%2C71.0685101%29%5B%22name%22%5D%3B%0A%29%3B%0Aout%20center%20tags%3B",
+    "content_type": "application/json",
+    "bytes": 2061,
+    "file": "fetched/api_osm_named.json"
   }
 ]

@@ -1,0 +1,103 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.4 2390de5a",
+  "osm3s": {
+    "timestamp_osm_base": "2026-10-11T05:52:20Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 4787480125,
+  "lat": 29.7659750,
+  "lon": 71.0684063,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Langah Travels.",
+    "operator": "Talat Langah"
+  }
+},
+{
+  "type": "node",
+  "id": 4787480126,
+  "lat": 29.7654600,
+  "lon": 71.0682984,
+  "tags": {
+    "addr:street": "M-5",
+    "email": "talat_zaib@yahoo.com",
+    "name": "Rohillan Walli. judge Market.",
+    "operator": "Nazit Ahmed Langah.",
+    "phone": "03006865068",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 4998086916,
+  "lat": 29.7602561,
+  "lon": 71.0658306,
+  "tags": {
+    "addr:country": "PK",
+    "amenity": "school",
+    "name": "Al Rahman Public School"
+  }
+},
+{
+  "type": "node",
+  "id": 7126165485,
+  "lat": 29.7653170,
+  "lon": 71.0682063,
+  "tags": {
+    "addr:street": "Rohilla Walli. City",
+    "amenity": "bus_station",
+    "name": "Nazir Judge Market.",
+    "name:en": "Urdu"
+  }
+},
+{
+  "type": "node",
+  "id": 12062332492,
+  "lat": 29.7673621,
+  "lon": 71.0685101,
+  "tags": {
+    "name": "روہیلانوالی",
+    "name:en": "Rohilanwali",
+    "name:hi": "रोहिलांवाली",
+    "place": "town",
+    "wikidata": "Q7359738",
+    "wikipedia": "en:Rohilanwali"
+  }
+},
+{
+  "type": "way",
+  "id": 140417343,
+  "center": {
+    "lat": 29.7602293,
+    "lon": 71.0643285
+  },
+  "tags": {
+    "highway": "primary",
+    "maxspeed": "80",
+    "name": "Rohilanwali-ByPass Road"
+  }
+},
+{
+  "type": "way",
+  "id": 1111517204,
+  "center": {
+    "lat": 29.7581079,
+    "lon": 71.0664548
+  },
+  "tags": {
+    "addr:city": "Rohillanwali",
+    "addr:postcode": "34400",
+    "addr:street": "Main Alipure Read",
+    "amenity": "school",
+    "name": "Goverment Higher Secondary School Rohillanwali",
+    "opening_hours": "Mo-Fr 08:00-18:00"
+  }
+}
+
+  ]
+}
