@@ -76,10 +76,17 @@ const hoursSummary = allSame ? `Open daily ${hoursText(hours.monday)}` : "See ou
 const hoursSentence = allSame
   ? `The pharmacy is open every day from ${time12(hours.monday[0])} to ${time12(hours.monday[1])}.`
   : "Please see the opening hours on our website.";
+const doctorDays = (config.doctorDays || []).filter((d) => DAYS.includes(d));
+const listText = (a, and) => (a.length > 1 ? `${a.slice(0, -1).join(", ")} ${and} ${a[a.length - 1]}` : a.join(""));
+const doctorDaysText = listText(doctorDays.map(cap), "&");
+const doctorDaysSentence = doctorDays.length
+  ? `Our child specialist, ${config.doctorName || "the doctor"}, sees patients every ${listText(doctorDays.map(cap), "and")}.`
+  : "";
 const hoursRows = DAYS.map((d) => {
   const h = hours[d];
   const attrs = h ? `data-open="${h[0]}" data-close="${h[1]}"` : `data-closed="true"`;
-  return `                  <tr data-day="${DAY_NUM[d]}" ${attrs}><th scope="row">${cap(d)}</th><td>${hoursText(h)}</td></tr>`;
+  const doc = doctorDays.includes(d) ? ' <span class="hours__doc">Doctor available</span>' : "";
+  return `                  <tr data-day="${DAY_NUM[d]}" ${attrs}><th scope="row">${cap(d)}</th><td>${hoursText(h)}${doc}</td></tr>`;
 }).join("\n");
 const openingHoursJson = JSON.stringify(
   uniqueHours.filter((u) => u !== "null").map((u) => {
@@ -110,6 +117,7 @@ const brandsShown = DATA.manufacturers.filter((m) => !m.hidden && mfrCount(m.id)
 
 const NAV = [
   ["index.html", "Home"],
+  ["index.html#clinic", "Clinic"],
   ["shop.html", "All Medicines"],
   ["categories/fever-pain.html", "Fever & Pain"],
   ["categories/cough-cold.html", "Cough & Cold"],
@@ -118,7 +126,6 @@ const NAV = [
   ["categories/diapers.html", "Diapers"],
   ["categories/personal-care.html", "Personal Care"],
   ["categories/vitamins.html", "Vitamins"],
-  ["index.html#clinic", "Clinic"],
   ["index.html#visit", "Contact"],
 ];
 
@@ -187,6 +194,14 @@ function page({ path: outPath, title, description, content, jsonLd = "", robots 
     hoursSummary,
     hoursSentence,
     hoursNote: esc(config.hoursNote || ""),
+    doctorName: esc(config.doctorName || ""),
+    doctorDaysText: esc(doctorDaysText),
+    doctorDaysSentence: esc(doctorDaysSentence),
+    doctorDaysRaw: listText(doctorDays.map(cap), "and"),
+    doctorDaysNums: doctorDays.map((d) => DAY_NUM[d]).join(","),
+    waBookUrl: esc(C.waUrl(config.whatsapp, "Assalam-o-Alaikum! I'd like to book a visit with the child specialist. (from your website)")),
+    email: esc(config.email || ""),
+    emailRaw: config.email || "",
     hoursRows,
     openingHoursJson,
     deliveryArea: esc(config.deliveryArea || "Rohillanwali"),

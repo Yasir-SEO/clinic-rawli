@@ -24,7 +24,7 @@ It's a fast static site: no server, database or monthly fees. It's hosted free o
 
 ## Fill in your details (before going live)
 
-Everything shop-wide lives in **`site.config.json`**. The phone/WhatsApp number (0302 5037681), Facebook and Instagram links come from the shop's Facebook Page; opening hours and delivery charges are still placeholders to confirm. Example:
+Everything shop-wide lives in **`site.config.json`**. The phone/WhatsApp number (0302 5037681), email, Facebook and Instagram links come from the shop's Facebook Page. The pharmacy is open 9 AM–10 PM daily and the child specialist is in on Saturday and Sunday. Delivery charges are still to confirm. Example:
 
 ```json
 "phoneDisplay": "+92 300 1234567",
@@ -37,12 +37,13 @@ Everything shop-wide lives in **`site.config.json`**. The phone/WhatsApp number 
 
 - `whatsapp`: country code + number, digits only. All orders are sent here.
 - `hours`: 24-hour times, Pakistan time. Use `null` for a closed day.
+- `doctorDays`: the days the child specialist sees patients, e.g. `["saturday", "sunday"]`. They show on the home page, the timings table and in the FAQ (the Urdu text on the home page is in `src/pages/index.html`).
 - `deliveryFee`: a number in rupees, `0` for free delivery, or `null` to confirm it on WhatsApp.
 
 Then **rebuild** (see below). The phone, hours and WhatsApp links update on every page.
 
 Also check:
-1. **Prices.** 38 common medicines show the retail price (MRP) and pack size from a public Pakistani price list (October 2026). Check them against your own stock and change any that differ. The rest show **"Price on request"**. Add a `price` (in rupees) and `pack` to any product in `data/products.js` and the cart, totals and Google data use it automatically.
+1. **Prices.** All products show **"Price on request"**, and the price is confirmed on WhatsApp. To show a price, add `price` (in rupees) to a product in `data/products.js`; the cart, totals and Google data use it automatically. 38 common medicines already list their pack size (`pack`).
 2. **Products.** The catalogue lists common medicines sold in Pakistan with their manufacturers. Remove what you don't stock and add what you do; each product is one line in `data/products.js`. Controlled medicines (sleeping pills, tramadol, codeine syrups, etc.) are deliberately **not** listed for online ordering.
 3. **Address & map.** Add the street or landmark in `src/pages/index.html` (Address card), and the Google Maps link or embed for your exact location.
 4. **Services.** Check the clinic services list in `src/pages/index.html`.
@@ -54,7 +55,7 @@ Open `data/products.js`. Each product is one line:
 ```js
 P({ id: "panadol-500mg-tablets", name: "Panadol 500mg Tablets", brand: "Panadol", strength: "500mg",
     generic: "Paracetamol", form: "tablet", unit: "Strip", cat: "fever-pain", mfr: "haleon",
-    price: 32, pack: "10 tablets", use: "Relief from fever, headache, toothache and body aches.", featured: true }),
+    pack: "10 tablets", use: "Relief from fever, headache, toothache and body aches.", featured: true }),
 ```
 
 - `price` is the retail price (MRP) of one `unit`, and `pack` says what is inside it, e.g. `"10 tablets"`, `"90ml"` or `"20g"`. Leave `price` out to show "Price on request".

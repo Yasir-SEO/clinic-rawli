@@ -134,6 +134,17 @@
         : "Closed today";
     }
 
+    var doc = document.querySelector("[data-doctor-today]");
+    if (doc) {
+      var days = (doc.getAttribute("data-days") || "").split(",").filter(Boolean).map(Number);
+      var NAMES = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+      var next = null;
+      for (var k = 1; k <= 7 && next === null; k++) if (days.indexOf((now.day + k) % 7) >= 0) next = (now.day + k) % 7;
+      doc.textContent = days.indexOf(now.day) >= 0 ? " · at the clinic today"
+        : next !== null ? " · next: " + NAMES[next] : "";
+      doc.classList.toggle("is-today", days.indexOf(now.day) >= 0);
+    }
+
     var bar = document.querySelector("[data-open-status]");
     var barText = document.querySelector("[data-open-text]");
     if (bar && barText) {

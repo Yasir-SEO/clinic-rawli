@@ -5,6 +5,7 @@
   "phoneDisplay": "0302 5037681",
   "phoneTel": "+923025037681",
   "whatsapp": "923025037681",
+  "email": "amirsajjad5511@gmail.com",
 
   "facebook": "https://www.facebook.com/Adilmedicalstore",
   "instagram": "https://www.instagram.com/adilmedicalstore/",
@@ -30,7 +31,9 @@
     "saturday":  ["09:00", "22:00"],
     "sunday":    ["09:00", "22:00"]
   },
-  "hoursNote": "Doctor timings at the clinic can vary. Please call before your visit.",
+  "doctorName": "Dr. Rana Muhammad Zubair Ahmad",
+  "doctorDays": ["saturday", "sunday"],
+  "hoursNote": "The child specialist sees patients every Saturday and Sunday. Please call or WhatsApp to book a time.",
 
   "currency": "Rs",
   "deliveryFee": null,

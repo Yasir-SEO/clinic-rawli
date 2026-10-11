@@ -1,4 +1,4 @@
-<!--page {"title": "Adil Child Care Clinic & Pharmacy | Online Medicine Store & Child Clinic in Rohillanwali", "description": "Order medicines online from Adil Child Care Clinic & Pharmacy, Rohillanwali, Muzaffargarh. Genuine medicines from GSK, Abbott, Getz and more, baby care and a children's clinic.", "path": "", "bodyClass": "page-home"} -->
+<!--page {"title": "Adil Child Care Clinic & Pharmacy | Child Specialist & Medical Store in Rohillanwali", "description": "Children's clinic in Rohillanwali, Muzaffargarh, with FCPS child specialist Dr. Rana Muhammad Zubair Ahmad every Saturday and Sunday, plus a pharmacy open daily. Order medicines online and confirm on WhatsApp.", "path": "", "bodyClass": "page-home"} -->
 <!--jsonld
   <script type="application/ld+json">
   {
@@ -26,6 +26,7 @@
         "image": "{{siteUrl}}assets/og-image.png",
         "logo": "{{siteUrl}}assets/icon-512.png",
         "telephone": "{{phoneDisplay}}",
+        "email": "{{emailRaw}}",
         "medicalSpecialty": "Pediatric",
         "priceRange": "Rs",
         "currenciesAccepted": "PKR",
@@ -49,13 +50,18 @@
           "@type": "Physician",
           "name": "Dr. Rana Muhammad Zubair Ahmad",
           "medicalSpecialty": "Pediatric",
-          "description": "FCPS (Paediatric Medicine). Nishtar Medical University, Multan. Registrar, Children's Hospital Complex, Multan."
+          "description": "FCPS (Paediatric Medicine). Nishtar Medical University, Multan. Registrar, Children's Hospital Complex, Multan. Sees patients at the clinic every {{doctorDaysRaw}}."
         }
       },
       {
         "@type": "FAQPage",
         "@id": "{{siteUrl}}#faq",
         "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "When is the child specialist available?",
+            "acceptedAnswer": { "@type": "Answer", "text": "{{doctorDaysSentence}} Please call or WhatsApp us to book a time. The pharmacy is open every day." }
+          },
           {
             "@type": "Question",
             "name": "Where is Adil Child Care Clinic & Pharmacy?",
@@ -84,7 +90,7 @@
           {
             "@type": "Question",
             "name": "What are your timings?",
-            "acceptedAnswer": { "@type": "Answer", "text": "{{hoursSentence}} Doctor timings at the clinic can vary, so please call before your visit." }
+            "acceptedAnswer": { "@type": "Answer", "text": "{{hoursSentence}} {{doctorDaysSentence}} Please call or WhatsApp to book a time with the doctor." }
           }
         ]
       }
@@ -96,25 +102,26 @@
     <section class="hero">
       <div class="container hero__inner">
         <div class="hero__content">
-          <p class="eyebrow"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg> Rohillanwali · District Muzaffargarh</p>
+          <p class="eyebrow"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg> Children's clinic · Rohillanwali, District Muzaffargarh</p>
           <h1 class="hero__title">Adil Child Care Clinic <span class="text-accent">&amp; Pharmacy</span></h1>
           <p class="hero__urdu urdu" lang="ur" dir="rtl">عادل چائلڈ کیئر کلینک اینڈ فارمیسی — روہیلانوالی</p>
-          <p class="hero__lead">Expert mother &amp; child care with an FCPS child specialist, and a trusted pharmacy for the whole family, right here in Rohillanwali. Genuine medicines, honest advice and a team that knows little patients need a little extra care.</p>
+          <p class="hero__lead">Mother &amp; child care with FCPS child specialist <strong>{{doctorName}}</strong>, at the clinic every <strong>{{doctorDaysText}}</strong>. After the check-up, get your medicines from our pharmacy under the same roof.</p>
 
           <div class="hero__actions">
-            <a class="btn btn--primary btn--lg" href="shop.html">
-              <svg class="icon" aria-hidden="true"><use href="#i-cart"/></svg> Shop Medicines
+            <a class="btn btn--primary btn--lg" href="{{waBookUrl}}" target="_blank" rel="noopener">
+              <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg> Book on WhatsApp
             </a>
             <a class="btn btn--outline btn--lg" href="tel:{{phoneTel}}">
-              <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg> Call Now
+              <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg> Call the Clinic
             </a>
           </div>
 
           <ul class="hero__points" role="list">
-            <li><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg> Genuine medicines</li>
-            <li><svg class="icon" aria-hidden="true"><use href="#i-baby"/></svg> Child-focused care</li>
-            <li><svg class="icon" aria-hidden="true"><use href="#i-tag"/></svg> Fair prices</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-stethoscope"/></svg> FCPS child specialist</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg> Doctor: {{doctorDaysText}}</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-pill"/></svg> Pharmacy open daily</li>
           </ul>
+          <a class="hero__shop" href="shop.html">Need medicines? Shop online <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
         </div>
 
         <aside class="hero__card" aria-label="Today at the clinic">
@@ -123,11 +130,11 @@
               <span class="today__title">Today at Adil</span>
               <span class="status-pill" data-open-pill>Open daily</span>
             </div>
-            <p class="today__hours"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg> <span data-today-hours>9:00 AM – 10:00 PM</span></p>
+            <p class="today__hours"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg> Pharmacy: <span data-today-hours>9:00 AM – 10:00 PM</span></p>
             <ul class="today__list" role="list">
               <li>
                 <span class="today__icon today__icon--teal"><svg class="icon" aria-hidden="true"><use href="#i-stethoscope"/></svg></span>
-                <span><strong>Child check-ups</strong><small>Newborns to teenagers</small></span>
+                <span><strong>Child specialist</strong><small>{{doctorDaysText}}<span data-doctor-today data-days="{{doctorDaysNums}}"></span></small></span>
               </li>
               <li>
                 <span class="today__icon today__icon--coral"><svg class="icon" aria-hidden="true"><use href="#i-pill"/></svg></span>
@@ -142,46 +149,6 @@
           </div>
           <div class="hero__blob" aria-hidden="true"></div>
         </aside>
-      </div>
-    </section>
-
-    <!-- BRANDS -->
-{{brandStrip}}
-
-    <!-- CATEGORIES -->
-    <section class="section section--tight" id="categories" aria-labelledby="cat-title">
-      <div class="container">
-        <header class="section__head section__head--row">
-          <div>
-            <p class="eyebrow">Online pharmacy</p>
-            <h2 id="cat-title">Shop by category</h2>
-          </div>
-          <a class="link-more" href="shop.html">View all {{productCount}} products <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-        </header>
-        <div class="cat-grid">
-{{categoryGrid}}
-        </div>
-      </div>
-    </section>
-
-    <!-- POPULAR -->
-    <section class="section section--soft section--tight" id="popular" aria-labelledby="popular-title">
-      <div class="container">
-        <header class="section__head section__head--row">
-          <div>
-            <p class="eyebrow">Most ordered</p>
-            <h2 id="popular-title">Popular medicines</h2>
-          </div>
-          <a class="link-more" href="shop.html">Shop all medicines <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-        </header>
-        <div class="product-grid product-grid--4">
-{{featuredGrid}}
-        </div>
-        <div class="how-order">
-          <div class="how-order__step"><span class="steps__num">1</span><span><strong>Add to cart</strong>Pick medicines or request any medicine not listed.</span></div>
-          <div class="how-order__step"><span class="steps__num">2</span><span><strong>Checkout</strong>Choose pickup or home delivery and tap Place order.</span></div>
-          <div class="how-order__step"><span class="steps__num">3</span><span><strong>We confirm on WhatsApp</strong>We reply with availability and price, then keep it ready.</span></div>
-        </div>
       </div>
     </section>
 
@@ -208,8 +175,12 @@
             </ul>
           </div>
           <div class="doctor__cta">
-            <p>Please call to confirm the doctor's clinic timings before your visit.</p>
-            <a class="btn btn--primary" href="tel:{{phoneTel}}"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg> {{phoneDisplay}}</a>
+            <p class="doctor__days"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg> Every {{doctorDaysText}}</p>
+            <p>Call or WhatsApp to book a time.</p>
+            <div class="doctor__btns">
+              <a class="btn btn--primary" href="tel:{{phoneTel}}"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg> {{phoneDisplay}}</a>
+              <a class="btn btn--whatsapp" href="{{waBookUrl}}" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg> Book on WhatsApp</a>
+            </div>
           </div>
         </article>
 
@@ -251,9 +222,49 @@
           </article>
           <article class="card card--cta">
             <h3>Is your child unwell?</h3>
-            <p>Call before you come, and we'll tell you when the doctor is available.</p>
+            <p>The doctor is here every {{doctorDaysText}}. Call before you come and we'll give you a time.</p>
             <a class="btn btn--light" href="tel:{{phoneTel}}"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg> Call the clinic</a>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATEGORIES -->
+    <section class="section section--tight" id="categories" aria-labelledby="cat-title">
+      <div class="container">
+        <header class="section__head section__head--row">
+          <div>
+            <p class="eyebrow">Online pharmacy</p>
+            <h2 id="cat-title">Shop by category</h2>
+          </div>
+          <a class="link-more" href="shop.html">View all {{productCount}} products <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </header>
+        <div class="cat-grid">
+{{categoryGrid}}
+        </div>
+      </div>
+    </section>
+
+    <!-- BRANDS -->
+{{brandStrip}}
+
+    <!-- POPULAR -->
+    <section class="section section--soft section--tight" id="popular" aria-labelledby="popular-title">
+      <div class="container">
+        <header class="section__head section__head--row">
+          <div>
+            <p class="eyebrow">Most ordered</p>
+            <h2 id="popular-title">Popular medicines</h2>
+          </div>
+          <a class="link-more" href="shop.html">Shop all medicines <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </header>
+        <div class="product-grid product-grid--4">
+{{featuredGrid}}
+        </div>
+        <div class="how-order">
+          <div class="how-order__step"><span class="steps__num">1</span><span><strong>Add to cart</strong>Pick medicines or request any medicine not listed.</span></div>
+          <div class="how-order__step"><span class="steps__num">2</span><span><strong>Checkout</strong>Choose pickup or home delivery and tap Place order.</span></div>
+          <div class="how-order__step"><span class="steps__num">3</span><span><strong>We confirm on WhatsApp</strong>We reply with availability and price, then keep it ready.</span></div>
         </div>
       </div>
     </section>
@@ -407,7 +418,7 @@
         <div class="visit">
           <div class="visit__info">
             <div class="info-card">
-              <h3><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg> Opening hours</h3>
+              <h3><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg> Clinic &amp; pharmacy hours</h3>
               <!-- Opening hours come from site.config.json -->
               <table class="hours" id="hours-table">
                 <tbody>
@@ -426,6 +437,7 @@
                 {{addrRegion}} {{addrPostal}}, Pakistan
               </address>
               <p class="urdu info-card__urdu" lang="ur" dir="rtl">{{addrUrdu}}</p>
+              <p class="info-card__email"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg> <a href="mailto:{{email}}">{{email}}</a></p>
               <div class="info-card__actions">
                 <a class="btn btn--primary" href="{{mapsSearchUrl}}" target="_blank" rel="noopener">
                   <svg class="icon" aria-hidden="true"><use href="#i-nav"/></svg> Get Directions
@@ -458,12 +470,16 @@
           یہاں نومولود سے لے کر بڑے بچوں تک کا معائنہ کیا جاتا ہے، اور بخار، نزلہ زکام، کھانسی، دست اور پیٹ کی تکالیف کا علاج کیا جاتا ہے۔
         </p>
         <p class="urdu">
+          بچوں کے ماہر ڈاکٹر رانا محمد زبیر احمد (ایف سی پی ایس) ہر ہفتہ اور اتوار کو کلینک میں بچوں کا معائنہ کرتے ہیں۔ وقت لینے کے لیے کال یا واٹس ایپ کریں۔
+        </p>
+        <p class="urdu">
           ہماری فارمیسی پر ڈاکٹری نسخے کی ادویات، روزمرہ کی ادویات، بچوں کے سیرپ اور ڈراپس، دودھ، ڈائپرز اور فرسٹ ایڈ کا سامان دستیاب ہے۔
           کسی دوائی کی دستیابی معلوم کرنے کے لیے اپنی لسٹ یا نسخے کی تصویر واٹس ایپ پر بھیجیں، ہم آپ کا آرڈر تیار رکھیں گے۔
         </p>
         <ul class="urdu urdu-list" role="list">
           <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> اصلی اور معیاری ادویات</li>
           <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> بچوں کا توجہ اور شفقت سے علاج</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> ہفتہ اور اتوار: چائلڈ اسپیشلسٹ دستیاب</li>
           <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> واٹس ایپ پر دوائی کا آرڈر</li>
           <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> مناسب قیمت</li>
         </ul>
@@ -482,6 +498,10 @@
           <h2 id="faq-title">Questions parents often ask</h2>
         </header>
         <div class="faq__list">
+          <details>
+            <summary>When is the child specialist available?</summary>
+            <p>{{doctorDaysSentence}} Please call or <a href="{{waBookUrl}}" target="_blank" rel="noopener">WhatsApp us</a> to book a time. The pharmacy is open every day.</p>
+          </details>
           <details>
             <summary>Where is Adil Child Care Clinic &amp; Pharmacy?</summary>
             <p>We are near Canal Rest House, Rohillanwali, Tehsil and District Muzaffargarh, Punjab 34400. Tap <a href="#visit">Get Directions</a> to open the location in Google Maps.</p>
@@ -504,7 +524,7 @@
           </details>
           <details>
             <summary>What are your timings?</summary>
-            <p>{{hoursSentence}} Doctor timings at the clinic can vary, so please call before your visit.</p>
+            <p>{{hoursSentence}} {{doctorDaysSentence}} Please call or WhatsApp to book a time with the doctor.</p>
           </details>
         </div>
       </div>
@@ -515,11 +535,11 @@
       <div class="container cta-band__inner">
         <div>
           <h2>Need a medicine or a check-up for your child?</h2>
-          <p>Order online, call or message us. We're here for you in Rohillanwali.</p>
+          <p>The child specialist is here every {{doctorDaysText}}. Book on WhatsApp, call, or order medicines online.</p>
         </div>
         <div class="cta-band__actions">
+          <a class="btn btn--whatsapp btn--lg" href="{{waBookUrl}}" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg> Book a Visit</a>
           <a class="btn btn--light btn--lg" href="shop.html"><svg class="icon" aria-hidden="true"><use href="#i-cart"/></svg> Shop Medicines</a>
-          <a class="btn btn--whatsapp btn--lg" href="{{waLink}}" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg> WhatsApp</a>
         </div>
       </div>
     </section>

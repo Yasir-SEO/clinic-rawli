@@ -226,9 +226,9 @@
   }
 
   function priceHtml(p, currency) {
-    if (p.price == null) return '<span class="price price--ask">Price on request</span>';
-    return '<span class="price">' + esc(formatPrice(p.price, currency)) + '</span><span class="price__unit">/ ' + esc(p.unit) + "</span>" +
-      (p.pack ? '<span class="price__pack">' + esc(p.pack) + "</span>" : "");
+    var pack = p.pack ? '<span class="price__pack">' + esc(p.unit) + " of " + esc(p.pack) + "</span>" : "";
+    if (p.price == null) return '<span class="price price--ask">Price on request</span>' + pack;
+    return '<span class="price">' + esc(formatPrice(p.price, currency)) + '</span><span class="price__unit">/ ' + esc(p.unit) + "</span>" + pack;
   }
 
   function productUrl(p, root) { return (root || "") + "medicines/" + p.id + ".html"; }
