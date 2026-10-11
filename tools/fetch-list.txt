@@ -1,15 +1,28 @@
 # name | url   (edit this file and push to run the GitHub "Fetch web pages" job)
-# Official Colgate Pakistan pack photos -> img_<product-id>
-img_colgate-maximum-cavity-protection | https://colgate.com.pk/wp-content/uploads/2020/01/colgate-maximum-cavity-protection-img2-1-500x500.jpg
-img_colgate-maxfresh-toothpaste | https://colgate.com.pk/wp-content/uploads/2020/01/colgate-maxfresh-peppermint-ice1-500x500.jpg
-img_colgate-herbal-toothpaste | https://colgate.com.pk/wp-content/uploads/2020/01/Colgate-Herbal-1-1-1-500x500.jpg
-img_colgate-misvak-toothpaste | https://colgate.com.pk/wp-content/uploads/2020/01/misvak-image1-500x500.jpg
-img_colgate-sensitive-pro-relief | https://colgate.com.pk/wp-content/uploads/2020/01/100g-CSPR-Original-1-1-500x500.jpg
-img_colgate-total-advanced-health | https://colgate.com.pk/wp-content/uploads/2020/01/Advance-Health40g-1-500x500.jpg
-img_colgate-optic-white | https://colgate.com.pk/wp-content/uploads/2020/02/COLGATE-OPTIC-WHITE-DAZZLING-WHITE.jpg
-img_colgate-toothbrush | https://colgate.com.pk/wp-content/uploads/2020/01/COLGATE-EXTRA-CLEAN-500x500.png
-img_colgate-360-whole-mouth-clean | https://colgate.com.pk/wp-content/uploads/2020/01/COLGATE-360º-WHOLE-MOUTH-CLEAN-500x500.png
-img_colgate-slimsoft-toothbrush | https://colgate.com.pk/wp-content/uploads/2020/01/COLGATE-SLIMSOFT-500x500.png
-img_kids-soft-toothbrush | https://colgate.com.pk/wp-content/uploads/2020/01/COLGATE-KIDS-500x500.png
-img_colgate-plax-mouthwash | https://colgate.com.pk/wp-content/uploads/2020/02/Colgate-Plax-Peppermint-Fresh-1-500x500.jpg
-img_colgate-plax-freshmint | https://colgate.com.pk/wp-content/uploads/2020/01/Colgate-Plax-Freshmint-1-500x500.jpg
+# Dawaai A-Z medicine lists (shrunk to tools/fetched/dawaai-list.json by tools/postprocess.py)
+dawaai_a | https://dawaai.pk/all-medicines/a
+dawaai_b | https://dawaai.pk/all-medicines/b
+dawaai_c | https://dawaai.pk/all-medicines/c
+dawaai_d | https://dawaai.pk/all-medicines/d
+dawaai_e | https://dawaai.pk/all-medicines/e
+dawaai_f | https://dawaai.pk/all-medicines/f
+dawaai_g | https://dawaai.pk/all-medicines/g
+dawaai_h | https://dawaai.pk/all-medicines/h
+dawaai_i | https://dawaai.pk/all-medicines/i
+dawaai_j | https://dawaai.pk/all-medicines/j
+dawaai_k | https://dawaai.pk/all-medicines/k
+dawaai_l | https://dawaai.pk/all-medicines/l
+dawaai_m | https://dawaai.pk/all-medicines/m
+dawaai_n | https://dawaai.pk/all-medicines/n
+dawaai_o | https://dawaai.pk/all-medicines/o
+dawaai_p | https://dawaai.pk/all-medicines/p
+dawaai_q | https://dawaai.pk/all-medicines/q
+dawaai_r | https://dawaai.pk/all-medicines/r
+dawaai_s | https://dawaai.pk/all-medicines/s
+dawaai_t | https://dawaai.pk/all-medicines/t
+dawaai_u | https://dawaai.pk/all-medicines/u
+dawaai_v | https://dawaai.pk/all-medicines/v
+dawaai_w | https://dawaai.pk/all-medicines/w
+dawaai_x | https://dawaai.pk/all-medicines/x
+dawaai_y | https://dawaai.pk/all-medicines/y
+dawaai_z | https://dawaai.pk/all-medicines/z
