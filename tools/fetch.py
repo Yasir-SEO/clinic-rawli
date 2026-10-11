@@ -6,9 +6,10 @@ internet access. Each line of the list is:  name | url
 Lines starting with # are ignored.
 
 A name starting with "photo_" means "this is a product page": the page is read,
-its main product photo is found (og:image, JSON-LD Product image or
-twitter:image) and saved as img_<rest of name>.<ext>. The page itself is not
-kept; index.json lists the photo address and other candidate images.
+and up to four product-looking images (JSON-LD Product image, og:image, then
+<img> tags, skipping logos and icons) are saved as img_<rest of name>.<ext>,
+img_<rest of name>__2.<ext> and so on, for a person to check and pick from.
+The page itself is not kept; index.json lists all candidate images.
 
 A name starting with "logo_" means "this is a company website": the page's logo
 image (an <img> whose tag mentions "logo", else the touch icon or og:image) is saved
@@ -145,16 +146,24 @@ for line in lines:
             page = body.decode("utf-8", "replace")
             cands = photo_candidates(page, final)
             entry.update(status=status, final_url=final, title=(meta(page, "og:title") or ""), candidates=cands)
-            if cands:
+            # Save the first few product-looking images (img_<id>, img_<id>__2, ...) for a person to pick from.
+            skip = re.compile(r"logo|icon|favicon|flag|sprite|cookie|close|arrow|social|facebook|twitter|insta|youtube|linkedin|svgexport|banner|placeholder|loader", re.I)
+            picks = [c for c in cands if not skip.search(c.split("?")[0].rsplit("/", 1)[-1])][:4]
+            saved = []
+            for n, c in enumerate(picks, 1):
                 time.sleep(1)
-                status, _, ctype, body = get(cands[0], "image/webp,image/*,*/*;q=0.8")
-                if ctype.startswith("image/"):
-                    path = os.path.join(OUT, f"img_{safe(name[len('photo_'):])}.{EXT.get(ctype, 'img')}")
-                    with open(path, "wb") as out:
-                        out.write(body)
-                    entry.update(image=cands[0], image_type=ctype, bytes=len(body), file=os.path.relpath(path, ROOT))
-                else:
-                    entry.update(image_error=f"not an image: {ctype}")
+                try:
+                    _, _, ctype, body = get(c, "image/webp,image/*,*/*;q=0.8")
+                except Exception as e:  # one bad image shouldn't stop the rest
+                    continue
+                if not ctype.startswith("image/") or len(body) < 3000:
+                    continue
+                suffix = "" if not saved else f"__{n}"
+                path = os.path.join(OUT, f"img_{safe(name[len('photo_'):])}{suffix}.{EXT.get(ctype, 'img')}")
+                with open(path, "wb") as out:
+                    out.write(body)
+                saved.append({"url": c, "file": os.path.relpath(path, ROOT), "bytes": len(body)})
+            entry.update(images=saved)
         else:
             status, final, ctype, body = get(url, "text/html,application/xhtml+xml,application/json,image/webp,image/*,*/*;q=0.8",
                                              API_UA if name.startswith("api_") else UA)
