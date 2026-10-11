@@ -45,13 +45,14 @@
                 <input type="radio" name="delivery" value="delivery">
                 <span class="option-card__body">
                   <svg class="icon icon--lg" aria-hidden="true"><use href="#i-truck"/></svg>
-                  <span><strong>Home delivery</strong><small>{{deliveryArea}} · {{deliveryFeeText}}</small></span>
+                  <span><strong>Home delivery</strong><small>{{deliveryFeeText}} · {{deliveryArea}}</small></span>
                 </span>
               </label>
             </div>
             <div class="field" id="co-address-field" hidden>
               <label for="co-address">Delivery address</label>
               <textarea id="co-address" name="address" rows="3" autocomplete="street-address" placeholder="House, street, mohalla or village, nearby landmark"></textarea>
+              <p class="form__hint">{{deliveryOffer}}. For smaller orders or longer distances, we'll tell you the charge on WhatsApp.</p>
               <p class="field__error" id="co-address-error" hidden></p>
             </div>
           </fieldset>

@@ -37,6 +37,8 @@ window.SITE = {
   },
   "currency": "Rs",
   "deliveryFee": null,
+  "freeDeliveryOver": 3000,
+  "deliveryRadiusKm": 5,
   "deliveryArea": "Rohillanwali and nearby villages",
   "paymentMethods": [
     "Cash on delivery",

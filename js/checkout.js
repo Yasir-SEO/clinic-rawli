@@ -19,25 +19,38 @@
     return '<span class="thumb-request" aria-hidden="true"><svg class="icon"><use href="#i-file"/></svg></span>';
   }
 
+  function deliveryOfferText() {
+    return "Free home delivery on orders over " + money(SITE.freeDeliveryOver) +
+      (SITE.deliveryRadiusKm != null ? " within " + SITE.deliveryRadiusKm + " km of the shop" : "");
+  }
+
   function lineTotal(l) { return l.price == null ? "On request" : money(l.price * l.qty); }
 
   function totalsHtml(t, opts) {
     var delivery = opts && opts.delivery;
     var fee = SITE.deliveryFee;
     var rows = '<div class="totals__row"><span>Subtotal</span><strong>' + (t.amount ? money(t.amount) : "On request") + "</strong></div>";
+    var freeOver = SITE.freeDeliveryOver;
+    var isFree = freeOver != null && !t.unpriced && t.amount >= freeOver;
+    if (isFree) fee = 0;
     if (delivery === "delivery") {
       rows += '<div class="totals__row"><span>Delivery</span><strong>' +
-        (fee == null ? "Confirmed on WhatsApp" : fee === 0 ? "Free" : money(fee)) + "</strong></div>";
+        (fee === 0 ? "Free" : freeOver != null ? "Free over " + money(freeOver) : fee == null ? "Confirmed on WhatsApp" : money(fee)) + "</strong></div>";
+      if (freeOver != null && !isFree) fee = null;
     } else if (delivery === "pickup") {
       rows += '<div class="totals__row"><span>Pickup from shop</span><strong>Free</strong></div>';
     }
     var total = t.amount + (delivery === "delivery" && fee ? fee : 0);
     rows += '<div class="totals__row totals__row--grand"><span>Total</span><strong>' +
-      (t.unpriced || (delivery === "delivery" && fee == null) ? (t.amount ? money(total) + " + items on request" : "Confirmed on WhatsApp") : money(total)) +
+      (t.unpriced ? (t.amount ? money(total) + " + items on request" : "Confirmed on WhatsApp")
+        : delivery === "delivery" && fee == null ? money(total) + " + delivery" : money(total)) +
       "</strong></div>";
     if (t.unpriced) {
       rows += '<p class="totals__note">' + t.unpriced + (t.unpriced === 1 ? " item has" : " items have") +
         " no listed price. We'll confirm the final price on WhatsApp before you pay.</p>";
+    }
+    if (freeOver != null && delivery !== "pickup") {
+      rows += '<p class="totals__note totals__note--offer">' + deliveryOfferText() + ".</p>";
     }
     return rows;
   }
@@ -199,7 +212,7 @@
       "",
       "Name: " + order.name,
       "Phone: " + order.phone,
-      "Delivery: " + (order.delivery === "delivery" ? "Home delivery" : "Pickup from shop")
+      "Delivery: " + (order.delivery === "delivery" ? "Home delivery" + (SITE.freeDeliveryOver != null ? " (free over " + money(SITE.freeDeliveryOver) + (SITE.deliveryRadiusKm != null ? " within " + SITE.deliveryRadiusKm + " km" : "") + ")" : "") : "Pickup from shop")
     ];
     if (order.delivery === "delivery") lines.push("Address: " + order.address);
     lines.push("Payment: " + order.payment, "", "*Items*");

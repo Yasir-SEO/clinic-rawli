@@ -166,6 +166,8 @@
       '<div class="mini-total"><span>Subtotal</span><strong>' +
       (t.amount ? money(t.amount) : "On request") + "</strong></div>" +
       (t.unpriced ? '<p class="mini-note">Prices for ' + t.unpriced + (t.unpriced === 1 ? " item" : " items") + " will be confirmed on WhatsApp.</p>" : "") +
+      (SITE.freeDeliveryOver != null ? '<p class="mini-note mini-note--offer"><svg class="icon" aria-hidden="true"><use href="#i-truck"/></svg> Free home delivery over ' + money(SITE.freeDeliveryOver) +
+        (SITE.deliveryRadiusKm != null ? " within " + SITE.deliveryRadiusKm + " km" : "") + "</p>" : "") +
       '<div class="mini-actions"><a class="btn btn--outline" href="' + ROOT + 'cart.html">View cart</a>' +
       '<a class="btn btn--primary" href="' + ROOT + 'checkout.html">Checkout</a></div>';
   }

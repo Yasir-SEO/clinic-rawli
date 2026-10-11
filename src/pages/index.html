@@ -75,6 +75,11 @@
           },
           {
             "@type": "Question",
+            "name": "Do you deliver medicines at home?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. {{deliveryOfferRaw}}, in Rohillanwali and nearby villages. For smaller orders or longer distances, we tell you the delivery charge on WhatsApp before you pay." }
+          },
+          {
+            "@type": "Question",
             "name": "Can I order medicines on WhatsApp?",
             "acceptedAnswer": { "@type": "Answer", "text": "Yes. Send us your medicine list or a photo of your prescription on WhatsApp. We will confirm availability and price, and keep your order ready for pickup." }
           },
@@ -273,7 +278,7 @@
         </div>
         <div class="how-order">
           <div class="how-order__step"><span class="steps__num">1</span><span><strong>Add to cart</strong>Pick medicines or request any medicine not listed.</span></div>
-          <div class="how-order__step"><span class="steps__num">2</span><span><strong>Checkout</strong>Choose pickup or home delivery and tap Place order.</span></div>
+          <div class="how-order__step"><span class="steps__num">2</span><span><strong>Checkout</strong>Choose pickup or home delivery (free over {{freeOverText}} {{radiusText}}) and tap Place order.</span></div>
           <div class="how-order__step"><span class="steps__num">3</span><span><strong>We confirm on WhatsApp</strong>We reply with availability and price, then keep it ready.</span></div>
         </div>
       </div>
@@ -292,6 +297,7 @@
             <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Expiry dates checked before every sale</li>
             <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Clear dosage advice, especially for children</li>
             <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Hard-to-find medicine? We'll try to arrange it</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-truck"/></svg> {{deliveryOffer}}</li>
           </ul>
           <a class="btn btn--primary" href="shop.html"><svg class="icon" aria-hidden="true"><use href="#i-cart"/></svg> Browse all medicines</a>
         </div>
@@ -373,7 +379,7 @@
             <legend>Collection</legend>
             <div class="radios">
               <label class="radio"><input type="radio" name="collect" value="I will pick up from the shop" checked> I'll pick up from the shop</label>
-              <label class="radio"><input type="radio" name="collect" value="Please tell me about home delivery"> Ask about home delivery</label>
+              <label class="radio"><input type="radio" name="collect" value="Home delivery please"> Home delivery (free over {{freeOverText}} {{radiusText}})</label>
             </div>
           </fieldset>
           <button class="btn btn--whatsapp btn--lg btn--block" type="submit">
@@ -495,6 +501,7 @@
           <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> بچوں کا توجہ اور شفقت سے علاج</li>
           <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> ہفتہ اور اتوار: چائلڈ اسپیشلسٹ دستیاب</li>
           <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> واٹس ایپ پر دوائی کا آرڈر</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> {{deliveryOfferUrdu}}</li>
           <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> مناسب قیمت</li>
         </ul>
         <div class="urdu-block__actions">
@@ -523,6 +530,10 @@
           <details>
             <summary>How do I order medicines online?</summary>
             <p>Add medicines to your cart, go to checkout and tap <strong>Place order on WhatsApp</strong>. Your order opens in WhatsApp; send it and we'll confirm availability and price before you pay. You can pick it up from the shop or ask about home delivery.</p>
+          </details>
+          <details>
+            <summary>Do you deliver medicines at home?</summary>
+            <p>Yes. {{deliveryOffer}}, in Rohillanwali and nearby villages. For smaller orders or longer distances, we tell you the delivery charge on WhatsApp before you pay.</p>
           </details>
           <details>
             <summary>Can I order medicines on WhatsApp?</summary>

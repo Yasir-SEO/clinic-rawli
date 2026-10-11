@@ -47,6 +47,7 @@ Everything shop-wide lives in **`site.config.json`**. The phone/WhatsApp number 
 - `hours`: 24-hour times, Pakistan time. Use `null` for a closed day.
 - `doctorDays`: the days the child specialist sees patients, e.g. `["saturday", "sunday"]`. They show on the home page, the timings table and in the FAQ (the Urdu text on the home page is in `src/pages/index.html`).
 - `deliveryFee`: a number in rupees, `0` for free delivery, or `null` to confirm it on WhatsApp.
+- `freeDeliveryOver` / `deliveryRadiusKm`: the free delivery offer (now Rs 3,000 within 5 km). It shows in the top bar, the home page, product pages, the cart, checkout and the WhatsApp order. Checkout shows delivery as Free automatically once an order has prices adding up to the amount. Set `freeDeliveryOver` to `null` to remove the offer.
 
 Then **rebuild** (see below). The phone, hours and WhatsApp links update on every page.
 

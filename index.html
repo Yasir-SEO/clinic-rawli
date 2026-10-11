@@ -29,7 +29,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600&family=Poppins:wght@400;500;600;700&display=swap">
-  <link rel="stylesheet" href="css/style.css?v=dc08d122">
+  <link rel="stylesheet" href="css/style.css?v=ba1afa8d">
   <link rel="stylesheet" href="vendor/leaflet/leaflet.css?v=c02c12fe">
   <script type="application/ld+json">
   {
@@ -106,6 +106,11 @@
           },
           {
             "@type": "Question",
+            "name": "Do you deliver medicines at home?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Free home delivery on orders over Rs 3,000 within 5 km of the shop, in Rohillanwali and nearby villages. For smaller orders or longer distances, we tell you the delivery charge on WhatsApp before you pay." }
+          },
+          {
+            "@type": "Question",
             "name": "Can I order medicines on WhatsApp?",
             "acceptedAnswer": { "@type": "Answer", "text": "Yes. Send us your medicine list or a photo of your prescription on WhatsApp. We will confirm availability and price, and keep your order ready for pickup." }
           },
@@ -178,6 +183,7 @@
   <div class="topbar">
     <div class="container topbar__inner">
       <span class="topbar__item topbar__loc"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg> Near Canal Rest House, Rohillanwali, Muzaffargarh</span>
+      <span class="topbar__item topbar__offer"><svg class="icon" aria-hidden="true"><use href="#i-truck"/></svg> Free delivery over Rs 3,000<span class="topbar__offer-more">within 5 km</span></span>
       <span class="topbar__item" data-open-status>
         <svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>
         <span data-open-text>Open daily 9:00 AM – 10:00 PM</span>
@@ -623,7 +629,7 @@
         </div>
         <div class="how-order">
           <div class="how-order__step"><span class="steps__num">1</span><span><strong>Add to cart</strong>Pick medicines or request any medicine not listed.</span></div>
-          <div class="how-order__step"><span class="steps__num">2</span><span><strong>Checkout</strong>Choose pickup or home delivery and tap Place order.</span></div>
+          <div class="how-order__step"><span class="steps__num">2</span><span><strong>Checkout</strong>Choose pickup or home delivery (free over Rs 3,000 within 5 km) and tap Place order.</span></div>
           <div class="how-order__step"><span class="steps__num">3</span><span><strong>We confirm on WhatsApp</strong>We reply with availability and price, then keep it ready.</span></div>
         </div>
       </div>
@@ -642,6 +648,7 @@
             <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Expiry dates checked before every sale</li>
             <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Clear dosage advice, especially for children</li>
             <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Hard-to-find medicine? We'll try to arrange it</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-truck"/></svg> Free home delivery on orders over Rs 3,000 within 5 km of the shop</li>
           </ul>
           <a class="btn btn--primary" href="shop.html"><svg class="icon" aria-hidden="true"><use href="#i-cart"/></svg> Browse all medicines</a>
         </div>
@@ -723,7 +730,7 @@
             <legend>Collection</legend>
             <div class="radios">
               <label class="radio"><input type="radio" name="collect" value="I will pick up from the shop" checked> I'll pick up from the shop</label>
-              <label class="radio"><input type="radio" name="collect" value="Please tell me about home delivery"> Ask about home delivery</label>
+              <label class="radio"><input type="radio" name="collect" value="Home delivery please"> Home delivery (free over Rs 3,000 within 5 km)</label>
             </div>
           </fieldset>
           <button class="btn btn--whatsapp btn--lg btn--block" type="submit">
@@ -851,6 +858,7 @@
           <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> بچوں کا توجہ اور شفقت سے علاج</li>
           <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> ہفتہ اور اتوار: چائلڈ اسپیشلسٹ دستیاب</li>
           <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> واٹس ایپ پر دوائی کا آرڈر</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> 5 کلومیٹر کے اندر 3,000 روپے سے زائد کے آرڈر پر مفت ہوم ڈیلیوری</li>
           <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> مناسب قیمت</li>
         </ul>
         <div class="urdu-block__actions">
@@ -879,6 +887,10 @@
           <details>
             <summary>How do I order medicines online?</summary>
             <p>Add medicines to your cart, go to checkout and tap <strong>Place order on WhatsApp</strong>. Your order opens in WhatsApp; send it and we'll confirm availability and price before you pay. You can pick it up from the shop or ask about home delivery.</p>
+          </details>
+          <details>
+            <summary>Do you deliver medicines at home?</summary>
+            <p>Yes. Free home delivery on orders over Rs 3,000 within 5 km of the shop, in Rohillanwali and nearby villages. For smaller orders or longer distances, we tell you the delivery charge on WhatsApp before you pay.</p>
           </details>
           <details>
             <summary>Can I order medicines on WhatsApp?</summary>
@@ -995,12 +1007,12 @@
     </a>
   </div>
 
-  <script src="js/config.js?v=1ded6251" defer></script>
+  <script src="js/config.js?v=8b220eb6" defer></script>
   <script src="data/products.js?v=83a03a7d" defer></script>
   <script src="data/images.js?v=1a4cf403" defer></script>
   <script src="js/catalog.js?v=826a104a" defer></script>
   <script src="js/main.js?v=df14e5b8" defer></script>
-  <script src="js/store.js?v=a41b3da7" defer></script>
+  <script src="js/store.js?v=44269562" defer></script>
   <script src="vendor/leaflet/leaflet.js?v=4c58d6ab" defer></script>
   <script src="js/map.js?v=a8b96db3" defer></script>
 </body>

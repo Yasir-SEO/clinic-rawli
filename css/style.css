@@ -172,8 +172,12 @@ address { font-style: normal; }
 .topbar [data-open-status].is-open { color: #86efac; }
 .topbar [data-open-status].is-closed { color: #fecaca; }
 
+.topbar__offer { color: #fde68a; font-weight: 500; }
 @media (max-width: 640px) {
   .topbar__item:first-child { display: none; }
+}
+@media (max-width: 360px) {
+  .topbar__offer-more { display: none; }
 }
 @media (max-width: 480px) {
   /* The floating call button covers the phone number on small screens. */
@@ -1959,6 +1963,8 @@ a.cart-row__name:hover { color: var(--teal-700); }
 .link-remove:hover { color: #b91c1c; }
 .mini-total { display: flex; justify-content: space-between; margin-bottom: 4px; font-size: 1.02rem; }
 .mini-note { margin: 0 0 8px; color: var(--muted); font-size: .8rem; }
+.mini-note--offer { display: flex; align-items: center; gap: 6px; color: var(--teal-800); font-weight: 600; }
+.totals__note--offer { color: var(--teal-800); font-weight: 600; }
 .mini-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px; }
 .mini-actions .btn { padding-left: .8em; padding-right: .8em; }
 .mini-empty { padding: 48px 12px; text-align: center; color: var(--muted); }

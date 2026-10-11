@@ -126,7 +126,20 @@ const geoJsonLd = geo ? `"geo": { "@type": "GeoCoordinates", "latitude": ${geo.l
 const waDigits = String(config.whatsapp || "").replace(/\D/g, "");
 const waLink = /^\d{10,15}$/.test(waDigits) ? `https://wa.me/${waDigits}` : "https://wa.me/";
 const fee = config.deliveryFee;
-const deliveryFeeText = fee == null ? "charges confirmed on WhatsApp" : fee === 0 ? "Free" : C.formatPrice(fee, config.currency);
+const freeOver = Number.isFinite(config.freeDeliveryOver) ? config.freeDeliveryOver : null;
+const radiusKm = Number.isFinite(config.deliveryRadiusKm) ? config.deliveryRadiusKm : null;
+const freeOverText = freeOver != null ? C.formatPrice(freeOver, config.currency) : "";
+const radiusText = radiusKm != null ? `within ${radiusKm} km` : "";
+// e.g. "Free home delivery on orders over Rs 3,000 within 5 km of the shop"
+const deliveryOffer = freeOver != null
+  ? `Free home delivery on orders over ${freeOverText}${radiusKm != null ? ` ${radiusText} of the shop` : ""}`
+  : "";
+const deliveryOfferUrdu = freeOver != null
+  ? `${radiusKm != null ? `${radiusKm} کلومیٹر کے اندر ` : ""}${freeOver.toLocaleString("en-US")} روپے سے زائد کے آرڈر پر مفت ہوم ڈیلیوری`
+  : "";
+const deliveryFeeText = freeOver != null
+  ? `Free over ${freeOverText}${radiusKm != null ? ` ${radiusText}` : ""}`
+  : fee == null ? "charges confirmed on WhatsApp" : fee === 0 ? "Free" : C.formatPrice(fee, config.currency);
 
 const realCategories = DATA.categories.filter((c) => !c.virtual);
 const catCount = (id) => DATA.products.filter((p) => C.inCategory(p, id)).length;
@@ -220,6 +233,8 @@ window.SITE = ${JSON.stringify({
   hours: config.hours,
   currency: config.currency,
   deliveryFee: config.deliveryFee,
+  freeDeliveryOver: freeOver,
+  deliveryRadiusKm: radiusKm,
   deliveryArea: config.deliveryArea,
   paymentMethods: config.paymentMethods,
 }, null, 2)};
@@ -289,6 +304,12 @@ function page({ path: outPath, title, description, content, jsonLd = "", robots 
     openingHoursJson,
     deliveryArea: esc(config.deliveryArea || "Rohillanwali"),
     deliveryFeeText,
+    deliveryOffer: esc(deliveryOffer),
+    deliveryOfferRaw: deliveryOffer,
+    deliveryOfferUrdu: esc(deliveryOfferUrdu),
+    freeOverText: esc(freeOverText),
+    radiusText: esc(radiusText),
+    deliveryAreaFull: esc(radiusKm != null ? `Within ${radiusKm} km of the shop (${config.deliveryArea || "Rohillanwali"})` : (config.deliveryArea || "Rohillanwali")),
     navLinks: navLinks(root, current),
     footerCategories: footerCategories(root),
     ...vars,
@@ -526,7 +547,7 @@ listing({
   products: DATA.products,
   title: "Buy Medicines Online in Rohillanwali | Adil Pharmacy Shop",
   h1: "All medicines & health products",
-  intro: `Browse ${DATA.products.length} medicines and health products from ${brandsShown.length} trusted manufacturers. Add to cart and order on WhatsApp for pickup in Rohillanwali or home delivery.`,
+  intro: `Browse ${DATA.products.length} medicines and health products from ${brandsShown.length} trusted manufacturers. Add to cart and order on WhatsApp for pickup in Rohillanwali or home delivery (free over Rs 3,000 within 5 km).`,
   short: "all medicines",
   crumbs: [{ name: "Home", href: "index.html" }, { name: "Shop", href: "shop.html" }],
   brandStripCompact: true,
