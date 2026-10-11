@@ -1,1188 +1,821 @@
 [
   {
-    "name": "img_nuberol-tablets",
-    "url": "https://searlecompany.com/wp-content/uploads/2021/09/68.jpg",
+    "name": "api_cs_000",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Panadol%20Extra&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
     "status": 200,
-    "final_url": "https://searlecompany.com/wp-content/uploads/2021/09/68.jpg",
-    "content_type": "image/jpeg",
-    "bytes": 107810,
-    "file": "fetched/img_nuberol-tablets.jpg"
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Panadol%20Extra&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 24164,
+    "file": "fetched/api_cs_000.json"
   },
   {
-    "name": "img_nuberol-forte-tablets",
-    "url": "https://searlecompany.com/wp-content/uploads/2021/09/67.jpg",
+    "name": "api_cs_001",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Brufen&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
     "status": 200,
-    "final_url": "https://searlecompany.com/wp-content/uploads/2021/09/67.jpg",
-    "content_type": "image/jpeg",
-    "bytes": 93219,
-    "file": "fetched/img_nuberol-forte-tablets.jpg"
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Brufen&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 21745,
+    "file": "fetched/api_cs_001.json"
   },
   {
-    "name": "img_gravinate-50mg",
-    "url": "https://searlecompany.com/wp-content/uploads/2021/09/gravinate.jpg",
+    "name": "api_cs_002",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Disprin&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
     "status": 200,
-    "final_url": "https://searlecompany.com/wp-content/uploads/2021/09/gravinate.jpg",
-    "content_type": "image/jpeg",
-    "bytes": 30074,
-    "file": "fetched/img_gravinate-50mg.jpg"
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Disprin&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 18619,
+    "file": "fetched/api_cs_002.json"
   },
   {
-    "name": "img_peditral-ors-sachets",
-    "url": "https://searlecompany.com/wp-content/uploads/2021/09/peditral.jpg",
+    "name": "api_cs_003",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Ponstan&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
     "status": 200,
-    "final_url": "https://searlecompany.com/wp-content/uploads/2021/09/peditral.jpg",
-    "content_type": "image/jpeg",
-    "bytes": 54404,
-    "file": "fetched/img_peditral-ors-sachets.jpg"
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Ponstan&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 22790,
+    "file": "fetched/api_cs_003.json"
   },
   {
-    "name": "img_hydryllin-syrup",
-    "url": "https://searlecompany.com/wp-content/uploads/2021/05/600x600.png",
+    "name": "api_cs_004",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Ponstan%20Forte&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
     "status": 200,
-    "final_url": "https://searlecompany.com/wp-content/uploads/2021/05/600x600.png",
-    "content_type": "image/png",
-    "bytes": 6531,
-    "file": "fetched/img_hydryllin-syrup.png"
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Ponstan%20Forte&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 22790,
+    "file": "fetched/api_cs_004.json"
   },
   {
-    "name": "img_novidat-500mg",
-    "url": "https://samipharma.com/wp-content/uploads/2024/08/NOVIDAT-Family-1-768x583.jpg",
+    "name": "api_cs_005",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Synflex&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
     "status": 200,
-    "final_url": "https://samipharma.com/wp-content/uploads/2024/08/NOVIDAT-Family-1-768x583.jpg",
-    "content_type": "image/jpeg",
-    "bytes": 82922,
-    "file": "fetched/img_novidat-500mg.jpg"
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Synflex&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 18670,
+    "file": "fetched/api_cs_005.json"
   },
   {
-    "name": "img_loprin-75mg",
-    "url": "https://highnoon-labs.com/wp-content/themes/high/img/products-container-image/Loprin.png",
-    "status": 404,
-    "error": "HTTP Error 404: Not Found"
-  },
-  {
-    "name": "img_loprin-75mg-alt",
-    "url": "https://highnoon-labs.com/wp-content/uploads/2022/12/Loprin2.png",
+    "name": "api_cs_006",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Voltral&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
     "status": 200,
-    "final_url": "https://highnoon-labs.com/wp-content/uploads/2022/12/Loprin2.png",
-    "content_type": "image/webp",
-    "bytes": 90226,
-    "file": "fetched/img_loprin-75mg-alt.webp"
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Voltral&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 21805,
+    "file": "fetched/api_cs_006.json"
   },
   {
-    "name": "img_pediasure-vanilla-400g",
-    "url": "https://www.family.abbott/content/dam/an/familyabbott/pk-en/pediasure/products/new-packshot-13aug24/Pediasure%20PAK_Vanilla_400g.png",
+    "name": "api_cs_007",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Caflam&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
     "status": 200,
-    "final_url": "https://www.family.abbott/content/dam/an/familyabbott/pk-en/pediasure/products/new-packshot-13aug24/Pediasure%20PAK_Vanilla_400g.png",
-    "content_type": "image/png",
-    "bytes": 349184,
-    "file": "fetched/img_pediasure-vanilla-400g.png"
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Caflam&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 28042,
+    "file": "fetched/api_cs_007.json"
   },
   {
-    "name": "img_glucerna-vanilla-400g",
-    "url": "https://www.family.abbott/content/dam/an/familyabbott/pk-en/glucerna/products/Glucerna-400-Vanilla-444x468.png",
+    "name": "api_cs_008",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Dicloran&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
     "status": 200,
-    "final_url": "https://www.family.abbott/content/dam/an/familyabbott/pk-en/glucerna/products/Glucerna-400-Vanilla-444x468.png",
-    "content_type": "image/png",
-    "bytes": 660949,
-    "file": "fetched/img_glucerna-vanilla-400g.png"
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Dicloran&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 19180,
+    "file": "fetched/api_cs_008.json"
   },
   {
-    "name": "img_duphalac-syrup",
-    "url": "https://medicines.abbott.com/wp-content/uploads/2026/02/DUPHALAC_66.7g-per-100mL_CartonBottle_200mL_GLO_result.webp",
+    "name": "api_cs_009",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Panadol%20drops&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
     "status": 200,
-    "final_url": "https://medicines.abbott.com/wp-content/uploads/2026/02/DUPHALAC_66.7g-per-100mL_CartonBottle_200mL_GLO_result.webp",
-    "content_type": "image/webp",
-    "bytes": 25860,
-    "file": "fetched/img_duphalac-syrup.webp"
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Panadol%20drops&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 23184,
+    "file": "fetched/api_cs_009.json"
   },
   {
-    "name": "photo_panadol-500mg-tablets",
-    "url": "https://www.panadol.com/en-pk/products/adult-product/panadol-tablets/",
+    "name": "api_cs_010",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Brufen%20DS&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
     "status": 200,
-    "final_url": "https://www.haleon.pk/our-brands/panadol/",
-    "title": "Panadol: Our Brands | Haleon Pakistan",
-    "candidates": [
-      "https://www.haleon.pk/media/og-image.png",
-      "https://www.haleon.pk/dist/img/countries/pakistan.jpg",
-      "https://www.haleon.pk/media/1765/panadol-range-shot.png",
-      "https://www.haleon.pk/media/1541/panadol-logo.png",
-      "https://www.haleon.pk/media/1767/panadol-10.png",
-      "https://www.haleon.pk/media/1766/panadol-6.png",
-      "https://www.haleon.pk/media/1768/panadol-4.png",
-      "https://www.haleon.pk/media/1743/panadol-drops-new.png",
-      "https://www.haleon.pk/media/1769/panadol-5.png",
-      "https://www.haleon.pk/media/1746/panadol-forte-new.png",
-      "https://www.haleon.pk/media/1386/panadol-cf-day.png",
-      "https://www.haleon.pk/media/1385/panadol-cf.png"
-    ],
-    "images": [
-      {
-        "url": "https://www.haleon.pk/media/1765/panadol-range-shot.png",
-        "file": "fetched/img_panadol-500mg-tablets.png",
-        "bytes": 375797
-      },
-      {
-        "url": "https://www.haleon.pk/media/1767/panadol-10.png",
-        "file": "fetched/img_panadol-500mg-tablets__4.png",
-        "bytes": 192279
-      }
-    ]
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Brufen%20DS&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 25809,
+    "file": "fetched/api_cs_010.json"
   },
   {
-    "name": "photo_panadol-extra-tablets",
-    "url": "https://www.panadol.com/en-pk/products/adult-product/panadol-extra/",
+    "name": "api_cs_011",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Arinac&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
     "status": 200,
-    "final_url": "https://www.haleon.pk/our-brands/panadol/",
-    "title": "Panadol: Our Brands | Haleon Pakistan",
-    "candidates": [
-      "https://www.haleon.pk/media/og-image.png",
-      "https://www.haleon.pk/dist/img/countries/pakistan.jpg",
-      "https://www.haleon.pk/media/1765/panadol-range-shot.png",
-      "https://www.haleon.pk/media/1541/panadol-logo.png",
-      "https://www.haleon.pk/media/1767/panadol-10.png",
-      "https://www.haleon.pk/media/1766/panadol-6.png",
-      "https://www.haleon.pk/media/1768/panadol-4.png",
-      "https://www.haleon.pk/media/1743/panadol-drops-new.png",
-      "https://www.haleon.pk/media/1769/panadol-5.png",
-      "https://www.haleon.pk/media/1746/panadol-forte-new.png",
-      "https://www.haleon.pk/media/1386/panadol-cf-day.png",
-      "https://www.haleon.pk/media/1385/panadol-cf.png"
-    ],
-    "images": [
-      {
-        "url": "https://www.haleon.pk/media/1765/panadol-range-shot.png",
-        "file": "fetched/img_panadol-extra-tablets.png",
-        "bytes": 375797
-      },
-      {
-        "url": "https://www.haleon.pk/media/1767/panadol-10.png",
-        "file": "fetched/img_panadol-extra-tablets__4.png",
-        "bytes": 192279
-      }
-    ]
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Arinac&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 30252,
+    "file": "fetched/api_cs_011.json"
   },
   {
-    "name": "photo_calpol-syrup-120mg",
-    "url": "https://www.calpol.ie/our-products/calpol-infant-suspension",
+    "name": "api_cs_012",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Arinac%20Forte&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
     "status": 200,
-    "final_url": "https://www.calpol.ie/our-products/calpol-infant-suspension",
-    "title": "Infant Suspension\u00a0for Pain & Fever Relief | CALPOL\u00ae IE",
-    "candidates": [
-      "https://images.ctfassets.net/nnajf7e944nu/3hTUfy8CnjspCsmOdMKUBq/f0d3f6e73dfe9f9a055a462b583407d5/CAL_EMEA_IR_3574661150000_77140_SF_Infant_Suspension_60ml_000_TIF.jpg",
-      "https://images.ctfassets.net/nnajf7e944nu/3hTUfy8CnjspCsmOdMKUBq/9d1f33ba05e1a061593c24d074320776/CAL_EMEA_IR_3574661150000_77140_SF_Infant_Suspension_60ml_000_TIF.jpg",
-      "https://images.ctfassets.net/nnajf7e944nu/2X4MhPxnO4bcy8CgVP8jiE/e4ac0e564b31b6166d263491a1bbc5b5/CAL_EMEA_IR_3574661150000_77140_SF_Infant_Suspension_60ml_000_TIF.jpg?fm=jpg&w=1920&q=80",
-      "https://images.ctfassets.net/nnajf7e944nu/7dYu6duQcmEdcPxxRslmFo/0f80e1829adbfe84afe1549afbf60849/CAL_EMEA_IR_3574661150024_77158_Six_Plus_SF_Colour_Free_Suspension_60ml_000_TIF.jpg?fm=jpg&w=1920&q=80",
-      "https://images.ctfassets.net/nnajf7e944nu/5zddgaKhvKpLSaGa6L1gN7/60123283ab2f1e3612587b85b9a9ef2c/CAL_3574661368566_EMEA_UK_SALINE_NASAL_SPRAY_15ML_000_TIF.jpg?fm=jpg&w=1920&q=80",
-      "https://images.ctfassets.net/nnajf7e944nu/3O8NgVtV67BxxlMINAeKhF/d5fb8dbc564a08fe4c6e7235e3a537a9/CAL_EMEA_UK_3574661368597_9216505_Vapour_Plug_Refills_5x_pads_000_TIF.jpg?fm=jpg&w=1920&q=80",
-      "https://images.ctfassets.net/nnajf7e944nu/1bvlQNzpUDnHJgv8G6qB3r/7305ad39709a0c64599edfb07ef99482/CAL_EMEA_IR_3574661665245_59033_Six_Plus_Fastmelts_12ct_000_TIF.jpg?fm=jpg&w=1920&q=80"
-    ],
-    "images": [
-      {
-        "url": "https://images.ctfassets.net/nnajf7e944nu/3hTUfy8CnjspCsmOdMKUBq/f0d3f6e73dfe9f9a055a462b583407d5/CAL_EMEA_IR_3574661150000_77140_SF_Infant_Suspension_60ml_000_TIF.jpg",
-        "file": "fetched/img_calpol-syrup-120mg.jpg",
-        "bytes": 469812
-      },
-      {
-        "url": "https://images.ctfassets.net/nnajf7e944nu/3hTUfy8CnjspCsmOdMKUBq/9d1f33ba05e1a061593c24d074320776/CAL_EMEA_IR_3574661150000_77140_SF_Infant_Suspension_60ml_000_TIF.jpg",
-        "file": "fetched/img_calpol-syrup-120mg__2.jpg",
-        "bytes": 469812
-      },
-      {
-        "url": "https://images.ctfassets.net/nnajf7e944nu/2X4MhPxnO4bcy8CgVP8jiE/e4ac0e564b31b6166d263491a1bbc5b5/CAL_EMEA_IR_3574661150000_77140_SF_Infant_Suspension_60ml_000_TIF.jpg?fm=jpg&w=1920&q=80",
-        "file": "fetched/img_calpol-syrup-120mg__3.jpg",
-        "bytes": 240605
-      },
-      {
-        "url": "https://images.ctfassets.net/nnajf7e944nu/7dYu6duQcmEdcPxxRslmFo/0f80e1829adbfe84afe1549afbf60849/CAL_EMEA_IR_3574661150024_77158_Six_Plus_SF_Colour_Free_Suspension_60ml_000_TIF.jpg?fm=jpg&w=1920&q=80",
-        "file": "fetched/img_calpol-syrup-120mg__4.jpg",
-        "bytes": 231631
-      }
-    ]
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Arinac%20Forte&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 6019,
+    "file": "fetched/api_cs_012.json"
   },
   {
-    "name": "photo_panadol-infant-drops",
-    "url": "https://www.panadol.com/en-pk/products/children-products/panadol-infant-drops/",
+    "name": "api_cs_013",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Hydryllin&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
     "status": 200,
-    "final_url": "https://www.haleon.pk/our-brands/panadol/",
-    "title": "Panadol: Our Brands | Haleon Pakistan",
-    "candidates": [
-      "https://www.haleon.pk/media/og-image.png",
-      "https://www.haleon.pk/dist/img/countries/pakistan.jpg",
-      "https://www.haleon.pk/media/1765/panadol-range-shot.png",
-      "https://www.haleon.pk/media/1541/panadol-logo.png",
-      "https://www.haleon.pk/media/1767/panadol-10.png",
-      "https://www.haleon.pk/media/1766/panadol-6.png",
-      "https://www.haleon.pk/media/1768/panadol-4.png",
-      "https://www.haleon.pk/media/1743/panadol-drops-new.png",
-      "https://www.haleon.pk/media/1769/panadol-5.png",
-      "https://www.haleon.pk/media/1746/panadol-forte-new.png",
-      "https://www.haleon.pk/media/1386/panadol-cf-day.png",
-      "https://www.haleon.pk/media/1385/panadol-cf.png"
-    ],
-    "images": [
-      {
-        "url": "https://www.haleon.pk/media/1765/panadol-range-shot.png",
-        "file": "fetched/img_panadol-infant-drops.png",
-        "bytes": 375797
-      },
-      {
-        "url": "https://www.haleon.pk/media/1767/panadol-10.png",
-        "file": "fetched/img_panadol-infant-drops__4.png",
-        "bytes": 192279
-      }
-    ]
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Hydryllin&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 20,
+    "file": "fetched/api_cs_013.json"
   },
   {
-    "name": "photo_panadol-cf-tablets",
-    "url": "https://www.panadol.com/en-me/adult-products/panadol-cold-flu/",
+    "name": "api_cs_014",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Ventolin&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
     "status": 200,
-    "final_url": "https://www.panadol.com/en-me/adult-products/panadol-cold-flu/",
-    "title": "Panadol Cold & Flu",
-    "candidates": [
-      "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/panadol-reborn/en_ME/logo/panadol-logo.png?auto=format",
-      "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/panadol-reborn/en_ME/update-26/nav-bundle-image-new.png?auto=format",
-      "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/panadol-reborn/en_ME/adult-symptoms/280x186-related-articles/shutterstock_2059586984.png?auto=format",
-      "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/panadol-reborn/en_ME/adult-symptoms/280x186-related-articles/shutterstock_1935605347.png?auto=format",
-      "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/panadol-reborn/en_ME/update-26/panadol-cold-flu-tablet-r.jpg?auto=format",
-      "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/panadol-reborn/en_ME/update-26/panadol-cold-flu-tablet.jpg?auto=format",
-      "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/panadol-reborn/en_ME/icons/icon-fever-D.png?auto=format",
-      "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/panadol-reborn/en_ME/update-26/panadol-cold-flu-day-r-thumb.png?auto=format",
-      "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/panadol-reborn/en_ME/update-26/panadol-vapour-release-thumb.png?auto=format",
-      "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/panadol-reborn/en_ME/icons/sachets.png?auto=format",
-      "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/panadol-reborn/en_ME/update-26/panadol-sinus-r-thumb.png?auto=format"
-    ],
-    "images": [
-      {
-        "url": "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/panadol-reborn/en_ME/update-26/nav-bundle-image-new.png?auto=format",
-        "file": "fetched/img_panadol-cf-tablets.webp",
-        "bytes": 10560
-      },
-      {
-        "url": "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/panadol-reborn/en_ME/adult-symptoms/280x186-related-articles/shutterstock_2059586984.png?auto=format",
-        "file": "fetched/img_panadol-cf-tablets__2.webp",
-        "bytes": 13276
-      },
-      {
-        "url": "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/panadol-reborn/en_ME/adult-symptoms/280x186-related-articles/shutterstock_1935605347.png?auto=format",
-        "file": "fetched/img_panadol-cf-tablets__3.webp",
-        "bytes": 16412
-      },
-      {
-        "url": "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/panadol-reborn/en_ME/update-26/panadol-cold-flu-tablet-r.jpg?auto=format",
-        "file": "fetched/img_panadol-cf-tablets__4.webp",
-        "bytes": 10940
-      }
-    ]
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Ventolin&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 22887,
+    "file": "fetched/api_cs_014.json"
   },
   {
-    "name": "photo_eno-fruit-salt",
-    "url": "https://www.eno.co.in/products/eno-fruit-salt-sachet/",
+    "name": "api_cs_015",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Avil&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
     "status": 200,
-    "final_url": "https://www.eno.co.in/products/eno-fruit-salt-sachet/",
-    "title": "ENO Fruit Salt (Sachet)",
-    "candidates": [
-      "https://www.eno.co.in/content/dam/cf-consumer-healthcare/nutrition-eno/en_IN/new-images2026/ENO-LEMON-Powder-5g-Sachet-v2.png",
-      "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/nutrition-eno/en_IN/generic/home-icon-eno.png?auto=format",
-      "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/nutrition-eno/en_IN/generic/eno-logo.png?auto=format",
-      "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/nutrition-eno/en_IN/new-images2026/ENO-LEMON-CHEWABLE-TABLET-30pc-FOP-200kb.png?auto=format",
-      "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/nutrition-eno/en_IN/new-images2026/eno-3-in-1-sixer-left.png?auto=format",
-      "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/nutrition-eno/en_IN/new-images2026/ENO-LEMON-Powder-5g-Sachet-v2.png?auto=format",
-      "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/nutrition-eno/en_IN/new-images2026/ENO-LEMON-EFFERVESCENT-POWDER-100g.png?auto=format",
-      "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/nutrition-eno/en_IN/new-images2026/eno-sixer-pack-lemon-lat.png?auto=format",
-      "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/nutrition-eno/en_IN/new-images2026/ENO-CHEWY-BITES-LEMON-TABLET-10pc.png?auto=format",
-      "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/nutrition-eno/en_IN/new-images2026/ENO-LEMON-Powder-5g-Sachet.png?auto=format",
-      "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/nutrition-eno/en_IN/generic/eno-logo_mobile.png?auto=format",
-      "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/nutrition-eno/en_IN/new-images2026/discover-what-banner-v2.png?auto=format",
-      "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/nutrition-eno/en_IN/home/desktop/Red_Divider.png?auto=format",
-      "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/nutrition-eno/en_IN/new-images2026/eno-sachet-regular-v2.png?auto=format",
-      "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/nutrition-eno/en_IN/new-images2026/eno-regular-new-v4.png?auto=format",
-      "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/nutrition-eno/en_IN/new-images2026/related-product-lemon-v4.png?auto=format",
-      "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/nutrition-eno/en_IN/new-images2026/ENO-EFFERVESCENT-POWDER-Cola-5g-Sachet-v2.png?auto=format",
-      "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/nutrition-eno/en_IN/new-images2026/ENO-ORANGE-EFFERVESCENT-POWDER-100g-v4.png?auto=format",
-      "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/nutrition-eno/en_IN/new-images2026/ENO-ORANGE-Powder-5g-Sachet-v4.png?auto=format",
-      "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/nutrition-eno/en_IN/new-images2026/related-product-img1-v2.png?auto=format"
-    ],
-    "images": [
-      {
-        "url": "https://www.eno.co.in/content/dam/cf-consumer-healthcare/nutrition-eno/en_IN/new-images2026/ENO-LEMON-Powder-5g-Sachet-v2.png",
-        "file": "fetched/img_eno-fruit-salt.png",
-        "bytes": 120485
-      },
-      {
-        "url": "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/nutrition-eno/en_IN/new-images2026/ENO-LEMON-CHEWABLE-TABLET-30pc-FOP-200kb.png?auto=format",
-        "file": "fetched/img_eno-fruit-salt__2.webp",
-        "bytes": 73646
-      },
-      {
-        "url": "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/nutrition-eno/en_IN/new-images2026/eno-3-in-1-sixer-left.png?auto=format",
-        "file": "fetched/img_eno-fruit-salt__3.webp",
-        "bytes": 99258
-      },
-      {
-        "url": "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/nutrition-eno/en_IN/new-images2026/ENO-LEMON-Powder-5g-Sachet-v2.png?auto=format",
-        "file": "fetched/img_eno-fruit-salt__4.webp",
-        "bytes": 18250
-      }
-    ]
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Avil&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 20543,
+    "file": "fetched/api_cs_015.json"
   },
   {
-    "name": "photo_otrivin-0-1-nasal-drops",
-    "url": "https://haleonhealthpartner.com/en-eg/respiratory-health/brands/otrivin/products/medicated/adult-nasal-drops",
-    "status": 404,
-    "error": "HTTP Error 404: Not Found"
-  },
-  {
-    "name": "photo_otrivin-paediatric-nasal-drops",
-    "url": "https://www.haleonhealthpartner.com/en-sa/respiratory-health/brands/otrivin/products/medicated/child-original-nasal-spray/",
+    "name": "api_cs_016",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Telfast&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
     "status": 200,
-    "final_url": "https://www.haleonhealthpartner.com/en-sa/respiratory-health/brands/otrivin/products/medicated/child-original-nasal-spray/",
-    "title": "Otrivin child 0.05% nasal Drops | Haleon HealthPartner",
-    "candidates": [
-      "https://www.haleonhealthpartner.com/content/dam/cf-consumer-healthcare/health-professionals/en_SA/Haleon_HP_Logo.png",
-      "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/health-professionals/en_SA/respiratory-health/logos/Otrivin%20Logo%20without%20Registered%20logo.jpg?auto=format",
-      "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/health-professionals/en_SA/respiratory-health/conditions/ls-otrivin-child-dog-970-1-px.jpg?auto=format",
-      "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/health-professionals/en_SA/respiratory-health/conditions/nose.png?auto=format",
-      "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/health-professionals/en_SA/respiratory-health/conditions/ls-otrivin-child-mother-970px.jpg?auto=format",
-      "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/health-professionals/en_SA/respiratory-health/packshots/Otrivin-0.05%25-drops.jpg?auto=format",
-      "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/health-professionals/en_SA/icons/GSK_GEP_Patient_Resources_Icon.png?auto=format",
-      "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/health-professionals/en_SA/icons/placeholder.png?auto=format"
-    ],
-    "images": [
-      {
-        "url": "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/health-professionals/en_SA/respiratory-health/conditions/ls-otrivin-child-dog-970-1-px.jpg?auto=format",
-        "file": "fetched/img_otrivin-paediatric-nasal-drops.webp",
-        "bytes": 55880
-      },
-      {
-        "url": "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/health-professionals/en_SA/respiratory-health/conditions/nose.png?auto=format",
-        "file": "fetched/img_otrivin-paediatric-nasal-drops__2.webp",
-        "bytes": 5770
-      },
-      {
-        "url": "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/health-professionals/en_SA/respiratory-health/conditions/ls-otrivin-child-mother-970px.jpg?auto=format",
-        "file": "fetched/img_otrivin-paediatric-nasal-drops__3.webp",
-        "bytes": 79826
-      },
-      {
-        "url": "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/health-professionals/en_SA/respiratory-health/packshots/Otrivin-0.05%25-drops.jpg?auto=format",
-        "file": "fetched/img_otrivin-paediatric-nasal-drops__4.webp",
-        "bytes": 14282
-      }
-    ]
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Telfast&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 25472,
+    "file": "fetched/api_cs_016.json"
   },
   {
-    "name": "photo_strepsils-lozenges",
-    "url": "https://www.strepsils.co.uk/all-products/strepsils-honey-lemon-lozenges/",
+    "name": "api_cs_017",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Myteka&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
     "status": 200,
-    "final_url": "https://www.strepsils.co.uk/all-products/strepsils-honey-lemon-lozenges/",
-    "title": "Strepsils Honey & Lemon Lozenges - Throat Medicine | Strepsils UK",
-    "candidates": [
-      "https://eu-images.contentstack.com/v3/assets/blta64b08d31d99b1db/blt4046979f43db3609/68b3694b7bd592c02c8ed80d/en-GB-rb_strepsils_36pk_rbl2112166_fop_v2_2_.webp",
-      "https://eu-images.contentstack.com/v3/assets/blta64b08d31d99b1db/blt339178d429f87738/68ac6e7fffaa4ef9b9040230/Frame_15422.png?width=70&height=16&format=png&quality=50",
-      "https://eu-images.contentstack.com/v3/assets/blta64b08d31d99b1db/blt339178d429f87738/68ac6e7fffaa4ef9b9040230/Frame_15422.png?width=190&height=44&format=png&quality=80",
-      "https://www.strepsils.co.uk/static/db0ee1d8de6d31ad3d361f5c5e976c49/1339b/en-GB-rb_strepsils_36pk_rbl2112166_fop_v2_2_.webp",
-      "https://www.strepsils.co.uk/static/a24eaf45422f76001aba074a3f283e4c/e609a/2_hours_H%26L.webp",
-      "https://www.strepsils.co.uk/static/360c9281e26c9035825ed6baac5e5fcf/b3913/en-GB-6years_h_l.webp",
-      "https://www.strepsils.co.uk/static/6ae7f7c1b81beee4d062dda7fb42569d/ae3eb/scientifically_proven_H%26L.webp",
-      "https://www.strepsils.co.uk/static/69ad80c9d5485994698bc0242936536e/b3913/AMCDCBA_Honey%26Lemon_B_assets.webp",
-      "https://eu-images.contentstack.com/v3/assets/blta64b08d31d99b1db/blt996469d0f1348ee9/68b36832625b4f948a4281e0/svgviewer-png-output_(24).png",
-      "https://eu-images.contentstack.com/v3/assets/blta64b08d31d99b1db/blt2f435d1ac08a6930/68adc8787ff9eaeb9933ff56/svgviewer-png-output_(18).png",
-      "https://eu-images.contentstack.com/v3/assets/blta64b08d31d99b1db/bltf1851c3d9135eb74/68b36853e5a93a746d82e26b/svgviewer-png-output_(25).png",
-      "https://eu-images.contentstack.com/v3/assets/blta64b08d31d99b1db/bltc90bb9ed24801fdb/68b3689d5b9c7119c0283341/svgviewer-png-output_(26).png",
-      "https://eu-images.contentstack.com/v3/assets/blta64b08d31d99b1db/blt2dc0452b06ce38e0/68b368b036bc2000e35dfece/svgviewer-png-output_(27).png",
-      "https://eu-images.contentstack.com/v3/assets/blta64b08d31d99b1db/blte4bf8a65a2a49c81/68b368c9cb73ecc69b7727cf/svgviewer-png-output_(28).png",
-      "https://eu-images.contentstack.com/v3/assets/blta64b08d31d99b1db/blta8934f5b8f1e3a94/68b368dfe0fb005ccaa876fe/svgviewer-png-output_(29).png",
-      "https://eu-images.contentstack.com/v3/assets/blta64b08d31d99b1db/bltcdec49193ca02039/68adc86675d6acd1f1529cec/svgviewer-png-output_(17).png",
-      "https://eu-images.contentstack.com/v3/assets/blta64b08d31d99b1db/blt8415a40ea2d65334/68adc88ae3b77f4d2213fb84/svgviewer-png-output_(19).png",
-      "https://www.strepsils.co.uk/static/6f976ac018cbbf70fe40d485134a36e4/8e91b/en-GB-rb_strepsils_36pk_rbl2112166_fop_v2_2_2_.webp",
-      "https://eu-images.contentstack.com/v3/assets/blta64b08d31d99b1db/bltdbb6dba12bd9f4b8/68b369fa25a3b757479234fb/svgviewer-png-output_(30).png",
-      "https://eu-images.contentstack.com/v3/assets/blta64b08d31d99b1db/blt869dbb020150e428/68b36a1180e72c73497f8eeb/svgviewer-png-output_(31).png"
-    ],
-    "images": [
-      {
-        "url": "https://eu-images.contentstack.com/v3/assets/blta64b08d31d99b1db/blt4046979f43db3609/68b3694b7bd592c02c8ed80d/en-GB-rb_strepsils_36pk_rbl2112166_fop_v2_2_.webp",
-        "file": "fetched/img_strepsils-lozenges.webp",
-        "bytes": 20556
-      },
-      {
-        "url": "https://eu-images.contentstack.com/v3/assets/blta64b08d31d99b1db/blt339178d429f87738/68ac6e7fffaa4ef9b9040230/Frame_15422.png?width=190&height=44&format=png&quality=80",
-        "file": "fetched/img_strepsils-lozenges__3.png",
-        "bytes": 3235
-      },
-      {
-        "url": "https://www.strepsils.co.uk/static/db0ee1d8de6d31ad3d361f5c5e976c49/1339b/en-GB-rb_strepsils_36pk_rbl2112166_fop_v2_2_.webp",
-        "file": "fetched/img_strepsils-lozenges__4.webp",
-        "bytes": 10026
-      }
-    ]
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Myteka&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 20,
+    "file": "fetched/api_cs_017.json"
   },
   {
-    "name": "photo_gaviscon-liquid",
-    "url": "https://www.gaviscon.ie/products/gaviscon-liquid-peppermint-flavour-oral-suspension/",
+    "name": "api_cs_018",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Seretide&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
     "status": 200,
-    "final_url": "https://www.gaviscon.ie/products/gaviscon-liquid-peppermint-flavour-oral-suspension/",
-    "title": "Gaviscon Liquid Peppermint Flavour Oral Suspension | Gaviscon IE",
-    "candidates": [
-      "https://eu-images.contentstack.com/v3/assets/bltfd11845e39dafaec/blt84dd835cab7ae78f/68ffb376cf9627c9b67df490/vuxtpdtrfvkbelmve5mp.webp",
-      "https://eu-images.contentstack.com/v3/assets/bltfd11845e39dafaec/bltc1eccc278e3fc925/68ff55180ae50dd498d82f3e/Icon_(2).png?width=36&height=30&format=png&quality=50",
-      "https://eu-images.contentstack.com/v3/assets/bltfd11845e39dafaec/blt687da349b37f1e1c/68ff6797d27f99bbe10414e0/Icon_(3).png?width=13&height=30&format=png&quality=50",
-      "https://eu-images.contentstack.com/v3/assets/bltfd11845e39dafaec/bltd0e3a40a5c8e932a/690e1f0ecca3c0df8815c2ec/inish-pharmacy-430x260.png?width=150&height=41&format=png&quality=80",
-      "https://eu-images.contentstack.com/v3/assets/bltfd11845e39dafaec/blt56a0afd37f5bc3b1/690e1fdfa000298554e5d377/supervalu-430x260_(2).png?width=150&height=65&format=png&quality=80",
-      "https://eu-images.contentstack.com/v3/assets/bltfd11845e39dafaec/blta273bc2d5025ece3/690e1eedda60c934e2bcc330/boots-website-logo.png?width=150&height=79&format=png&quality=80",
-      "https://www.gaviscon.ie/static/eb7aa2918e49cd979558615d12ca9ddc/1033e/vuxtpdtrfvkbelmve5mp.webp",
-      "https://eu-images.contentstack.com/v3/assets/bltfd11845e39dafaec/blt1bc1a911abac56e6/68ff3213999b0fff3cb8a675/Check_Icon.png",
-      "https://eu-images.contentstack.com/v3/assets/bltfd11845e39dafaec/bltd41b10d437eefd68/68ff321d684cea7743d056dd/Check_Icon.png",
-      "https://eu-images.contentstack.com/v3/assets/bltfd11845e39dafaec/blt4dd5fdb230f4dab0/68ff32980ae50d2e3dd82df6/Icon_right.png",
-      "https://www.gaviscon.ie/static/f8b8a8db1137b50dba9f6923dfabfdb0/84c84/ipvt7vtyxhw0ovnn35zc_(1).webp",
-      "https://www.gaviscon.ie/static/e5cc18bfad377f3c88ccbf18d101940e/63b4b/t9tuf3p9b0olpdauktsp.webp",
-      "https://eu-images.contentstack.com/v3/assets/bltfd11845e39dafaec/blt4dd5fdb230f4dab0/68ff32980ae50d2e3dd82df6/Icon_right.png?width=21&height=20&format=png&quality=50",
-      "https://eu-images.contentstack.com/v3/assets/bltfd11845e39dafaec/blt752e2cedcec51274/69033b9a3e16cbafa8fb947e/SVG.png?width=158&height=36&format=png&quality=50"
-    ],
-    "images": [
-      {
-        "url": "https://eu-images.contentstack.com/v3/assets/bltfd11845e39dafaec/blt84dd835cab7ae78f/68ffb376cf9627c9b67df490/vuxtpdtrfvkbelmve5mp.webp",
-        "file": "fetched/img_gaviscon-liquid.webp",
-        "bytes": 48926
-      },
-      {
-        "url": "https://eu-images.contentstack.com/v3/assets/bltfd11845e39dafaec/bltd0e3a40a5c8e932a/690e1f0ecca3c0df8815c2ec/inish-pharmacy-430x260.png?width=150&height=41&format=png&quality=80",
-        "file": "fetched/img_gaviscon-liquid__2.png",
-        "bytes": 3885
-      },
-      {
-        "url": "https://eu-images.contentstack.com/v3/assets/bltfd11845e39dafaec/blt56a0afd37f5bc3b1/690e1fdfa000298554e5d377/supervalu-430x260_(2).png?width=150&height=65&format=png&quality=80",
-        "file": "fetched/img_gaviscon-liquid__3.png",
-        "bytes": 4711
-      },
-      {
-        "url": "https://www.gaviscon.ie/static/eb7aa2918e49cd979558615d12ca9ddc/1033e/vuxtpdtrfvkbelmve5mp.webp",
-        "file": "fetched/img_gaviscon-liquid__4.webp",
-        "bytes": 29742
-      }
-    ]
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Seretide&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 21128,
+    "file": "fetched/api_cs_018.json"
   },
   {
-    "name": "photo_dettol-antiseptic-liquid",
-    "url": "https://www.dettol.pk/surface-care/antiseptic-liquid/dettol-antiseptic-liquid-500ml/",
+    "name": "api_cs_019",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Zyrtec&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
     "status": 200,
-    "final_url": "https://www.dettol.pk/surface-care/antiseptic-liquid/dettol-antiseptic-liquid-500ml/",
-    "title": "Dettol Antiseptic Liquid, 500ml | Dettol",
-    "candidates": [
-      "https://phx-dettol-pk-prd.gcp-husky-2.rbcloud.io/media/omjpki5j/asl-500ml.png"
-    ],
-    "images": []
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Zyrtec&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 18421,
+    "file": "fetched/api_cs_019.json"
   },
   {
-    "name": "photo_dettol-original-soap",
-    "url": "https://www.dettol.pk/personal-wash/bar-soaps/dettol-original-bar-soap-130-g/",
+    "name": "api_cs_020",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Digene&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
     "status": 200,
-    "final_url": "https://www.dettol.pk/personal-wash/bar-soaps/dettol-original-bar-soap-130-g/",
-    "title": "Dettol Antibacterial Original Soap, 130gm | Dettol",
-    "candidates": [
-      "https://phx-dettol-pk-prd.gcp-husky-2.rbcloud.io/media/wk1jovcw/barsoap_orignal.png"
-    ],
-    "images": []
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Digene&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 35002,
+    "file": "fetched/api_cs_020.json"
   },
   {
-    "name": "photo_dettol-liquid-handwash",
-    "url": "https://www.dettol.pk/personal-wash/liquid-hand-wash/dettol-hand-wash-original-250ml-pump/",
+    "name": "api_cs_021",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Entamizole&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
     "status": 200,
-    "final_url": "https://www.dettol.pk/personal-wash/liquid-hand-wash/dettol-hand-wash-original-250ml-pump/",
-    "title": "Dettol Liquid Handwash - Original, 250ml | Dettol",
-    "candidates": [
-      "https://phx-dettol-pk-prd.gcp-husky-2.rbcloud.io/media/t52hdu3m/liquidhandwas.png"
-    ],
-    "images": []
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Entamizole&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 20,
+    "file": "fetched/api_cs_021.json"
   },
   {
-    "name": "photo_dettol-hand-sanitizer",
-    "url": "https://www.dettol.pk/personal-wash/hand-sanitizer/dettol-hand-sanitizer-50ml/",
+    "name": "api_cs_022",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=No-Spa&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
     "status": 200,
-    "final_url": "https://www.dettol.pk/personal-wash/hand-sanitizer/dettol-hand-sanitizer-50ml/",
-    "title": "Dettol Hand Sanitizer, 50ml | Dettol",
-    "candidates": [
-      "https://phx-dettol-pk-prd.gcp-husky-2.rbcloud.io/media/5xmhpvui/hsn.png"
-    ],
-    "images": []
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=No-Spa&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 20235,
+    "file": "fetched/api_cs_022.json"
   },
   {
-    "name": "photo_vicks-vaporub",
-    "url": "https://vicks.com/en-us/shop-products/vapo/vicks-vaporub-topical-cough-suppresant",
+    "name": "api_cs_023",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Colofac&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
     "status": 200,
-    "final_url": "https://vicks.com/en-us/shop-products/vapo/vicks-vaporub-topical-cough-suppresant",
-    "title": "Vicks VapoRub Topical Ointment Children's Cough Medicine - Vicks",
-    "candidates": [
-      "https://images.ctfassets.net/xuuihvmvy6c9/3FGsJNGSdPuhfa2iXHcrWk/71dd49129c1a61783ef9866a1921255b/Web_1920________25.png?fm=avif",
-      "https://images.ctfassets.net/xuuihvmvy6c9/3FGsJNGSdPuhfa2iXHcrWk/71dd49129c1a61783ef9866a1921255b/Web_1920________25.png?fm=avif&w=1000",
-      "https://images.ctfassets.net/xuuihvmvy6c9/2XauTEZXKafcvwGfgE79yO/e8b043b0df2052d05bfe50e32d283e6f/00323900040564_C1N1.png?fm=avif&q=100",
-      "https://images.ctfassets.net/xuuihvmvy6c9/1xw9kiqDs7v6H1KmMahNxO/7042e4b571b14ffc87add8ed78c238b0/00323900040410_C1N1.png?fm=avif&q=100",
-      "https://images.ctfassets.net/xuuihvmvy6c9/3SOt2ByPpU1oM792kEURJ9/056f888355c905318104950b9c937a1a/840X840________73.png?fm=avif&q=100",
-      "https://images.ctfassets.net/xuuihvmvy6c9/5mi1nyCcHQ2C4ADC1QegYK/6bafbec5df9b0238f41bec8ae0664144/840X840________53.png?fm=avif&q=100",
-      "https://images.ctfassets.net/xuuihvmvy6c9/1SvM86hS5UaSIAPBSgYMTM/e714d30f925dd169db892c92e64be5f8/840X840________33.png?fm=avif&q=100",
-      "https://images.ctfassets.net/xuuihvmvy6c9/68Mgu1fy1CdkRcv9DLLsIg/4c32ff2b8c0ed50eb7c8abac9d7e4a13/RE-EDITED_-_MOI_-_Sinex_Saline.jpg?fm=avif&q=100",
-      "https://images.ctfassets.net/xuuihvmvy6c9/pZgkEbfNgLfE8XS1wKIOX/e7ef5fbd1d7fe0ea3d7e53fe103da418/flagImage.png",
-      "https://images.ctfassets.net/xuuihvmvy6c9/2O8SoI5R0n8zv80gmPseRk/30ebe475fd2da04176aac661145ad9e9/privacyoptions730x350.png"
-    ],
-    "images": [
-      {
-        "url": "https://images.ctfassets.net/xuuihvmvy6c9/3FGsJNGSdPuhfa2iXHcrWk/71dd49129c1a61783ef9866a1921255b/Web_1920________25.png?fm=avif",
-        "file": "fetched/img_vicks-vaporub.avif",
-        "bytes": 26557
-      },
-      {
-        "url": "https://images.ctfassets.net/xuuihvmvy6c9/3FGsJNGSdPuhfa2iXHcrWk/71dd49129c1a61783ef9866a1921255b/Web_1920________25.png?fm=avif&w=1000",
-        "file": "fetched/img_vicks-vaporub__2.avif",
-        "bytes": 26557
-      },
-      {
-        "url": "https://images.ctfassets.net/xuuihvmvy6c9/2XauTEZXKafcvwGfgE79yO/e8b043b0df2052d05bfe50e32d283e6f/00323900040564_C1N1.png?fm=avif&q=100",
-        "file": "fetched/img_vicks-vaporub__3.avif",
-        "bytes": 55633
-      },
-      {
-        "url": "https://images.ctfassets.net/xuuihvmvy6c9/1xw9kiqDs7v6H1KmMahNxO/7042e4b571b14ffc87add8ed78c238b0/00323900040410_C1N1.png?fm=avif&q=100",
-        "file": "fetched/img_vicks-vaporub__4.avif",
-        "bytes": 32044
-      }
-    ]
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Colofac&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 19427,
+    "file": "fetched/api_cs_023.json"
   },
   {
-    "name": "photo_oral-b-toothbrush",
-    "url": "https://oralb.com/en-us/products/toothbrushes/manual-toothbrushes/cavity-defense-manual-toothbrush/",
+    "name": "api_cs_024",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Enterogermina&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
     "status": 200,
-    "final_url": "https://oralb.com/en-us/products/toothbrushes/manual-toothbrushes/cavity-defense-manual-toothbrush/",
-    "title": "Cavity Defense Manual Toothbrush",
-    "candidates": [
-      "https://cdn11.bigcommerce.com/s-2idmiil7bp/images/stencil/1280x1280/products/604/1055/Oral-B_Cavity_Defense_Manual_Toothbrush__93402__19187.1781827586.png?c=1",
-      "https://cdn11.bigcommerce.com/s-2idmiil7bp/products/604/images/1055/Oral-B_Cavity_Defense_Manual_Toothbrush__93402__19187.1781827586.386.513.png?c=1",
-      "https://cdn11.bigcommerce.com/s-2idmiil7bp/images/stencil/original/content/deal-template/desktop/close.png",
-      "https://cdn11.bigcommerce.com/s-2idmiil7bp/images/stencil/original/content/deal-template/desktop/sort.png",
-      "https://cdn11.bigcommerce.com/s-2idmiil7bp/images/stencil/original/content/eureka/homepage/oralb-logo-d.png",
-      "https://cdn11.bigcommerce.com/s-gh916pkr86/content/eureka/homepage/pause.jpg",
-      "https://cdn11.bigcommerce.com/s-2idmiil7bp/images/stencil/original/content/eureka/navigation/main/nav-electric-toothbrush.jpg",
-      "https://cdn11.bigcommerce.com/s-2idmiil7bp/images/stencil/original/content/eureka/navigation/main/nav-replacement-brushhead.jpg",
-      "https://cdn11.bigcommerce.com/s-2idmiil7bp/images/stencil/original/content/eureka/navigation/main/manual-toothbrush-nav.jpg",
-      "https://cdn11.bigcommerce.com/s-2idmiil7bp/images/stencil/original/content/eureka/navigation/main/floss-nav.jpg",
-      "https://cdn11.bigcommerce.com/s-2idmiil7bp/images/stencil/original/content/eureka/navigation/main/water-flosser-nav.jpg",
-      "https://cdn11.bigcommerce.com/s-2idmiil7bp/images/stencil/original/content/eureka/homepage/healthier-gums-nav.jpg",
-      "https://cdn11.bigcommerce.com/s-2idmiil7bp/images/stencil/original/content/eureka/homepage/relieve_sensitivity_nav.jpg",
-      "https://cdn11.bigcommerce.com/s-2idmiil7bp/images/stencil/original/content/eureka/homepage/fresh_breath_nav.jpg",
-      "https://cdn11.bigcommerce.com/s-2idmiil7bp/images/stencil/original/content/eureka/homepage/whiter_teeth_nav.jpg",
-      "https://cdn11.bigcommerce.com/s-2idmiil7bp/images/stencil/original/content/eureka/homepage/cavity_protection_nav.jpg",
-      "https://cdn11.bigcommerce.com/s-2idmiil7bp/images/stencil/original/content/eureka/homepage/healthy_family_habits_nav.jpg",
-      "https://cdn11.bigcommerce.com/s-2idmiil7bp/images/stencil/original/content/eureka/homepage/kids-3-6-years-nav.jpg",
-      "https://cdn11.bigcommerce.com/s-2idmiil7bp/images/stencil/original/content/eureka/homepage/kids-6-plus-years-nav.jpg",
-      "https://cdn11.bigcommerce.com/s-2idmiil7bp/images/stencil/original/content/eureka/homepage/why-oral-b-nav.jpg"
-    ],
-    "images": [
-      {
-        "url": "https://cdn11.bigcommerce.com/s-2idmiil7bp/images/stencil/1280x1280/products/604/1055/Oral-B_Cavity_Defense_Manual_Toothbrush__93402__19187.1781827586.png?c=1",
-        "file": "fetched/img_oral-b-toothbrush.webp",
-        "bytes": 5106
-      },
-      {
-        "url": "https://cdn11.bigcommerce.com/s-2idmiil7bp/products/604/images/1055/Oral-B_Cavity_Defense_Manual_Toothbrush__93402__19187.1781827586.386.513.png?c=1",
-        "file": "fetched/img_oral-b-toothbrush__2.webp",
-        "bytes": 5006
-      }
-    ]
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Enterogermina&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 25162,
+    "file": "fetched/api_cs_024.json"
   },
   {
-    "name": "photo_head-and-shoulders-shampoo",
-    "url": "https://www.headandshoulders.co.uk/en-gb/anti-dandruff-products/dandruff-shampoo/classic-clean-shampoo/",
+    "name": "api_cs_025",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=oral%20rehydration%20salts%20sachet&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
     "status": 200,
-    "final_url": "https://www.headandshoulders.co.uk/en-gb/anti-dandruff-products/dandruff-shampoo/classic-clean-shampoo/",
-    "title": "Head&Shoulders Classic Clean Anti-dandruff shampoo",
-    "candidates": [
-      "https://images.ctfassets.net/mk47tk9qdyzw/9gL4XYYt3YhVH5yN2mBsQ/35b047b5f1dad0adea6c155de60b12b4/0_80860569_5410076229994_C1N1.png",
-      "https://www.headandshoulders.co.uk/images/hs_logo.png",
-      "https://www.headandshoulders.co.uk/images/page-logo.png",
-      "https://images.ctfassets.net/mk47tk9qdyzw/9gL4XYYt3YhVH5yN2mBsQ/35b047b5f1dad0adea6c155de60b12b4/0_80860569_5410076229994_C1N1.png&fl=progressive&q=80",
-      "https://images.ctfassets.net/mk47tk9qdyzw/4GKFMo5a0mPVJpiySkWsPI/c13d7555ed0722ca0ef35c084b2fcdc4/0_80859682_8700216216876_C1N1.png?fm=webp&w=150",
-      "https://images.ctfassets.net/mk47tk9qdyzw/6ZUOSB38TsELA4ZkLGZC7c/238e5bd0f72d9f0214d3266287fa0b64/H_S_E-Commerce-OUZO-Framework_V04-B_v2_Classic-clean-01.jpg?fm=webp&w=150",
-      "https://images.ctfassets.net/mk47tk9qdyzw/6y8btKgOUQUJKSob1vkeCj/04eb54039a66e23212f4bf8a5cd9a427/H_S_E-Commerce-OUZO-Framework_V04.png?fm=webp&w=150",
-      "https://images.ctfassets.net/mk47tk9qdyzw/4Pc20P3hXHi2HjsDKeTq1O/3aaeb4633e71524599f067dd077b39bf/H_S_E-Commerce-OUZO-Framework_V04-B_v2_Citrus-2in1-03.jpg?fm=webp&w=150",
-      "https://images.ctfassets.net/mk47tk9qdyzw/2sJtLWkwbKRFrEs05TlUkc/6a23ad79ef62112d87fdc9840c7159b9/H_S_E-Commerce-OUZO-Framework_V04-B_v2_Citrus-2in1-06.jpg?fm=webp&w=150",
-      "https://images.ctfassets.net/mk47tk9qdyzw/2ISLzV9qFeHdfSbAkRceJO/838c680a54f502068dc838bab3386445/H_S_E-Commerce-OUZO-Framework_V04-B_v2_Citrus-05.jpg?fm=webp&w=150",
-      "https://images.ctfassets.net/mk47tk9qdyzw/4zI4TeIvP45N3tglLfdcBv/5e7d3f266e710ee5d41f5f80a90f4587/H_S_E-Commerce-OUZO-Framework_V04-B_v2_Classic-clean-02_copie.jpg?fm=webp&w=150",
-      "https://images.ctfassets.net/mk47tk9qdyzw/2ZS2C2TusdjcR12ZmQd072/ec5f0a94bc906640d9acba735904a742/pantene-logo.png",
-      "https://images.ctfassets.net/mk47tk9qdyzw/5P8XYgH1ZapKIb5qhZSxRe/cb4f94d5f0b377b197cb343f8285b768/herbalessences-logo.png",
-      "https://images.ctfassets.net/mk47tk9qdyzw/3gvXs4DuybtDfP2hKwap86/876b3a8daf93014481a1c550676a8a5b/aussie-logo.png",
-      "https://images.ctfassets.net/mk47tk9qdyzw/5QQiO3vfLHtkNTOMHxXLTy/7f7b0e370fb2b0999ef4f21eba6e1232/olay-logo.png",
-      "https://images.ctfassets.net/mk47tk9qdyzw/5zYznzRHaH55acOHqydlms/e7719f8444c1e4a3694349ccb8ebbf2e/HairCode_Logo.jpg"
-    ],
-    "images": [
-      {
-        "url": "https://images.ctfassets.net/mk47tk9qdyzw/9gL4XYYt3YhVH5yN2mBsQ/35b047b5f1dad0adea6c155de60b12b4/0_80860569_5410076229994_C1N1.png",
-        "file": "fetched/img_head-and-shoulders-shampoo.png",
-        "bytes": 355338
-      },
-      {
-        "url": "https://images.ctfassets.net/mk47tk9qdyzw/4GKFMo5a0mPVJpiySkWsPI/c13d7555ed0722ca0ef35c084b2fcdc4/0_80859682_8700216216876_C1N1.png?fm=webp&w=150",
-        "file": "fetched/img_head-and-shoulders-shampoo__3.webp",
-        "bytes": 12650
-      },
-      {
-        "url": "https://images.ctfassets.net/mk47tk9qdyzw/6ZUOSB38TsELA4ZkLGZC7c/238e5bd0f72d9f0214d3266287fa0b64/H_S_E-Commerce-OUZO-Framework_V04-B_v2_Classic-clean-01.jpg?fm=webp&w=150",
-        "file": "fetched/img_head-and-shoulders-shampoo__4.webp",
-        "bytes": 7222
-      }
-    ]
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=oral%20rehydration%20salts%20sachet&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 7220,
+    "file": "fetched/api_cs_025.json"
   },
   {
-    "name": "photo_pantene-shampoo",
-    "url": "https://www.pantene.com.my/en-my/shop-products/total-damage-care-shampoo",
+    "name": "api_cs_026",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Zentel&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
     "status": 200,
-    "final_url": "https://www.pantene.com.my/en-my/shop-products/total-damage-care-shampoo",
-    "title": "Total Damage Care Shampoo for Damaged Hair | Pantene MY",
-    "candidates": [
-      "https://images.ctfassets.net/5165mu5kqjth/0wlsnpt5f2xm_5HbbVYHmpN9lnI0bbPvMpN/361b4b2abb11d3d2efbacd0c40aeb1b9/80783059_21064798_TDC_SH_Bottle_300ML_FOP_20022024.jpg",
-      "https://images.ctfassets.net/5165mu5kqjth/t6dckb7om1nu_1XowbX26NJYHaJchRTvxN8/f5a4fc1d5650d073d7fb29b520b0cbf5/pantene_great_hair_days_share.png"
-    ],
-    "images": [
-      {
-        "url": "https://images.ctfassets.net/5165mu5kqjth/0wlsnpt5f2xm_5HbbVYHmpN9lnI0bbPvMpN/361b4b2abb11d3d2efbacd0c40aeb1b9/80783059_21064798_TDC_SH_Bottle_300ML_FOP_20022024.jpg",
-        "file": "fetched/img_pantene-shampoo.jpg",
-        "bytes": 36173
-      },
-      {
-        "url": "https://images.ctfassets.net/5165mu5kqjth/t6dckb7om1nu_1XowbX26NJYHaJchRTvxN8/f5a4fc1d5650d073d7fb29b520b0cbf5/pantene_great_hair_days_share.png",
-        "file": "fetched/img_pantene-shampoo__2.png",
-        "bytes": 449000
-      }
-    ]
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Zentel&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 21297,
+    "file": "fetched/api_cs_026.json"
   },
   {
-    "name": "photo_always-sanitary-pads",
-    "url": "https://www.always.co.uk/en-gb/feminine-products/period-pads/always-ultra/always-ultra-normal-sanitary-pads-with-wings/",
+    "name": "api_cs_027",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Woodward%27s%20gripe%20water&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
     "status": 200,
-    "final_url": "https://www.always.co.uk/en-gb/feminine-products/period-pads/always-ultra/always-ultra-normal-sanitary-pads-with-wings/",
-    "title": "Always Pads Ultra Day Light/Moderate Flow With Wings | Always",
-    "candidates": [
-      "https://images.ctfassets.net/aqfuj2z95p5p/4YTArDonM01LvHLJazaIGP/686bd753466390296f0dd988fb9710ac/Ultra_image.png?w=1920",
-      "https://images.ctfassets.net/aqfuj2z95p5p/1iYdWxfHhQ6aT9ghNgLppW/0c826aa548db4dadad9959860c3ce07a/tabler_world.png",
-      "https://images.ctfassets.net/aqfuj2z95p5p/6GegF37kLSbh6AJGkmu7V4/2abfbf96f980b6af4f85e770b5d319ac/Ultra_Size_1_Day.png",
-      "https://images.ctfassets.net/aqfuj2z95p5p/2DjhVcUUXSUIPPHQqXtOYB/1b5366816f1bee20cf16312907266a6e/Always_EN_UK_Products_Sanitary-Towels_Sensitive_Night-Ultra-Size-3-With-Wings_Always-Sensitive-Night-Ultra-Sanitary-Towels-.webp",
-      "https://images.ctfassets.net/aqfuj2z95p5p/4YTArDonM01LvHLJazaIGP/686bd753466390296f0dd988fb9710ac/Ultra_image.png?fm=webp&q=75",
-      "https://images.ctfassets.net/aqfuj2z95p5p/75wiKWFv1DjK1rNsVgX7PH/a3c95f179499dce3c6c04616533ed20d/Ultra_Size_1_NW_SI1.png?fm=webp&q=75",
-      "https://images.ctfassets.net/aqfuj2z95p5p/6LofGGi5jhjebpvUq1Svs1/a49df9d495b26e7552b71d505680a7ba/Ultra_Size_1_NW_SI2.png?fm=webp&q=75",
-      "https://images.ctfassets.net/aqfuj2z95p5p/4SCXkvTqEQ5iU7TGBQy3zT/fd9985b0691da183872b1438a406cd6b/Ultra_Size_1_NW_SI3.png?fm=webp&q=75",
-      "https://images.ctfassets.net/aqfuj2z95p5p/0LkQGRSzuGlSbMv2yIY9W/4498160050523f0de667decac0fcccf8/Ultra_Size_1_NW_SI4.png?fm=webp&q=75",
-      "https://images.ctfassets.net/aqfuj2z95p5p/4po5yAQfWYaqSXwYTtuKJ8/52230e2c984ff264ce29bd8e8ef002ac/Ultra_Size_1_NW_SI5.png?fm=webp&q=75",
-      "https://images.ctfassets.net/aqfuj2z95p5p/6kzLY5Xa1hNNak1O0VoDH2/eb0688507cf3cfbaef7682ceb03c8d4d/Comparison_images_Flex_Protect.png?fm=webp&q=75",
-      "https://images.ctfassets.net/aqfuj2z95p5p/5nnyg0ai54ZEsIOyhp1Ilw/391906609175180b0b5b7c81e394d041/Comparison_images_Platinum_size_1.png?fm=webp&q=75",
-      "https://images.ctfassets.net/aqfuj2z95p5p/44vhqKc0CcAy7XKiJMBxqs/7942f236fe16ac85ef6ddb7b34081950/Ultra_image.png?fm=webp&q=75",
-      "https://images.ctfassets.net/aqfuj2z95p5p/6FdcZeyaKGgw09OcRHjrZ3/c784e24a837318f08de965eb91a38d10/Comparison_images_Sensitive_Size_1.png?fm=webp&q=75",
-      "https://images.ctfassets.net/aqfuj2z95p5p/5K9HOg5HdjvT1dF6NwQhxz/634bd265e4a5d30607812d530cedd332/Comparison_images_Maxi_Day_Size_2.png?fm=webp&q=75",
-      "https://images.ctfassets.net/aqfuj2z95p5p/2j8Qe1voGvM0eqzAIkwofY/674fde61a04c5c4d3c4b4c8634da9b24/image_115.png?fm=webp&q=75",
-      "https://images.ctfassets.net/aqfuj2z95p5p/22l6LFazvjd68SeHTyyPtk/33defc91fdf973b0cceeb1fbcdee8105/Ultra_Size_5_Wing.png?fm=webp&q=75",
-      "https://images.ctfassets.net/aqfuj2z95p5p/7gbmfJQbvvFgXHJIoD0uSZ/138728ade63f0ca7f5e0f3a71c5dec4e/FlexProtect-Normal_Size_1.png?fm=webp&q=75",
-      "https://images.ctfassets.net/aqfuj2z95p5p/1xleAQfnnLqYKTV2dVV6fD/e6d13a61ede052f6d483ddf8819096d5/Period_pains_and_cramps.png?fm=webp&q=75",
-      "https://images.ctfassets.net/aqfuj2z95p5p/3gtvuHV5QMpHv2sLWCaTj9/330ef9e9395b0c2d39952b2f360c0132/How_to_Calculate_Your_Menstrual_Cycle.png?fm=webp&q=75"
-    ],
-    "images": [
-      {
-        "url": "https://images.ctfassets.net/aqfuj2z95p5p/4YTArDonM01LvHLJazaIGP/686bd753466390296f0dd988fb9710ac/Ultra_image.png?w=1920",
-        "file": "fetched/img_always-sanitary-pads.jpg",
-        "bytes": 37681
-      },
-      {
-        "url": "https://images.ctfassets.net/aqfuj2z95p5p/6GegF37kLSbh6AJGkmu7V4/2abfbf96f980b6af4f85e770b5d319ac/Ultra_Size_1_Day.png",
-        "file": "fetched/img_always-sanitary-pads__3.png",
-        "bytes": 233276
-      },
-      {
-        "url": "https://images.ctfassets.net/aqfuj2z95p5p/2DjhVcUUXSUIPPHQqXtOYB/1b5366816f1bee20cf16312907266a6e/Always_EN_UK_Products_Sanitary-Towels_Sensitive_Night-Ultra-Size-3-With-Wings_Always-Sensitive-Night-Ultra-Sanitary-Towels-.webp",
-        "file": "fetched/img_always-sanitary-pads__4.webp",
-        "bytes": 211974
-      }
-    ]
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Woodward%27s%20gripe%20water&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 21468,
+    "file": "fetched/api_cs_027.json"
   },
   {
-    "name": "photo_vaseline-petroleum-jelly",
-    "url": "https://www.vaseline.com/us/en/p/vaseline-healing-jelly-original.html/00305212352009",
+    "name": "api_cs_028",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Augmentin&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
     "status": 200,
-    "final_url": "https://www.vaseline.com/us/en/p/vaseline-healing-jelly-original.html/00305212352009",
-    "title": "Vaseline\u00ae Healing Jelly Original",
-    "candidates": [
-      "https://assets.unileversolutions.com/v2/w600/ch-retailer/web/migration-1474787/1474787.jpeg",
-      "https://assets.unileversolutions.com/v1/1474787.png",
-      "https://assets.unileversolutions.com/v1/1228921.png",
-      "https://assets.unileversolutions.com/v1/124523770.png",
-      "https://assets.unileversolutions.com/v1/74495356.jpg",
-      "https://assets.unileversolutions.com/v1/71812517.jpg",
-      "https://assets.unileversolutions.com/v1/74495354.jpg",
-      "https://assets.unileversolutions.com/v1/74495355.jpg",
-      "https://assets.unileversolutions.com/v1/64413798.png",
-      "https://assets.unileversolutions.com/v1/64413752.png",
-      "https://assets.unileversolutions.com/v1/124523975.png",
-      "https://assets.unileversolutions.com/v1/123982911.png",
-      "https://assets.unileversolutions.com/v1/1474735.png",
-      "https://assets.unileversolutions.com/v1/1707276.png",
-      "https://assets.unileversolutions.com/v1/1475018.png",
-      "https://assets.unileversolutions.com/v1/1475020.png",
-      "https://assets.unileversolutions.com/v1/64923368.png",
-      "https://assets.unileversolutions.com/v1/64571555.png",
-      "https://assets.unileversolutions.com/v1/64571512.png",
-      "https://assets.unileversolutions.com/v1/142495355.png"
-    ],
-    "images": [
-      {
-        "url": "https://assets.unileversolutions.com/v2/w600/ch-retailer/web/migration-1474787/1474787.jpeg",
-        "file": "fetched/img_vaseline-petroleum-jelly.jpg",
-        "bytes": 44048
-      },
-      {
-        "url": "https://assets.unileversolutions.com/v1/1474787.png",
-        "file": "fetched/img_vaseline-petroleum-jelly__2.webp",
-        "bytes": 238486
-      },
-      {
-        "url": "https://assets.unileversolutions.com/v1/1228921.png",
-        "file": "fetched/img_vaseline-petroleum-jelly__3.webp",
-        "bytes": 117720
-      },
-      {
-        "url": "https://assets.unileversolutions.com/v1/124523770.png",
-        "file": "fetched/img_vaseline-petroleum-jelly__4.webp",
-        "bytes": 453734
-      }
-    ]
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Augmentin&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 21108,
+    "file": "fetched/api_cs_028.json"
   },
   {
-    "name": "photo_lifebuoy-soap",
-    "url": "https://www.lifebuoy.com/arabia/en/p/lifebuoy-anti-bacterial-bar-total-10.html/06281006483644",
+    "name": "api_cs_029",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Augmentin%20DS&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
     "status": 200,
-    "final_url": "https://www.lifebuoy.com/arabia/en/p/lifebuoy-anti-bacterial-bar-total-10.html/06281006483644",
-    "title": "Lifebuoy Anti Bacterial Bar Total 10",
-    "candidates": [
-      "https://assets.unileversolutions.com/v1/1956945.png",
-      "https://assets.unileversolutions.com/v1/52623781.jpg",
-      "https://assets.unileversolutions.com/v1/1947665.png",
-      "https://assets.unileversolutions.com/v1/33694211.png",
-      "https://assets.unileversolutions.com/v1/1984180.png",
-      "https://assets.unileversolutions.com/v1/1885118.png",
-      "https://assets.unileversolutions.com/v1/1931103.png",
-      "https://assets.unileversolutions.com/v1/1635580.png",
-      "https://assets.unileversolutions.com/v1/1458701.png",
-      "https://assets.unileversolutions.com/v1/1947660.png",
-      "https://assets.unileversolutions.com/v1/1947653.png",
-      "https://assets.unileversolutions.com/v1/33694236.png",
-      "https://assets.unileversolutions.com/v1/79661547.png"
-    ],
-    "images": [
-      {
-        "url": "https://assets.unileversolutions.com/v1/1956945.png",
-        "file": "fetched/img_lifebuoy-soap.webp",
-        "bytes": 340678
-      },
-      {
-        "url": "https://assets.unileversolutions.com/v1/52623781.jpg",
-        "file": "fetched/img_lifebuoy-soap__2.webp",
-        "bytes": 141476
-      },
-      {
-        "url": "https://assets.unileversolutions.com/v1/1947665.png",
-        "file": "fetched/img_lifebuoy-soap__3.webp",
-        "bytes": 156488
-      },
-      {
-        "url": "https://assets.unileversolutions.com/v1/33694211.png",
-        "file": "fetched/img_lifebuoy-soap__4.webp",
-        "bytes": 192462
-      }
-    ]
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Augmentin%20DS&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 14357,
+    "file": "fetched/api_cs_029.json"
   },
   {
-    "name": "photo_lux-soap",
-    "url": "https://www.lux.com/pk/p/rose-glow.html/08961014015317",
+    "name": "api_cs_030",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Amoxil&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
     "status": 200,
-    "final_url": "https://www.lux.com/pk/p/rose-glow.html/08961014015317",
-    "title": "Rose Glow",
-    "candidates": [
-      "https://assets.unileversolutions.com/v1/38845913.png",
-      "https://assets.unileversolutions.com/v1/35431836.png",
-      "https://assets.unileversolutions.com/v1/38845279.png",
-      "https://assets.unileversolutions.com/v1/38845911.png",
-      "https://assets.unileversolutions.com/v1/2070955.png",
-      "https://assets.unileversolutions.com/v1/2171004.png",
-      "https://assets.unileversolutions.com/v1/1513657.png"
-    ],
-    "images": [
-      {
-        "url": "https://assets.unileversolutions.com/v1/38845913.png",
-        "file": "fetched/img_lux-soap.webp",
-        "bytes": 18962
-      },
-      {
-        "url": "https://assets.unileversolutions.com/v1/35431836.png",
-        "file": "fetched/img_lux-soap__2.webp",
-        "bytes": 38282
-      },
-      {
-        "url": "https://assets.unileversolutions.com/v1/38845279.png",
-        "file": "fetched/img_lux-soap__3.webp",
-        "bytes": 87190
-      },
-      {
-        "url": "https://assets.unileversolutions.com/v1/38845911.png",
-        "file": "fetched/img_lux-soap__4.webp",
-        "bytes": 14254
-      }
-    ]
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Amoxil&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 20278,
+    "file": "fetched/api_cs_030.json"
   },
   {
-    "name": "photo_lifebuoy-handwash",
-    "url": "https://www.lifebuoy.com/arabia/en/products/hand-wash/lifebuoy-anti-bacterial-hand-wash-total-10.html",
-    "status": 404,
-    "error": "HTTP Error 404: Not Found"
-  },
-  {
-    "name": "photo_sunsilk-shampoo",
-    "url": "https://www.sunsilk.pk/p/black-shine-shampoo.html/08961014009354",
-    "status": 404,
-    "error": "HTTP Error 404: Not Found"
-  },
-  {
-    "name": "photo_vaseline-body-lotion",
-    "url": "https://www.vaseline.com/in/en/p/vaseline-intensive-care-deep-restore-lotion.html/08901030733543",
-    "status": 404,
-    "error": "HTTP Error 404: Not Found"
-  },
-  {
-    "name": "photo_ponds-cold-cream",
-    "url": "https://www.ponds.com/pk/p/cold-cream.html/08961014242584",
+    "name": "api_cs_031",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Velosef&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
     "status": 200,
-    "final_url": "https://www.ponds.com/pk/p/cold-cream.html/08961014242584",
-    "title": "Cold Cream",
-    "candidates": [
-      "https://assets.unileversolutions.com/v1/1973658.png",
-      "https://assets.unileversolutions.com/v1/116523980.png",
-      "https://assets.unileversolutions.com/v1/61123974.png",
-      "https://assets.unileversolutions.com/v1/1973806.png",
-      "https://assets.unileversolutions.com/v1/77657071.png",
-      "https://assets.unileversolutions.com/v1/87189666.png",
-      "https://assets.unileversolutions.com/v1/77657627.png",
-      "https://assets.unileversolutions.com/v1/87189390.png",
-      "https://assets.unileversolutions.com/v1/60441650.png"
-    ],
-    "images": [
-      {
-        "url": "https://assets.unileversolutions.com/v1/1973658.png",
-        "file": "fetched/img_ponds-cold-cream.webp",
-        "bytes": 8118
-      },
-      {
-        "url": "https://assets.unileversolutions.com/v1/116523980.png",
-        "file": "fetched/img_ponds-cold-cream__2.webp",
-        "bytes": 6104
-      },
-      {
-        "url": "https://assets.unileversolutions.com/v1/61123974.png",
-        "file": "fetched/img_ponds-cold-cream__3.webp",
-        "bytes": 21226
-      },
-      {
-        "url": "https://assets.unileversolutions.com/v1/1973806.png",
-        "file": "fetched/img_ponds-cold-cream__4.webp",
-        "bytes": 8614
-      }
-    ]
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Velosef&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 23827,
+    "file": "fetched/api_cs_031.json"
   },
   {
-    "name": "photo_nivea-creme",
-    "url": "https://www.nivea.co.uk/products/nivea-creme-tin-60ml-40060001801440045.html",
+    "name": "api_cs_032",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Septran%20DS&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
     "status": 200,
-    "final_url": "https://www.nivea.co.uk/products/nivea-creme-tin-60ml-40060001801440045.html",
-    "title": "Nivea Creme Tin 60ml | NIVEA",
-    "candidates": [
-      "https://assets.beiersdorf.com/-/media/images/9/7/e/b/49dcfb0313b24e80a4ceaa33b7fad752-screen.jpg?db=web&ctx=GB&hash=33CA63B8B5F24DC7CC5EC01EE88E1BB8",
-      "https://assets.beiersdorf.com/-/media/images/5/3/0/2/019f8a3ee8e671db90cd3ee5e97595e9-print.jpg?mh=1200&mw=1200&ctx=GB&rx=0&ry=384&rw=2020&rh=1057&hash=EDC12C0197F7C1685D46480E14871019"
-    ],
-    "images": [
-      {
-        "url": "https://assets.beiersdorf.com/-/media/images/9/7/e/b/49dcfb0313b24e80a4ceaa33b7fad752-screen.jpg?db=web&ctx=GB&hash=33CA63B8B5F24DC7CC5EC01EE88E1BB8",
-        "file": "fetched/img_nivea-creme.webp",
-        "bytes": 46998
-      }
-    ]
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Septran%20DS&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 20,
+    "file": "fetched/api_cs_032.json"
   },
   {
-    "name": "photo_hansaplast-strips",
-    "url": "https://int.hansaplast.com/products/universal-plasters/universal-40-strips-assorted",
+    "name": "api_cs_033",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Septran&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
     "status": 200,
-    "final_url": "https://int.hansaplast.com/products/universal-plasters/universal-40-strips-assorted",
-    "title": "Hansaplast Universal Wound Plasters | Water-resistant | Strong Adhesion | Absorbent Non-stick Wound Pad | Breathable Plasters | Multipurpose plasters | 40 Strips",
-    "candidates": [],
-    "images": []
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Septran&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 24655,
+    "file": "fetched/api_cs_033.json"
   },
   {
-    "name": "photo_johnsons-baby-shampoo",
-    "url": "https://www.johnsonsbaby.com/baby-products/johnsons-baby-shampoo",
+    "name": "api_cs_034",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Klaricid&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
     "status": 200,
-    "final_url": "https://www.johnsonsbaby.com/baby-products/johnsons-baby-shampoo",
-    "title": "Johnson's\u00ae Baby Shampoo - Johnson's Baby",
-    "candidates": [
-      "https://images.ctfassets.net/j62l7jj24jl8/4eDLhWuQEodDjIogMG1eBj/fd15b5b14a103d623de7b21b59904794/JNB_NA_US_381371177301_111773016_449509_Baby_Gold_Shampoo_13p6oz_00000_copy.webp",
-      "https://images.ctfassets.net/j62l7jj24jl8/3shDWjI3KbCDeJa7xp2tC8/3b4866cca5e204b0b91163b45c129a95/jns_381371175024_600ml_00000_1000wx1000h.jpeg",
-      "https://images.ctfassets.net/j62l7jj24jl8/23XJgNyXIsLKhPZvFdCvTi/3c6d8d94b106856719db91c39d66efa2/healthiest_start.webp?fm=jpg&w=1920&q=80",
-      "https://images.ctfassets.net/j62l7jj24jl8/4eDLhWuQEodDjIogMG1eBj/fd15b5b14a103d623de7b21b59904794/JNB_NA_US_381371177301_111773016_449509_Baby_Gold_Shampoo_13p6oz_00000_copy.webp?fm=jpg&w=98&q=80",
-      "https://images.ctfassets.net/j62l7jj24jl8/e5RyuXZmSi1LtKXKjOqPp/cfe05a95f75d86cf77b985889ba41c63/JBaby_Its_Pure_Love_GoldShampoo_New_Packaging_ATF2_3300x3300__2_.WEBP?fm=jpg&w=98&q=80",
-      "https://images.ctfassets.net/j62l7jj24jl8/4I0hIL4rOUVc4ofnROQDEk/824b6ad26548b1b0822c3b72c54ee890/US_JNB_IMAGECLASSICS_EDA_ATF3_3300x3300.webp?fm=jpg&w=98&q=80",
-      "https://images.ctfassets.net/j62l7jj24jl8/1TXH36N4SyBpUkByOoVxcC/36c26e2de7511f19fb4effeaaac8b946/US_JNB_IMAGECLASSICS_EDA_ATF7_3300x3300.webp?fm=jpg&w=98&q=80",
-      "https://images.ctfassets.net/j62l7jj24jl8/63H5Z9F7FTC5GEKDnGQIAF/f60fe80232da9a051b7e8941f82d7626/JBaby_Its_Pure_Love_GoldShampoo_Ingredients_ATF5_3300x3300__2_.WEBP?fm=jpg&w=98&q=80",
-      "https://images.ctfassets.net/j62l7jj24jl8/2scfunM1IpzdMgap7fK4qk/7a96519d24b203d2e0caaff82fec4744/JBaby_Its_Pure_Love_GoldShampoo_Science_ATF6_3000x3000.webp?fm=jpg&w=98&q=80",
-      "https://images.ctfassets.net/j62l7jj24jl8/6yKZiUGllRqXw6H4nondX4/bce2f285f288cd2b5e02ad962a00b476/USA_JB_Classics_CF_EDA_Baby_Shampoo_Info_copy__1_.webp?fm=jpg&w=98&q=80",
-      "https://images.ctfassets.net/j62l7jj24jl8/1N1RTsSOJORqfn6JirpI1Y/057467270c968dea313aa23994845cf2/US_JNB_IMAGECLASSICS_EDA_ColorChange_ATF6_3300x3300.WEBP?fm=jpg&w=98&q=80",
-      "https://images.ctfassets.net/j62l7jj24jl8/4xkEKpkatW2lr2NSLoo0Sl/04b357c41b63ef33113deeea66f9d5b8/JNB_NA_US_381371177301_111773016_449509_Baby_Gold_Shampoo_13p6oz_00180_copy.webp?fm=jpg&w=98&q=80",
-      "https://images.ctfassets.net/j62l7jj24jl8/4eDLhWuQEodDjIogMG1eBj/fd15b5b14a103d623de7b21b59904794/JNB_NA_US_381371177301_111773016_449509_Baby_Gold_Shampoo_13p6oz_00000_copy.webp?fm=jpg&w=1920&q=80",
-      "https://images.ctfassets.net/j62l7jj24jl8/e5RyuXZmSi1LtKXKjOqPp/cfe05a95f75d86cf77b985889ba41c63/JBaby_Its_Pure_Love_GoldShampoo_New_Packaging_ATF2_3300x3300__2_.WEBP?fm=jpg&w=1920&q=80",
-      "https://images.ctfassets.net/j62l7jj24jl8/4I0hIL4rOUVc4ofnROQDEk/824b6ad26548b1b0822c3b72c54ee890/US_JNB_IMAGECLASSICS_EDA_ATF3_3300x3300.webp?fm=jpg&w=1920&q=80",
-      "https://images.ctfassets.net/j62l7jj24jl8/1TXH36N4SyBpUkByOoVxcC/36c26e2de7511f19fb4effeaaac8b946/US_JNB_IMAGECLASSICS_EDA_ATF7_3300x3300.webp?fm=jpg&w=1920&q=80",
-      "https://images.ctfassets.net/j62l7jj24jl8/63H5Z9F7FTC5GEKDnGQIAF/f60fe80232da9a051b7e8941f82d7626/JBaby_Its_Pure_Love_GoldShampoo_Ingredients_ATF5_3300x3300__2_.WEBP?fm=jpg&w=1920&q=80",
-      "https://images.ctfassets.net/j62l7jj24jl8/2scfunM1IpzdMgap7fK4qk/7a96519d24b203d2e0caaff82fec4744/JBaby_Its_Pure_Love_GoldShampoo_Science_ATF6_3000x3000.webp?fm=jpg&w=1920&q=80",
-      "https://images.ctfassets.net/j62l7jj24jl8/6yKZiUGllRqXw6H4nondX4/bce2f285f288cd2b5e02ad962a00b476/USA_JB_Classics_CF_EDA_Baby_Shampoo_Info_copy__1_.webp?fm=jpg&w=1920&q=80",
-      "https://images.ctfassets.net/j62l7jj24jl8/1N1RTsSOJORqfn6JirpI1Y/057467270c968dea313aa23994845cf2/US_JNB_IMAGECLASSICS_EDA_ColorChange_ATF6_3300x3300.WEBP?fm=jpg&w=1920&q=80"
-    ],
-    "images": [
-      {
-        "url": "https://images.ctfassets.net/j62l7jj24jl8/4eDLhWuQEodDjIogMG1eBj/fd15b5b14a103d623de7b21b59904794/JNB_NA_US_381371177301_111773016_449509_Baby_Gold_Shampoo_13p6oz_00000_copy.webp",
-        "file": "fetched/img_johnsons-baby-shampoo.webp",
-        "bytes": 511868
-      },
-      {
-        "url": "https://images.ctfassets.net/j62l7jj24jl8/3shDWjI3KbCDeJa7xp2tC8/3b4866cca5e204b0b91163b45c129a95/jns_381371175024_600ml_00000_1000wx1000h.jpeg",
-        "file": "fetched/img_johnsons-baby-shampoo__2.jpg",
-        "bytes": 33522
-      },
-      {
-        "url": "https://images.ctfassets.net/j62l7jj24jl8/23XJgNyXIsLKhPZvFdCvTi/3c6d8d94b106856719db91c39d66efa2/healthiest_start.webp?fm=jpg&w=1920&q=80",
-        "file": "fetched/img_johnsons-baby-shampoo__3.jpg",
-        "bytes": 100301
-      }
-    ]
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Klaricid&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 22022,
+    "file": "fetched/api_cs_034.json"
   },
   {
-    "name": "photo_johnsons-baby-lotion",
-    "url": "https://www.johnsonsbaby.in/baby-products/johnsons-baby-lotion",
+    "name": "api_cs_035",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Zithromax&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
     "status": 200,
-    "final_url": "https://www.johnsonsbaby.in/baby-products/johnsons-baby-lotion",
-    "title": "JOHNSON'S\u00ae Baby Moisturizing Lotion | Johnson's\u00ae Baby India",
-    "candidates": [
-      "https://images.ctfassets.net/j62l7jj24jl8/6dwhHdLYRU8D22klvvkU0z/2ca3aa35684bf5aaa02f56cbb8ed92c8/lotion_image_11-hi-in?w=559",
-      "https://images.ctfassets.net/j62l7jj24jl8/6dwhHdLYRU8D22klvvkU0z/2ca3aa35684bf5aaa02f56cbb8ed92c8/lotion_image_11-hi-in",
-      "https://images.ctfassets.net/j62l7jj24jl8/1mopUgk2sgj3URdat12L3N/40d19a1888058d96179908dfdf29a254/4374518c-a6ed-4782-a3e5-b2c201463c84_6147c071-91e8-48c5-b6f9-c57718897e6b_Prev.jpg?w=607",
-      "https://images.ctfassets.net/j62l7jj24jl8/2IjVRpPvDZFhAnJdO5vOBs/1542b080269af0b4818c9f8c7b1dad29/lotion_image_91.png?fm=jpg&w=1920&q=80",
-      "https://images.ctfassets.net/j62l7jj24jl8/ryxUe78YlLFkuoGNos95n/2f38c304bd3a9fa7b0c24e3f8b7f382c/lotion_image_101.png?fm=jpg&w=1920&q=80",
-      "https://images.ctfassets.net/j62l7jj24jl8/6HwGExKDFxAFxCk7fOcRZG/531cc95fb53bc34343ef150a53215ad2/lotion_image_81.png?fm=jpg&w=1920&q=80",
-      "https://images.ctfassets.net/j62l7jj24jl8/4UQUvDSFKupxMYMrTRUIFe/b569cad2b27d9f8692e1971f8a8d1cc2/animal_welfare.png?w=1920&fm=jpg&q=80",
-      "https://images.ctfassets.net/j62l7jj24jl8/1pwUwc7r1qmXu4Dzf8olwW/436f7aa3b370029749cce8c5744709fe/ttt1.png?fm=jpg&w=1920&q=80"
-    ],
-    "images": [
-      {
-        "url": "https://images.ctfassets.net/j62l7jj24jl8/6dwhHdLYRU8D22klvvkU0z/2ca3aa35684bf5aaa02f56cbb8ed92c8/lotion_image_11-hi-in?w=559",
-        "file": "fetched/img_johnsons-baby-lotion.png",
-        "bytes": 101061
-      },
-      {
-        "url": "https://images.ctfassets.net/j62l7jj24jl8/6dwhHdLYRU8D22klvvkU0z/2ca3aa35684bf5aaa02f56cbb8ed92c8/lotion_image_11-hi-in",
-        "file": "fetched/img_johnsons-baby-lotion__2.png",
-        "bytes": 95918
-      },
-      {
-        "url": "https://images.ctfassets.net/j62l7jj24jl8/1mopUgk2sgj3URdat12L3N/40d19a1888058d96179908dfdf29a254/4374518c-a6ed-4782-a3e5-b2c201463c84_6147c071-91e8-48c5-b6f9-c57718897e6b_Prev.jpg?w=607",
-        "file": "fetched/img_johnsons-baby-lotion__3.webp",
-        "bytes": 11322
-      },
-      {
-        "url": "https://images.ctfassets.net/j62l7jj24jl8/2IjVRpPvDZFhAnJdO5vOBs/1542b080269af0b4818c9f8c7b1dad29/lotion_image_91.png?fm=jpg&w=1920&q=80",
-        "file": "fetched/img_johnsons-baby-lotion__4.jpg",
-        "bytes": 39700
-      }
-    ]
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Zithromax&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 19600,
+    "file": "fetched/api_cs_035.json"
   },
   {
-    "name": "photo_johnsons-baby-oil",
-    "url": "https://www.johnsonsbaby.in/baby-products/johnsons-baby-oil-with-vitamin-e",
+    "name": "api_cs_036",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Azomax&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
     "status": 200,
-    "final_url": "https://www.johnsonsbaby.in/baby-products/johnsons-baby-oil-with-vitamin-e",
-    "title": "JOHNSON'S\u00ae Baby Oil With Vitamin E | Baby Massage Oil | Johnson's\u00ae Baby India",
-    "candidates": [
-      "https://images.ctfassets.net/j62l7jj24jl8/6Djf1Q9MblcyRcTT9GNXxw/f288fcd25bb8cec719a7baf26aafc5dc/oil_image_1-hi-in?w=559",
-      "https://images.ctfassets.net/j62l7jj24jl8/6Djf1Q9MblcyRcTT9GNXxw/f288fcd25bb8cec719a7baf26aafc5dc/oil_image_1-hi-in",
-      "https://images.ctfassets.net/j62l7jj24jl8/1mopUgk2sgj3URdat12L3N/40d19a1888058d96179908dfdf29a254/4374518c-a6ed-4782-a3e5-b2c201463c84_6147c071-91e8-48c5-b6f9-c57718897e6b_Prev.jpg?w=607",
-      "https://images.ctfassets.net/j62l7jj24jl8/x1a8LGhKZ5RKOrnut15gr/8b21f05f6f7d0e4e45b63627f02d62a4/oil_image_7.png?fm=jpg&w=1920&q=80",
-      "https://images.ctfassets.net/j62l7jj24jl8/5iMouI3AQBUzCwihC4eIxs/1be11f2ab37e95380167a33714c6a040/oil_image_8.png?fm=jpg&w=1920&q=80",
-      "https://images.ctfassets.net/j62l7jj24jl8/5XLnuTnIZ75su8I3LOSVbp/df96fa96ee34e2f31c624897c7de5355/oil_image_6.png?fm=jpg&w=1920&q=80",
-      "https://images.ctfassets.net/j62l7jj24jl8/4UQUvDSFKupxMYMrTRUIFe/b569cad2b27d9f8692e1971f8a8d1cc2/animal_welfare.png?w=1920&fm=jpg&q=80",
-      "https://images.ctfassets.net/j62l7jj24jl8/1pwUwc7r1qmXu4Dzf8olwW/436f7aa3b370029749cce8c5744709fe/ttt1.png?fm=jpg&w=1920&q=80"
-    ],
-    "images": [
-      {
-        "url": "https://images.ctfassets.net/j62l7jj24jl8/6Djf1Q9MblcyRcTT9GNXxw/f288fcd25bb8cec719a7baf26aafc5dc/oil_image_1-hi-in?w=559",
-        "file": "fetched/img_johnsons-baby-oil.png",
-        "bytes": 102087
-      },
-      {
-        "url": "https://images.ctfassets.net/j62l7jj24jl8/6Djf1Q9MblcyRcTT9GNXxw/f288fcd25bb8cec719a7baf26aafc5dc/oil_image_1-hi-in",
-        "file": "fetched/img_johnsons-baby-oil__2.png",
-        "bytes": 99940
-      },
-      {
-        "url": "https://images.ctfassets.net/j62l7jj24jl8/1mopUgk2sgj3URdat12L3N/40d19a1888058d96179908dfdf29a254/4374518c-a6ed-4782-a3e5-b2c201463c84_6147c071-91e8-48c5-b6f9-c57718897e6b_Prev.jpg?w=607",
-        "file": "fetched/img_johnsons-baby-oil__3.webp",
-        "bytes": 11322
-      },
-      {
-        "url": "https://images.ctfassets.net/j62l7jj24jl8/x1a8LGhKZ5RKOrnut15gr/8b21f05f6f7d0e4e45b63627f02d62a4/oil_image_7.png?fm=jpg&w=1920&q=80",
-        "file": "fetched/img_johnsons-baby-oil__4.jpg",
-        "bytes": 32083
-      }
-    ]
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Azomax&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 20,
+    "file": "fetched/api_cs_036.json"
   },
   {
-    "name": "photo_johnsons-baby-powder",
-    "url": "https://www.johnsonsbaby.in/baby-products/johnsons-baby-powder",
+    "name": "api_cs_037",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Flagyl&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
     "status": 200,
-    "final_url": "https://www.johnsonsbaby.in/baby-products/johnsons-baby-powder",
-    "title": "Johnson\u2019s Baby Powder Natural | Johnson's\u00ae Baby India",
-    "candidates": [
-      "https://images.ctfassets.net/j62l7jj24jl8/1pwhng1qZb8H1QWC1kCQkP/8f64c3fc4ac519fbfa499426fe04f513/johnsons_baby_powder_200g_01-hi-in?w=547",
-      "https://images.ctfassets.net/j62l7jj24jl8/1pwhng1qZb8H1QWC1kCQkP/8f64c3fc4ac519fbfa499426fe04f513/johnsons_baby_powder_200g_01-hi-in",
-      "https://images.ctfassets.net/j62l7jj24jl8/1mopUgk2sgj3URdat12L3N/40d19a1888058d96179908dfdf29a254/4374518c-a6ed-4782-a3e5-b2c201463c84_6147c071-91e8-48c5-b6f9-c57718897e6b_Prev.jpg?w=607",
-      "https://images.ctfassets.net/j62l7jj24jl8/2piB8fWMtZdY0VkarQlyme/8c655e71487826037db2083a0443cd45/powder_icon_11.png?w=1920&fm=jpg&q=80",
-      "https://images.ctfassets.net/j62l7jj24jl8/5LGnSAYXSGb5XI3K4oDi3N/df8133437eed25422681292ce1146f2f/icon_21_1.png?w=1920&fm=jpg&q=80",
-      "https://images.ctfassets.net/j62l7jj24jl8/5RImpyDOR1rEA8O1L1sjD1/cde13b956c9d7835bc6706a9b404939c/powder_icon_31.png?w=1920&fm=jpg&q=80",
-      "https://images.ctfassets.net/j62l7jj24jl8/2gARpNRjwaPTxkq7hRtDdu/df42bf660bba8386cfa177d9e2a8d73b/powder_image_91.png?fm=jpg&w=1920&q=80",
-      "https://images.ctfassets.net/j62l7jj24jl8/52kYZ7ktItAac63LpcdAKt/1b848a8ee854f8c3bc8d335223634fe2/powder_image_81.png?fm=jpg&w=1920&q=80",
-      "https://images.ctfassets.net/j62l7jj24jl8/4UQUvDSFKupxMYMrTRUIFe/b569cad2b27d9f8692e1971f8a8d1cc2/animal_welfare.png?w=1920&fm=jpg&q=80",
-      "https://images.ctfassets.net/j62l7jj24jl8/1pwUwc7r1qmXu4Dzf8olwW/436f7aa3b370029749cce8c5744709fe/ttt1.png?fm=jpg&w=1920&q=80"
-    ],
-    "images": [
-      {
-        "url": "https://images.ctfassets.net/j62l7jj24jl8/1pwhng1qZb8H1QWC1kCQkP/8f64c3fc4ac519fbfa499426fe04f513/johnsons_baby_powder_200g_01-hi-in?w=547",
-        "file": "fetched/img_johnsons-baby-powder.png",
-        "bytes": 98986
-      },
-      {
-        "url": "https://images.ctfassets.net/j62l7jj24jl8/1pwhng1qZb8H1QWC1kCQkP/8f64c3fc4ac519fbfa499426fe04f513/johnsons_baby_powder_200g_01-hi-in",
-        "file": "fetched/img_johnsons-baby-powder__2.png",
-        "bytes": 94366
-      },
-      {
-        "url": "https://images.ctfassets.net/j62l7jj24jl8/1mopUgk2sgj3URdat12L3N/40d19a1888058d96179908dfdf29a254/4374518c-a6ed-4782-a3e5-b2c201463c84_6147c071-91e8-48c5-b6f9-c57718897e6b_Prev.jpg?w=607",
-        "file": "fetched/img_johnsons-baby-powder__3.webp",
-        "bytes": 11322
-      },
-      {
-        "url": "https://images.ctfassets.net/j62l7jj24jl8/2gARpNRjwaPTxkq7hRtDdu/df42bf660bba8386cfa177d9e2a8d73b/powder_image_91.png?fm=jpg&w=1920&q=80",
-        "file": "fetched/img_johnsons-baby-powder__4.jpg",
-        "bytes": 33095
-      }
-    ]
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Flagyl&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 21465,
+    "file": "fetched/api_cs_037.json"
   },
   {
-    "name": "photo_johnsons-baby-soap",
-    "url": "https://www.johnsonsbaby.in/baby-products/johnsons-baby-soap",
+    "name": "api_cs_038",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Ciproxin&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
     "status": 200,
-    "final_url": "https://www.johnsonsbaby.in/baby-products/johnsons-baby-soap",
-    "title": "JOHNSON'S\u00ae Baby Soaps | Soap For Babies | JOHNSON'S\u00ae Baby India",
-    "candidates": [
-      "https://images.ctfassets.net/j62l7jj24jl8/4Mw7TLGFOspBXgk5ZdBp1t/a050b4563c4871dad4ab98f2d4e5283f/Artboard_1.jpg?w=1097",
-      "https://images.ctfassets.net/j62l7jj24jl8/4Mw7TLGFOspBXgk5ZdBp1t/a050b4563c4871dad4ab98f2d4e5283f/Artboard_1.jpg",
-      "https://images.ctfassets.net/j62l7jj24jl8/1mopUgk2sgj3URdat12L3N/40d19a1888058d96179908dfdf29a254/4374518c-a6ed-4782-a3e5-b2c201463c84_6147c071-91e8-48c5-b6f9-c57718897e6b_Prev.jpg?w=607",
-      "https://images.ctfassets.net/j62l7jj24jl8/4Mw7TLGFOspBXgk5ZdBp1t/a050b4563c4871dad4ab98f2d4e5283f/Artboard_1.jpg?w=98&fm=jpg&q=80",
-      "https://images.ctfassets.net/j62l7jj24jl8/2Rhzxwf304AoFl3RYVwXss/2273bd0ed6339fb96c64bc3336eb6ff7/Johnson-baby-soap-2.jpg?w=98&fm=jpg&q=80",
-      "https://images.ctfassets.net/j62l7jj24jl8/4tnLqMk7vyyR8vu4bM7Bh2/9e7c7175446ed3be1c7821d1730a489d/Johnson-baby-soap-5.jpg?w=98&fm=jpg&q=80",
-      "https://images.ctfassets.net/j62l7jj24jl8/3P9lnLuT6p9pan0vFgGPCZ/19c6e98fabd098e05d070d63de2517c6/Johnson-baby-soap-3.jpg?w=98&fm=jpg&q=80",
-      "https://images.ctfassets.net/j62l7jj24jl8/7tenBI9cwUS1G4tGWvR4Ed/086870d0bdba975202603df18382d01d/Johnson-baby-soap-4.jpg?w=98&fm=jpg&q=80",
-      "https://images.ctfassets.net/j62l7jj24jl8/50y7sSJeyCXySCPNhUnxuK/54b1082a0521eae0cc0a472895f1ba73/Johnson-baby-soap-6.png?w=98&fm=jpg&q=80",
-      "https://images.ctfassets.net/j62l7jj24jl8/7q1XigoWhJCO3OF8TTVxh7/674c6c52822e1ea34f4b7d2f596fea7e/Johnson-baby-soap-7.png?w=98&fm=jpg&q=80",
-      "https://images.ctfassets.net/j62l7jj24jl8/33xxACrrpY65ATMfH9aBPL/27611de6f152ad3d147a5786a410ba3d/Artboard_8.jpg?w=98&fm=jpg&q=80",
-      "https://images.ctfassets.net/j62l7jj24jl8/4Mw7TLGFOspBXgk5ZdBp1t/a050b4563c4871dad4ab98f2d4e5283f/Artboard_1.jpg?w=1920&fm=jpg&q=80",
-      "https://images.ctfassets.net/j62l7jj24jl8/2Rhzxwf304AoFl3RYVwXss/2273bd0ed6339fb96c64bc3336eb6ff7/Johnson-baby-soap-2.jpg?w=1920&fm=jpg&q=80",
-      "https://images.ctfassets.net/j62l7jj24jl8/4tnLqMk7vyyR8vu4bM7Bh2/9e7c7175446ed3be1c7821d1730a489d/Johnson-baby-soap-5.jpg?w=1920&fm=jpg&q=80",
-      "https://images.ctfassets.net/j62l7jj24jl8/3P9lnLuT6p9pan0vFgGPCZ/19c6e98fabd098e05d070d63de2517c6/Johnson-baby-soap-3.jpg?w=1920&fm=jpg&q=80",
-      "https://images.ctfassets.net/j62l7jj24jl8/7tenBI9cwUS1G4tGWvR4Ed/086870d0bdba975202603df18382d01d/Johnson-baby-soap-4.jpg?w=1920&fm=jpg&q=80",
-      "https://images.ctfassets.net/j62l7jj24jl8/50y7sSJeyCXySCPNhUnxuK/54b1082a0521eae0cc0a472895f1ba73/Johnson-baby-soap-6.png?w=1920&fm=jpg&q=80",
-      "https://images.ctfassets.net/j62l7jj24jl8/7q1XigoWhJCO3OF8TTVxh7/674c6c52822e1ea34f4b7d2f596fea7e/Johnson-baby-soap-7.png?w=1920&fm=jpg&q=80",
-      "https://images.ctfassets.net/j62l7jj24jl8/33xxACrrpY65ATMfH9aBPL/27611de6f152ad3d147a5786a410ba3d/Artboard_8.jpg?w=1920&fm=jpg&q=80",
-      "https://images.ctfassets.net/j62l7jj24jl8/3YB6Awa3XFk8GQPR8TKHxN/c31968d4c3661a9eab5f9478f1523618/soap_image_71.png?fm=jpg&w=1920&q=80"
-    ],
-    "images": [
-      {
-        "url": "https://images.ctfassets.net/j62l7jj24jl8/4Mw7TLGFOspBXgk5ZdBp1t/a050b4563c4871dad4ab98f2d4e5283f/Artboard_1.jpg?w=1097",
-        "file": "fetched/img_johnsons-baby-soap.jpg",
-        "bytes": 107921
-      },
-      {
-        "url": "https://images.ctfassets.net/j62l7jj24jl8/4Mw7TLGFOspBXgk5ZdBp1t/a050b4563c4871dad4ab98f2d4e5283f/Artboard_1.jpg",
-        "file": "fetched/img_johnsons-baby-soap__2.jpg",
-        "bytes": 236546
-      },
-      {
-        "url": "https://images.ctfassets.net/j62l7jj24jl8/1mopUgk2sgj3URdat12L3N/40d19a1888058d96179908dfdf29a254/4374518c-a6ed-4782-a3e5-b2c201463c84_6147c071-91e8-48c5-b6f9-c57718897e6b_Prev.jpg?w=607",
-        "file": "fetched/img_johnsons-baby-soap__3.webp",
-        "bytes": 11322
-      },
-      {
-        "url": "https://images.ctfassets.net/j62l7jj24jl8/4Mw7TLGFOspBXgk5ZdBp1t/a050b4563c4871dad4ab98f2d4e5283f/Artboard_1.jpg?w=98&fm=jpg&q=80",
-        "file": "fetched/img_johnsons-baby-soap__4.jpg",
-        "bytes": 5092
-      }
-    ]
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Ciproxin&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 19321,
+    "file": "fetched/api_cs_038.json"
   },
   {
-    "name": "photo_listerine-cool-mint",
-    "url": "https://www.listerine.com/products/mouthwash/antiseptic-cool-mint",
+    "name": "api_cs_039",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Cefiget&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
     "status": 200,
-    "final_url": "https://www.listerine.com/products/mouthwash/antiseptic-cool-mint",
-    "title": "LISTERINE\u00ae COOL MINT\u00ae Intense Antiseptic Mouthwash",
-    "candidates": [
-      "https://images.ctfassets.net/z7cr8rgccizj/4AbQVi5j8wR988zAZvFCQk/d349dec3190d5f3c4189786075669df3/LIS_USA_US_312547427555_524275587_686712_Cool_Mint_Intense_1p5L_PR_00000.webp",
-      "https://images.ctfassets.net/z7cr8rgccizj/4AbQVi5j8wR988zAZvFCQk/b321c7e354d132fd4fcbc7559b2d49ba/LIS_USA_US_312547427555_524275587_686712_Cool_Mint_Intense_1p5L_PR_00000.webp",
-      "https://images.ctfassets.net/z7cr8rgccizj/4AbQVi5j8wR988zAZvFCQk/d349dec3190d5f3c4189786075669df3/LIS_USA_US_312547427555_524275587_686712_Cool_Mint_Intense_1p5L_PR_00000.webp?fm=jpg&w=98&q=80",
-      "https://images.ctfassets.net/z7cr8rgccizj/1rxX7tklATPkl8dq2zxcgQ/818a76d7ba5e6e80b0c5f6063a44f3f4/LIS_B__From_To_CM_Intense_RGB_01.webp?fm=jpg&w=98&q=80",
-      "https://images.ctfassets.net/z7cr8rgccizj/1kRF7YM8tBeFhvNzXwVH46/863e7aa409a58d312fd6ed210322544f/122402_KEN_LIS_CoolMint_1L_2pk_ATF_03_A.WEBP?fm=jpg&w=98&q=80",
-      "https://images.ctfassets.net/z7cr8rgccizj/4sJeMheMNIt2uess1cyaI5/f666d3de1961ab19a3184a5fafb4ed35/122402_KEN_LIS_CoolMint_1L_2pk_ATF_04.WEBP?fm=jpg&w=98&q=80",
-      "https://images.ctfassets.net/z7cr8rgccizj/71IOQQF3L5sXCNBnXmRMLu/4f1dd74b9147fe2614527e167f2f29cf/122402_KEN_LIS_CoolMint_1L_2pk_ATF_05.WEBP?fm=jpg&w=98&q=80",
-      "https://images.ctfassets.net/z7cr8rgccizj/2VxEY6LsCYEVpQjD6nsuoH/cd466149e3bacf165b547f1d7add580c/122402_KEN_LIS_CoolMint_1L_2pk_ATF_06.WEBP?fm=jpg&w=98&q=80",
-      "https://images.ctfassets.net/z7cr8rgccizj/79WQSa9mURWhN9dmEZ0LON/ea854a1d11a9fd7c1be57bf007d4c8de/LIS_B__How_To_Use_CM_Intense_RGB_07.webp?fm=jpg&w=98&q=80",
-      "https://images.ctfassets.net/z7cr8rgccizj/3RrxJLEutWHIlIjWDvVaBt/a47555fdefe940bb7020289153c9cfcc/122402_KEN_LIS_CoolMint_1L_2pk_ATF_09_B.WEBP?fm=jpg&w=98&q=80",
-      "https://images.ctfassets.net/z7cr8rgccizj/3GaCxPkhsx6f7MiCYiwecf/540a2c5e899925dcb6beccbea91a6915/LIS_USA_US_312547427555_524275587_686712_Cool_Mint_Intense_1p5L_PR_00180.webp?fm=jpg&w=98&q=80",
-      "https://images.ctfassets.net/z7cr8rgccizj/4AbQVi5j8wR988zAZvFCQk/d349dec3190d5f3c4189786075669df3/LIS_USA_US_312547427555_524275587_686712_Cool_Mint_Intense_1p5L_PR_00000.webp?fm=jpg&w=1920&q=80",
-      "https://images.ctfassets.net/z7cr8rgccizj/6K2k8B2Von1ueU2ipqlpjb/172e297621c4fe35a523a050559b07b9/our-history-1985.png?fm=avif&w=3840&q=80",
-      "https://images.ctfassets.net/z7cr8rgccizj/1rxX7tklATPkl8dq2zxcgQ/818a76d7ba5e6e80b0c5f6063a44f3f4/LIS_B__From_To_CM_Intense_RGB_01.webp?fm=jpg&w=1920&q=80",
-      "https://images.ctfassets.net/z7cr8rgccizj/1kRF7YM8tBeFhvNzXwVH46/863e7aa409a58d312fd6ed210322544f/122402_KEN_LIS_CoolMint_1L_2pk_ATF_03_A.WEBP?fm=jpg&w=1920&q=80",
-      "https://images.ctfassets.net/z7cr8rgccizj/4sJeMheMNIt2uess1cyaI5/f666d3de1961ab19a3184a5fafb4ed35/122402_KEN_LIS_CoolMint_1L_2pk_ATF_04.WEBP?fm=jpg&w=1920&q=80",
-      "https://images.ctfassets.net/z7cr8rgccizj/71IOQQF3L5sXCNBnXmRMLu/4f1dd74b9147fe2614527e167f2f29cf/122402_KEN_LIS_CoolMint_1L_2pk_ATF_05.WEBP?fm=jpg&w=1920&q=80",
-      "https://images.ctfassets.net/z7cr8rgccizj/2VxEY6LsCYEVpQjD6nsuoH/cd466149e3bacf165b547f1d7add580c/122402_KEN_LIS_CoolMint_1L_2pk_ATF_06.WEBP?fm=jpg&w=1920&q=80",
-      "https://images.ctfassets.net/z7cr8rgccizj/79WQSa9mURWhN9dmEZ0LON/ea854a1d11a9fd7c1be57bf007d4c8de/LIS_B__How_To_Use_CM_Intense_RGB_07.webp?fm=jpg&w=1920&q=80",
-      "https://images.ctfassets.net/z7cr8rgccizj/3RrxJLEutWHIlIjWDvVaBt/a47555fdefe940bb7020289153c9cfcc/122402_KEN_LIS_CoolMint_1L_2pk_ATF_09_B.WEBP?fm=jpg&w=1920&q=80"
-    ],
-    "images": [
-      {
-        "url": "https://images.ctfassets.net/z7cr8rgccizj/4AbQVi5j8wR988zAZvFCQk/d349dec3190d5f3c4189786075669df3/LIS_USA_US_312547427555_524275587_686712_Cool_Mint_Intense_1p5L_PR_00000.webp",
-        "file": "fetched/img_listerine-cool-mint.webp",
-        "bytes": 145872
-      },
-      {
-        "url": "https://images.ctfassets.net/z7cr8rgccizj/4AbQVi5j8wR988zAZvFCQk/b321c7e354d132fd4fcbc7559b2d49ba/LIS_USA_US_312547427555_524275587_686712_Cool_Mint_Intense_1p5L_PR_00000.webp",
-        "file": "fetched/img_listerine-cool-mint__2.webp",
-        "bytes": 145872
-      }
-    ]
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Cefiget&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 20,
+    "file": "fetched/api_cs_039.json"
   },
   {
-    "name": "photo_supradyn-tablets",
-    "url": "https://supradyn.in/what_does_it_contain.aspx",
-    "status": null,
-    "error": "URLError: <urlopen error timed out>"
+    "name": "api_cs_040",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Surbex-Z&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "status": 200,
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Surbex-Z&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 4775,
+    "file": "fetched/api_cs_040.json"
   },
   {
-    "name": "photo_berocca-effervescent",
-    "url": "https://www.berocca.pk/products/performance/berocca-performance-orange-effervescent-tablets",
-    "status": null,
-    "error": "URLError: <urlopen error [Errno -2] Name or service not known>"
+    "name": "api_cs_041",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Supradyn&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "status": 200,
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Supradyn&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 13618,
+    "file": "fetched/api_cs_041.json"
+  },
+  {
+    "name": "api_cs_042",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Berocca&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "status": 200,
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Berocca&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 7419,
+    "file": "fetched/api_cs_042.json"
+  },
+  {
+    "name": "api_cs_043",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=folic%20acid%20tablets&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "status": 200,
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=folic%20acid%20tablets&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 30704,
+    "file": "fetched/api_cs_043.json"
+  },
+  {
+    "name": "api_cs_044",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=calcium%20vitamin%20D%20tablets&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "status": 200,
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=calcium%20vitamin%20D%20tablets&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 33504,
+    "file": "fetched/api_cs_044.json"
+  },
+  {
+    "name": "api_cs_045",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=zinc%20syrup&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "status": 200,
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=zinc%20syrup&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 30862,
+    "file": "fetched/api_cs_045.json"
+  },
+  {
+    "name": "api_cs_046",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=vitamin%20D%20drops&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "status": 200,
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=vitamin%20D%20drops&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 22901,
+    "file": "fetched/api_cs_046.json"
+  },
+  {
+    "name": "api_cs_047",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Vidaylin&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "status": 200,
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Vidaylin&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 2311,
+    "file": "fetched/api_cs_047.json"
+  },
+  {
+    "name": "api_cs_048",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Vidaylin-L&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "status": 200,
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Vidaylin-L&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 2311,
+    "file": "fetched/api_cs_048.json"
+  },
+  {
+    "name": "api_cs_049",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Amaryl&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "status": 200,
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Amaryl&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 27238,
+    "file": "fetched/api_cs_049.json"
+  },
+  {
+    "name": "api_cs_050",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Daonil&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "status": 200,
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Daonil&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 23284,
+    "file": "fetched/api_cs_050.json"
+  },
+  {
+    "name": "api_cs_051",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Galvus&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "status": 200,
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Galvus&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 20618,
+    "file": "fetched/api_cs_051.json"
+  },
+  {
+    "name": "api_cs_052",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Galvus%20Met&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "status": 200,
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Galvus%20Met&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 28517,
+    "file": "fetched/api_cs_052.json"
+  },
+  {
+    "name": "api_cs_053",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Januvia&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "status": 200,
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Januvia&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 25200,
+    "file": "fetched/api_cs_053.json"
+  },
+  {
+    "name": "api_cs_054",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Janumet&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "status": 200,
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Janumet&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 26869,
+    "file": "fetched/api_cs_054.json"
+  },
+  {
+    "name": "api_cs_055",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Accu-Chek&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "status": 200,
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Accu-Chek&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 21056,
+    "file": "fetched/api_cs_055.json"
+  },
+  {
+    "name": "api_cs_056",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Diovan&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "status": 200,
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Diovan&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 23061,
+    "file": "fetched/api_cs_056.json"
+  },
+  {
+    "name": "api_cs_057",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Co-Diovan&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "status": 200,
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Co-Diovan&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 28767,
+    "file": "fetched/api_cs_057.json"
+  },
+  {
+    "name": "api_cs_058",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Exforge&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "status": 200,
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Exforge&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 20983,
+    "file": "fetched/api_cs_058.json"
+  },
+  {
+    "name": "api_cs_059",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Plavix&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "status": 200,
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Plavix&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 21136,
+    "file": "fetched/api_cs_059.json"
+  },
+  {
+    "name": "api_cs_060",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Lasix&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "status": 200,
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Lasix&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 19531,
+    "file": "fetched/api_cs_060.json"
+  },
+  {
+    "name": "api_cs_061",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Polyfax&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "status": 200,
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Polyfax&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 18894,
+    "file": "fetched/api_cs_061.json"
+  },
+  {
+    "name": "api_cs_062",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Fucidin&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "status": 200,
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Fucidin&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 19731,
+    "file": "fetched/api_cs_062.json"
+  },
+  {
+    "name": "api_cs_063",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Betnovate&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "status": 200,
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Betnovate&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 26527,
+    "file": "fetched/api_cs_063.json"
+  },
+  {
+    "name": "api_cs_064",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Dermovate&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "status": 200,
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Dermovate&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 25721,
+    "file": "fetched/api_cs_064.json"
+  },
+  {
+    "name": "api_cs_065",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Otrivin&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "status": 200,
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Otrivin&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 17519,
+    "file": "fetched/api_cs_065.json"
+  },
+  {
+    "name": "api_cs_066",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Tobradex&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "status": 200,
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Tobradex&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 8007,
+    "file": "fetched/api_cs_066.json"
+  },
+  {
+    "name": "api_cs_067",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Refresh%20Tears%20eye%20drops&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "status": 200,
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Refresh%20Tears%20eye%20drops&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 21131,
+    "file": "fetched/api_cs_067.json"
+  },
+  {
+    "name": "api_cs_068",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Molfix%20diaper&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "status": 200,
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Molfix%20diaper&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 20,
+    "file": "fetched/api_cs_068.json"
+  },
+  {
+    "name": "api_cs_069",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Johnson%27s%20baby%20lotion&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "status": 200,
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Johnson%27s%20baby%20lotion&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 24362,
+    "file": "fetched/api_cs_069.json"
+  },
+  {
+    "name": "api_cs_070",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Johnson%27s%20baby%20oil&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "status": 200,
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Johnson%27s%20baby%20oil&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 19503,
+    "file": "fetched/api_cs_070.json"
+  },
+  {
+    "name": "api_cs_071",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Johnson%27s%20baby%20powder&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "status": 200,
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Johnson%27s%20baby%20powder&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 20495,
+    "file": "fetched/api_cs_071.json"
+  },
+  {
+    "name": "api_cs_072",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Sualin&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "status": 200,
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Sualin&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 18251,
+    "file": "fetched/api_cs_072.json"
+  },
+  {
+    "name": "api_cs_073",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Joshina&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "status": 200,
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Joshina&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 30915,
+    "file": "fetched/api_cs_073.json"
+  },
+  {
+    "name": "api_cs_074",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Safi%20Hamdard&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "status": 200,
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Safi%20Hamdard&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 18980,
+    "file": "fetched/api_cs_074.json"
+  },
+  {
+    "name": "api_cs_075",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Joshanda&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "status": 200,
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Joshanda&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 1768,
+    "file": "fetched/api_cs_075.json"
+  },
+  {
+    "name": "api_cs_076",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Dettol&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "status": 200,
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Dettol&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 21539,
+    "file": "fetched/api_cs_076.json"
+  },
+  {
+    "name": "api_cs_077",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Hansaplast&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "status": 200,
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Hansaplast&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 18657,
+    "file": "fetched/api_cs_077.json"
+  },
+  {
+    "name": "api_cs_078",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=cotton%20wool%20roll&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "status": 200,
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=cotton%20wool%20roll&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 22417,
+    "file": "fetched/api_cs_078.json"
+  },
+  {
+    "name": "api_cs_079",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=crepe%20bandage&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "status": 200,
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=crepe%20bandage&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 18445,
+    "file": "fetched/api_cs_079.json"
+  },
+  {
+    "name": "api_cs_080",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=gauze%20swabs&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "status": 200,
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=gauze%20swabs&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 54604,
+    "file": "fetched/api_cs_080.json"
+  },
+  {
+    "name": "api_cs_081",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=surgical%20face%20mask&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "status": 200,
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=surgical%20face%20mask&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 28580,
+    "file": "fetched/api_cs_081.json"
+  },
+  {
+    "name": "api_cs_082",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=disposable%20examination%20gloves&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "status": 200,
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=disposable%20examination%20gloves&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 18572,
+    "file": "fetched/api_cs_082.json"
+  },
+  {
+    "name": "api_cs_083",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=pulse%20oximeter%20fingertip&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "status": 200,
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=pulse%20oximeter%20fingertip&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 14358,
+    "file": "fetched/api_cs_083.json"
+  },
+  {
+    "name": "api_cs_084",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Closeup%20toothpaste&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "status": 200,
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Closeup%20toothpaste&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 27005,
+    "file": "fetched/api_cs_084.json"
+  },
+  {
+    "name": "api_cs_085",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Safeguard%20soap&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "status": 200,
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Safeguard%20soap&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 22522,
+    "file": "fetched/api_cs_085.json"
+  },
+  {
+    "name": "api_cs_086",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Lifebuoy%20hand%20wash&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "status": 200,
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Lifebuoy%20hand%20wash&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 22116,
+    "file": "fetched/api_cs_086.json"
+  },
+  {
+    "name": "api_cs_087",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Sunsilk%20shampoo&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "status": 200,
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Sunsilk%20shampoo&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 7887,
+    "file": "fetched/api_cs_087.json"
+  },
+  {
+    "name": "api_cs_088",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Vaseline%20lotion&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "status": 200,
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Vaseline%20lotion&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 24462,
+    "file": "fetched/api_cs_088.json"
+  },
+  {
+    "name": "api_cs_089",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Pond%27s%20cold%20cream&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "status": 200,
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Pond%27s%20cold%20cream&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 23763,
+    "file": "fetched/api_cs_089.json"
+  },
+  {
+    "name": "api_cs_090",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Johnson%27s%20baby%20soap&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "status": 200,
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Johnson%27s%20baby%20soap&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url%7Csize%7Cmime%7Cextmetadata&iiurlwidth=640&iiextmetadatafilter=LicenseShortName%7CArtist%7CLicenseUrl%7CImageDescription&format=json",
+    "content_type": "application/json",
+    "bytes": 20381,
+    "file": "fetched/api_cs_090.json"
   }
 ]
