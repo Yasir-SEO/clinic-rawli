@@ -9,11 +9,12 @@ It's a fast static site: no server, database or monthly fees. It's hosted free o
 ## What's included
 
 **Online shop (WooCommerce-style)**
-- **191 products** in 18 categories: fever & pain, cough & cold, allergy & asthma, stomach, antibiotics, kids' medicines, vitamins, diabetes, heart & BP, skin care, eye/ear/nose, baby care, diapers & wipes, oral care (toothpaste, toothbrushes, mouthwash), personal care & hygiene (soaps, handwash, shampoo, pads, razors), herbal, first aid and medical devices.
-- **Manufacturer strip** of 31 companies (GSK, Haleon, Abbott, Getz, Searle, Sami, Hilton, Novartis, Sanofi, Colgate-Palmolive, Unilever, P&G, Reckitt and more). Each one has its own brand page.
+- **199 products** in 18 categories: fever & pain, cough & cold, allergy & asthma, stomach, antibiotics, kids' medicines, vitamins, diabetes, heart & BP, skin care, eye/ear/nose, baby care, diapers & wipes, oral care (toothpaste, toothbrushes, mouthwash), personal care & hygiene (soaps, handwash, shampoo, pads, razors), herbal, first aid and medical devices.
+- **Manufacturer strip** of 32 companies (GSK, Haleon, Abbott, Getz, Searle, Sami, Hilton, Novartis, Sanofi, Colgate-Palmolive, Unilever, P&G, Reckitt and more). Each one has its own brand page.
 - **A page for every medicine:** active ingredient, strength, form, manufacturer, prescription status, related products and structured data for Google.
 - **Shop page features:** live search with suggestions in the header, filters (category, manufacturer, kids, no-prescription), sorting, and "Load more".
 - **Cart:** add to cart with quantity buttons, a slide-out mini cart, a full cart page, and "Request a medicine" for anything not listed.
+- **Request any medicine:** searches also show matches from a list of about 14,700 medicines sold in Pakistan (name, maker and pack size only), each with a **Request** button that adds it to the cart. Controlled medicines are left out of this list.
 - **Checkout:** name and mobile, pickup or home delivery with address, payment method and notes. A prescription confirmation is required for Rx items.
 - **Placing an order** opens WhatsApp with the full order (order number, items, customer details) ready to send. Nothing is stored on the website.
 
@@ -41,7 +42,7 @@ Everything shop-wide lives in **`site.config.json`**. The phone/WhatsApp number 
 Then **rebuild** (see below). The phone, hours and WhatsApp links update on every page.
 
 Also check:
-1. **Prices.** All products show **"Price on request"** because current retail prices weren't available. Add a `price` (in rupees) to any product in `data/products.js` and the cart, totals and Google data use it automatically.
+1. **Prices.** 38 common medicines show the retail price (MRP) and pack size from a public Pakistani price list (October 2026). Check them against your own stock and change any that differ. The rest show **"Price on request"**. Add a `price` (in rupees) and `pack` to any product in `data/products.js` and the cart, totals and Google data use it automatically.
 2. **Products.** The catalogue lists common medicines sold in Pakistan with their manufacturers. Remove what you don't stock and add what you do; each product is one line in `data/products.js`. Controlled medicines (sleeping pills, tramadol, codeine syrups, etc.) are deliberately **not** listed for online ordering.
 3. **Address & map.** Add the street or landmark in `src/pages/index.html` (Address card), and the Google Maps link or embed for your exact location.
 4. **Services.** Check the clinic services list in `src/pages/index.html`.
@@ -53,8 +54,10 @@ Open `data/products.js`. Each product is one line:
 ```js
 P({ id: "panadol-500mg-tablets", name: "Panadol 500mg Tablets", brand: "Panadol", strength: "500mg",
     generic: "Paracetamol", form: "tablet", unit: "Strip", cat: "fever-pain", mfr: "haleon",
-    price: 45, use: "Relief from fever, headache, toothache and body aches.", featured: true }),
+    price: 32, pack: "10 tablets", use: "Relief from fever, headache, toothache and body aches.", featured: true }),
 ```
+
+- `price` is the retail price (MRP) of one `unit`, and `pack` says what is inside it, e.g. `"10 tablets"`, `"90ml"` or `"20g"`. Leave `price` out to show "Price on request".
 
 - `rx: true` marks a prescription medicine, and `kids: true` adds it to Kids' Medicines.
 - `featured: true` shows it in "Popular medicines" on the home page.
@@ -97,6 +100,7 @@ js/store.js          Cart, mini cart, header search
 js/shop.js           Filters, sorting, load more
 js/checkout.js       Cart page and WhatsApp checkout
 js/main.js           Open/closed status, WhatsApp quick form
+data/all-medicines.json  "Request any medicine" list (made by tools/build_medicine_index.py)
 ```
 
 ## Preview locally

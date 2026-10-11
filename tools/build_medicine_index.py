@@ -35,6 +35,21 @@ CONTROLLED = [
 ]
 CONTROLLED_RE = re.compile(r"\b(" + "|".join(CONTROLLED) + r")\b", re.I)
 
+# Brand names of controlled medicines found in the list by hand review (first word
+# of the medicine name): tramadol, alprazolam, zolpidem, nalbuphine, pentazocine,
+# codeine/hydrocodone combinations, ketamine, tapentadol, clonazepam, triazolam.
+BLOCKED_BRANDS = {
+    "albotram", "atramed", "tramagesic", "tramapar", "tramaway", "tramed", "tramitt", "ultrame", "xtramol",
+    "alp", "azolam", "zolam", "stilnox", "zolp", "zolpip", "kinz", "nalbuf", "nalburax", "pentazogon",
+    "codogesic", "paracodeine", "pcodine", "hycodine", "corex-d", "ketamax", "tapento", "klozepam",
+    "triazolin",
+}
+
+
+def is_controlled(name):
+    first = re.split(r"\s+", name.strip().lower())[0].strip(".,()")
+    return bool(CONTROLLED_RE.search(name)) or first in BLOCKED_BRANDS
+
 
 def tidy(s):
     return re.sub(r"\s+", " ", (s or "")).strip()
@@ -52,7 +67,7 @@ def main():
             name, maker, pack = tidy(item.get("name")), tidy(item.get("maker")), tidy(item.get("pack"))
             if not name:
                 continue
-            if CONTROLLED_RE.search(name):
+            if is_controlled(name):
                 removed.append(name)
                 continue
             key = (name.lower(), maker.lower(), pack.lower())

@@ -475,7 +475,7 @@ for (const p of DATA.products) {
     ["Active ingredient", p.generic],
     p.strength ? ["Strength / variant", p.strength] : null,
     ["Form", C.FORM_NAME[p.form] || p.form],
-    ["Sold as", `Per ${p.unit.toLowerCase()}`],
+    ["Sold as", `Per ${p.unit.toLowerCase()}${p.pack ? ` (${p.pack})` : ""}`],
     ["Manufacturer", mfr.hidden ? "Various (available brands may vary)" : mfr.full],
     ["Category", cat.name],
     ["Prescription", p.rx ? "Required" : "Not required"],
@@ -541,7 +541,9 @@ for (const p of DATA.products) {
       id: esc(p.id),
       generic: esc(p.generic),
       mfrLine: mfr.hidden ? "" : `<p class="product__mfr">by <a href="${root}brands/${mfr.id}.html">${esc(mfr.full)}</a></p>`,
-      priceHtml: C.priceHtml(p, config.currency) + (p.price == null ? '<span class="price__hint">We confirm the price on WhatsApp before you pay.</span>' : ""),
+      priceHtml: C.priceHtml(p, config.currency) + (p.price == null
+        ? '<span class="price__hint">We confirm the price on WhatsApp before you pay.</span>'
+        : '<span class="price__hint">Retail price (MRP) printed on the pack. We confirm availability on WhatsApp before you pay.</span>'),
       rxNotice: p.rx
         ? '<p class="note note--rx"><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg> Prescription required. You can add it to your cart and send the prescription photo on WhatsApp.</p>'
         : "",

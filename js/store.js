@@ -73,7 +73,7 @@
         return {
           id: l.id, qty: l.qty, custom: !!l.custom, product: p,
           name: p ? p.name : l.name,
-          unit: p ? p.unit : "Item",
+          unit: p ? p.unit + (p.pack ? " · " + p.pack : "") : "Item",
           price: p ? p.price : null,
           rx: p ? p.rx : false
         };

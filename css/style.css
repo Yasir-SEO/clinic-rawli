@@ -67,7 +67,7 @@ h2 { font-size: clamp(1.6rem, 1.2rem + 1.6vw, 2.25rem); }
 h3 { font-size: 1.1rem; }
 p { margin: 0 0 1em; }
 address { font-style: normal; }
-ul[role="list"], ol { list-style: none; margin: 0; padding: 0; }
+:where(ul[role="list"]), ol { list-style: none; margin: 0; padding: 0; }
 
 .container {
   width: 100%;
@@ -1173,6 +1173,7 @@ body.no-scroll { overflow: hidden; }
 .price { font-weight: 700; color: var(--ink); }
 .price__unit { margin-left: 4px; font-size: .78rem; color: var(--muted); }
 .price--ask { font-size: .8rem; font-weight: 600; color: var(--teal-800); }
+.price__pack { display: block; font-size: .76rem; color: var(--muted); }
 
 .btn-add {
   display: inline-flex;
@@ -1437,9 +1438,6 @@ body.no-scroll { overflow: hidden; }
 .product__generic { margin: 0 0 4px; color: var(--muted); font-size: 1.05rem; }
 .product__mfr { margin: 0 0 16px; font-size: .95rem; }
 .product__price {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
   margin-bottom: 16px;
   padding: 14px 0;
   border-top: 1px solid var(--line);
@@ -1447,7 +1445,8 @@ body.no-scroll { overflow: hidden; }
 }
 .product__price .price { font-size: 1.6rem; }
 .product__price .price--ask { font-size: 1.2rem; }
-.price__hint { font-size: .84rem; color: var(--muted); }
+.price__hint { display: block; margin-top: 4px; font-size: .84rem; color: var(--muted); }
+.product__price .price__pack { font-size: .9rem; }
 .note--rx { margin: 0 0 16px; background: #fef2f2; color: #991b1b; }
 .product__use { font-size: 1.02rem; }
 .product__buy { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin: 18px 0 10px; }
