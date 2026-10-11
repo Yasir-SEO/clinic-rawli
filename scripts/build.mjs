@@ -47,6 +47,16 @@ if (fs.existsSync(path.join(ROOT, IMAGE_DIR))) {
 }
 C.setImages(IMAGES);
 
+// Manufacturer logos: assets/brands/<manufacturer-id>.png (or .jpg/.webp/.svg).
+const LOGO_DIR = "assets/brands";
+const LOGOS = {};
+if (fs.existsSync(path.join(ROOT, LOGO_DIR))) {
+  for (const file of fs.readdirSync(path.join(ROOT, LOGO_DIR)).sort()) {
+    const m = file.match(/^([a-z0-9-]+)\.(png|jpe?g|webp|svg)$/i);
+    if (m && IDX.mfr[m[1]]) LOGOS[m[1]] = `${LOGO_DIR}/${file}`;
+  }
+}
+
 /* ---------- Validate data ---------- */
 const seen = new Set();
 for (const p of DATA.products) {
@@ -251,6 +261,9 @@ function page({ path: outPath, title, description, content, jsonLd = "", robots 
     mapsSearchUrlRaw: mapsSearchUrl,
     mapsEmbedUrl: esc(mapsEmbedUrl),
     mapsDirectionsUrl: esc(mapsDirectionsUrl),
+    landmark: esc(config.landmark || ""),
+    landmarkRaw: config.landmark || "",
+    landmarkUrdu: esc(config.landmarkUrdu || ""),
     geoJsonLd,
     facebookUrl: esc(config.facebook || "https://www.facebook.com/Adilmedicalstore"),
     instagramUrl: esc(config.instagram || "https://www.instagram.com/adilmedicalstore/"),
@@ -336,16 +349,19 @@ function brandStrip(root, { compact = false } = {}) {
   const chips = (hidden) => brandsShown.map((m, i) => {
     const n = mfrCount(m.id);
     const attrs = hidden ? ' tabindex="-1"' : "";
-    return `<a class="brand-chip" href="${root}brands/${m.id}.html"${attrs}>` +
-      `<span class="brand-chip__mark" style="--c:${MARK_COLORS[i % MARK_COLORS.length]}">${esc(monogram(m.name))}</span>` +
+    const logo = LOGOS[m.id]
+      ? `<span class="brand-chip__logo"><img src="${root}${LOGOS[m.id]}" alt="" width="88" height="88" loading="lazy" decoding="async"></span>`
+      : `<span class="brand-chip__logo brand-chip__logo--text" style="--c:${MARK_COLORS[i % MARK_COLORS.length]}">${esc(monogram(m.name))}</span>`;
+    return `<a class="brand-chip" href="${root}brands/${m.id}.html"${attrs} title="${esc(m.full)}">` + logo +
       `<span class="brand-chip__name">${esc(m.name)}<small>${n} ${n === 1 ? "product" : "products"}</small></span></a>`;
   }).join("");
+  // About 4 seconds per logo, so the strip moves slowly whatever the number of brands.
   return `    <section class="brands${compact ? " brands--compact" : ""}" id="brands" aria-labelledby="brands-title">
       <div class="container brands__head">
         <h2 id="brands-title">${compact ? "Shop by manufacturer" : "Trusted manufacturers we stock"}</h2>
         <p>${brandsShown.length} leading pharmaceutical and healthcare companies</p>
       </div>
-      <div class="marquee">
+      <div class="marquee" style="--marquee-time:${brandsShown.length * 4}s">
         <div class="marquee__track">
           <div class="marquee__group">${chips(false)}</div>
           <div class="marquee__group" aria-hidden="true">${chips(true)}</div>

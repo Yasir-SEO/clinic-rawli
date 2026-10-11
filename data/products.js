@@ -96,7 +96,7 @@
     { id: "reckitt", name: "Reckitt", full: "Reckitt" },
     { id: "pg", name: "P&G", full: "Procter & Gamble" },
     { id: "nestle", name: "Nestlé", full: "Nestlé Pakistan" },
-    { id: "kenvue", name: "Johnson's", full: "Kenvue (Johnson's)" },
+    { id: "kenvue", name: "Kenvue", full: "Kenvue (Johnson's, Listerine)" },
     { id: "hamdard", name: "Hamdard", full: "Hamdard Laboratories (Waqf) Pakistan" },
     { id: "qarshi", name: "Qarshi", full: "Qarshi Industries" },
     { id: "engelhard", name: "Engelhard", full: "Engelhard Arzneimittel, marketed by Highnoon Laboratories" },

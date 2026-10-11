@@ -21,7 +21,9 @@
     "urdu": "نزد کینال ریسٹ ہاؤس، روہیلانوالی، تحصیل و ضلع مظفرگڑھ"
   },
   "mapsQuery": "Canal Rest House, Rohillanwali, Muzaffargarh, Punjab, Pakistan",
-  "geo": { "lat": 29.76927, "lng": 71.06915 },
+  "geo": { "lat": 29.768201, "lng": 71.068559 },
+  "landmark": "Opposite Canal Rest House, 15–20 m past Meezan Bank (Rohillanwali branch)",
+  "landmarkUrdu": "کینال ریسٹ ہاؤس کے سامنے، میزان بینک (روہیلانوالی برانچ) سے 15 تا 20 میٹر آگے",
 
   "hours": {
     "monday":    ["09:00", "22:00"],

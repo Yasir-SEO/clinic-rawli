@@ -42,7 +42,7 @@ Everything shop-wide lives in **`site.config.json`**. The phone/WhatsApp number 
 ```
 
 - `whatsapp`: country code + number, digits only. All orders are sent here.
-- `geo`: the shop's map position (latitude, longitude). It is set to Canal Rest House, Rohilanwali (the shop is opposite it), taken from the location of the rest house photo on Wikimedia Commons. To move the pin, open Google Maps, press and hold on the exact spot, copy the two numbers shown and put them here.
+- `geo`: the shop's map position (latitude, longitude), set to the Meezan Bank Rohillanwali branch from the bank's branch locator (the shop is 15–20 m past it, opposite Canal Rest House). `landmark` / `landmarkUrdu` describe this on the contact card. To move the pin, right-click the exact spot in Google Maps (or press and hold on a phone), copy the two numbers and put them here.
 - `hours`: 24-hour times, Pakistan time. Use `null` for a closed day.
 - `doctorDays`: the days the child specialist sees patients, e.g. `["saturday", "sunday"]`. They show on the home page, the timings table and in the FAQ (the Urdu text on the home page is in `src/pages/index.html`).
 - `deliveryFee`: a number in rupees, `0` for free delivery, or `null` to confirm it on WhatsApp.
@@ -85,6 +85,8 @@ P({ id: "panadol-500mg-tablets", name: "Panadol 500mg Tablets", brand: "Panadol"
 The photo then appears on the product card, product page, search suggestions, cart and checkout, and is used as the product's share image. Don't copy photos from other pharmacy websites or Google Images; those belong to someone else.
 
 **Getting photos from brand websites:** list the brand's product pages in `tools/fetch-list.txt` as `photo_<product-id> | https://...` and push. The GitHub "Fetch web pages" job saves each page's main product photo as `tools/fetched/img_<product-id>.*`. Check them, then run `python3 tools/process_images.py` to turn them into `assets/products/<product-id>.jpg`.
+
+**Manufacturer logos** (the round badges in the "Trusted manufacturers" slider) are in `assets/brands/<manufacturer-id>.png`. They come from Wikimedia Commons and the companies' own websites. To add or replace one, list it in `tools/fetch-list.txt` as `img_logo_<manufacturer-id> | https://...logo.svg` (or `logo_<manufacturer-id> | https://company-website/` to pick up the site's logo) and push. Then run `node tools/process_logos.mjs`, which trims each logo and sizes it to fit its circle. A company without a logo file shows its initials. LEO Pharma and Woodward's show initials for now.
 
 **Linking to a photo instead:** add `image: "https://..."` to a product in `data/products.js` to show a photo hosted on another site (for example the brand's own website). It is shown on top of the drawn pack; if the link ever breaks, the drawn pack shows instead. Saved photos are still more reliable.
 

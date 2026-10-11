@@ -66,7 +66,7 @@
           {
             "@type": "Question",
             "name": "Where is Adil Child Care Clinic & Pharmacy?",
-            "acceptedAnswer": { "@type": "Answer", "text": "We are near Canal Rest House, Rohillanwali, Tehsil and District Muzaffargarh, Punjab 34400, Pakistan. Tap Get Directions on our website to open the location in Google Maps." }
+            "acceptedAnswer": { "@type": "Answer", "text": "We are near Canal Rest House, Rohillanwali, Tehsil and District Muzaffargarh, Punjab 34400, Pakistan: {{landmarkRaw}}. Tap Get Directions on our website to open the location in Google Maps." }
           },
           {
             "@type": "Question",
@@ -446,7 +446,8 @@
                 {{addrDistrict}}<br>
                 {{addrRegion}} {{addrPostal}}, Pakistan
               </address>
-              <p class="urdu info-card__urdu" lang="ur" dir="rtl">{{addrUrdu}}</p>
+              <p class="info-card__landmark"><svg class="icon" aria-hidden="true"><use href="#i-nav"/></svg> {{landmark}}</p>
+              <p class="urdu info-card__urdu" lang="ur" dir="rtl">{{addrUrdu}}<br>{{landmarkUrdu}}</p>
               <p class="info-card__email"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg> <a href="mailto:{{email}}">{{email}}</a></p>
               <div class="info-card__actions">
                 <a class="btn btn--primary" href="{{mapsDirectionsUrl}}" target="_blank" rel="noopener">
@@ -514,7 +515,7 @@
           </details>
           <details>
             <summary>Where is Adil Child Care Clinic &amp; Pharmacy?</summary>
-            <p>We are near Canal Rest House, Rohillanwali, Tehsil and District Muzaffargarh, Punjab 34400. Tap <a href="#visit">Get Directions</a> to open the location in Google Maps.</p>
+            <p>We are near Canal Rest House, Rohillanwali, Tehsil and District Muzaffargarh, Punjab 34400: {{landmark}}. Tap <a href="#visit">Get Directions</a> to open the location in Google Maps.</p>
           </details>
           <details>
             <summary>How do I order medicines online?</summary>
