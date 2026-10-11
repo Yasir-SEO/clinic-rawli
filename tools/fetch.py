@@ -10,6 +10,10 @@ its main product photo is found (og:image, JSON-LD Product image or
 twitter:image) and saved as img_<rest of name>.<ext>. The page itself is not
 kept; index.json lists the photo address and other candidate images.
 
+A name starting with "logo_" means "this is a company website": the page's logo
+image (an <img> whose tag mentions "logo", else the touch icon or og:image) is saved
+as img_logo_<rest of name>.<ext>, and the other candidates are listed in index.json.
+
 A name starting with "api_" is a request to an open-data API (e.g. OpenStreetMap);
 it is sent with a user agent that names this project, as those APIs ask.
 """
@@ -21,7 +25,8 @@ os.makedirs(OUT, exist_ok=True)
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) AppleWebKit/605.1.15 "
       "(KHTML, like Gecko) Version/17.5 Safari/605.1.15")
 EXT = {"text/html": "html", "application/json": "json", "image/jpeg": "jpg", "image/png": "png",
-       "image/webp": "webp", "image/avif": "avif", "image/gif": "gif", "text/plain": "txt"}
+       "image/webp": "webp", "image/avif": "avif", "image/gif": "gif", "text/plain": "txt",
+       "image/svg+xml": "svg", "image/x-icon": "ico", "image/vnd.microsoft.icon": "ico"}
 MAX_BYTES = 8 * 1024 * 1024
 
 
@@ -88,6 +93,28 @@ def photo_candidates(page, base):
     return out[:20]
 
 
+def logo_candidates(page, base):
+    cands = []
+    for tag in re.findall(r"<img\b[^>]*>", page, re.I):
+        if "logo" not in tag.lower():
+            continue
+        m = re.search(r'(?:data-src|src)=["\']([^"\']+)', tag, re.I) or re.search(r'srcset=["\']([^"\'\s,]+)', tag, re.I)
+        if m and not m.group(1).startswith("data:"):
+            cands.append(html.unescape(m.group(1)))
+    for rel in ("apple-touch-icon", "icon"):
+        m = re.search(r'<link[^>]+rel=["\'][^"\']*%s[^"\']*["\'][^>]*href=["\']([^"\']+)' % rel, page, re.I)
+        if m:
+            cands.append(html.unescape(m.group(1)))
+    cands.append(meta(page, "og:image"))
+    out = []
+    for c in cands:
+        if c:
+            c = urllib.parse.urljoin(base, c)
+            if c not in out:
+                out.append(c)
+    return out[:15]
+
+
 results = []
 with open(os.path.join(ROOT, "fetch-list.txt"), encoding="utf-8") as f:
     lines = [l.strip() for l in f if l.strip() and not l.lstrip().startswith("#")]
@@ -98,7 +125,22 @@ for line in lines:
     name, url = [x.strip() for x in line.split("|", 1)]
     entry = {"name": name, "url": url}
     try:
-        if name.startswith("photo_"):
+        if name.startswith("logo_"):
+            status, final, ctype, body = get(url, "text/html,application/xhtml+xml,*/*;q=0.8")
+            page = body.decode("utf-8", "replace")
+            cands = logo_candidates(page, final)
+            entry.update(status=status, final_url=final, candidates=cands)
+            if cands:
+                time.sleep(1)
+                status, _, ctype, body = get(cands[0], "image/svg+xml,image/webp,image/*,*/*;q=0.8")
+                if ctype.startswith("image/"):
+                    path = os.path.join(OUT, f"img_logo_{safe(name[len('logo_'):])}.{EXT.get(ctype, 'img')}")
+                    with open(path, "wb") as out:
+                        out.write(body)
+                    entry.update(image=cands[0], image_type=ctype, bytes=len(body), file=os.path.relpath(path, ROOT))
+                else:
+                    entry.update(image_error=f"not an image: {ctype}")
+        elif name.startswith("photo_"):
             status, final, ctype, body = get(url, "text/html,application/xhtml+xml,*/*;q=0.8")
             page = body.decode("utf-8", "replace")
             cands = photo_candidates(page, final)
