@@ -1,12 +1,20 @@
 # name | url   (edit this file and push to run the GitHub "Fetch web pages" job)
-# Product photos, round 4: Pigeon Pakistan, Getz Leflox, Omron, Accu-Chek, Glucerna, Molfix
-img_pigeon-silicone-nipple | https://cdn.shopify.com/s/files/1/0621/2786/5954/files/StandardNeckTeatsPigeonPk-2.webp?v=1759232186
-img_pigeon-baby-wipes | https://cdn.shopify.com/s/files/1/0621/2786/5954/files/baby-wipes-p78101.jpg?v=1759226158
-img_pigeon-baby-powder | https://cdn.shopify.com/s/files/1/0621/2786/5954/files/BABY-POWDER-78415.jpg?v=1758958063
-img_leflox-500mg | https://getzpharma.com/wp-content/uploads/2018/03/Leflox-500mg_2-scaled.jpg
-img_leflox-500mg-alt | https://getzpharma.com/wp-content/uploads/2018/03/Leflox-500mg1_1.jpg
-photo_omron-m2-basic-bp-monitor | https://www.omronhealthcare-ap.com/ap/product/1717-hem-7121j-e
-photo_accu-chek-instant-meter | https://www.accu-cheklatam.com/en/products/blood-glucose-monitoring/meters-test-strips/instant
-photo_glucerna-vanilla-400g | https://abbottfamily.com.sg/products/page/glucerna-triple-care
-img_molfix-size-3 | https://cdn.hayat.com.tr/images/52f85e4e-d3c2-40e3-b627-b0d9e9595c27.jpg
-img_molfix-size-3-alt | https://www.molfix.com/dist/media/img/product-detail/products-tr/taped-3d-newborn.png
+# Product photos, round 5: Searle, Sami, Hilton, Highnoon, Abbott Pakistan pages; Omron and Glucerna images
+photo_nuberol-tablets | https://searlecompany.com/products/nuberol/
+photo_nuberol-forte-tablets | https://searlecompany.com/products/nuberol-forte/
+photo_hydryllin-syrup | https://searlecompany.com/product/hydryllin
+photo_gravinate-50mg | https://searlecompany.com/products/gravinate/
+photo_peditral-ors-sachets | https://searlecompany.com/products/peditral/
+photo_peditral-500ml | https://searlecompany.com/peditral-peditral-liquid-o-r-s/
+photo_novidat-500mg | https://samipharma.com/Products/novidat-ciprofloxacin-hcl/
+photo_myteka-10mg | https://hiltonpharma.com/human_products/myteka/
+photo_loprin-75mg | https://highnoon-labs.com/hi_products/loprin/
+photo_pediasure-vanilla-400g | https://www.family.abbott/pk-en/pediasure/products/pediasure-vanilla.html
+photo_glucerna-vanilla-400g | https://www.family.abbott/pk-en/glucerna/products/glucerna-powder-vanilla.html
+photo_duphalac-syrup | https://medicines.abbott.com/product/duphalac/
+img_omron-m2-basic-bp-monitor-1 | https://www.omronhealthcare-ap.com/Content/uploads/products/ef543f9b321149f6926e70d6a3d0224c.png
+img_omron-m2-basic-bp-monitor-2 | https://www.omronhealthcare-ap.com/Content/uploads/products/d1fe30ea79554b85bee8dad0e08abd63.jpg
+img_omron-m2-basic-bp-monitor-3 | https://www.omronhealthcare-ap.com/Content/uploads/products/ad01041b3f24411a966e05cbd2cc9663.png
+img_omron-m2-basic-bp-monitor-4 | https://www.omronhealthcare-ap.com/Content/uploads/products/d7b60569215d480bb04e1087e88c2ab8.png
+img_omron-m2-basic-bp-monitor-5 | https://www.omronhealthcare-ap.com/Content/uploads/products/03b59712ee8a4461823abf58a1a8d6c5.png
+img_glucerna-vanilla-400g-sg | https://www.family.abbott/adobe/dynamicmedia/deliver/dm-aid--6679d46c-5e57-46d7-ac1a-ecd42791f3c7/glucerna-vanilla-800g-packshot-front-removebg-preview.png?preferwebp=true&quality=85
