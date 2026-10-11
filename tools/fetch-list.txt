@@ -1,6 +1,4 @@
 # name | url   (edit this file and push to run the GitHub "Fetch web pages" job)
-facebook_page | https://www.facebook.com/Adilmedicalstore
-facebook_about | https://www.facebook.com/Adilmedicalstore/about
-facebook_mbasic | https://mbasic.facebook.com/Adilmedicalstore
-colgate_oral_care | https://colgate.com.pk/products/oral-care/
-dawaai_all_a | https://dawaai.pk/all-medicines/a
+colgate_toothpaste | https://colgate.com.pk/products/oral-care/tooth-paste/
+colgate_toothbrush | https://colgate.com.pk/products/oral-care/colgate-tooth-brush/
+colgate_mouthwash | https://colgate.com.pk/products/oral-care/mouthwash/
