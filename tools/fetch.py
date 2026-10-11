@@ -5,7 +5,7 @@ Runs on GitHub Actions (see .github/workflows/fetch-web.yml), which has normal
 internet access. Each line of the list is:  name | url
 Lines starting with # are ignored.
 """
-import json, os, re, time, urllib.request, urllib.error
+import json, os, re, time, urllib.parse, urllib.request, urllib.error
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(ROOT, "fetched")
@@ -27,6 +27,7 @@ for line in lines:
     if "|" not in line:
         continue
     name, url = [x.strip() for x in line.split("|", 1)]
+    url = urllib.parse.quote(url, safe=":/?&=%#+,;@!$'()*~")
     entry = {"name": name, "url": url}
     try:
         req = urllib.request.Request(url, headers={
