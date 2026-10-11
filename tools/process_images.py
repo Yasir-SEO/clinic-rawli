@@ -37,10 +37,12 @@ def trim(img):
 
 
 def square(img):
-    inner = int(SIZE * (1 - 2 * MARGIN))
+    # Never enlarge small photos (that makes them blurry); shrink big ones.
+    inner = min(int(SIZE * (1 - 2 * MARGIN)), max(img.size))
+    side = min(SIZE, max(400, round(inner / (1 - 2 * MARGIN))))
     img.thumbnail((inner, inner), Image.LANCZOS)
-    canvas = Image.new("RGB", (SIZE, SIZE), (255, 255, 255))
-    canvas.paste(img, ((SIZE - img.width) // 2, (SIZE - img.height) // 2))
+    canvas = Image.new("RGB", (side, side), (255, 255, 255))
+    canvas.paste(img, ((side - img.width) // 2, (side - img.height) // 2))
     return canvas
 
 
