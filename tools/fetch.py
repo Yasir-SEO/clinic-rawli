@@ -9,6 +9,9 @@ A name starting with "photo_" means "this is a product page": the page is read,
 its main product photo is found (og:image, JSON-LD Product image or
 twitter:image) and saved as img_<rest of name>.<ext>. The page itself is not
 kept; index.json lists the photo address and other candidate images.
+
+A name starting with "api_" is a request to an open-data API (e.g. OpenStreetMap);
+it is sent with a user agent that names this project, as those APIs ask.
 """
 import html, json, os, re, time, urllib.parse, urllib.request, urllib.error
 
@@ -26,10 +29,14 @@ def safe(name):
     return re.sub(r"[^a-zA-Z0-9_.-]+", "-", name).strip("-")[:80] or "item"
 
 
-def get(url, accept):
+# Map/open-data APIs (OpenStreetMap) ask callers to identify themselves.
+API_UA = "clinic-rawli-site-builder/1.0 (+https://github.com/Yasir-SEO/clinic-rawli)"
+
+
+def get(url, accept, ua=UA):
     url = urllib.parse.quote(url, safe=":/?&=%#+,;@!$'()*~")
     req = urllib.request.Request(url, headers={
-        "User-Agent": UA, "Accept-Language": "en-US,en;q=0.9", "Accept": accept})
+        "User-Agent": ua, "Accept-Language": "en-US,en;q=0.9", "Accept": accept})
     with urllib.request.urlopen(req, timeout=30) as r:
         body = r.read(MAX_BYTES + 1)
         ctype = (r.headers.get("Content-Type") or "").split(";")[0].strip().lower()
@@ -107,7 +114,8 @@ for line in lines:
                 else:
                     entry.update(image_error=f"not an image: {ctype}")
         else:
-            status, final, ctype, body = get(url, "text/html,application/xhtml+xml,application/json,image/webp,image/*,*/*;q=0.8")
+            status, final, ctype, body = get(url, "text/html,application/xhtml+xml,application/json,image/webp,image/*,*/*;q=0.8",
+                                             API_UA if name.startswith("api_") else UA)
             entry.update(status=status, final_url=final, content_type=ctype, bytes=len(body))
             path = os.path.join(OUT, f"{safe(name)}.{EXT.get(ctype, 'bin')}")
             with open(path, "wb") as out:
