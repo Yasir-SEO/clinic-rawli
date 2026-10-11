@@ -42,6 +42,7 @@ Everything shop-wide lives in **`site.config.json`**. The phone/WhatsApp number 
 ```
 
 - `whatsapp`: country code + number, digits only. All orders are sent here.
+- `geo`: the shop's map position (latitude, longitude). It is set to Canal Rest House, Rohilanwali (the shop is opposite it), taken from the location of the rest house photo on Wikimedia Commons. To move the pin, open Google Maps, press and hold on the exact spot, copy the two numbers shown and put them here.
 - `hours`: 24-hour times, Pakistan time. Use `null` for a closed day.
 - `doctorDays`: the days the child specialist sees patients, e.g. `["saturday", "sunday"]`. They show on the home page, the timings table and in the FAQ (the Urdu text on the home page is in `src/pages/index.html`).
 - `deliveryFee`: a number in rupees, `0` for free delivery, or `null` to confirm it on WhatsApp.

@@ -21,6 +21,7 @@
     "urdu": "نزد کینال ریسٹ ہاؤس، روہیلانوالی، تحصیل و ضلع مظفرگڑھ"
   },
   "mapsQuery": "Canal Rest House, Rohillanwali, Muzaffargarh, Punjab, Pakistan",
+  "geo": { "lat": 29.76927, "lng": 71.06915 },
 
   "hours": {
     "monday":    ["09:00", "22:00"],

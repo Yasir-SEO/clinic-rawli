@@ -44,6 +44,7 @@
           { "@type": "AdministrativeArea", "name": "Muzaffargarh District" }
         ],
         "openingHoursSpecification": {{openingHoursJson}},
+        {{geoJsonLd}}
         "hasMap": "{{mapsSearchUrlRaw}}",
         "sameAs": ["https://www.facebook.com/Adilmedicalstore", "https://www.instagram.com/adilmedicalstore/"],
         "employee": {
@@ -448,7 +449,7 @@
               <p class="urdu info-card__urdu" lang="ur" dir="rtl">{{addrUrdu}}</p>
               <p class="info-card__email"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg> <a href="mailto:{{email}}">{{email}}</a></p>
               <div class="info-card__actions">
-                <a class="btn btn--primary" href="{{mapsSearchUrl}}" target="_blank" rel="noopener">
+                <a class="btn btn--primary" href="{{mapsDirectionsUrl}}" target="_blank" rel="noopener">
                   <svg class="icon" aria-hidden="true"><use href="#i-nav"/></svg> Get Directions
                 </a>
                 <a class="btn btn--outline" href="tel:{{phoneTel}}">

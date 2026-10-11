@@ -104,9 +104,15 @@ const openingHoursJson = JSON.stringify(
 
 /* ---------- Shared values ---------- */
 const addr = config.address || {};
-const mapsQuery = encodeURIComponent(config.mapsQuery || `${addr.town}, ${addr.district}, Pakistan`);
+// With exact coordinates (config.geo) the map pin, directions and Google data use the
+// precise spot; otherwise Google searches for the address text.
+const geo = config.geo && Number.isFinite(config.geo.lat) && Number.isFinite(config.geo.lng) ? config.geo : null;
+const geoText = geo ? `${geo.lat},${geo.lng}` : "";
+const mapsQuery = geo ? geoText : encodeURIComponent(config.mapsQuery || `${addr.town}, ${addr.district}, Pakistan`);
 const mapsSearchUrl = `https://www.google.com/maps/search/?api=1&query=${mapsQuery}`;
-const mapsEmbedUrl = `https://maps.google.com/maps?q=${mapsQuery}&z=15&output=embed`;
+const mapsDirectionsUrl = geo ? `https://www.google.com/maps/dir/?api=1&destination=${geoText}` : mapsSearchUrl;
+const mapsEmbedUrl = `https://maps.google.com/maps?q=${mapsQuery}&z=${geo ? 17 : 15}&output=embed`;
+const geoJsonLd = geo ? `"geo": { "@type": "GeoCoordinates", "latitude": ${geo.lat}, "longitude": ${geo.lng} },` : "";
 const waDigits = String(config.whatsapp || "").replace(/\D/g, "");
 const waLink = /^\d{10,15}$/.test(waDigits) ? `https://wa.me/${waDigits}` : "https://wa.me/";
 const fee = config.deliveryFee;
@@ -244,6 +250,8 @@ function page({ path: outPath, title, description, content, jsonLd = "", robots 
     mapsSearchUrl: esc(mapsSearchUrl),
     mapsSearchUrlRaw: mapsSearchUrl,
     mapsEmbedUrl: esc(mapsEmbedUrl),
+    mapsDirectionsUrl: esc(mapsDirectionsUrl),
+    geoJsonLd,
     facebookUrl: esc(config.facebook || "https://www.facebook.com/Adilmedicalstore"),
     instagramUrl: esc(config.instagram || "https://www.instagram.com/adilmedicalstore/"),
     phoneDisplay: esc(config.phoneDisplay),
