@@ -2144,3 +2144,8 @@ a.cart-row__name:hover { color: var(--teal-700); }
 }
 .page-head__note { margin: 8px 0 0; font-size: .92rem; }
 .page-head__note a { font-weight: 600; }
+
+/* Photo credits */
+.photo-credit { position: absolute; left: 12px; right: 12px; bottom: 8px; margin: 0; color: var(--muted); font-size: .7rem; line-height: 1.3; text-align: right; }
+.photo-credit a { color: inherit; }
+.credits-list { display: grid; gap: 8px; font-size: .92rem; }

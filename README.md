@@ -78,7 +78,7 @@ P({ id: "panadol-500mg-tablets", name: "Panadol 500mg Tablets", brand: "Panadol"
 
 ## Product photos
 
-42 products show a real photo: 29 saved in `assets/products/` from the brands' own websites (Getz Pharma, Haleon/Sensodyne, Calpol, P&G, Unilever, Abbott, Omron, Pigeon, Molfix, Bayer, Brookes and Highnoon), plus 13 Colgate photos linked from colgate.com.pk. Some are the brand's international pack, which can look a little different from the Pakistani one; replace any with your own photo if you prefer. The rest show a drawn pack until you add a real photo. To add one:
+About 90 products show a real photo. Most come from the brands' and manufacturers' own websites. Thirteen are free-licensed photos from Wikimedia Commons; each of those shows its photographer and licence under the photo, and all are listed on the Photo credits page (`credits.html`, from `assets/products/credits.json`). Some photos are a brand's international pack, which can look a little different from the Pakistani one; replace any with your own photo if you prefer. The rest show a drawn pack until you add a real photo. To add one:
 
 1. Take a clear photo of the pack (from the front, on a plain white background, in good light), or use an official image the company or distributor has supplied to you.
 2. Name it after the product's `id`, for example `panadol-500mg-tablets.jpg` (`.jpg`, `.png` or `.webp`). Keep it around 800 × 800 px and under 200 KB.

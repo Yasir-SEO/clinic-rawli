@@ -47,6 +47,18 @@ if (fs.existsSync(path.join(ROOT, IMAGE_DIR))) {
 }
 C.setImages(IMAGES);
 
+// Credits for free-licensed photos (e.g. from Wikimedia Commons): assets/products/credits.json,
+// { "<product-id>": { "author", "license", "licenseUrl", "source" } }. Shown under the photo
+// on the product page and on the Photo credits page.
+const CREDITS_FILE = path.join(ROOT, IMAGE_DIR, "credits.json");
+const CREDITS = fs.existsSync(CREDITS_FILE) ? JSON.parse(fs.readFileSync(CREDITS_FILE, "utf8")) : {};
+function creditHtml(id) {
+  const c = CREDITS[id];
+  if (!c || !IMAGES[id]) return "";
+  const lic = c.licenseUrl ? `<a href="${esc(c.licenseUrl)}" target="_blank" rel="noopener">${esc(c.license)}</a>` : esc(c.license);
+  return `<p class="photo-credit">Photo: ${esc(c.author)} · ${lic} · <a href="${esc(c.source)}" target="_blank" rel="noopener">Wikimedia Commons</a></p>`;
+}
+
 // Manufacturer logos: assets/brands/<manufacturer-id>.png (or .jpg/.webp/.svg).
 const LOGO_DIR = "assets/brands";
 const LOGOS = {};
@@ -687,6 +699,7 @@ for (const p of DATA.products) {
     vars: {
       breadcrumbs: bc.html,
       art: C.media(p, { root }),
+      photoCredit: creditHtml(p.id),
       badges: C.badgesHtml(p),
       catUrl: `${root}categories/${cat.id}.html`,
       catName: esc(cat.name),
@@ -707,6 +720,31 @@ for (const p of DATA.products) {
       about: aboutParas,
       related: cards(related.slice(0, 4), root),
     },
+  });
+}
+
+/* ---------- Photo credits ---------- */
+{
+  const ids = Object.keys(CREDITS).filter((id) => IMAGES[id] && IDX.prod[id]).sort();
+  const rows = ids.map((id) => {
+    const p = IDX.prod[id], c = CREDITS[id];
+    const lic = c.licenseUrl ? `<a href="${esc(c.licenseUrl)}" target="_blank" rel="noopener">${esc(c.license)}</a>` : esc(c.license);
+    return `          <li><a href="medicines/${id}.html">${esc(p.name)}</a>: photo by ${esc(c.author)}, ${lic}, <a href="${esc(c.source)}" target="_blank" rel="noopener">Wikimedia Commons</a></li>`;
+  }).join("\n");
+  page({
+    path: "credits.html",
+    title: "Photo credits | Adil Child Care Clinic & Pharmacy",
+    description: "Credits for the free-licensed product photos used on this website.",
+    bodyClass: "page-credits",
+    robots: "noindex, follow",
+    sitemap: false,
+    content: `    <div class="page-head"><div class="container"><h1>Photo credits</h1>
+      <p class="page-head__intro">Product photos come from the brands' and manufacturers' own websites, or are free-licensed photos from Wikimedia Commons, credited below. Brand names and pack designs belong to their owners.</p></div></div>
+    <section class="section section--tight"><div class="container">
+        <ul class="credits-list" role="list">
+${rows || "          <li>No free-licensed photos are used at the moment.</li>"}
+        </ul>
+    </div></section>`,
   });
 }
 
