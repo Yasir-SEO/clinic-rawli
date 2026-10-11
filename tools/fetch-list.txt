@@ -1,27 +1,10 @@
 # name | url   (edit this file and push to run the GitHub "Fetch web pages" job)
-# Manufacturer logos, round 2: chosen Wikimedia Commons files (PNG renders) and dark logo versions
-img_logo_abbott | https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Logo_Abbott_Laboratories.svg/500px-Logo_Abbott_Laboratories.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
-img_logo_alcon | https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Alcon_Logo_2019.svg/500px-Alcon_Logo_2019.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
-img_logo_allergan | https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Allergan_logo.svg/500px-Allergan_logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
-img_logo_bayer | https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Logo_Bayer.svg/500px-Logo_Bayer.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
-img_logo_beiersdorf | https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Beiersdorf_Logo.svg/500px-Beiersdorf_Logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
-img_logo_colgate | https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Colgate-Palmolive_logo.svg/500px-Colgate-Palmolive_logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
-img_logo_engelhard | https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Engelhard_Arzneimittel_logo.svg/500px-Engelhard_Arzneimittel_logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
-img_logo_gsk | https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/GSK_Logo_PNG5.png/500px-GSK_Logo_PNG5.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
-img_logo_haleon | https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Haleon.svg/500px-Haleon.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
-img_logo_hayat | https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Hayat_Logo_Buyutulmus-01.jpg/500px-Hayat_Logo_Buyutulmus-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
-img_logo_kenvue | https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Kenvue_logo.svg/500px-Kenvue_logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
-img_logo_msd | https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Merck_Sharp_%26_Dohme_%28MSD%29.svg/500px-Merck_Sharp_%26_Dohme_%28MSD%29.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
-img_logo_novartis | https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Novartis-Logo-2023.svg/500px-Novartis-Logo-2023.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
-img_logo_omron | https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/OMRON_Logo.svg/500px-OMRON_Logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
-img_logo_pfizer | https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Pfizer_%282021%29.svg/500px-Pfizer_%282021%29.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
-img_logo_pg | https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/P%26G_logo.svg/500px-P%26G_logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
-img_logo_roche | https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Roche_Logo_800px_Blue_RGB_Roche_Logo_RGB.png/500px-Roche_Logo_800px_Blue_RGB_Roche_Logo_RGB.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
-img_logo_sanofi | https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Sanofi-2022.svg/500px-Sanofi-2022.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
-img_logo_searle-commons | https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Searle_Company_logo.svg/500px-Searle_Company_logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
-img_logo_unilever | https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Unilever_text_logo.svg/500px-Unilever_text_logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
-img_logo_martindow | https://www.martindow.com/assets/images/svg-icons/Martin_Dow_Blue_Logo_1.svg
-img_logo_sami | https://samipharma.com/wp-content/uploads/2024/03/sami-logo-black.png
-logo_nestle | https://www.nestle.pk/
-logo_reckitt | https://www.reckitt.com/
-logo_leo | https://www.leo-pharma.com/
+# Manufacturer logos, round 3
+img_logo_colgate | https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Colgate_logo.svg/500px-Colgate_logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+img_logo_sami | https://samipharma.com/wp-content/uploads/2024/04/cropped-sami-icon-180x180.png
+api_commons_logo_nestle | https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=intitle%3ANestl%C3%A9%20intitle%3Alogo&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Csize%7Cmime&iiurlwidth=400&format=json
+api_commons_logo_nestle2 | https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Nestl%C3%A9%20textlogo&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Csize%7Cmime&iiurlwidth=400&format=json
+api_commons_logo_leo | https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=intitle%3ALEO%20intitle%3APharma&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Csize%7Cmime&iiurlwidth=400&format=json
+api_commons_logo_reckitt | https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=intitle%3AReckitt%20intitle%3Alogo&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Csize%7Cmime&iiurlwidth=400&format=json
+logo_leo2 | https://www.leo-pharma.com/en
+logo_nestle2 | https://www.nestle.com/
