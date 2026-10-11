@@ -27,7 +27,16 @@
     "devices": ["#475569", "#edf0f4", "#2f3a48"],
     "diapers": ["#6d5bd0", "#efecfb", "#4a3aa6"],
     "oral-care": ["#0d9bd8", "#e3f4fc", "#09709c"],
-    "personal-care": ["#7c8b2e", "#f1f4e2", "#58631f"]
+    "personal-care": ["#7c8b2e", "#f1f4e2", "#58631f"],
+    "baby-feeding": ["#d9772b", "#fdf0e4", "#9e5218"],
+    "kids-fever-pain": ["#e2574c", "#fdecea", "#a3352c"],
+    "kids-cough-allergy": ["#0e8fc7", "#e4f4fb", "#0a6690"],
+    "kids-tummy": ["#e08a12", "#fdf3e2", "#a86108"],
+    "kids-antibiotics": ["#0f766e", "#e3f6f3", "#0b524c"],
+    "kids-vitamins": ["#ea6c1a", "#fdeee3", "#b14c0c"],
+    "baby-kids": ["#e0568f", "#fdeaf2", "#a63766"],
+    "adult": ["#0f766e", "#e3f6f3", "#0b524c"],
+    "care-health": ["#7c8b2e", "#f1f4e2", "#58631f"]
   };
   var DEFAULT_COLOR = ["#0f766e", "#e3f6f3", "#0b524c"];
 
@@ -60,7 +69,12 @@
   };
 
   /* Categories that are not medicines (kept out of "Kids' Medicines"). */
-  var NON_MEDICINE = { baby: true, diapers: true, "oral-care": true, "personal-care": true };
+  // Category definitions, kept from the last indexData() call (or window.STORE_DATA in the browser).
+  var CATS = null;
+  function cats() {
+    if (!CATS && typeof window !== "undefined" && window.STORE_DATA) indexData(window.STORE_DATA);
+    return CATS || {};
+  }
 
   function esc(s) {
     return String(s == null ? "" : s)
@@ -204,20 +218,46 @@
   }
 
   function indexData(data) {
-    if (data.__idx) return data.__idx;
+    if (data.__idx) { CATS = data.__idx.cat; return data.__idx; }
     var cat = {}, mfr = {}, prod = {};
     data.categories.forEach(function (c) { cat[c.id] = c; });
     data.manufacturers.forEach(function (m) { mfr[m.id] = m; });
     data.products.forEach(function (p) { prod[p.id] = p; });
     var idx = { cat: cat, mfr: mfr, prod: prod };
+    CATS = cat;
     try { Object.defineProperty(data, "__idx", { value: idx, enumerable: false }); } catch (e) { /* frozen */ }
     return idx;
   }
 
+  // Medicines made only for children (kids: true without all: true).
+  function kidsOnly(p) {
+    var c = cats()[p.cat];
+    return !!p.kids && !p.all && (!c || c.type === "med");
+  }
+
   function inCategory(p, catId) {
     if (!catId) return true;
-    if (catId === "kids") return p.kids && !NON_MEDICINE[p.cat];
-    return p.cat === catId;
+    var all = cats(), c = all[catId];
+    if (!c) return p.cat === catId;
+    if (!c.virtual) return p.cat === catId && !(c.type === "med" && kidsOnly(p));
+    var pc = all[p.cat] || {};
+    if (c.base && c.base.indexOf(p.cat) === -1) return false;
+    if (c.type && pc.type !== c.type) return false;
+    if (c.audience === "kids" && !p.kids) return false;
+    if (c.audience === "adult" && kidsOnly(p)) return false;
+    return true;
+  }
+
+  // The category page a product is listed under: the Kids' page for children's medicines.
+  function homeCategory(p) {
+    var all = cats();
+    if (kidsOnly(p)) {
+      for (var id in all) {
+        var c = all[id];
+        if (c.virtual && c.base && c.audience === "kids" && c.base.indexOf(p.cat) !== -1) return c;
+      }
+    }
+    return all[p.cat];
   }
 
   function formatPrice(n, currency) {
@@ -258,7 +298,7 @@
     var idx = indexData(data);
     var root = opts.root || "";
     var url = productUrl(p, root);
-    var cat = idx.cat[p.cat];
+    var cat = homeCategory(p) || idx.cat[p.cat];
     var mfr = idx.mfr[p.mfr];
     return '<article class="pcard">' +
       '<a class="pcard__media" href="' + url + '" tabindex="-1" aria-hidden="true">' + media(p, { decorative: true, root: root }) +
@@ -310,7 +350,7 @@
   }
 
   return {
-    esc: esc, packArt: packArt, media: media, isRemote: isRemote, setImages: setImages, imageFor: imageFor, colorFor: colorFor, indexData: indexData, inCategory: inCategory,
+    esc: esc, packArt: packArt, media: media, isRemote: isRemote, setImages: setImages, imageFor: imageFor, colorFor: colorFor, indexData: indexData, inCategory: inCategory, kidsOnly: kidsOnly, homeCategory: homeCategory,
     formatPrice: formatPrice, priceHtml: priceHtml, productUrl: productUrl, categoryUrl: categoryUrl,
     brandUrl: brandUrl, badgesHtml: badgesHtml, actionsHtml: actionsHtml, renderCard: renderCard,
     search: search, normalize: normalize, waUrl: waUrl, FORM_NAME: FORM_NAME

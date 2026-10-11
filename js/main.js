@@ -159,6 +159,47 @@
   updateOpenStatus();
   setInterval(updateOpenStatus, 60 * 1000);
 
+  /* ---------- Main menu: dropdowns on desktop, accordion on phones ---------- */
+  (function () {
+    var nav = document.querySelector(".navbar");
+    if (!nav) return;
+    var toggle = nav.querySelector(".navbar__toggle");
+    var buttons = Array.prototype.slice.call(nav.querySelectorAll(".nav-item--menu > .nav-link"));
+    var desktop = window.matchMedia("(min-width: 921px)");
+    var hover = window.matchMedia("(hover: hover) and (min-width: 921px)");
+
+    function closeAll(except) {
+      buttons.forEach(function (b) { if (b !== except) b.setAttribute("aria-expanded", "false"); });
+    }
+    if (toggle) {
+      toggle.addEventListener("click", function () {
+        var open = nav.classList.toggle("is-open");
+        toggle.setAttribute("aria-expanded", String(open));
+      });
+    }
+    buttons.forEach(function (b) {
+      b.addEventListener("click", function () {
+        var open = b.getAttribute("aria-expanded") !== "true";
+        if (desktop.matches) closeAll(b);
+        b.setAttribute("aria-expanded", String(open));
+      });
+      b.parentNode.addEventListener("mouseleave", function () {
+        if (hover.matches) b.setAttribute("aria-expanded", "false");
+      });
+    });
+    document.addEventListener("click", function (e) {
+      if (desktop.matches && !nav.contains(e.target)) closeAll();
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key !== "Escape") return;
+      var open = nav.querySelector('.nav-item--menu > .nav-link[aria-expanded="true"]');
+      if (open) { closeAll(); open.focus(); }
+    });
+    nav.addEventListener("focusout", function (e) {
+      if (desktop.matches && !nav.contains(e.relatedTarget)) closeAll();
+    });
+  })();
+
   /* ---------- WhatsApp order form ---------- */
   var form = document.getElementById("order-form");
   if (!form) return;

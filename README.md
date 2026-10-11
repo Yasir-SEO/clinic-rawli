@@ -9,8 +9,14 @@ It's a fast static site: no server, database or monthly fees. It's hosted free o
 ## What's included
 
 **Online shop (WooCommerce-style)**
-- **199 products** in 18 categories: fever & pain, cough & cold, allergy & asthma, stomach, antibiotics, kids' medicines, vitamins, diabetes, heart & BP, skin care, eye/ear/nose, baby care, diapers & wipes, oral care (toothpaste, toothbrushes, mouthwash), personal care & hygiene (soaps, handwash, shampoo, pads, razors), herbal, first aid and medical devices.
-- **Manufacturer strip** of 32 companies (GSK, Haleon, Abbott, Getz, Searle, Sami, Hilton, Novartis, Sanofi, Colgate-Palmolive, Unilever, P&G, Reckitt and more). Each one has its own brand page.
+- **211 products**, organised the way a children's clinic works. The main menu has four sections:
+  - **Kids' Medicines:** Fever & Pain; Cough, Cold & Allergy; Tummy, Diarrhoea & Worms; Antibiotics; Vitamins & Nutrition.
+  - **Baby & Kids Care:** Diapers & Wipes; Bath & Skin Care; Feeding & Formula.
+  - **Adult Medicines:** Fever & Pain, Cough & Cold, Allergy & Asthma, Stomach, Antibiotics, Diabetes, Heart & BP, Skin, Eye/Ear/Nose, Vitamins, Herbal.
+  - **Personal Care & Health:** Oral Care, Personal & Skin Care, First Aid, Medical Devices.
+
+  Adult medicine pages list adult and family medicines, and medicines made only for children are on the matching Kids' page (each page links to the other).
+- **Manufacturer strip** of 33 companies (GSK, Haleon, Abbott, Getz, Searle, Sami, Hilton, Novartis, Sanofi, Colgate-Palmolive, Unilever, P&G, Reckitt and more). Each one has its own brand page.
 - **A page for every medicine:** active ingredient, strength, form, manufacturer, prescription status, related products and structured data for Google.
 - **Shop page features:** live search with suggestions in the header, filters (category, manufacturer, kids, no-prescription), sorting, and "Load more".
 - **Cart:** add to cart with quantity buttons, a slide-out mini cart, a full cart page, and "Request a medicine" for anything not listed.
@@ -60,7 +66,9 @@ P({ id: "panadol-500mg-tablets", name: "Panadol 500mg Tablets", brand: "Panadol"
 
 - `price` is the retail price (MRP) of one `unit`, and `pack` says what is inside it, e.g. `"10 tablets"`, `"90ml"` or `"20g"`. Leave `price` out to show "Price on request".
 
-- `rx: true` marks a prescription medicine, and `kids: true` adds it to Kids' Medicines.
+- `rx: true` marks a prescription medicine.
+- `kids: true` puts a product on the Kids' pages (medicines) or Baby & Kids Care (other products). A children's medicine is then *not* listed on the adult page; add `all: true` as well for products meant for children and adults alike (e.g. ORS, Prospan), so they show on both.
+- Categories, and which menu each sits in, are at the top of `data/products.js`. The Kids' sections are "virtual" categories worked out from the products (see the notes there), so there is nothing extra to tag.
 - `featured: true` shows it in "Popular medicines" on the home page.
 - New manufacturers go in the `manufacturers` list at the top of the same file, and they appear in the brand strip automatically.
 - The product picture is drawn automatically from the brand name, strength and form. No photos are needed.

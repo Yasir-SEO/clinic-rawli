@@ -29,7 +29,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600&family=Poppins:wght@400;500;600;700&display=swap">
-  <link rel="stylesheet" href="../css/style.css?v=3456316e">
+  <link rel="stylesheet" href="../css/style.css?v=8d77b028">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -60,13 +60,13 @@
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "Shop",
-      "item": "https://yasir-seo.github.io/clinic-rawli/shop.html"
+      "name": "Personal Care & Health",
+      "item": "https://yasir-seo.github.io/clinic-rawli/categories/care-health.html"
     },
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "Personal Care & Hygiene",
+      "name": "Personal & Skin Care",
       "item": "https://yasir-seo.github.io/clinic-rawli/categories/personal-care.html"
     },
     {
@@ -110,6 +110,7 @@
     <symbol id="i-filter" viewBox="0 0 24 24"><path d="M22 3H2l8 9.46V19l4 2v-8.54z"/></symbol>
     <symbol id="i-truck" viewBox="0 0 24 24"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2M15 18H9M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.62L18.3 9.38a1 1 0 0 0-.78-.38H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></symbol>
     <symbol id="i-home" viewBox="0 0 24 24"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
     <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></symbol>
     <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></symbol>
     <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></symbol>
@@ -168,24 +169,79 @@
 
   <nav class="navbar" aria-label="Main">
     <div class="container navbar__inner">
-      <a href="../index.html">Home</a>
-      <a href="../index.html#clinic">Clinic</a>
-      <a href="../shop.html">All Medicines</a>
-      <a href="../categories/fever-pain.html">Fever &amp; Pain</a>
-      <a href="../categories/cough-cold.html">Cough &amp; Cold</a>
-      <a href="../categories/kids.html">Kids&#39; Medicines</a>
-      <a href="../categories/baby.html">Baby Care</a>
-      <a href="../categories/diapers.html">Diapers</a>
-      <a href="../categories/personal-care.html">Personal Care</a>
-      <a href="../categories/vitamins.html">Vitamins</a>
-      <a href="../index.html#visit">Contact</a>
+      <button class="navbar__toggle" type="button" aria-expanded="false" aria-controls="nav-list"><svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg> Menu</button>
+      <ul class="nav-list" id="nav-list" role="list">
+        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="../index.html#clinic">Clinic</a></li>
+        <li class="nav-item nav-item--menu">
+          <button class="nav-link" type="button" aria-expanded="false" aria-controls="menu-kids">Kids&#39; Medicines <svg class="icon nav-caret" aria-hidden="true"><use href="#i-chevron"/></svg></button>
+          <div class="nav-menu" id="menu-kids">
+            <p class="nav-menu__note">Medicines for babies and children, sorted by need.</p>
+            <ul class="nav-menu__list" role="list">
+              <li><a href="../categories/kids-fever-pain.html"><svg class="icon" aria-hidden="true"><use href="#i-thermo"/></svg> Fever &amp; Pain <span>5</span></a></li>
+              <li><a href="../categories/kids-cough-allergy.html"><svg class="icon" aria-hidden="true"><use href="#i-wind"/></svg> Cough, Cold &amp; Allergy <span>10</span></a></li>
+              <li><a href="../categories/kids-tummy.html"><svg class="icon" aria-hidden="true"><use href="#i-utensils"/></svg> Tummy, Diarrhoea &amp; Worms <span>6</span></a></li>
+              <li><a href="../categories/kids-antibiotics.html"><svg class="icon" aria-hidden="true"><use href="#i-pill"/></svg> Antibiotics (prescription) <span>11</span></a></li>
+              <li><a href="../categories/kids-vitamins.html"><svg class="icon" aria-hidden="true"><use href="#i-sparkle"/></svg> Vitamins &amp; Nutrition <span>5</span></a></li>
+            </ul>
+            <a class="nav-menu__all" href="../categories/kids.html">All kids&#39; medicines (37) <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+        </li>
+        <li class="nav-item nav-item--menu">
+          <button class="nav-link" type="button" aria-expanded="false" aria-controls="menu-kids-care">Baby &amp; Kids Care <svg class="icon nav-caret" aria-hidden="true"><use href="#i-chevron"/></svg></button>
+          <div class="nav-menu" id="menu-kids-care">
+            <p class="nav-menu__note">Diapers, bath, skin and feeding.</p>
+            <ul class="nav-menu__list" role="list">
+              <li><a href="../categories/diapers.html"><svg class="icon" aria-hidden="true"><use href="#i-baby"/></svg> Diapers &amp; Wipes <span>16</span></a></li>
+              <li><a href="../categories/baby.html"><svg class="icon" aria-hidden="true"><use href="#i-bottle"/></svg> Bath &amp; Skin Care <span>7</span></a></li>
+              <li><a href="../categories/baby-feeding.html"><svg class="icon" aria-hidden="true"><use href="#i-bottle"/></svg> Feeding &amp; Formula <span>9</span></a></li>
+            </ul>
+            <a class="nav-menu__all" href="../categories/baby-kids.html">All baby &amp; kids care (33) <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+        </li>
+        <li class="nav-item nav-item--menu">
+          <button class="nav-link" type="button" aria-expanded="false" aria-controls="menu-adult">Adult Medicines <svg class="icon nav-caret" aria-hidden="true"><use href="#i-chevron"/></svg></button>
+          <div class="nav-menu nav-menu--wide" id="menu-adult">
+            <p class="nav-menu__note">Medicines for adults and the whole family.</p>
+            <ul class="nav-menu__list" role="list">
+              <li><a href="../categories/fever-pain.html"><svg class="icon" aria-hidden="true"><use href="#i-thermo"/></svg> Fever &amp; Pain <span>12</span></a></li>
+              <li><a href="../categories/cough-cold.html"><svg class="icon" aria-hidden="true"><use href="#i-wind"/></svg> Cough, Cold &amp; Flu <span>8</span></a></li>
+              <li><a href="../categories/allergy-asthma.html"><svg class="icon" aria-hidden="true"><use href="#i-lungs"/></svg> Allergy &amp; Asthma <span>8</span></a></li>
+              <li><a href="../categories/stomach.html"><svg class="icon" aria-hidden="true"><use href="#i-utensils"/></svg> Stomach &amp; Digestion <span>17</span></a></li>
+              <li><a href="../categories/antibiotics.html"><svg class="icon" aria-hidden="true"><use href="#i-pill"/></svg> Antibiotics <span>13</span></a></li>
+              <li><a href="../categories/diabetes.html"><svg class="icon" aria-hidden="true"><use href="#i-droplet"/></svg> Diabetes Care <span>14</span></a></li>
+              <li><a href="../categories/heart-bp.html"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg> Heart &amp; Blood Pressure <span>9</span></a></li>
+              <li><a href="../categories/skin.html"><svg class="icon" aria-hidden="true"><use href="#i-bandage"/></svg> Skin Treatments <span>5</span></a></li>
+              <li><a href="../categories/eye-ear-nose.html"><svg class="icon" aria-hidden="true"><use href="#i-eye"/></svg> Eye, Ear &amp; Nose <span>3</span></a></li>
+              <li><a href="../categories/vitamins.html"><svg class="icon" aria-hidden="true"><use href="#i-sparkle"/></svg> Vitamins &amp; Supplements <span>6</span></a></li>
+              <li><a href="../categories/herbal.html"><svg class="icon" aria-hidden="true"><use href="#i-leaf"/></svg> Herbal &amp; Desi Remedies <span>4</span></a></li>
+            </ul>
+            <a class="nav-menu__all" href="../categories/adult.html">All adult medicines (99) <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+        </li>
+        <li class="nav-item nav-item--menu">
+          <button class="nav-link" type="button" aria-expanded="false" aria-controls="menu-care">Personal Care &amp; Health <svg class="icon nav-caret" aria-hidden="true"><use href="#i-chevron"/></svg></button>
+          <div class="nav-menu" id="menu-care">
+            <p class="nav-menu__note">Oral care, hygiene, first aid and devices.</p>
+            <ul class="nav-menu__list" role="list">
+              <li><a href="../categories/oral-care.html"><svg class="icon" aria-hidden="true"><use href="#i-smile"/></svg> Oral Care <span>20</span></a></li>
+              <li><a href="../categories/personal-care.html"><svg class="icon" aria-hidden="true"><use href="#i-droplet"/></svg> Personal &amp; Skin Care <span>18</span></a></li>
+              <li><a href="../categories/first-aid.html"><svg class="icon" aria-hidden="true"><use href="#i-kit"/></svg> First Aid &amp; Supplies <span>8</span></a></li>
+              <li><a href="../categories/devices.html"><svg class="icon" aria-hidden="true"><use href="#i-pulse"/></svg> Medical Devices <span>4</span></a></li>
+            </ul>
+            <a class="nav-menu__all" href="../categories/care-health.html">All personal care &amp; health (50) <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="../shop.html">All Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="../index.html#visit">Contact</a></li>
+      </ul>
     </div>
   </nav>
 
   <main id="main">
     <div class="page-head page-head--slim">
       <div class="container">
-        <nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="../index.html">Home</a></li><li><a href="../shop.html">Shop</a></li><li><a href="../categories/personal-care.html">Personal Care &amp; Hygiene</a></li><li aria-current="page">Always Sanitary Pads</li></ol></nav>
+        <nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="../index.html">Home</a></li><li><a href="../categories/care-health.html">Personal Care &amp; Health</a></li><li><a href="../categories/personal-care.html">Personal &amp; Skin Care</a></li><li aria-current="page">Always Sanitary Pads</li></ol></nav>
       </div>
     </div>
 
@@ -197,7 +253,7 @@
         </div>
 
         <div class="product__info">
-          <a class="product__cat" href="../categories/personal-care.html">Personal Care &amp; Hygiene</a>
+          <a class="product__cat" href="../categories/personal-care.html">Personal &amp; Skin Care</a>
           <h1 class="product__title">Always Sanitary Pads</h1>
           <p class="product__generic">Sanitary napkins</p>
           <p class="product__mfr">by <a href="../brands/pg.html">Procter &amp; Gamble</a></p>
@@ -240,7 +296,7 @@
               <tr><th scope="row">Form</th><td>Sanitary pads</td></tr>
               <tr><th scope="row">Sold as</th><td>Per pack</td></tr>
               <tr><th scope="row">Manufacturer</th><td>Procter &amp; Gamble</td></tr>
-              <tr><th scope="row">Category</th><td>Personal Care &amp; Hygiene</td></tr>
+              <tr><th scope="row">Category</th><td>Personal &amp; Skin Care</td></tr>
               <tr><th scope="row">Prescription</th><td>Not required</td></tr>
             </tbody>
           </table>
@@ -257,14 +313,14 @@
     <section class="section section--soft section--tight" aria-labelledby="related-title">
       <div class="container">
         <header class="section__head section__head--row">
-          <h2 id="related-title">More in Personal Care &amp; Hygiene</h2>
+          <h2 id="related-title">More in Personal &amp; Skin Care</h2>
           <a class="link-more" href="../categories/personal-care.html">View all <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
         </header>
         <div class="product-grid product-grid--4">
-          <article class="pcard"><a class="pcard__media" href="../medicines/dettol-original-soap.html" tabindex="-1" aria-hidden="true"><svg class="pack-art" viewBox="0 0 240 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><rect width="240" height="200" fill="#f1f4e2"/><circle cx="204" cy="34" r="48" fill="#fff" fill-opacity=".55"/><circle cx="24" cy="186" r="34" fill="#fff" fill-opacity=".4"/><path d="M52 74 72 56h132l-20 18z" fill="#7c8b2e" fill-opacity=".35"/><path d="M184 74l20-18v104l-20 18z" fill="#58631f" fill-opacity=".85"/><rect x="52" y="74" width="132" height="104" fill="#fff"/><rect x="52" y="74" width="132" height="24" fill="#7c8b2e"/><text x="118" y="132" text-anchor="middle" font-family="Poppins,system-ui,sans-serif" font-weight="700" font-size="20.0" fill="#58631f">Dettol</text><text x="118" y="154" text-anchor="middle" font-family="Poppins,system-ui,sans-serif" font-weight="500" font-size="12.0" fill="#4a6461">Soap</text></svg><span class="pcard__badges"></span></a><div class="pcard__body"><a class="pcard__cat" href="../categories/personal-care.html">Personal Care &amp; Hygiene</a><h3 class="pcard__title"><a href="../medicines/dettol-original-soap.html">Dettol Original Soap</a></h3><p class="pcard__generic">Antibacterial soap</p><p class="pcard__mfr">Reckitt</p><div class="pcard__foot"><div class="pcard__price"><span class="price price--ask">Price on request</span></div><div class="pcard__actions" data-actions-for="dettol-original-soap"><button type="button" class="btn-add" data-add="dettol-original-soap" aria-label="Add Dettol Original Soap to cart"><svg class="icon" aria-hidden="true"><use href="#i-cart"/></svg>Add</button></div></div></div></article>
-          <article class="pcard"><a class="pcard__media" href="../medicines/safeguard-soap.html" tabindex="-1" aria-hidden="true"><svg class="pack-art" viewBox="0 0 240 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><rect width="240" height="200" fill="#f1f4e2"/><circle cx="204" cy="34" r="48" fill="#fff" fill-opacity=".55"/><circle cx="24" cy="186" r="34" fill="#fff" fill-opacity=".4"/><path d="M52 74 72 56h132l-20 18z" fill="#7c8b2e" fill-opacity=".35"/><path d="M184 74l20-18v104l-20 18z" fill="#58631f" fill-opacity=".85"/><rect x="52" y="74" width="132" height="104" fill="#fff"/><rect x="52" y="74" width="132" height="24" fill="#7c8b2e"/><text x="118" y="132" text-anchor="middle" font-family="Poppins,system-ui,sans-serif" font-weight="700" font-size="20.0" fill="#58631f">Safeguard</text><text x="118" y="154" text-anchor="middle" font-family="Poppins,system-ui,sans-serif" font-weight="500" font-size="12.0" fill="#4a6461">Soap</text></svg><span class="pcard__badges"></span></a><div class="pcard__body"><a class="pcard__cat" href="../categories/personal-care.html">Personal Care &amp; Hygiene</a><h3 class="pcard__title"><a href="../medicines/safeguard-soap.html">Safeguard Soap</a></h3><p class="pcard__generic">Germ-protection soap</p><p class="pcard__mfr">P&amp;G</p><div class="pcard__foot"><div class="pcard__price"><span class="price price--ask">Price on request</span></div><div class="pcard__actions" data-actions-for="safeguard-soap"><button type="button" class="btn-add" data-add="safeguard-soap" aria-label="Add Safeguard Soap to cart"><svg class="icon" aria-hidden="true"><use href="#i-cart"/></svg>Add</button></div></div></div></article>
-          <article class="pcard"><a class="pcard__media" href="../medicines/lifebuoy-soap.html" tabindex="-1" aria-hidden="true"><svg class="pack-art" viewBox="0 0 240 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><rect width="240" height="200" fill="#f1f4e2"/><circle cx="204" cy="34" r="48" fill="#fff" fill-opacity=".55"/><circle cx="24" cy="186" r="34" fill="#fff" fill-opacity=".4"/><path d="M52 74 72 56h132l-20 18z" fill="#7c8b2e" fill-opacity=".35"/><path d="M184 74l20-18v104l-20 18z" fill="#58631f" fill-opacity=".85"/><rect x="52" y="74" width="132" height="104" fill="#fff"/><rect x="52" y="74" width="132" height="24" fill="#7c8b2e"/><text x="118" y="132" text-anchor="middle" font-family="Poppins,system-ui,sans-serif" font-weight="700" font-size="20.0" fill="#58631f">Lifebuoy</text><text x="118" y="154" text-anchor="middle" font-family="Poppins,system-ui,sans-serif" font-weight="500" font-size="12.0" fill="#4a6461">Soap</text></svg><span class="pcard__badges"></span></a><div class="pcard__body"><a class="pcard__cat" href="../categories/personal-care.html">Personal Care &amp; Hygiene</a><h3 class="pcard__title"><a href="../medicines/lifebuoy-soap.html">Lifebuoy Soap</a></h3><p class="pcard__generic">Germ-protection soap</p><p class="pcard__mfr">Unilever</p><div class="pcard__foot"><div class="pcard__price"><span class="price price--ask">Price on request</span></div><div class="pcard__actions" data-actions-for="lifebuoy-soap"><button type="button" class="btn-add" data-add="lifebuoy-soap" aria-label="Add Lifebuoy Soap to cart"><svg class="icon" aria-hidden="true"><use href="#i-cart"/></svg>Add</button></div></div></div></article>
-          <article class="pcard"><a class="pcard__media" href="../medicines/lux-soap.html" tabindex="-1" aria-hidden="true"><svg class="pack-art" viewBox="0 0 240 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><rect width="240" height="200" fill="#f1f4e2"/><circle cx="204" cy="34" r="48" fill="#fff" fill-opacity=".55"/><circle cx="24" cy="186" r="34" fill="#fff" fill-opacity=".4"/><path d="M52 74 72 56h132l-20 18z" fill="#7c8b2e" fill-opacity=".35"/><path d="M184 74l20-18v104l-20 18z" fill="#58631f" fill-opacity=".85"/><rect x="52" y="74" width="132" height="104" fill="#fff"/><rect x="52" y="74" width="132" height="24" fill="#7c8b2e"/><text x="118" y="132" text-anchor="middle" font-family="Poppins,system-ui,sans-serif" font-weight="700" font-size="20.0" fill="#58631f">Lux</text><text x="118" y="154" text-anchor="middle" font-family="Poppins,system-ui,sans-serif" font-weight="500" font-size="12.0" fill="#4a6461">Soap</text></svg><span class="pcard__badges"></span></a><div class="pcard__body"><a class="pcard__cat" href="../categories/personal-care.html">Personal Care &amp; Hygiene</a><h3 class="pcard__title"><a href="../medicines/lux-soap.html">Lux Soap</a></h3><p class="pcard__generic">Beauty soap</p><p class="pcard__mfr">Unilever</p><div class="pcard__foot"><div class="pcard__price"><span class="price price--ask">Price on request</span></div><div class="pcard__actions" data-actions-for="lux-soap"><button type="button" class="btn-add" data-add="lux-soap" aria-label="Add Lux Soap to cart"><svg class="icon" aria-hidden="true"><use href="#i-cart"/></svg>Add</button></div></div></div></article>
+          <article class="pcard"><a class="pcard__media" href="../medicines/dettol-original-soap.html" tabindex="-1" aria-hidden="true"><svg class="pack-art" viewBox="0 0 240 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><rect width="240" height="200" fill="#f1f4e2"/><circle cx="204" cy="34" r="48" fill="#fff" fill-opacity=".55"/><circle cx="24" cy="186" r="34" fill="#fff" fill-opacity=".4"/><path d="M52 74 72 56h132l-20 18z" fill="#7c8b2e" fill-opacity=".35"/><path d="M184 74l20-18v104l-20 18z" fill="#58631f" fill-opacity=".85"/><rect x="52" y="74" width="132" height="104" fill="#fff"/><rect x="52" y="74" width="132" height="24" fill="#7c8b2e"/><text x="118" y="132" text-anchor="middle" font-family="Poppins,system-ui,sans-serif" font-weight="700" font-size="20.0" fill="#58631f">Dettol</text><text x="118" y="154" text-anchor="middle" font-family="Poppins,system-ui,sans-serif" font-weight="500" font-size="12.0" fill="#4a6461">Soap</text></svg><span class="pcard__badges"></span></a><div class="pcard__body"><a class="pcard__cat" href="../categories/personal-care.html">Personal &amp; Skin Care</a><h3 class="pcard__title"><a href="../medicines/dettol-original-soap.html">Dettol Original Soap</a></h3><p class="pcard__generic">Antibacterial soap</p><p class="pcard__mfr">Reckitt</p><div class="pcard__foot"><div class="pcard__price"><span class="price price--ask">Price on request</span></div><div class="pcard__actions" data-actions-for="dettol-original-soap"><button type="button" class="btn-add" data-add="dettol-original-soap" aria-label="Add Dettol Original Soap to cart"><svg class="icon" aria-hidden="true"><use href="#i-cart"/></svg>Add</button></div></div></div></article>
+          <article class="pcard"><a class="pcard__media" href="../medicines/vaseline-petroleum-jelly.html" tabindex="-1" aria-hidden="true"><svg class="pack-art" viewBox="0 0 240 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><rect width="240" height="200" fill="#f1f4e2"/><circle cx="204" cy="34" r="48" fill="#fff" fill-opacity=".55"/><circle cx="24" cy="186" r="34" fill="#fff" fill-opacity=".4"/><rect x="62" y="72" width="116" height="26" rx="6" fill="#58631f"/><rect x="58" y="96" width="124" height="80" rx="14" fill="#7c8b2e"/><rect x="58" y="112" width="124" height="46" fill="#fff"/><text x="120" y="135" text-anchor="middle" font-family="Poppins,system-ui,sans-serif" font-weight="700" font-size="17.0" fill="#58631f">Vaseline</text><text x="120" y="151" text-anchor="middle" font-family="Poppins,system-ui,sans-serif" font-weight="500" font-size="10.0" fill="#4a6461">Jar</text></svg><span class="pcard__badges"></span></a><div class="pcard__body"><a class="pcard__cat" href="../categories/personal-care.html">Personal &amp; Skin Care</a><h3 class="pcard__title"><a href="../medicines/vaseline-petroleum-jelly.html">Vaseline Pure Petroleum Jelly</a></h3><p class="pcard__generic">Petroleum jelly</p><p class="pcard__mfr">Unilever</p><div class="pcard__foot"><div class="pcard__price"><span class="price price--ask">Price on request</span></div><div class="pcard__actions" data-actions-for="vaseline-petroleum-jelly"><button type="button" class="btn-add" data-add="vaseline-petroleum-jelly" aria-label="Add Vaseline Pure Petroleum Jelly to cart"><svg class="icon" aria-hidden="true"><use href="#i-cart"/></svg>Add</button></div></div></div></article>
+          <article class="pcard"><a class="pcard__media" href="../medicines/nivea-creme.html" tabindex="-1" aria-hidden="true"><svg class="pack-art" viewBox="0 0 240 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><rect width="240" height="200" fill="#f1f4e2"/><circle cx="204" cy="34" r="48" fill="#fff" fill-opacity=".55"/><circle cx="24" cy="186" r="34" fill="#fff" fill-opacity=".4"/><rect x="62" y="72" width="116" height="26" rx="6" fill="#58631f"/><rect x="58" y="96" width="124" height="80" rx="14" fill="#7c8b2e"/><rect x="58" y="112" width="124" height="46" fill="#fff"/><text x="120" y="135" text-anchor="middle" font-family="Poppins,system-ui,sans-serif" font-weight="700" font-size="17.0" fill="#58631f">Nivea</text><text x="120" y="151" text-anchor="middle" font-family="Poppins,system-ui,sans-serif" font-weight="500" font-size="10.0" fill="#4a6461">Creme</text></svg><span class="pcard__badges"></span></a><div class="pcard__body"><a class="pcard__cat" href="../categories/personal-care.html">Personal &amp; Skin Care</a><h3 class="pcard__title"><a href="../medicines/nivea-creme.html">Nivea Creme</a></h3><p class="pcard__generic">Moisturising cream</p><p class="pcard__mfr">Beiersdorf</p><div class="pcard__foot"><div class="pcard__price"><span class="price price--ask">Price on request</span></div><div class="pcard__actions" data-actions-for="nivea-creme"><button type="button" class="btn-add" data-add="nivea-creme" aria-label="Add Nivea Creme to cart"><svg class="icon" aria-hidden="true"><use href="#i-cart"/></svg>Add</button></div></div></div></article>
+          <article class="pcard"><a class="pcard__media" href="../medicines/safeguard-soap.html" tabindex="-1" aria-hidden="true"><svg class="pack-art" viewBox="0 0 240 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><rect width="240" height="200" fill="#f1f4e2"/><circle cx="204" cy="34" r="48" fill="#fff" fill-opacity=".55"/><circle cx="24" cy="186" r="34" fill="#fff" fill-opacity=".4"/><path d="M52 74 72 56h132l-20 18z" fill="#7c8b2e" fill-opacity=".35"/><path d="M184 74l20-18v104l-20 18z" fill="#58631f" fill-opacity=".85"/><rect x="52" y="74" width="132" height="104" fill="#fff"/><rect x="52" y="74" width="132" height="24" fill="#7c8b2e"/><text x="118" y="132" text-anchor="middle" font-family="Poppins,system-ui,sans-serif" font-weight="700" font-size="20.0" fill="#58631f">Safeguard</text><text x="118" y="154" text-anchor="middle" font-family="Poppins,system-ui,sans-serif" font-weight="500" font-size="12.0" fill="#4a6461">Soap</text></svg><span class="pcard__badges"></span></a><div class="pcard__body"><a class="pcard__cat" href="../categories/personal-care.html">Personal &amp; Skin Care</a><h3 class="pcard__title"><a href="../medicines/safeguard-soap.html">Safeguard Soap</a></h3><p class="pcard__generic">Germ-protection soap</p><p class="pcard__mfr">P&amp;G</p><div class="pcard__foot"><div class="pcard__price"><span class="price price--ask">Price on request</span></div><div class="pcard__actions" data-actions-for="safeguard-soap"><button type="button" class="btn-add" data-add="safeguard-soap" aria-label="Add Safeguard Soap to cart"><svg class="icon" aria-hidden="true"><use href="#i-cart"/></svg>Add</button></div></div></div></article>
         </div>
       </div>
     </section>
@@ -285,14 +341,14 @@
       <div class="footer__col">
         <h3>Shop</h3>
         <ul role="list">
-          <li><a href="../categories/fever-pain.html">Fever &amp; Pain</a></li>
-          <li><a href="../categories/cough-cold.html">Cough, Cold &amp; Flu</a></li>
           <li><a href="../categories/kids.html">Kids&#39; Medicines</a></li>
-          <li><a href="../categories/baby.html">Baby Care</a></li>
+          <li><a href="../categories/kids-fever-pain.html">Kids&#39; Fever &amp; Pain</a></li>
+          <li><a href="../categories/baby-kids.html">Baby &amp; Kids Care</a></li>
           <li><a href="../categories/diapers.html">Diapers &amp; Wipes</a></li>
-          <li><a href="../categories/oral-care.html">Oral Care</a></li>
-          <li><a href="../categories/personal-care.html">Personal Care &amp; Hygiene</a></li>
-          <li><a href="../categories/vitamins.html">Vitamins &amp; Nutrition</a></li>
+          <li><a href="../categories/baby-feeding.html">Feeding &amp; Formula</a></li>
+          <li><a href="../categories/adult.html">Adult &amp; Family Medicines</a></li>
+          <li><a href="../categories/personal-care.html">Personal &amp; Skin Care</a></li>
+          <li><a href="../categories/care-health.html">Personal Care &amp; Health</a></li>
         </ul>
       </div>
       <div class="footer__col">
@@ -351,10 +407,10 @@
   </div>
 
   <script src="../js/config.js?v=1ded6251" defer></script>
-  <script src="../data/products.js?v=1adada18" defer></script>
+  <script src="../data/products.js?v=0d6b3b93" defer></script>
   <script src="../data/images.js?v=81dcd023" defer></script>
-  <script src="../js/catalog.js?v=c3e56605" defer></script>
-  <script src="../js/main.js?v=da06a0ca" defer></script>
+  <script src="../js/catalog.js?v=826a104a" defer></script>
+  <script src="../js/main.js?v=df14e5b8" defer></script>
   <script src="../js/store.js?v=a41b3da7" defer></script>
 
 </body>

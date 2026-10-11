@@ -239,8 +239,17 @@
           </div>
           <a class="link-more" href="shop.html">View all {{productCount}} products <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
         </header>
-        <div class="cat-grid">
-{{categoryGrid}}
+        <div class="cat-group">
+          <h3 class="cat-group__title"><svg class="icon" aria-hidden="true"><use href="#i-baby"/></svg> For children <span>Kids' medicines &amp; baby care · {{kidsCount}} products</span></h3>
+          <div class="cat-grid">
+{{kidsCategoryGrid}}
+          </div>
+        </div>
+        <div class="cat-group">
+          <h3 class="cat-group__title"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg> For adults &amp; family <span>Medicines, personal care &amp; health · {{adultCount}} products</span></h3>
+          <div class="cat-grid">
+{{adultCategoryGrid}}
+          </div>
         </div>
       </div>
     </section>

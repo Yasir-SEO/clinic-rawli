@@ -11,6 +11,61 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://yasir-seo.github.io/clinic-rawli/categories/kids.html</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yasir-seo.github.io/clinic-rawli/categories/kids-fever-pain.html</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yasir-seo.github.io/clinic-rawli/categories/kids-cough-allergy.html</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yasir-seo.github.io/clinic-rawli/categories/kids-tummy.html</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yasir-seo.github.io/clinic-rawli/categories/kids-antibiotics.html</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yasir-seo.github.io/clinic-rawli/categories/kids-vitamins.html</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yasir-seo.github.io/clinic-rawli/categories/baby-kids.html</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yasir-seo.github.io/clinic-rawli/categories/diapers.html</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yasir-seo.github.io/clinic-rawli/categories/baby.html</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yasir-seo.github.io/clinic-rawli/categories/baby-feeding.html</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yasir-seo.github.io/clinic-rawli/categories/adult.html</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://yasir-seo.github.io/clinic-rawli/categories/fever-pain.html</loc>
     <lastmod>2026-10-11</lastmod>
     <priority>0.7</priority>
@@ -36,16 +91,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://yasir-seo.github.io/clinic-rawli/categories/kids.html</loc>
-    <lastmod>2026-10-11</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://yasir-seo.github.io/clinic-rawli/categories/vitamins.html</loc>
-    <lastmod>2026-10-11</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://yasir-seo.github.io/clinic-rawli/categories/diabetes.html</loc>
     <lastmod>2026-10-11</lastmod>
     <priority>0.7</priority>
@@ -66,12 +111,17 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://yasir-seo.github.io/clinic-rawli/categories/baby.html</loc>
+    <loc>https://yasir-seo.github.io/clinic-rawli/categories/vitamins.html</loc>
     <lastmod>2026-10-11</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://yasir-seo.github.io/clinic-rawli/categories/diapers.html</loc>
+    <loc>https://yasir-seo.github.io/clinic-rawli/categories/herbal.html</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yasir-seo.github.io/clinic-rawli/categories/care-health.html</loc>
     <lastmod>2026-10-11</lastmod>
     <priority>0.7</priority>
   </url>
@@ -82,11 +132,6 @@
   </url>
   <url>
     <loc>https://yasir-seo.github.io/clinic-rawli/categories/personal-care.html</loc>
-    <lastmod>2026-10-11</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://yasir-seo.github.io/clinic-rawli/categories/herbal.html</loc>
     <lastmod>2026-10-11</lastmod>
     <priority>0.7</priority>
   </url>
@@ -261,6 +306,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://yasir-seo.github.io/clinic-rawli/brands/woodwards.html</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://yasir-seo.github.io/clinic-rawli/medicines/panadol-500mg-tablets.html</loc>
     <lastmod>2026-10-11</lastmod>
     <priority>0.6</priority>
@@ -336,6 +386,16 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://yasir-seo.github.io/clinic-rawli/medicines/panadol-infant-drops.html</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://yasir-seo.github.io/clinic-rawli/medicines/brufen-ds-suspension.html</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://yasir-seo.github.io/clinic-rawli/medicines/panadol-cf-tablets.html</loc>
     <lastmod>2026-10-11</lastmod>
     <priority>0.6</priority>
@@ -367,6 +427,11 @@
   </url>
   <url>
     <loc>https://yasir-seo.github.io/clinic-rawli/medicines/vicks-vaporub.html</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://yasir-seo.github.io/clinic-rawli/medicines/ventolin-expectorant.html</loc>
     <lastmod>2026-10-11</lastmod>
     <priority>0.6</priority>
   </url>
@@ -417,6 +482,26 @@
   </url>
   <url>
     <loc>https://yasir-seo.github.io/clinic-rawli/medicines/seretide-inhaler.html</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://yasir-seo.github.io/clinic-rawli/medicines/zyrtec-syrup.html</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://yasir-seo.github.io/clinic-rawli/medicines/avil-syrup.html</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://yasir-seo.github.io/clinic-rawli/medicines/montiget-4mg-granules.html</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://yasir-seo.github.io/clinic-rawli/medicines/montiget-5mg-chewable.html</loc>
     <lastmod>2026-10-11</lastmod>
     <priority>0.6</priority>
   </url>
@@ -497,6 +582,21 @@
   </url>
   <url>
     <loc>https://yasir-seo.github.io/clinic-rawli/medicines/zentel-suspension.html</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://yasir-seo.github.io/clinic-rawli/medicines/peditral-ors-sachets.html</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://yasir-seo.github.io/clinic-rawli/medicines/peditral-500ml.html</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://yasir-seo.github.io/clinic-rawli/medicines/woodwards-gripe-water.html</loc>
     <lastmod>2026-10-11</lastmod>
     <priority>0.6</priority>
   </url>
@@ -662,6 +762,16 @@
   </url>
   <url>
     <loc>https://yasir-seo.github.io/clinic-rawli/medicines/vitamin-d3-drops.html</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://yasir-seo.github.io/clinic-rawli/medicines/vidaylin-drops.html</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://yasir-seo.github.io/clinic-rawli/medicines/vidaylin-l-syrup.html</loc>
     <lastmod>2026-10-11</lastmod>
     <priority>0.6</priority>
   </url>

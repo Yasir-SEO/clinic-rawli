@@ -13,10 +13,11 @@
                 bottle | device | supply | toothpaste | toothbrush | mouthwash | soap |
                 shampoo | lotion | handwash | sanitizer | powder | diaper | wipes | pads | razor
       unit      what one cart item means: Strip, Bottle, Tube, Pack, Box, Tin, Piece, Jar, Sachet
-      cat       category id (see `categories`)
+      cat       category id (see `categories`; real categories only)
       mfr       manufacturer id (see `manufacturers`)
       rx        true = prescription required
-      kids      true = suitable for / made for children
+      kids      true = suitable for / made for children (listed on the Kids' pages)
+      all       true = for children AND adults (with kids: true; also listed on adult pages)
       price     retail price (MRP) in rupees for one unit, or null to show "Price on request"
       pack      what is inside one unit, e.g. "10 tablets", "90ml", "20g" (can be left out)
       use       one short sentence about what it is used for
@@ -32,25 +33,49 @@
 })(this, function () {
   "use strict";
 
+  /*
+    Categories. Real categories (no "virtual") are what a product's `cat` can be.
+      type      med = medicine, care = everyday/baby care products, health = first aid & devices
+      group     which menu the category sits in (kids, kids-care, adult, care)
+    Virtual categories are collections worked out from the products:
+      base      only products in these categories
+      audience  kids  = products marked kids: true
+                adult = products for adults (not made only for children)
+    On medicine category pages (fever-pain, cough-cold ...) only adult & family products are
+    listed; medicines made only for children are on the matching Kids' page.
+  */
   var categories = [
-    { id: "fever-pain", name: "Fever & Pain", urdu: "بخار اور درد", icon: "thermo" },
-    { id: "cough-cold", name: "Cough, Cold & Flu", urdu: "کھانسی اور نزلہ زکام", icon: "wind" },
-    { id: "allergy-asthma", name: "Allergy & Asthma", urdu: "الرجی اور دمہ", icon: "lungs" },
-    { id: "stomach", name: "Stomach & Digestion", urdu: "معدہ اور ہاضمہ", icon: "utensils" },
-    { id: "antibiotics", name: "Antibiotics", urdu: "اینٹی بائیوٹکس", icon: "pill" },
-    { id: "kids", name: "Kids' Medicines", urdu: "بچوں کی ادویات", icon: "baby", virtual: true },
-    { id: "vitamins", name: "Vitamins & Nutrition", urdu: "وٹامنز اور غذائیت", icon: "sparkle" },
-    { id: "diabetes", name: "Diabetes Care", urdu: "شوگر", icon: "droplet" },
-    { id: "heart-bp", name: "Heart & Blood Pressure", urdu: "دل اور بلڈ پریشر", icon: "heart" },
-    { id: "skin", name: "Skin Care", urdu: "جلد کی نگہداشت", icon: "bandage" },
-    { id: "eye-ear-nose", name: "Eye, Ear & Nose", urdu: "آنکھ، کان اور ناک", icon: "eye" },
-    { id: "baby", name: "Baby Care", urdu: "نومولود کی دیکھ بھال", icon: "bottle" },
-    { id: "diapers", name: "Diapers & Wipes", urdu: "ڈائپرز اور وائپس", icon: "baby" },
-    { id: "oral-care", name: "Oral Care", urdu: "دانتوں کی صفائی", icon: "smile" },
-    { id: "personal-care", name: "Personal Care & Hygiene", urdu: "ذاتی صفائی", icon: "droplet" },
-    { id: "herbal", name: "Herbal & Desi Remedies", urdu: "دیسی اور ہربل", icon: "leaf" },
-    { id: "first-aid", name: "First Aid & Supplies", urdu: "فرسٹ ایڈ", icon: "kit" },
-    { id: "devices", name: "Medical Devices", urdu: "طبی آلات", icon: "pulse" }
+    /* Kids' medicines */
+    { id: "kids", name: "Kids' Medicines", short: "All kids' medicines", urdu: "بچوں کی ادویات", icon: "baby", virtual: true, group: "kids", type: "med", audience: "kids" },
+    { id: "kids-fever-pain", name: "Kids' Fever & Pain", short: "Fever & Pain", urdu: "بچوں کا بخار اور درد", icon: "thermo", virtual: true, group: "kids", base: ["fever-pain"], audience: "kids" },
+    { id: "kids-cough-allergy", name: "Kids' Cough, Cold & Allergy", short: "Cough, Cold & Allergy", urdu: "بچوں کی کھانسی، نزلہ اور الرجی", icon: "wind", virtual: true, group: "kids", base: ["cough-cold", "allergy-asthma", "eye-ear-nose"], audience: "kids" },
+    { id: "kids-tummy", name: "Kids' Tummy, Diarrhoea & Worms", short: "Tummy, Diarrhoea & Worms", urdu: "بچوں کا پیٹ، دست اور کیڑے", icon: "utensils", virtual: true, group: "kids", base: ["stomach"], audience: "kids" },
+    { id: "kids-antibiotics", name: "Kids' Antibiotics", short: "Antibiotics (prescription)", urdu: "بچوں کی اینٹی بائیوٹکس", icon: "pill", virtual: true, group: "kids", base: ["antibiotics"], audience: "kids" },
+    { id: "kids-vitamins", name: "Kids' Vitamins & Nutrition", short: "Vitamins & Nutrition", urdu: "بچوں کے وٹامنز اور غذائیت", icon: "sparkle", virtual: true, group: "kids", base: ["vitamins"], audience: "kids" },
+    /* Baby & kids care (not medicines) */
+    { id: "baby-kids", name: "Baby & Kids Care", short: "All baby & kids care", urdu: "بچوں کی دیکھ بھال", icon: "bottle", virtual: true, group: "kids-care", type: "care", audience: "kids" },
+    { id: "diapers", name: "Diapers & Wipes", urdu: "ڈائپرز اور وائپس", icon: "baby", group: "kids-care", type: "care" },
+    { id: "baby", name: "Baby Bath & Skin Care", short: "Bath & Skin Care", urdu: "نہلانا اور جلد کی دیکھ بھال", icon: "bottle", group: "kids-care", type: "care" },
+    { id: "baby-feeding", name: "Feeding & Formula", urdu: "دودھ اور فیڈنگ", icon: "bottle", group: "kids-care", type: "care" },
+    /* Adult & family medicines */
+    { id: "adult", name: "Adult & Family Medicines", short: "All adult medicines", urdu: "بڑوں کی ادویات", icon: "pill", virtual: true, group: "adult", type: "med", audience: "adult" },
+    { id: "fever-pain", name: "Fever & Pain", urdu: "بخار اور درد", icon: "thermo", group: "adult", type: "med" },
+    { id: "cough-cold", name: "Cough, Cold & Flu", urdu: "کھانسی اور نزلہ زکام", icon: "wind", group: "adult", type: "med" },
+    { id: "allergy-asthma", name: "Allergy & Asthma", urdu: "الرجی اور دمہ", icon: "lungs", group: "adult", type: "med" },
+    { id: "stomach", name: "Stomach & Digestion", urdu: "معدہ اور ہاضمہ", icon: "utensils", group: "adult", type: "med" },
+    { id: "antibiotics", name: "Antibiotics", urdu: "اینٹی بائیوٹکس", icon: "pill", group: "adult", type: "med" },
+    { id: "diabetes", name: "Diabetes Care", urdu: "شوگر", icon: "droplet", group: "adult", type: "med" },
+    { id: "heart-bp", name: "Heart & Blood Pressure", urdu: "دل اور بلڈ پریشر", icon: "heart", group: "adult", type: "med" },
+    { id: "skin", name: "Skin Treatments", urdu: "جلد کی ادویات", icon: "bandage", group: "adult", type: "med" },
+    { id: "eye-ear-nose", name: "Eye, Ear & Nose", urdu: "آنکھ، کان اور ناک", icon: "eye", group: "adult", type: "med" },
+    { id: "vitamins", name: "Vitamins & Supplements", urdu: "وٹامنز اور غذائیت", icon: "sparkle", group: "adult", type: "med" },
+    { id: "herbal", name: "Herbal & Desi Remedies", urdu: "دیسی اور ہربل", icon: "leaf", group: "adult", type: "med" },
+    /* Personal care & health */
+    { id: "care-health", name: "Personal Care & Health", short: "All personal care & health", urdu: "ذاتی نگہداشت اور صحت", icon: "droplet", virtual: true, group: "care", base: ["oral-care", "personal-care", "first-aid", "devices"] },
+    { id: "oral-care", name: "Oral Care", urdu: "دانتوں کی صفائی", icon: "smile", group: "care", type: "care" },
+    { id: "personal-care", name: "Personal & Skin Care", urdu: "ذاتی صفائی اور جلد", icon: "droplet", group: "care", type: "care" },
+    { id: "first-aid", name: "First Aid & Supplies", urdu: "فرسٹ ایڈ", icon: "kit", group: "care", type: "health" },
+    { id: "devices", name: "Medical Devices", urdu: "طبی آلات", icon: "pulse", group: "care", type: "health" }
   ];
 
   var manufacturers = [
@@ -86,13 +111,14 @@
     { id: "colgate", name: "Colgate-Palmolive", full: "Colgate-Palmolive Pakistan" },
     { id: "hayat", name: "Hayat Kimya", full: "Hayat Kimya (Molfix)" },
     { id: "pigeon", name: "Pigeon", full: "Pigeon Corporation" },
+    { id: "woodwards", name: "Woodward's", full: "Woodward's Pakistan" },
     { id: "various", name: "Various", full: "Various manufacturers", hidden: true }
   ];
 
   var P = function (o) {
     return {
       id: o.id, name: o.name, brand: o.brand, strength: o.strength || "", generic: o.generic,
-      form: o.form, unit: o.unit, cat: o.cat, mfr: o.mfr, rx: !!o.rx, kids: !!o.kids,
+      form: o.form, unit: o.unit, cat: o.cat, mfr: o.mfr, rx: !!o.rx, kids: !!o.kids, all: !!o.all,
       price: o.price == null ? null : o.price, use: o.use, featured: !!o.featured,
       pack: o.pack || "", image: o.image || null
     };
@@ -116,14 +142,19 @@
     P({ id: "caflam-50mg", name: "Caflam 50mg Tablets", brand: "Caflam", strength: "50mg", generic: "Diclofenac potassium", form: "tablet", unit: "Strip", cat: "fever-pain", mfr: "novartis", rx: true, use: "Acute pain such as sprains, dental pain and period pain." }),
     P({ id: "dicloran-50mg", name: "Dicloran 50mg Tablets", brand: "Dicloran", strength: "50mg", generic: "Diclofenac sodium", form: "tablet", unit: "Strip", cat: "fever-pain", mfr: "sami", rx: true, use: "Pain and swelling in joints and muscles." }),
 
+    P({ id: "panadol-infant-drops", name: "Panadol Infant Drops", brand: "Panadol", strength: "Infant Drops", generic: "Paracetamol", form: "drops", unit: "Bottle", cat: "fever-pain", mfr: "haleon", kids: true, pack: "30ml", use: "Fever and pain relief for babies. Give only the dose your doctor advises." }),
+    P({ id: "brufen-ds-suspension", name: "Brufen DS Suspension 200mg/5ml", brand: "Brufen DS", strength: "200mg/5ml", generic: "Ibuprofen", form: "suspension", unit: "Bottle", cat: "fever-pain", mfr: "abbott", kids: true, pack: "90ml", use: "Double-strength fever and pain relief for older children." }),
+
     /* ---------- Cough, Cold & Flu ---------- */
     P({ id: "panadol-cf-tablets", name: "Panadol CF Tablets", brand: "Panadol CF", generic: "Paracetamol cold & flu combination", form: "tablet", unit: "Strip", cat: "cough-cold", mfr: "haleon", pack: "10 tablets", use: "Relief from cold and flu symptoms: fever, blocked nose and body aches.", featured: true }),
     P({ id: "arinac-tablets", name: "Arinac Tablets", brand: "Arinac", strength: "200mg/30mg", generic: "Ibuprofen + Pseudoephedrine", form: "tablet", unit: "Strip", cat: "cough-cold", mfr: "abbott", pack: "10 tablets", use: "Relief from flu symptoms such as blocked nose, fever and headache." }),
     P({ id: "arinac-forte-tablets", name: "Arinac Forte Tablets", brand: "Arinac Forte", strength: "400mg/60mg", generic: "Ibuprofen + Pseudoephedrine", form: "tablet", unit: "Strip", cat: "cough-cold", mfr: "abbott", pack: "10 tablets", use: "Stronger relief from flu, sinus congestion and body aches." }),
     P({ id: "hydryllin-syrup", name: "Hydryllin Syrup", brand: "Hydryllin", generic: "Aminophylline + Diphenhydramine + Ammonium chloride", form: "syrup", unit: "Bottle", cat: "cough-cold", mfr: "searle", pack: "120ml", use: "Cough with chest congestion.", featured: true }),
-    P({ id: "prospan-syrup", name: "Prospan Cough Syrup", brand: "Prospan", generic: "Ivy leaf dry extract", form: "syrup", unit: "Bottle", cat: "cough-cold", mfr: "engelhard", kids: true, pack: "120ml", use: "Herbal relief for chesty cough in children and adults.", featured: true }),
+    P({ id: "prospan-syrup", name: "Prospan Cough Syrup", brand: "Prospan", generic: "Ivy leaf dry extract", form: "syrup", unit: "Bottle", cat: "cough-cold", mfr: "engelhard", kids: true, all: true, pack: "120ml", use: "Herbal relief for chesty cough in children and adults.", featured: true }),
     P({ id: "strepsils-lozenges", name: "Strepsils Lozenges", brand: "Strepsils", generic: "Amylmetacresol + Dichlorobenzyl alcohol", form: "lozenge", unit: "Pack", cat: "cough-cold", mfr: "reckitt", use: "Soothing relief for sore throat." }),
     P({ id: "vicks-vaporub", name: "Vicks VapoRub", brand: "Vicks", strength: "VapoRub", generic: "Menthol + Camphor + Eucalyptus oil", form: "jar", unit: "Jar", cat: "cough-cold", mfr: "pg", use: "Rub on chest and back to ease blocked nose and cough. Not for children under 2." }),
+
+    P({ id: "ventolin-expectorant", name: "Ventolin Expectorant Syrup (Sugar Free)", brand: "Ventolin", strength: "Expectorant", generic: "Salbutamol + Guaifenesin", form: "syrup", unit: "Bottle", cat: "cough-cold", mfr: "gsk", rx: true, kids: true, all: true, pack: "120ml", use: "Chesty cough with wheezing, as prescribed." }),
 
     /* ---------- Allergy & Asthma ---------- */
     P({ id: "avil-25mg", name: "Avil 25mg Tablets", brand: "Avil", strength: "25mg", generic: "Pheniramine maleate", form: "tablet", unit: "Strip", cat: "allergy-asthma", mfr: "sanofi", pack: "10 tablets", use: "Allergies, itching, hives and runny nose. May cause drowsiness." }),
@@ -134,8 +165,13 @@
     P({ id: "montiget-10mg", name: "Montiget 10mg Tablets", brand: "Montiget", strength: "10mg", generic: "Montelukast", form: "tablet", unit: "Strip", cat: "allergy-asthma", mfr: "getz", rx: true, use: "Prevention of asthma and relief of allergic rhinitis." }),
     P({ id: "ventolin-inhaler", name: "Ventolin Inhaler 100mcg", brand: "Ventolin", strength: "100mcg", generic: "Salbutamol", form: "inhaler", unit: "Piece", cat: "allergy-asthma", mfr: "gsk", rx: true, pack: "200 doses", use: "Quick relief of wheezing and breathlessness in asthma." }),
     P({ id: "ventolin-syrup", name: "Ventolin Syrup 2mg/5ml", brand: "Ventolin", strength: "2mg/5ml", generic: "Salbutamol", form: "syrup", unit: "Bottle", cat: "allergy-asthma", mfr: "gsk", rx: true, kids: true, pack: "120ml", use: "Relief of wheezing and chest tightness, as prescribed." }),
-    P({ id: "ventolin-nebules", name: "Ventolin Nebules 2.5mg", brand: "Ventolin", strength: "Nebules 2.5mg", generic: "Salbutamol", form: "nebule", unit: "Box", cat: "allergy-asthma", mfr: "gsk", rx: true, kids: true, use: "For use with a nebulizer to relieve wheezing." }),
+    P({ id: "ventolin-nebules", name: "Ventolin Nebules 2.5mg", brand: "Ventolin", strength: "Nebules 2.5mg", generic: "Salbutamol", form: "nebule", unit: "Box", cat: "allergy-asthma", mfr: "gsk", rx: true, kids: true, all: true, use: "For use with a nebulizer to relieve wheezing." }),
     P({ id: "seretide-inhaler", name: "Seretide Inhaler", brand: "Seretide", generic: "Salmeterol + Fluticasone", form: "inhaler", unit: "Piece", cat: "allergy-asthma", mfr: "gsk", rx: true, use: "Regular control of asthma and COPD, as prescribed." }),
+
+    P({ id: "zyrtec-syrup", name: "Zyrtec Syrup 5mg/5ml", brand: "Zyrtec", strength: "5mg/5ml", generic: "Cetirizine", form: "syrup", unit: "Bottle", cat: "allergy-asthma", mfr: "gsk", kids: true, pack: "60ml", use: "Relief from allergies, runny nose and itchy skin in children." }),
+    P({ id: "avil-syrup", name: "Avil Syrup", brand: "Avil", strength: "Syrup", generic: "Pheniramine maleate", form: "syrup", unit: "Bottle", cat: "allergy-asthma", mfr: "sanofi", kids: true, pack: "90ml", use: "Allergies, itching and hives. May cause drowsiness." }),
+    P({ id: "montiget-4mg-granules", name: "Montiget 4mg Paediatric Granules", brand: "Montiget", strength: "4mg", generic: "Montelukast", form: "sachet", unit: "Box", cat: "allergy-asthma", mfr: "getz", rx: true, kids: true, pack: "14 sachets", use: "Asthma and allergy prevention for young children, as prescribed." }),
+    P({ id: "montiget-5mg-chewable", name: "Montiget 5mg Chewable Tablets", brand: "Montiget", strength: "5mg", generic: "Montelukast", form: "tablet", unit: "Box", cat: "allergy-asthma", mfr: "getz", rx: true, kids: true, use: "Asthma prevention for children aged 6 to 14, as prescribed." }),
 
     /* ---------- Stomach & Digestion ---------- */
     P({ id: "risek-20mg", name: "Risek 20mg Capsules", brand: "Risek", strength: "20mg", generic: "Omeprazole", form: "capsule", unit: "Strip", cat: "stomach", mfr: "getz", use: "Acidity, heartburn and stomach ulcers.", featured: true }),
@@ -150,10 +186,14 @@
     P({ id: "no-spa-40mg", name: "No-Spa 40mg Tablets", brand: "No-Spa", strength: "40mg", generic: "Drotaverine", form: "tablet", unit: "Strip", cat: "stomach", mfr: "sanofi", use: "Stomach cramps and abdominal spasms." }),
     P({ id: "colofac-135mg", name: "Colofac 135mg Tablets", brand: "Colofac", strength: "135mg", generic: "Mebeverine", form: "tablet", unit: "Strip", cat: "stomach", mfr: "abbott", use: "Cramps and bloating of irritable bowel syndrome (IBS)." }),
     P({ id: "duphalac-syrup", name: "Duphalac Syrup", brand: "Duphalac", generic: "Lactulose", form: "syrup", unit: "Bottle", cat: "stomach", mfr: "abbott", pack: "120ml", use: "Gentle relief from constipation." }),
-    P({ id: "enterogermina-suspension", name: "Enterogermina Oral Suspension", brand: "Enterogermina", generic: "Bacillus clausii (probiotic)", form: "vial", unit: "Box", cat: "stomach", mfr: "sanofi", kids: true, pack: "10 × 5ml vials", use: "Probiotic that helps restore healthy gut bacteria during diarrhoea.", featured: true }),
-    P({ id: "ors-sachets", name: "ORS Sachets (Low Osmolarity)", brand: "ORS", generic: "Oral rehydration salts", form: "sachet", unit: "Sachet", cat: "stomach", mfr: "various", kids: true, use: "Prevents and treats dehydration from diarrhoea and vomiting.", featured: true }),
+    P({ id: "enterogermina-suspension", name: "Enterogermina Oral Suspension", brand: "Enterogermina", generic: "Bacillus clausii (probiotic)", form: "vial", unit: "Box", cat: "stomach", mfr: "sanofi", kids: true, all: true, pack: "10 × 5ml vials", use: "Probiotic that helps restore healthy gut bacteria during diarrhoea.", featured: true }),
+    P({ id: "ors-sachets", name: "ORS Sachets (Low Osmolarity)", brand: "ORS", generic: "Oral rehydration salts", form: "sachet", unit: "Sachet", cat: "stomach", mfr: "various", kids: true, all: true, use: "Prevents and treats dehydration from diarrhoea and vomiting.", featured: true }),
     P({ id: "zentel-400mg", name: "Zentel 400mg Tablet", brand: "Zentel", strength: "400mg", generic: "Albendazole", form: "tablet", unit: "Strip", cat: "stomach", mfr: "gsk", use: "Treatment of worm infections." }),
     P({ id: "zentel-suspension", name: "Zentel Suspension", brand: "Zentel", strength: "Suspension", generic: "Albendazole", form: "suspension", unit: "Bottle", cat: "stomach", mfr: "gsk", kids: true, pack: "10ml", use: "Treatment of worm infections in children." }),
+
+    P({ id: "peditral-ors-sachets", name: "Peditral ORS Sachets", brand: "Peditral", strength: "ORS", generic: "Oral rehydration salts", form: "sachet", unit: "Sachet", cat: "stomach", mfr: "searle", kids: true, all: true, use: "Replaces water and salts lost in diarrhoea and vomiting." }),
+    P({ id: "peditral-500ml", name: "Peditral Ready-to-Drink ORS 500ml", brand: "Peditral", strength: "500ml", generic: "Oral rehydration solution", form: "bottle", unit: "Bottle", cat: "stomach", mfr: "searle", kids: true, all: true, pack: "500ml", use: "Ready-made ORS drink for diarrhoea and dehydration. Comes in several flavours." }),
+    P({ id: "woodwards-gripe-water", name: "Woodward's Gripe Water", brand: "Woodward's", strength: "Gripe Water", generic: "Dill seed oil + Sodium bicarbonate", form: "bottle", unit: "Bottle", cat: "stomach", mfr: "woodwards", kids: true, use: "Traditional relief for wind and colic in babies." }),
 
     /* ---------- Antibiotics (prescription only) ---------- */
     P({ id: "augmentin-625mg", name: "Augmentin 625mg Tablets", brand: "Augmentin", strength: "625mg", generic: "Amoxicillin + Clavulanic acid", form: "tablet", unit: "Strip", cat: "antibiotics", mfr: "gsk", rx: true, use: "Bacterial infections of the chest, ear, throat, sinus, skin and urinary tract.", featured: true }),
@@ -192,6 +232,9 @@
     P({ id: "zinc-syrup-20mg", name: "Zinc Syrup 20mg/5ml", brand: "Zinc", strength: "20mg/5ml", generic: "Zinc sulphate", form: "syrup", unit: "Bottle", cat: "vitamins", mfr: "various", kids: true, use: "Zinc supplement, often given with ORS during diarrhoea in children." }),
     P({ id: "vitamin-d3-drops", name: "Vitamin D3 Drops", brand: "Vitamin D3", strength: "Drops", generic: "Cholecalciferol", form: "drops", unit: "Bottle", cat: "vitamins", mfr: "various", kids: true, use: "Vitamin D supplement for babies and children." }),
 
+    P({ id: "vidaylin-drops", name: "Vidaylin Drops", brand: "Vidaylin", strength: "Drops", generic: "Multivitamin drops", form: "drops", unit: "Bottle", cat: "vitamins", mfr: "abbott", kids: true, pack: "10ml", use: "Daily multivitamin drops for infants." }),
+    P({ id: "vidaylin-l-syrup", name: "Vidaylin-L Syrup", brand: "Vidaylin-L", strength: "Syrup", generic: "Multivitamins + Lysine", form: "syrup", unit: "Bottle", cat: "vitamins", mfr: "abbott", kids: true, pack: "120ml", use: "Multivitamin syrup for growing children." }),
+
     /* ---------- Diabetes Care ---------- */
     P({ id: "amaryl-1mg", name: "Amaryl 1mg Tablets", brand: "Amaryl", strength: "1mg", generic: "Glimepiride", form: "tablet", unit: "Strip", cat: "diabetes", mfr: "sanofi", rx: true, use: "Blood sugar control in type 2 diabetes." }),
     P({ id: "amaryl-2mg", name: "Amaryl 2mg Tablets", brand: "Amaryl", strength: "2mg", generic: "Glimepiride", form: "tablet", unit: "Strip", cat: "diabetes", mfr: "sanofi", rx: true, use: "Blood sugar control in type 2 diabetes." }),
@@ -225,8 +268,8 @@
     P({ id: "betnovate-cream", name: "Betnovate Cream 0.1%", brand: "Betnovate", strength: "0.1%", generic: "Betamethasone valerate", form: "cream", unit: "Tube", cat: "skin", mfr: "gsk", rx: true, pack: "20g", use: "Eczema, dermatitis and other inflamed skin conditions." }),
     P({ id: "dermovate-cream", name: "Dermovate Cream 0.05%", brand: "Dermovate", strength: "0.05%", generic: "Clobetasol propionate", form: "cream", unit: "Tube", cat: "skin", mfr: "gsk", rx: true, pack: "20g", use: "Severe eczema and psoriasis, as prescribed." }),
     P({ id: "canesten-cream", name: "Canesten Cream 1%", brand: "Canesten", strength: "1%", generic: "Clotrimazole", form: "cream", unit: "Tube", cat: "skin", mfr: "bayer", pack: "20g", use: "Fungal skin infections such as ringworm and athlete's foot." }),
-    P({ id: "vaseline-petroleum-jelly", name: "Vaseline Pure Petroleum Jelly", brand: "Vaseline", generic: "Petroleum jelly", form: "jar", unit: "Jar", cat: "skin", mfr: "unilever", use: "Protects and soothes dry, cracked skin." }),
-    P({ id: "nivea-creme", name: "Nivea Creme", brand: "Nivea", strength: "Creme", generic: "Moisturising cream", form: "jar", unit: "Tin", cat: "skin", mfr: "beiersdorf", use: "Moisturising cream for face, hands and body." }),
+    P({ id: "vaseline-petroleum-jelly", name: "Vaseline Pure Petroleum Jelly", brand: "Vaseline", generic: "Petroleum jelly", form: "jar", unit: "Jar", cat: "personal-care", mfr: "unilever", use: "Protects and soothes dry, cracked skin." }),
+    P({ id: "nivea-creme", name: "Nivea Creme", brand: "Nivea", strength: "Creme", generic: "Moisturising cream", form: "jar", unit: "Tin", cat: "personal-care", mfr: "beiersdorf", use: "Moisturising cream for face, hands and body." }),
     P({ id: "sensodyne-toothpaste", name: "Sensodyne Toothpaste", brand: "Sensodyne", generic: "Toothpaste for sensitive teeth", form: "toothpaste", unit: "Tube", cat: "oral-care", mfr: "haleon", use: "Daily toothpaste for sensitive teeth." }),
 
     /* ---------- Eye, Ear & Nose ---------- */
@@ -236,13 +279,13 @@
     P({ id: "refresh-tears", name: "Refresh Tears Eye Drops", brand: "Refresh Tears", generic: "Carboxymethylcellulose 0.5%", form: "drops", unit: "Bottle", cat: "eye-ear-nose", mfr: "allergan", use: "Lubricating drops for dry, tired eyes." }),
 
     /* ---------- Baby Care ---------- */
-    P({ id: "nan-optipro-1", name: "Nestlé NAN Optipro 1 Infant Formula", brand: "NAN Optipro", strength: "Stage 1", generic: "Infant formula (0–6 months)", form: "tin", unit: "Tin", cat: "baby", mfr: "nestle", kids: true, use: "Infant formula from birth when breastfeeding is not possible.", featured: true }),
-    P({ id: "nan-optipro-2", name: "Nestlé NAN Optipro 2 Follow-up Formula", brand: "NAN Optipro", strength: "Stage 2", generic: "Follow-up formula (6–12 months)", form: "tin", unit: "Tin", cat: "baby", mfr: "nestle", kids: true, use: "Follow-up formula for babies from 6 months." }),
-    P({ id: "nan-optipro-3", name: "Nestlé NAN Optipro 3 Growing-up Milk", brand: "NAN Optipro", strength: "Stage 3", generic: "Growing-up milk (1–3 years)", form: "tin", unit: "Tin", cat: "baby", mfr: "nestle", kids: true, use: "Growing-up milk for toddlers from 1 year." }),
-    P({ id: "lactogen-1", name: "Nestlé Lactogen 1 Infant Formula", brand: "Lactogen", strength: "Stage 1", generic: "Infant formula (0–6 months)", form: "tin", unit: "Tin", cat: "baby", mfr: "nestle", kids: true, use: "Infant formula from birth when breastfeeding is not possible." }),
-    P({ id: "lactogen-2", name: "Nestlé Lactogen 2 Follow-up Formula", brand: "Lactogen", strength: "Stage 2", generic: "Follow-up formula (6–12 months)", form: "tin", unit: "Tin", cat: "baby", mfr: "nestle", kids: true, use: "Follow-up formula for babies from 6 months." }),
-    P({ id: "cerelac-wheat", name: "Nestlé Cerelac Wheat", brand: "Cerelac", strength: "Wheat", generic: "Infant cereal (from 6 months)", form: "pack", unit: "Pack", cat: "baby", mfr: "nestle", kids: true, use: "Iron-fortified cereal for babies starting solid food." }),
-    P({ id: "cerelac-rice", name: "Nestlé Cerelac Rice", brand: "Cerelac", strength: "Rice", generic: "Infant cereal (from 6 months)", form: "pack", unit: "Pack", cat: "baby", mfr: "nestle", kids: true, use: "Gentle first cereal for babies from 6 months." }),
+    P({ id: "nan-optipro-1", name: "Nestlé NAN Optipro 1 Infant Formula", brand: "NAN Optipro", strength: "Stage 1", generic: "Infant formula (0–6 months)", form: "tin", unit: "Tin", cat: "baby-feeding", mfr: "nestle", kids: true, use: "Infant formula from birth when breastfeeding is not possible.", featured: true }),
+    P({ id: "nan-optipro-2", name: "Nestlé NAN Optipro 2 Follow-up Formula", brand: "NAN Optipro", strength: "Stage 2", generic: "Follow-up formula (6–12 months)", form: "tin", unit: "Tin", cat: "baby-feeding", mfr: "nestle", kids: true, use: "Follow-up formula for babies from 6 months." }),
+    P({ id: "nan-optipro-3", name: "Nestlé NAN Optipro 3 Growing-up Milk", brand: "NAN Optipro", strength: "Stage 3", generic: "Growing-up milk (1–3 years)", form: "tin", unit: "Tin", cat: "baby-feeding", mfr: "nestle", kids: true, use: "Growing-up milk for toddlers from 1 year." }),
+    P({ id: "lactogen-1", name: "Nestlé Lactogen 1 Infant Formula", brand: "Lactogen", strength: "Stage 1", generic: "Infant formula (0–6 months)", form: "tin", unit: "Tin", cat: "baby-feeding", mfr: "nestle", kids: true, use: "Infant formula from birth when breastfeeding is not possible." }),
+    P({ id: "lactogen-2", name: "Nestlé Lactogen 2 Follow-up Formula", brand: "Lactogen", strength: "Stage 2", generic: "Follow-up formula (6–12 months)", form: "tin", unit: "Tin", cat: "baby-feeding", mfr: "nestle", kids: true, use: "Follow-up formula for babies from 6 months." }),
+    P({ id: "cerelac-wheat", name: "Nestlé Cerelac Wheat", brand: "Cerelac", strength: "Wheat", generic: "Infant cereal (from 6 months)", form: "pack", unit: "Pack", cat: "baby-feeding", mfr: "nestle", kids: true, use: "Iron-fortified cereal for babies starting solid food." }),
+    P({ id: "cerelac-rice", name: "Nestlé Cerelac Rice", brand: "Cerelac", strength: "Rice", generic: "Infant cereal (from 6 months)", form: "pack", unit: "Pack", cat: "baby-feeding", mfr: "nestle", kids: true, use: "Gentle first cereal for babies from 6 months." }),
     P({ id: "pampers-baby-dry-size-3", name: "Pampers Baby-Dry Diapers Size 3 (Midi)", brand: "Pampers", strength: "Size 3 · Midi", generic: "Baby diapers", form: "diaper", unit: "Pack", cat: "diapers", mfr: "pg", kids: true, use: "Soft, absorbent diapers for overnight dryness." }),
     P({ id: "pampers-baby-dry-size-4", name: "Pampers Baby-Dry Diapers Size 4 (Maxi)", brand: "Pampers", strength: "Size 4 · Maxi", generic: "Baby diapers", form: "diaper", unit: "Pack", cat: "diapers", mfr: "pg", kids: true, use: "Soft, absorbent diapers for overnight dryness." }),
     P({ id: "pampers-baby-dry-size-5", name: "Pampers Baby-Dry Diapers Size 5 (Junior)", brand: "Pampers", strength: "Size 5 · Junior", generic: "Baby diapers", form: "diaper", unit: "Pack", cat: "diapers", mfr: "pg", kids: true, use: "Soft, absorbent diapers for overnight dryness." }),
@@ -254,8 +297,8 @@
     P({ id: "johnsons-baby-lotion", name: "Johnson's Baby Lotion", brand: "Johnson's", strength: "Lotion", generic: "Baby moisturising lotion", form: "bottle", unit: "Bottle", cat: "baby", mfr: "kenvue", kids: true, use: "Keeps baby's skin soft and moisturised." }),
     P({ id: "johnsons-baby-oil", name: "Johnson's Baby Oil", brand: "Johnson's", strength: "Oil", generic: "Baby massage oil", form: "bottle", unit: "Bottle", cat: "baby", mfr: "kenvue", kids: true, use: "Gentle oil for baby massage." }),
     P({ id: "johnsons-baby-powder", name: "Johnson's Baby Powder", brand: "Johnson's", strength: "Powder", generic: "Baby powder", form: "powder", unit: "Bottle", cat: "baby", mfr: "kenvue", kids: true, use: "Keeps baby's skin dry and fresh." }),
-    P({ id: "pigeon-feeding-bottle", name: "Pigeon Feeding Bottle", brand: "Pigeon", strength: "Feeder", generic: "Baby feeding bottle", form: "bottle", unit: "Piece", cat: "baby", mfr: "pigeon", kids: true, use: "Easy-to-clean feeding bottle for babies." }),
-    P({ id: "pigeon-silicone-nipple", name: "Pigeon Silicone Nipple", brand: "Pigeon", strength: "Nipple", generic: "Feeding bottle nipple", form: "pack", unit: "Pack", cat: "baby", mfr: "pigeon", kids: true, use: "Soft replacement nipple for feeding bottles." }),
+    P({ id: "pigeon-feeding-bottle", name: "Pigeon Feeding Bottle", brand: "Pigeon", strength: "Feeder", generic: "Baby feeding bottle", form: "bottle", unit: "Piece", cat: "baby-feeding", mfr: "pigeon", kids: true, use: "Easy-to-clean feeding bottle for babies." }),
+    P({ id: "pigeon-silicone-nipple", name: "Pigeon Silicone Nipple", brand: "Pigeon", strength: "Nipple", generic: "Feeding bottle nipple", form: "pack", unit: "Pack", cat: "baby-feeding", mfr: "pigeon", kids: true, use: "Soft replacement nipple for feeding bottles." }),
 
     /* ---------- Herbal & Desi ---------- */
     P({ id: "sualin-tablets", name: "Sualin Tablets", brand: "Sualin", generic: "Herbal cough tablets", form: "tablet", unit: "Pack", cat: "herbal", mfr: "hamdard", use: "Herbal relief for cough and sore throat." }),
@@ -328,8 +371,8 @@
     P({ id: "gillette-disposable-razors", name: "Gillette Disposable Razors", brand: "Gillette", strength: "Razors", generic: "Disposable shaving razors", form: "razor", unit: "Pack", cat: "personal-care", mfr: "pg", use: "Disposable razors for a smooth shave." }),
 
     /* ---------- More skin & baby care ---------- */
-    P({ id: "vaseline-body-lotion", name: "Vaseline Intensive Care Body Lotion", brand: "Vaseline", strength: "Body Lotion", generic: "Moisturising body lotion", form: "lotion", unit: "Bottle", cat: "skin", mfr: "unilever", use: "Moisturising lotion for dry skin." }),
-    P({ id: "ponds-cold-cream", name: "Pond's Cold Cream", brand: "Pond's", strength: "Cold Cream", generic: "Moisturising cold cream", form: "jar", unit: "Jar", cat: "skin", mfr: "unilever", use: "Rich cream for dry skin in winter." }),
+    P({ id: "vaseline-body-lotion", name: "Vaseline Intensive Care Body Lotion", brand: "Vaseline", strength: "Body Lotion", generic: "Moisturising body lotion", form: "lotion", unit: "Bottle", cat: "personal-care", mfr: "unilever", use: "Moisturising lotion for dry skin." }),
+    P({ id: "ponds-cold-cream", name: "Pond's Cold Cream", brand: "Pond's", strength: "Cold Cream", generic: "Moisturising cold cream", form: "jar", unit: "Jar", cat: "personal-care", mfr: "unilever", use: "Rich cream for dry skin in winter." }),
     P({ id: "johnsons-baby-soap", name: "Johnson's Baby Soap", brand: "Johnson's", strength: "Baby Soap", generic: "Mild baby soap", form: "soap", unit: "Piece", cat: "baby", mfr: "kenvue", kids: true, use: "Mild soap for baby's bath time." }),
     P({ id: "pigeon-baby-powder", name: "Pigeon Baby Powder", brand: "Pigeon", strength: "Baby Powder", generic: "Baby powder", form: "powder", unit: "Bottle", cat: "baby", mfr: "pigeon", kids: true, use: "Keeps baby's skin dry and comfortable." }),
     P({ id: "pigeon-baby-shampoo", name: "Pigeon Baby Shampoo", brand: "Pigeon", strength: "Baby Shampoo", generic: "Gentle baby shampoo", form: "shampoo", unit: "Bottle", cat: "baby", mfr: "pigeon", kids: true, use: "Gentle shampoo for baby's hair." })

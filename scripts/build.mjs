@@ -54,6 +54,7 @@ for (const p of DATA.products) {
   seen.add(p.id);
   if (!/^[a-z0-9-]+$/.test(p.id)) throw new Error(`Invalid product id (use a-z, 0-9, -): ${p.id}`);
   if (!IDX.cat[p.cat] || IDX.cat[p.cat].virtual) throw new Error(`Unknown category "${p.cat}" for ${p.id}`);
+  if (p.all && !p.kids) throw new Error(`${p.id}: "all: true" is only for products that also have "kids: true"`);
   if (!IDX.mfr[p.mfr]) throw new Error(`Unknown manufacturer "${p.mfr}" for ${p.id}`);
   if (p.price != null && !(typeof p.price === "number" && p.price >= 0)) throw new Error(`Invalid price for ${p.id}`);
   if (p.image && !/^https:\/\/[^\s"'<>]+$/.test(p.image)) throw new Error(`Image link for ${p.id} must start with https:// and contain no spaces`);
@@ -116,29 +117,59 @@ const catCount = (id) => DATA.products.filter((p) => C.inCategory(p, id)).length
 const mfrCount = (id) => DATA.products.filter((p) => p.mfr === id).length;
 const brandsShown = DATA.manufacturers.filter((m) => !m.hidden && mfrCount(m.id) > 0);
 
+/* Main menu. Menus list the categories of one group; "all" is the group's overview page. */
+const MENU_GROUPS = [
+  { group: "kids", label: "Kids' Medicines", all: "kids", note: "Medicines for babies and children, sorted by need." },
+  { group: "kids-care", label: "Baby & Kids Care", all: "baby-kids", note: "Diapers, bath, skin and feeding." },
+  { group: "adult", label: "Adult Medicines", all: "adult", note: "Medicines for adults and the whole family." },
+  { group: "care", label: "Personal Care & Health", all: "care-health", note: "Oral care, hygiene, first aid and devices." },
+];
+const groupCats = (group) => DATA.categories.filter((c) => c.group === group && c.id !== MENU_GROUPS.find((g) => g.group === group).all);
+const catShort = (c) => c.short || c.name;
+const catHref = (c) => `categories/${c.id}.html`;
+const groupOf = (c) => MENU_GROUPS.find((g) => g.group === c.group);
 const NAV = [
-  ["index.html", "Home"],
-  ["index.html#clinic", "Clinic"],
-  ["shop.html", "All Medicines"],
-  ["categories/fever-pain.html", "Fever & Pain"],
-  ["categories/cough-cold.html", "Cough & Cold"],
-  ["categories/kids.html", "Kids' Medicines"],
-  ["categories/baby.html", "Baby Care"],
-  ["categories/diapers.html", "Diapers"],
-  ["categories/personal-care.html", "Personal Care"],
-  ["categories/vitamins.html", "Vitamins"],
-  ["index.html#visit", "Contact"],
+  { href: "index.html", label: "Home" },
+  { href: "index.html#clinic", label: "Clinic" },
+  ...MENU_GROUPS.map((g) => ({ menu: g })),
+  { href: "shop.html", label: "All Products" },
+  { href: "index.html#visit", label: "Contact" },
 ];
 
 function navLinks(root, current) {
-  return NAV.map(([href, label]) => {
-    const active = href === current ? ' aria-current="page"' : "";
-    return `      <a href="${root}${href}"${active}>${esc(label)}</a>`;
-  }).join("\n");
+  const items = NAV.map((item, i) => {
+    if (!item.menu) {
+      const active = item.href === current ? ' aria-current="page"' : "";
+      return `        <li class="nav-item"><a class="nav-link" href="${root}${item.href}"${active}>${esc(item.label)}</a></li>`;
+    }
+    const g = item.menu;
+    const allCat = IDX.cat[g.all];
+    const list = groupCats(g.group);
+    const inMenu = [allCat, ...list].some((c) => current === catHref(c));
+    const id = `menu-${g.group}`;
+    const links = list.map((c) => {
+      const active = current === catHref(c) ? ' aria-current="page"' : "";
+      return `              <li><a href="${root}${catHref(c)}"${active}><svg class="icon" aria-hidden="true"><use href="#i-${c.icon}"/></svg> ${esc(catShort(c))} <span>${catCount(c.id)}</span></a></li>`;
+    }).join("\n");
+    return `        <li class="nav-item nav-item--menu${inMenu ? " is-active" : ""}">
+          <button class="nav-link" type="button" aria-expanded="false" aria-controls="${id}">${esc(g.label)} <svg class="icon nav-caret" aria-hidden="true"><use href="#i-chevron"/></svg></button>
+          <div class="nav-menu${list.length > 6 ? " nav-menu--wide" : ""}" id="${id}">
+            <p class="nav-menu__note">${esc(g.note)}</p>
+            <ul class="nav-menu__list" role="list">
+${links}
+            </ul>
+            <a class="nav-menu__all" href="${root}${catHref(allCat)}"${current === catHref(allCat) ? ' aria-current="page"' : ""}>${esc(allCat.short || allCat.name)} (${catCount(allCat.id)}) <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+        </li>`;
+  });
+  return `      <button class="navbar__toggle" type="button" aria-expanded="false" aria-controls="nav-list"><svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg> Menu</button>
+      <ul class="nav-list" id="nav-list" role="list">
+${items.join("\n")}
+      </ul>`;
 }
 
 function footerCategories(root) {
-  return ["fever-pain", "cough-cold", "kids", "baby", "diapers", "oral-care", "personal-care", "vitamins"]
+  return ["kids", "kids-fever-pain", "baby-kids", "diapers", "baby-feeding", "adult", "personal-care", "care-health"]
     .map((id) => `          <li><a href="${root}categories/${id}.html">${esc(IDX.cat[id].name)}</a></li>`)
     .join("\n");
 }
@@ -335,15 +366,17 @@ function parsePage(file) {
 {
   const root = "";
   const { meta, jsonLd, content } = parsePage("src/pages/index.html");
-  const categoryGrid = DATA.categories.map((c) => {
+  const catCard = (c) => {
     const color = C.colorFor(c.id);
     return `          <a class="cat-card" href="categories/${c.id}.html" style="--c:${color[0]};--cs:${color[1]}">
             <span class="cat-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-${c.icon}"/></svg></span>
-            <span class="cat-card__name">${esc(c.name)}</span>
+            <span class="cat-card__name">${esc(catShort(c))}</span>
             <span class="cat-card__urdu urdu" lang="ur" dir="rtl">${esc(c.urdu)}</span>
             <span class="cat-card__count">${catCount(c.id)} products</span>
           </a>`;
-  }).join("\n");
+  };
+  const kidsCategoryGrid = [...groupCats("kids"), ...groupCats("kids-care")].map(catCard).join("\n");
+  const adultCategoryGrid = [...groupCats("adult"), ...groupCats("care")].map(catCard).join("\n");
   const featured = DATA.products.filter((p) => p.featured).slice(0, 12);
   page({
     path: "index.html",
@@ -356,7 +389,10 @@ function parsePage(file) {
     priority: "1.0",
     vars: {
       brandStrip: brandStrip(root),
-      categoryGrid,
+      kidsCategoryGrid,
+      adultCategoryGrid,
+      kidsCount: catCount("kids") + catCount("baby-kids"),
+      adultCount: catCount("adult") + catCount("care-health"),
       featuredGrid: cards(featured, root),
       productCount: DATA.products.length,
     },
@@ -367,16 +403,21 @@ function parsePage(file) {
 const LISTING = read("src/templates/listing.html");
 const PAGE_SIZE = 24;
 
-function listing({ outPath, products, title, h1, urdu = "", intro, short, crumbs, presetCat = "", presetMfr = "", activeCat = "", showMfr = true, brandStripCompact = false, current = "" }) {
+function listing({ outPath, products, title, h1, urdu = "", intro, note = "", short, crumbs, presetCat = "", presetMfr = "", activeCat = "", showMfr = true, brandStripCompact = false, current = "" }) {
   const depth = outPath.split("/").length - 1;
   const root = depth ? "../" : "";
   const sorted = [...products].sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0));
   const bc = breadcrumbs(root, crumbs);
 
+  const catLink = (c, label) =>
+    `            <li><a href="${root}categories/${c.id}.html"${activeCat === c.id ? ' aria-current="page"' : ""}>${esc(label)} <span>${catCount(c.id)}</span></a></li>`;
   const categoryLinks = [
-    `            <li><a href="${root}shop.html"${!activeCat ? ' aria-current="page"' : ""}>All medicines <span>${DATA.products.length}</span></a></li>`,
-    ...DATA.categories.map((c) =>
-      `            <li><a href="${root}categories/${c.id}.html"${activeCat === c.id ? ' aria-current="page"' : ""}>${esc(c.name)} <span>${catCount(c.id)}</span></a></li>`),
+    `            <li><a href="${root}shop.html"${!activeCat && !presetMfr ? ' aria-current="page"' : ""}>All products <span>${DATA.products.length}</span></a></li>`,
+    ...MENU_GROUPS.flatMap((g) => [
+      `            <li class="cat-links__group">${esc(g.label)}</li>`,
+      catLink(IDX.cat[g.all], IDX.cat[g.all].short || IDX.cat[g.all].name),
+      ...groupCats(g.group).map((c) => catLink(c, catShort(c))),
+    ]),
   ].join("\n");
 
   let mfrFilterBlock = "";
@@ -425,6 +466,7 @@ ${list.map((m) => `            <label class="check"><input type="checkbox" value
       listingTitle: esc(h1),
       listingUrdu: urdu ? `<p class="page-head__urdu urdu" lang="ur" dir="rtl">${esc(urdu)}</p>` : "",
       listingIntro: esc(intro),
+      listingNote: note ? `<p class="page-head__note">${note}</p>` : "",
       listingShort: esc(short),
       listingBrandStrip: brandStripCompact ? brandStrip(root, { compact: true }) : "",
       presetCat,
@@ -463,7 +505,29 @@ listing({
 });
 
 const categoryLabel = (c) =>
-  /medicines|devices|care|supplies|nutrition|remedies|antibiotics|hygiene|wipes/i.test(c.name) ? c.name : `${c.name} Medicines`;
+  /medicines|devices|care|supplies|nutrition|remedies|antibiotics|hygiene|wipes|treatments|formula|supplements/i.test(c.name) ? c.name : `${c.name} Medicines`;
+
+// Kids' page for an adult medicine category, and the reverse.
+const kidsCounterpart = (c) => DATA.categories.find((k) => k.group === "kids" && k.base && k.base.includes(c.id));
+function categoryNote(c, root) {
+  const link = (k, text) => `${esc(text)} <a href="${root}categories/${k.id}.html">${esc(k.name)}</a>`;
+  if (c.group === "adult" && !c.virtual) {
+    const k = kidsCounterpart(c);
+    return k && catCount(k.id) ? link(k, "Medicines for children are on") : "";
+  }
+  if (c.group === "kids" && c.base) {
+    const adults = c.base.map((id) => IDX.cat[id]).filter((a) => catCount(a.id));
+    return adults.length ? "Medicines for adults: " + adults.map((a) => `<a href="${root}categories/${a.id}.html">${esc(a.name)}</a>`).join(", ") : "";
+  }
+  if (c.id === "kids") return `Looking for diapers, baby bath or feeding products? See <a href="${root}categories/baby-kids.html">Baby &amp; Kids Care</a>.`;
+  if (c.id === "baby-kids") return `Looking for children's medicines? See <a href="${root}categories/kids.html">Kids' Medicines</a>.`;
+  return "";
+}
+function categoryCrumbs(c) {
+  const g = groupOf(c);
+  if (!g || g.all === c.id) return [{ name: "Home", href: "index.html" }, { name: "Shop", href: "shop.html" }, { name: c.name, href: catHref(c) }];
+  return [{ name: "Home", href: "index.html" }, { name: g.label, href: catHref(IDX.cat[g.all]) }, { name: catShort(c), href: catHref(c) }];
+}
 
 for (const c of DATA.categories) {
   const products = DATA.products.filter((p) => C.inCategory(p, c.id));
@@ -478,9 +542,10 @@ for (const c of DATA.categories) {
     title: `${label} in Rohillanwali | Adil Pharmacy`,
     h1: label,
     urdu: c.urdu,
-    intro: `Shop ${label.toLowerCase()} at Adil Pharmacy, Rohillanwali: ${brands.join(", ")} and more${makers.length ? ` from ${makers.join(", ")}` : ""}. Order online for pickup or ask about home delivery.`,
+    intro: `Shop ${label.replace(/^Kids'/, "kids'").replace(/^(?!Kids)\S/, (ch) => ch.toLowerCase())} at Adil Pharmacy, Rohillanwali: ${brands.join(", ")} and more${makers.length ? ` from ${makers.join(", ")}` : ""}. Order online for pickup or ask about home delivery.`,
+    note: categoryNote(c, "../"),
     short: c.name.toLowerCase(),
-    crumbs: [{ name: "Home", href: "index.html" }, { name: "Shop", href: "shop.html" }, { name: c.name, href: `categories/${c.id}.html` }],
+    crumbs: categoryCrumbs(c),
     presetCat: c.id,
     activeCat: c.id,
     current: `categories/${c.id}.html`,
@@ -506,14 +571,9 @@ for (const m of brandsShown) {
 const PRODUCT = read("src/templates/product.html");
 for (const p of DATA.products) {
   const root = "../";
-  const cat = IDX.cat[p.cat];
+  const cat = C.homeCategory(p);
   const mfr = IDX.mfr[p.mfr];
-  const bc = breadcrumbs(root, [
-    { name: "Home", href: "index.html" },
-    { name: "Shop", href: "shop.html" },
-    { name: cat.name, href: `categories/${cat.id}.html` },
-    { name: p.name, href: `medicines/${p.id}.html` },
-  ]);
+  const bc = breadcrumbs(root, [...categoryCrumbs(cat), { name: p.name, href: `medicines/${p.id}.html` }]);
 
   const spec = [
     ["Active ingredient", p.generic],
@@ -534,7 +594,7 @@ for (const p of DATA.products) {
     p.kids ? "A child's dose depends on age and weight. Please ask our doctor or pharmacist before giving it to your child." : "",
   ].filter(Boolean).map((t) => `          <p>${esc(t)}</p>`).join("\n");
 
-  const related = DATA.products.filter((x) => x.cat === p.cat && x.id !== p.id);
+  const related = DATA.products.filter((x) => x.id !== p.id && (x.cat === p.cat || C.inCategory(x, cat.id)) && C.kidsOnly(x) === C.kidsOnly(p));
   related.sort((a, b) => (b.brand === p.brand ? 1 : 0) - (a.brand === p.brand ? 1 : 0) || (b.featured ? 1 : 0) - (a.featured ? 1 : 0));
 
   const askText = `Assalam-o-Alaikum! Is ${p.name} available? (from your website)`;
