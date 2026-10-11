@@ -2149,3 +2149,49 @@ a.cart-row__name:hover { color: var(--teal-700); }
 .photo-credit { position: absolute; left: 12px; right: 12px; bottom: 8px; margin: 0; color: var(--muted); font-size: .7rem; line-height: 1.3; text-align: right; }
 .photo-credit a { color: inherit; }
 .credits-list { display: grid; gap: 8px; font-size: .92rem; }
+
+/* Footer social links */
+.social { display: flex; gap: 10px; margin-top: 16px; }
+.social__btn {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .1);
+  color: #fff;
+  transition: background .15s ease, transform .15s ease;
+}
+.social__btn:hover { background: var(--teal-600); transform: translateY(-2px); }
+.social__btn .icon { width: 20px; height: 20px; }
+
+/* Doctor photo, second doctor, doctors' advice */
+.doctor__photo { width: 96px; height: 96px; border-radius: 50%; object-fit: cover; border: 3px solid #fff; box-shadow: 0 4px 14px rgba(15, 50, 46, .18); }
+.doctor--gynae { background: linear-gradient(135deg, #fdf0f4, #fff); border-color: #f6d3df; }
+.doctor--gynae .doctor__icon { background: #c2416c; }
+.doctor--gynae .eyebrow, .doctor--gynae .doctor__urdu, .doctor--gynae .doctor__days { color: #a3335a; }
+.doctor--gynae .doctor__creds .icon { color: #c2416c; }
+.today__icon--rose { background: #fdf0f4; color: #c2416c; }
+.hours__doc--gynae { background: #fdf0f4; color: #a3335a; }
+.tips { margin-top: 28px; }
+.tips__head { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 4px 16px; margin-bottom: 14px; }
+.tips__head h3 { margin: 0; font-size: 1.25rem; }
+.tips__head .urdu { margin: 0; color: var(--teal-800); }
+.tips__grid { display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: 14px; }
+.tip { padding: 18px 20px; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); }
+.tip h4 { display: flex; align-items: center; gap: 8px; margin: 0 0 2px; font-size: 1rem; }
+.tip h4 .icon { color: var(--teal-700); }
+.tip__urdu { margin: 0 0 8px; color: var(--teal-800); font-size: .95rem; text-align: left; }
+.tip p, .tip__list { color: var(--ink); font-size: .9rem; }
+.tip__list { display: grid; gap: 4px; margin: 0; padding-left: 1.3em; list-style: decimal; }
+.tip__list li::marker { color: var(--teal-700); font-weight: 700; }
+.tip__by { margin: 10px 0 0; color: var(--muted); font-size: .78rem; font-weight: 600; }
+.posters { display: flex; gap: 12px; margin-top: 14px; padding-bottom: 6px; overflow-x: auto; scroll-snap-type: x mandatory; }
+.poster { flex: none; scroll-snap-align: start; }
+.poster img { display: block; height: 220px; width: auto; border-radius: 10px; border: 1px solid var(--line); background: #fff; }
+.tips__more { margin-top: 10px; }
+@media (max-width: 900px) { .tips__grid { grid-template-columns: 1fr; } .poster img { height: 180px; } }
+@media (max-width: 480px) {
+  .hours td .hours__doc { margin: 3px 0 0 4px; }
+  .hours td { white-space: normal; }
+}

@@ -1,4 +1,4 @@
-<!--page {"title": "Adil Child Care Clinic & Pharmacy | Child Specialist & Medical Store in Rohillanwali", "description": "Children's clinic in Rohillanwali, Muzaffargarh, with FCPS child specialist Dr. Rana Muhammad Zubair Ahmad every Saturday and Sunday, plus a pharmacy open daily. Order medicines online and confirm on WhatsApp.", "path": "", "bodyClass": "page-home", "styles": ["vendor/leaflet/leaflet.css"], "scripts": ["vendor/leaflet/leaflet.js", "js/map.js"]} -->
+<!--page {"title": "Adil Child Care Clinic & Pharmacy | Child Specialist & Medical Store in Rohillanwali", "description": "Children's clinic in Rohillanwali, Muzaffargarh, with FCPS child specialist Dr. Rana Muhammad Zubair Ahmad (Saturday and Sunday), lady gynaecologist Dr. Saima Zubair Rao (Sunday) and a pharmacy open daily. Order medicines online and confirm on WhatsApp.", "path": "", "bodyClass": "page-home", "styles": ["vendor/leaflet/leaflet.css"], "scripts": ["vendor/leaflet/leaflet.js", "js/map.js"]} -->
 <!--jsonld
   <script type="application/ld+json">
   {
@@ -27,7 +27,7 @@
         "logo": "{{siteUrl}}assets/icon-512.png",
         "telephone": "{{phoneDisplay}}",
         "email": "{{emailRaw}}",
-        "medicalSpecialty": "Pediatric",
+        "medicalSpecialty": ["Pediatric", "Obstetric", "Gynecologic"],
         "priceRange": "Rs",
         "currenciesAccepted": "PKR",
         "paymentAccepted": "Cash",
@@ -47,12 +47,21 @@
         {{geoJsonLd}}
         "hasMap": "{{mapsSearchUrlRaw}}",
         "sameAs": ["https://www.facebook.com/Adilmedicalstore", "https://www.instagram.com/adilmedicalstore/"],
-        "employee": {
-          "@type": "Physician",
-          "name": "Dr. Rana Muhammad Zubair Ahmad",
-          "medicalSpecialty": "Pediatric",
-          "description": "FCPS (Paediatric Medicine). Nishtar Medical University, Multan. Registrar, Children's Hospital Complex, Multan. Sees patients at the clinic every {{doctorDaysRaw}}."
-        }
+        "employee": [
+          {
+            "@type": "Physician",
+            "name": "Dr. Rana Muhammad Zubair Ahmad",
+            "image": "{{siteUrl}}assets/clinic/dr-rana-zubair-ahmad.jpg",
+            "medicalSpecialty": "Pediatric",
+            "description": "Child Specialist & Neonatologist. MBBS (Nishtar Medical University, Multan), FCPS (Paediatric Medicine). Consultant Child Specialist, Children's Hospital Complex, Multan. Sees patients at the clinic every {{doctorDaysRaw}}."
+          },
+          {
+            "@type": "Physician",
+            "name": "{{gynaeNameRaw}}",
+            "medicalSpecialty": ["Obstetric", "Gynecologic"],
+            "description": "Consultant Gynaecologist, MBBS, FCPS. Senior Registrar, Nishtar Hospital, Multan; former Registrar, CMH Multan. Pregnancy care, infertility treatment, ovulation induction and IUI. Sees patients every {{gynaeDaysRaw}}, {{gynaeHoursText}}."
+          }
+        ]
       },
       {
         "@type": "FAQPage",
@@ -62,6 +71,11 @@
             "@type": "Question",
             "name": "When is the child specialist available?",
             "acceptedAnswer": { "@type": "Answer", "text": "{{doctorDaysSentence}} Please call or WhatsApp us to book a time. The pharmacy is open every day." }
+          },
+          {
+            "@type": "Question",
+            "name": "Is there a lady doctor (gynaecologist)?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. {{gynaeSentenceRaw}} She offers pregnancy care, infertility treatment (including ovulation induction and IUI) and treatment for women's health problems. Call {{clinicPhonesRaw}} to book." }
           },
           {
             "@type": "Question",
@@ -111,7 +125,7 @@
           <p class="eyebrow"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg> Children's clinic · Rohillanwali, District Muzaffargarh</p>
           <h1 class="hero__title">Adil Child Care Clinic <span class="text-accent">&amp; Pharmacy</span></h1>
           <p class="hero__urdu urdu" lang="ur" dir="rtl">عادل چائلڈ کیئر کلینک اینڈ فارمیسی — روہیلانوالی</p>
-          <p class="hero__lead">Mother &amp; child care with FCPS child specialist <strong>{{doctorName}}</strong>, at the clinic every <strong>{{doctorDaysText}}</strong>. After the check-up, get your medicines from our pharmacy under the same roof.</p>
+          <p class="hero__lead">Mother &amp; child care with FCPS child specialist <strong>{{doctorName}}</strong> (every <strong>{{doctorDaysText}}</strong>) and lady gynaecologist <strong>{{gynaeName}}</strong> (every <strong>{{gynaeDaysText}}</strong>). After the check-up, get your medicines from our pharmacy under the same roof.</p>
 
           <div class="hero__actions">
             <a class="btn btn--primary btn--lg" href="{{waBookUrl}}" target="_blank" rel="noopener">
@@ -124,7 +138,7 @@
 
           <ul class="hero__points" role="list">
             <li><svg class="icon" aria-hidden="true"><use href="#i-stethoscope"/></svg> FCPS child specialist</li>
-            <li><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg> Doctor: {{doctorDaysText}}</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg> Lady gynaecologist</li>
             <li><svg class="icon" aria-hidden="true"><use href="#i-pill"/></svg> Pharmacy open daily</li>
           </ul>
           <a class="hero__shop" href="shop.html">Need medicines? Shop online <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
@@ -141,6 +155,10 @@
               <li>
                 <span class="today__icon today__icon--teal"><svg class="icon" aria-hidden="true"><use href="#i-stethoscope"/></svg></span>
                 <span><strong>Child specialist</strong><small>{{doctorDaysText}}<span data-doctor-today data-days="{{doctorDaysNums}}"></span></small></span>
+              </li>
+              <li>
+                <span class="today__icon today__icon--rose"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg></span>
+                <span><strong>Lady gynaecologist</strong><small>{{gynaeDaysText}}, {{gynaeHoursText}}<span data-doctor-today data-days="{{gynaeDaysNums}}"></span></small></span>
               </li>
               <li>
                 <span class="today__icon today__icon--coral"><svg class="icon" aria-hidden="true"><use href="#i-pill"/></svg></span>
@@ -162,22 +180,22 @@
     <section class="section section--soft" id="clinic" aria-labelledby="clinic-title">
       <div class="container">
         <header class="section__head">
-          <p class="eyebrow">Child Care Clinic</p>
-          <h2 id="clinic-title">Caring treatment for children of every age</h2>
-          <p class="urdu section__urdu" lang="ur" dir="rtl">بچوں کا توجہ اور شفقت سے علاج</p>
-          <p class="section__lead">From a newborn's first check-up to a school-going child's fever, our mother &amp; child care clinic gives every child calm, careful attention and gives parents clear advice they can follow at home.</p>
+          <p class="eyebrow">Adil Mother &amp; Child Care Clinic</p>
+          <h2 id="clinic-title">Caring treatment for mothers and children</h2>
+          <p class="urdu section__urdu" lang="ur" dir="rtl">ماں اور بچے کا توجہ اور شفقت سے علاج</p>
+          <p class="section__lead">From pregnancy care to a newborn's first check-up and a school-going child's fever, our two FCPS specialists give every mother and child calm, careful attention and clear advice to follow at home.</p>
         </header>
 
         <article class="doctor" aria-labelledby="doctor-name">
-          <span class="doctor__icon" aria-hidden="true"><svg class="icon"><use href="#i-stethoscope"/></svg></span>
+          <img class="doctor__photo" src="assets/clinic/dr-rana-zubair-ahmad.jpg" alt="Dr. Rana Muhammad Zubair Ahmad, child specialist" width="96" height="96" loading="lazy">
           <div class="doctor__body">
-            <p class="eyebrow">Our child specialist</p>
+            <p class="eyebrow">Child specialist &amp; neonatologist</p>
             <h3 id="doctor-name" class="doctor__name">Dr. Rana Muhammad Zubair Ahmad</h3>
             <p class="doctor__urdu urdu" lang="ur" dir="rtl">ڈاکٹر رانا محمد زبیر احمد</p>
             <ul class="doctor__creds" role="list">
-              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> FCPS (Paediatric Medicine)</li>
-              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Nishtar Medical University, Multan</li>
-              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Registrar, Children's Hospital Complex, Multan</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> MBBS (Nishtar Medical University, Multan), FCPS (Paediatric Medicine)</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Consultant Child Specialist, Children's Hospital Complex, Multan</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Newborn care, child illnesses, asthma, growth &amp; vaccination advice</li>
             </ul>
           </div>
           <div class="doctor__cta">
@@ -186,6 +204,28 @@
             <div class="doctor__btns">
               <a class="btn btn--primary" href="tel:{{phoneTel}}"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg> {{phoneDisplay}}</a>
               <a class="btn btn--whatsapp" href="{{waBookUrl}}" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg> Book on WhatsApp</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="doctor doctor--gynae" aria-labelledby="gynae-name">
+          <span class="doctor__icon" aria-hidden="true"><svg class="icon"><use href="#i-heart"/></svg></span>
+          <div class="doctor__body">
+            <p class="eyebrow">Lady gynaecologist</p>
+            <h3 id="gynae-name" class="doctor__name">{{gynaeName}}</h3>
+            <p class="doctor__urdu urdu" lang="ur" dir="rtl">ڈاکٹر صائمہ زبیر راؤ</p>
+            <ul class="doctor__creds" role="list">
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> MBBS, FCPS, Consultant Gynaecologist</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Senior Registrar, Nishtar Hospital, Multan · former Registrar, CMH Multan</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Pregnancy care, infertility treatment, ovulation induction, IUI, women's health</li>
+            </ul>
+          </div>
+          <div class="doctor__cta">
+            <p class="doctor__days"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg> {{gynaeDaysText}}, {{gynaeHoursText}}</p>
+            <p>Appointments: {{clinicPhonesText}}</p>
+            <div class="doctor__btns">
+              <a class="btn btn--primary" href="tel:{{clinicPhone1Tel}}"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg> {{clinicPhone1}}</a>
+              <a class="btn btn--whatsapp" href="{{waBookGynaeUrl}}" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg> Book on WhatsApp</a>
             </div>
           </div>
         </article>
@@ -231,6 +271,49 @@
             <p>The doctor is here every {{doctorDaysText}}. Call before you come and we'll give you a time.</p>
             <a class="btn btn--light" href="tel:{{phoneTel}}"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg> Call the clinic</a>
           </article>
+        </div>
+
+        <div class="tips" id="tips">
+          <header class="tips__head">
+            <h3>Advice from our doctors</h3>
+            <p class="urdu" lang="ur" dir="rtl">ہمارے ڈاکٹروں کے مشورے</p>
+          </header>
+          <div class="tips__grid">
+            <article class="tip">
+              <h4><svg class="icon" aria-hidden="true"><use href="#i-baby"/></svg> Caring for your newborn</h4>
+              <p class="tip__urdu urdu" lang="ur" dir="rtl">نوزائیدگان کے بارے میں خصوصی ہدایات</p>
+              <ol class="tip__list">
+                <li>Feed only breast milk. Mothers should drink plenty of milk and water.</li>
+                <li>Feed every 2–3 hours, and burp the baby on your shoulder after each feed.</li>
+                <li>After feeding, lay the baby with the head and shoulders slightly raised.</li>
+                <li>Never put surma (kohl) in the eyes, and never give honey or ghutti.</li>
+                <li>Complete the full vaccination course.</li>
+                <li><strong>See a doctor at once</strong> if the baby turns blue, dark or very yellow, cries non-stop, breathes fast or with jerks, won't feed, vomits again and again or becomes drowsy.</li>
+              </ol>
+              <p class="tip__by">Dr. Rana Muhammad Zubair Ahmad</p>
+            </article>
+            <article class="tip">
+              <h4><svg class="icon" aria-hidden="true"><use href="#i-wind"/></svg> Asthma in children</h4>
+              <p class="tip__urdu urdu" lang="ur" dir="rtl">دمہ کا اصل علاج انہیلر یا نیبولائزیشن ہے</p>
+              <p>Cough syrups and antibiotics do not treat asthma. <strong>Inhalers or nebulisation are the real treatment</strong>, and with timely treatment most children outgrow asthma.</p>
+              <p class="tip__by">Dr. Rana Muhammad Zubair Ahmad</p>
+            </article>
+            <article class="tip">
+              <h4><svg class="icon" aria-hidden="true"><use href="#i-droplet"/></svg> Diarrhoea: ORS and zinc</h4>
+              <p class="tip__urdu urdu" lang="ur" dir="rtl">ڈائریا میں زنک کے فوائد</p>
+              <p>Give ORS to replace lost water, and zinc for as many days as the doctor advises. Zinc helps children get better sooner. Ask us for the right dose for your child's age.</p>
+              <p class="tip__by">Dr. Rana Muhammad Zubair Ahmad</p>
+            </article>
+          </div>
+          <div class="posters" aria-label="Posters from our Facebook page">
+            <a class="poster" href="assets/clinic/poster-dr-saima-services.jpg" target="_blank" rel="noopener"><img src="assets/clinic/poster-dr-saima-services.jpg" alt="Poster: Dr. Saima Zubair Rao, MBBS FCPS, gynaecologist: ovulation induction, IUI, complete pregnancy care and infertility treatment, 10 AM to 5 PM" loading="lazy"></a>
+            <a class="poster" href="assets/clinic/poster-newborn-care.jpg" target="_blank" rel="noopener"><img src="assets/clinic/poster-newborn-care.jpg" alt="Poster: Dr. Rana Muhammad Zubair Ahmad's advice for newborn care, in Urdu" loading="lazy"></a>
+            <a class="poster" href="assets/clinic/poster-delayed-pregnancy.jpg" target="_blank" rel="noopener"><img src="assets/clinic/poster-delayed-pregnancy.jpg" alt="Poster: delayed pregnancy, when to get a check-up, by Dr. Saima Zubair Rao" loading="lazy"></a>
+            <a class="poster" href="assets/clinic/poster-pregnancy-sleep.jpg" target="_blank" rel="noopener"><img src="assets/clinic/poster-pregnancy-sleep.jpg" alt="Poster: the right way to sleep during pregnancy, by Dr. Saima Zubair Rao" loading="lazy"></a>
+            <a class="poster" href="assets/clinic/poster-pregnancy-breathing.jpg" target="_blank" rel="noopener"><img src="assets/clinic/poster-pregnancy-breathing.jpg" alt="Poster: breathlessness in pregnancy, when it is normal and when it is a warning sign, by Dr. Saima Zubair Rao" loading="lazy"></a>
+            <a class="poster" href="assets/clinic/poster-dr-zubair-banner.jpg" target="_blank" rel="noopener"><img src="assets/clinic/poster-dr-zubair-banner.jpg" alt="Banner: Dr. Rana Muhammad Zubair Ahmad, child specialist and neonatologist, Adil Children Clinic" loading="lazy"></a>
+          </div>
+          <a class="link-more tips__more" href="{{facebookUrl}}" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-facebook"/></svg> More health tips on our Facebook page</a>
         </div>
       </div>
     </section>
@@ -454,6 +537,7 @@
               </address>
               <p class="info-card__landmark"><svg class="icon" aria-hidden="true"><use href="#i-nav"/></svg> {{landmark}}</p>
               <p class="urdu info-card__urdu" lang="ur" dir="rtl">{{addrUrdu}}<br>{{landmarkUrdu}}</p>
+              <p class="info-card__email"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg> Clinic appointments: <a href="tel:{{clinicPhone1Tel}}">{{clinicPhone1}}</a> · <a href="tel:{{clinicPhone2Tel}}">{{clinicPhone2}}</a></p>
               <p class="info-card__email"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg> <a href="mailto:{{email}}">{{email}}</a></p>
               <div class="info-card__actions">
                 <a class="btn btn--primary" href="{{mapsDirectionsUrl}}" target="_blank" rel="noopener">
@@ -493,6 +577,9 @@
           بچوں کے ماہر ڈاکٹر رانا محمد زبیر احمد (ایف سی پی ایس) ہر ہفتہ اور اتوار کو کلینک میں بچوں کا معائنہ کرتے ہیں۔ وقت لینے کے لیے کال یا واٹس ایپ کریں۔
         </p>
         <p class="urdu">
+          ماہرِ امراضِ نسواں، زچگی اور بانجھ پن ڈاکٹر صائمہ زبیر راؤ (ایم بی بی ایس، ایف سی پی ایس) ہر اتوار صبح 10 سے شام 5 بجے تک کلینک میں مریض دیکھتی ہیں۔ رابطہ: 0303 7553165، 0333 7725926۔
+        </p>
+        <p class="urdu">
           ہماری فارمیسی پر ڈاکٹری نسخے کی ادویات، روزمرہ کی ادویات، بچوں کے سیرپ اور ڈراپس، دودھ، ڈائپرز اور فرسٹ ایڈ کا سامان دستیاب ہے۔
           کسی دوائی کی دستیابی معلوم کرنے کے لیے اپنی لسٹ یا نسخے کی تصویر واٹس ایپ پر بھیجیں، ہم آپ کا آرڈر تیار رکھیں گے۔
         </p>
@@ -500,6 +587,7 @@
           <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> اصلی اور معیاری ادویات</li>
           <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> بچوں کا توجہ اور شفقت سے علاج</li>
           <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> ہفتہ اور اتوار: چائلڈ اسپیشلسٹ دستیاب</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> اتوار: لیڈی ڈاکٹر (گائناکالوجسٹ) صبح 10 سے شام 5 بجے</li>
           <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> واٹس ایپ پر دوائی کا آرڈر</li>
           <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> {{deliveryOfferUrdu}}</li>
           <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> مناسب قیمت</li>
@@ -522,6 +610,10 @@
           <details>
             <summary>When is the child specialist available?</summary>
             <p>{{doctorDaysSentence}} Please call or <a href="{{waBookUrl}}" target="_blank" rel="noopener">WhatsApp us</a> to book a time. The pharmacy is open every day.</p>
+          </details>
+          <details>
+            <summary>Is there a lady doctor (gynaecologist)?</summary>
+            <p>Yes. {{gynaeSentence}} She offers pregnancy care, infertility treatment (including ovulation induction and IUI) and treatment for women's health problems. Call {{clinicPhonesText}} to book.</p>
           </details>
           <details>
             <summary>Where is Adil Child Care Clinic &amp; Pharmacy?</summary>

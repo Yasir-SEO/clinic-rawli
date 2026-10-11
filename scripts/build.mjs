@@ -106,10 +106,20 @@ const doctorDaysText = listText(doctorDays.map(cap), "&");
 const doctorDaysSentence = doctorDays.length
   ? `Our child specialist, ${config.doctorName || "the doctor"}, sees patients every ${listText(doctorDays.map(cap), "and")}.`
   : "";
+const gynae = config.gynae || null;
+const gynaeDays = gynae ? (gynae.days || []).filter((d) => DAYS.includes(d)) : [];
+const gynaeHoursText = gynae && gynae.hours ? `${time12(gynae.hours[0])} – ${time12(gynae.hours[1])}` : "";
+const gynaeDaysText = listText(gynaeDays.map(cap), "&");
+const gynaeSentence = gynae
+  ? `Our lady gynaecologist, ${gynae.name}, sees patients every ${listText(gynaeDays.map(cap), "and")}${gynaeHoursText ? ` from ${time12(gynae.hours[0])} to ${time12(gynae.hours[1])}` : ""}.`
+  : "";
+const clinicPhones = config.clinicPhones || [];
+const telOf = (n) => "+92" + String(n).replace(/\D/g, "").replace(/^0/, "");
 const hoursRows = DAYS.map((d) => {
   const h = hours[d];
   const attrs = h ? `data-open="${h[0]}" data-close="${h[1]}"` : `data-closed="true"`;
-  const doc = doctorDays.includes(d) ? ' <span class="hours__doc">Doctor available</span>' : "";
+  const doc = (doctorDays.includes(d) ? ' <span class="hours__doc">Child specialist</span>' : "") +
+    (gynaeDays.includes(d) ? ` <span class="hours__doc hours__doc--gynae" title="${esc(gynaeHoursText)}">Gynaecologist</span>` : "");
   return `                  <tr data-day="${DAY_NUM[d]}" ${attrs}><th scope="row">${cap(d)}</th><td>${hoursText(h)}${doc}</td></tr>`;
 }).join("\n");
 const openingHoursJson = JSON.stringify(
@@ -308,6 +318,21 @@ function page({ path: outPath, title, description, content, jsonLd = "", robots 
     doctorDaysText: esc(doctorDaysText),
     doctorDaysSentence: esc(doctorDaysSentence),
     doctorDaysRaw: listText(doctorDays.map(cap), "and"),
+    gynaeName: esc(gynae ? gynae.name : ""),
+    gynaeNameRaw: gynae ? gynae.name : "",
+    gynaeDaysText: esc(gynaeDaysText),
+    gynaeDaysRaw: listText(gynaeDays.map(cap), "and"),
+    gynaeHoursText: esc(gynaeHoursText),
+    gynaeDaysNums: gynaeDays.map((d) => DAY_NUM[d]).join(","),
+    gynaeSentence: esc(gynaeSentence),
+    gynaeSentenceRaw: gynaeSentence,
+    clinicPhone1: esc(clinicPhones[0] || config.phoneDisplay),
+    clinicPhone1Tel: esc(clinicPhones[0] ? telOf(clinicPhones[0]) : config.phoneTel),
+    clinicPhone2: esc(clinicPhones[1] || ""),
+    clinicPhone2Tel: esc(clinicPhones[1] ? telOf(clinicPhones[1]) : ""),
+    clinicPhonesText: esc(clinicPhones.join(" · ")),
+    clinicPhonesRaw: clinicPhones.join(" or "),
+    waBookGynaeUrl: esc(C.waUrl(config.whatsapp, `Assalam-o-Alaikum! I'd like to book a visit with the lady gynaecologist${gynae ? `, ${gynae.name}` : ""}. (from your website)`)),
     doctorDaysNums: doctorDays.map((d) => DAY_NUM[d]).join(","),
     waBookUrl: esc(C.waUrl(config.whatsapp, "Assalam-o-Alaikum! I'd like to book a visit with the child specialist. (from your website)")),
     email: esc(config.email || ""),

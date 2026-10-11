@@ -8,7 +8,12 @@
             <span class="brand__sub">Clinic &amp; Pharmacy</span>
           </span>
         </a>
-        <p>Children's clinic and pharmacy serving families in Rohillanwali and nearby areas of District Muzaffargarh.</p>
+        <p>Mother &amp; child care clinic and pharmacy serving families in Rohillanwali and nearby areas of District Muzaffargarh.</p>
+        <div class="social" aria-label="Follow us">
+          <a class="social__btn" href="{{facebookUrl}}" target="_blank" rel="noopener" aria-label="Facebook"><svg class="icon" aria-hidden="true"><use href="#i-facebook"/></svg></a>
+          <a class="social__btn" href="{{instagramUrl}}" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg></a>
+          <a class="social__btn" href="{{waLink}}" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg></a>
+        </div>
       </div>
       <div class="footer__col">
         <h3>Shop</h3>
@@ -21,7 +26,8 @@
         <ul role="list">
           <li><a href="{{root}}shop.html">All medicines</a></li>
           <li><a href="{{root}}index.html#brands">Brands we stock</a></li>
-          <li><a href="{{root}}index.html#clinic">Child Care Clinic</a></li>
+          <li><a href="{{root}}index.html#clinic">Mother &amp; Child Clinic</a></li>
+          <li><a href="{{root}}index.html#tips">Health tips</a></li>
           <li><a href="{{root}}cart.html">Your cart</a></li>
           <li><a href="{{root}}index.html#faq">FAQ</a></li>
           <li><a href="{{root}}credits.html">Photo credits</a></li>
@@ -36,7 +42,8 @@
           <li><a href="{{facebookUrl}}" target="_blank" rel="noopener">Facebook page</a></li>
           <li><a href="{{instagramUrl}}" target="_blank" rel="noopener">Instagram @adilmedicalstore</a></li>
           <li>{{storeName}} &amp; {{clinicName}}<br>{{addrStreet}}, {{addrTown}}<br>{{addrDistrict}}<br>{{addrRegion}} {{addrPostal}}, Pakistan</li>
-          <li>Pharmacy: {{hoursSummary}}<br>Child specialist: {{doctorDaysText}}</li>
+          <li>Pharmacy: {{hoursSummary}}<br>Child specialist: {{doctorDaysText}}<br>Lady gynaecologist: {{gynaeDaysText}}, {{gynaeHoursText}}</li>
+          <li>Clinic appointments: <a href="tel:{{clinicPhone1Tel}}">{{clinicPhone1}}</a>, <a href="tel:{{clinicPhone2Tel}}">{{clinicPhone2}}</a></li>
         </ul>
       </div>
     </div>
