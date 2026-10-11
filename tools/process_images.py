@@ -29,10 +29,18 @@ def flatten(img):
 
 
 def trim(img):
-    """Crop away near-white borders."""
-    bg = Image.new("RGB", img.size, (255, 255, 255))
-    diff = ImageChops.difference(img, bg).convert("L").point(lambda v: 255 if v > 18 else 0)
-    box = diff.getbbox()
+    """Crop away the plain background: white, or the light studio backdrop seen in the corners."""
+    w, h = img.size
+    corners = [img.getpixel((x, y)) for x, y in ((0, 0), (w - 1, 0), (0, h - 1), (w - 1, h - 1))]
+    light = [c for c in corners if min(c) > 200]
+    bg_color = tuple(sorted(light)[len(light) // 2]) if len(light) >= 3 else (255, 255, 255)
+    box = None
+    for color, cut in ((bg_color, 26), ((255, 255, 255), 18)):
+        bg = Image.new("RGB", img.size, color)
+        diff = ImageChops.difference(img, bg).convert("L").point(lambda v, c=cut: 255 if v > c else 0)
+        b = diff.getbbox()
+        if b and (box is None or (b[2] - b[0]) * (b[3] - b[1]) < (box[2] - box[0]) * (box[3] - box[1])):
+            box = b
     return img.crop(box) if box else img
 
 

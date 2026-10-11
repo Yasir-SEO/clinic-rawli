@@ -8,6 +8,8 @@ window.PRODUCT_IMAGES = {
   "gillette-disposable-razors": "assets/products/gillette-disposable-razors.jpg",
   "molfix-baby-wipes": "assets/products/molfix-baby-wipes.jpg",
   "montiget-10mg": "assets/products/montiget-10mg.jpg",
+  "montiget-4mg-granules": "assets/products/montiget-4mg-granules.jpg",
+  "montiget-5mg-chewable": "assets/products/montiget-5mg-chewable.jpg",
   "nexum-20mg": "assets/products/nexum-20mg.jpg",
   "nexum-40mg": "assets/products/nexum-40mg.jpg",
   "omron-digital-thermometer": "assets/products/omron-digital-thermometer.jpg",
