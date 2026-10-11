@@ -1,437 +1,228 @@
 [
   {
-    "name": "api_commons_logo_gsk",
-    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=GSK%20logo&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Csize%7Cmime&iiurlwidth=400&format=json",
+    "name": "img_logo_abbott",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Logo_Abbott_Laboratories.svg/500px-Logo_Abbott_Laboratories.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "status": 200,
-    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=GSK%20logo&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Csize%7Cmime&iiurlwidth=400&format=json",
-    "content_type": "application/json",
-    "bytes": 9984,
-    "file": "fetched/api_commons_logo_gsk.json"
+    "final_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Logo_Abbott_Laboratories.svg/500px-Logo_Abbott_Laboratories.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "content_type": "image/webp",
+    "bytes": 3320,
+    "file": "fetched/img_logo_abbott.webp"
   },
   {
-    "name": "api_commons_logo_haleon",
-    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Haleon%20logo&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Csize%7Cmime&iiurlwidth=400&format=json",
+    "name": "img_logo_alcon",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Alcon_Logo_2019.svg/500px-Alcon_Logo_2019.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "status": 200,
-    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Haleon%20logo&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Csize%7Cmime&iiurlwidth=400&format=json",
-    "content_type": "application/json",
-    "bytes": 8350,
-    "file": "fetched/api_commons_logo_haleon.json"
+    "final_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Alcon_Logo_2019.svg/500px-Alcon_Logo_2019.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "content_type": "image/webp",
+    "bytes": 3816,
+    "file": "fetched/img_logo_alcon.webp"
   },
   {
-    "name": "api_commons_logo_abbott",
-    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Abbott%20Laboratories%20logo&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Csize%7Cmime&iiurlwidth=400&format=json",
+    "name": "img_logo_allergan",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Allergan_logo.svg/500px-Allergan_logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "status": 200,
-    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Abbott%20Laboratories%20logo&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Csize%7Cmime&iiurlwidth=400&format=json",
-    "content_type": "application/json",
-    "bytes": 12172,
-    "file": "fetched/api_commons_logo_abbott.json"
+    "final_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Allergan_logo.svg/500px-Allergan_logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "content_type": "image/webp",
+    "bytes": 2306,
+    "file": "fetched/img_logo_allergan.webp"
   },
   {
-    "name": "api_commons_logo_novartis",
-    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Novartis%20logo&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Csize%7Cmime&iiurlwidth=400&format=json",
+    "name": "img_logo_bayer",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Logo_Bayer.svg/500px-Logo_Bayer.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "status": 200,
-    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Novartis%20logo&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Csize%7Cmime&iiurlwidth=400&format=json",
-    "content_type": "application/json",
-    "bytes": 11777,
-    "file": "fetched/api_commons_logo_novartis.json"
+    "final_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Logo_Bayer.svg/500px-Logo_Bayer.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "content_type": "image/webp",
+    "bytes": 16866,
+    "file": "fetched/img_logo_bayer.webp"
   },
   {
-    "name": "api_commons_logo_sanofi",
-    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Sanofi%20logo&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Csize%7Cmime&iiurlwidth=400&format=json",
+    "name": "img_logo_beiersdorf",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Beiersdorf_Logo.svg/500px-Beiersdorf_Logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "status": 200,
-    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Sanofi%20logo&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Csize%7Cmime&iiurlwidth=400&format=json",
-    "content_type": "application/json",
-    "bytes": 11587,
-    "file": "fetched/api_commons_logo_sanofi.json"
+    "final_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Beiersdorf_Logo.svg/500px-Beiersdorf_Logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "content_type": "image/webp",
+    "bytes": 4366,
+    "file": "fetched/img_logo_beiersdorf.webp"
   },
   {
-    "name": "api_commons_logo_pfizer",
-    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Pfizer%20logo&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Csize%7Cmime&iiurlwidth=400&format=json",
+    "name": "img_logo_colgate",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Colgate-Palmolive_logo.svg/500px-Colgate-Palmolive_logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "status": 200,
-    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Pfizer%20logo&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Csize%7Cmime&iiurlwidth=400&format=json",
-    "content_type": "application/json",
-    "bytes": 12236,
-    "file": "fetched/api_commons_logo_pfizer.json"
+    "final_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Colgate-Palmolive_logo.svg/500px-Colgate-Palmolive_logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "content_type": "image/webp",
+    "bytes": 3898,
+    "file": "fetched/img_logo_colgate.webp"
   },
   {
-    "name": "api_commons_logo_bayer",
-    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Bayer%20logo&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Csize%7Cmime&iiurlwidth=400&format=json",
+    "name": "img_logo_engelhard",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Engelhard_Arzneimittel_logo.svg/500px-Engelhard_Arzneimittel_logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "status": 200,
-    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Bayer%20logo&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Csize%7Cmime&iiurlwidth=400&format=json",
-    "content_type": "application/json",
-    "bytes": 13281,
-    "file": "fetched/api_commons_logo_bayer.json"
+    "final_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Engelhard_Arzneimittel_logo.svg/500px-Engelhard_Arzneimittel_logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "content_type": "image/webp",
+    "bytes": 12498,
+    "file": "fetched/img_logo_engelhard.webp"
   },
   {
-    "name": "api_commons_logo_msd",
-    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=MSD%20Merck%20Sharp%20Dohme%20logo&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Csize%7Cmime&iiurlwidth=400&format=json",
+    "name": "img_logo_gsk",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/GSK_Logo_PNG5.png/500px-GSK_Logo_PNG5.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "status": 200,
-    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=MSD%20Merck%20Sharp%20Dohme%20logo&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Csize%7Cmime&iiurlwidth=400&format=json",
-    "content_type": "application/json",
-    "bytes": 5984,
-    "file": "fetched/api_commons_logo_msd.json"
+    "final_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/GSK_Logo_PNG5.png/500px-GSK_Logo_PNG5.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "content_type": "image/png",
+    "bytes": 22168,
+    "file": "fetched/img_logo_gsk.png"
   },
   {
-    "name": "api_commons_logo_reckitt",
-    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Reckitt%20logo&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Csize%7Cmime&iiurlwidth=400&format=json",
+    "name": "img_logo_haleon",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Haleon.svg/500px-Haleon.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "status": 200,
-    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Reckitt%20logo&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Csize%7Cmime&iiurlwidth=400&format=json",
-    "content_type": "application/json",
-    "bytes": 11845,
-    "file": "fetched/api_commons_logo_reckitt.json"
+    "final_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Haleon.svg/500px-Haleon.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "content_type": "image/webp",
+    "bytes": 2292,
+    "file": "fetched/img_logo_haleon.webp"
   },
   {
-    "name": "api_commons_logo_pg",
-    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Procter%20Gamble%20logo&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Csize%7Cmime&iiurlwidth=400&format=json",
+    "name": "img_logo_hayat",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Hayat_Logo_Buyutulmus-01.jpg/500px-Hayat_Logo_Buyutulmus-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "status": 200,
-    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Procter%20Gamble%20logo&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Csize%7Cmime&iiurlwidth=400&format=json",
-    "content_type": "application/json",
-    "bytes": 11074,
-    "file": "fetched/api_commons_logo_pg.json"
+    "final_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Hayat_Logo_Buyutulmus-01.jpg/500px-Hayat_Logo_Buyutulmus-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "content_type": "image/jpeg",
+    "bytes": 10284,
+    "file": "fetched/img_logo_hayat.jpg"
   },
   {
-    "name": "api_commons_logo_nestle",
-    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Nestle%20logo&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Csize%7Cmime&iiurlwidth=400&format=json",
+    "name": "img_logo_kenvue",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Kenvue_logo.svg/500px-Kenvue_logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "status": 200,
-    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Nestle%20logo&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Csize%7Cmime&iiurlwidth=400&format=json",
-    "content_type": "application/json",
-    "bytes": 11368,
-    "file": "fetched/api_commons_logo_nestle.json"
+    "final_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Kenvue_logo.svg/500px-Kenvue_logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "content_type": "image/webp",
+    "bytes": 3644,
+    "file": "fetched/img_logo_kenvue.webp"
   },
   {
-    "name": "api_commons_logo_kenvue",
-    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Kenvue%20logo&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Csize%7Cmime&iiurlwidth=400&format=json",
+    "name": "img_logo_msd",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Merck_Sharp_%26_Dohme_%28MSD%29.svg/500px-Merck_Sharp_%26_Dohme_%28MSD%29.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "status": 200,
-    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Kenvue%20logo&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Csize%7Cmime&iiurlwidth=400&format=json",
-    "content_type": "application/json",
-    "bytes": 5032,
-    "file": "fetched/api_commons_logo_kenvue.json"
+    "final_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Merck_Sharp_%26_Dohme_%28MSD%29.svg/500px-Merck_Sharp_%26_Dohme_%28MSD%29.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "content_type": "image/webp",
+    "bytes": 5090,
+    "file": "fetched/img_logo_msd.webp"
   },
   {
-    "name": "api_commons_logo_johnsons",
-    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Johnson%27s%20baby%20logo&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Csize%7Cmime&iiurlwidth=400&format=json",
+    "name": "img_logo_novartis",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Novartis-Logo-2023.svg/500px-Novartis-Logo-2023.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "status": 200,
-    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Johnson%27s%20baby%20logo&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Csize%7Cmime&iiurlwidth=400&format=json",
-    "content_type": "application/json",
-    "bytes": 15449,
-    "file": "fetched/api_commons_logo_johnsons.json"
+    "final_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Novartis-Logo-2023.svg/500px-Novartis-Logo-2023.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "content_type": "image/webp",
+    "bytes": 6166,
+    "file": "fetched/img_logo_novartis.webp"
   },
   {
-    "name": "api_commons_logo_leo",
-    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=LEO%20Pharma%20logo&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Csize%7Cmime&iiurlwidth=400&format=json",
+    "name": "img_logo_omron",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/OMRON_Logo.svg/500px-OMRON_Logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "status": 200,
-    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=LEO%20Pharma%20logo&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Csize%7Cmime&iiurlwidth=400&format=json",
-    "content_type": "application/json",
-    "bytes": 13108,
-    "file": "fetched/api_commons_logo_leo.json"
+    "final_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/OMRON_Logo.svg/500px-OMRON_Logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "content_type": "image/webp",
+    "bytes": 3656,
+    "file": "fetched/img_logo_omron.webp"
   },
   {
-    "name": "api_commons_logo_alcon",
-    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Alcon%20logo&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Csize%7Cmime&iiurlwidth=400&format=json",
+    "name": "img_logo_pfizer",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Pfizer_%282021%29.svg/500px-Pfizer_%282021%29.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "status": 200,
-    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Alcon%20logo&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Csize%7Cmime&iiurlwidth=400&format=json",
-    "content_type": "application/json",
-    "bytes": 10998,
-    "file": "fetched/api_commons_logo_alcon.json"
+    "final_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Pfizer_%282021%29.svg/500px-Pfizer_%282021%29.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "content_type": "image/webp",
+    "bytes": 7854,
+    "file": "fetched/img_logo_pfizer.webp"
   },
   {
-    "name": "api_commons_logo_allergan",
-    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Allergan%20logo&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Csize%7Cmime&iiurlwidth=400&format=json",
+    "name": "img_logo_pg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/P%26G_logo.svg/500px-P%26G_logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "status": 200,
-    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Allergan%20logo&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Csize%7Cmime&iiurlwidth=400&format=json",
-    "content_type": "application/json",
-    "bytes": 11851,
-    "file": "fetched/api_commons_logo_allergan.json"
+    "final_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/P%26G_logo.svg/500px-P%26G_logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "content_type": "image/webp",
+    "bytes": 6872,
+    "file": "fetched/img_logo_pg.webp"
   },
   {
-    "name": "api_commons_logo_roche",
-    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Roche%20logo&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Csize%7Cmime&iiurlwidth=400&format=json",
+    "name": "img_logo_roche",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Roche_Logo_800px_Blue_RGB_Roche_Logo_RGB.png/500px-Roche_Logo_800px_Blue_RGB_Roche_Logo_RGB.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "status": 200,
-    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Roche%20logo&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Csize%7Cmime&iiurlwidth=400&format=json",
-    "content_type": "application/json",
-    "bytes": 12499,
-    "file": "fetched/api_commons_logo_roche.json"
+    "final_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Roche_Logo_800px_Blue_RGB_Roche_Logo_RGB.png/500px-Roche_Logo_800px_Blue_RGB_Roche_Logo_RGB.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "content_type": "image/png",
+    "bytes": 25407,
+    "file": "fetched/img_logo_roche.png"
   },
   {
-    "name": "api_commons_logo_omron",
-    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Omron%20logo&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Csize%7Cmime&iiurlwidth=400&format=json",
+    "name": "img_logo_sanofi",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Sanofi-2022.svg/500px-Sanofi-2022.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "status": 200,
-    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Omron%20logo&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Csize%7Cmime&iiurlwidth=400&format=json",
-    "content_type": "application/json",
-    "bytes": 14005,
-    "file": "fetched/api_commons_logo_omron.json"
+    "final_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Sanofi-2022.svg/500px-Sanofi-2022.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "content_type": "image/webp",
+    "bytes": 4220,
+    "file": "fetched/img_logo_sanofi.webp"
   },
   {
-    "name": "api_commons_logo_beiersdorf",
-    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Beiersdorf%20logo&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Csize%7Cmime&iiurlwidth=400&format=json",
+    "name": "img_logo_searle-commons",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Searle_Company_logo.svg/500px-Searle_Company_logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "status": 200,
-    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Beiersdorf%20logo&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Csize%7Cmime&iiurlwidth=400&format=json",
-    "content_type": "application/json",
-    "bytes": 12118,
-    "file": "fetched/api_commons_logo_beiersdorf.json"
+    "final_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Searle_Company_logo.svg/500px-Searle_Company_logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "content_type": "image/webp",
+    "bytes": 4318,
+    "file": "fetched/img_logo_searle-commons.webp"
   },
   {
-    "name": "api_commons_logo_unilever",
-    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Unilever%20logo&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Csize%7Cmime&iiurlwidth=400&format=json",
+    "name": "img_logo_unilever",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Unilever_text_logo.svg/500px-Unilever_text_logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "status": 200,
-    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Unilever%20logo&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Csize%7Cmime&iiurlwidth=400&format=json",
-    "content_type": "application/json",
-    "bytes": 11141,
-    "file": "fetched/api_commons_logo_unilever.json"
+    "final_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Unilever_text_logo.svg/500px-Unilever_text_logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "content_type": "image/webp",
+    "bytes": 5874,
+    "file": "fetched/img_logo_unilever.webp"
   },
   {
-    "name": "api_commons_logo_colgate",
-    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Colgate-Palmolive%20logo&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Csize%7Cmime&iiurlwidth=400&format=json",
+    "name": "img_logo_martindow",
+    "url": "https://www.martindow.com/assets/images/svg-icons/Martin_Dow_Blue_Logo_1.svg",
     "status": 200,
-    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Colgate-Palmolive%20logo&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Csize%7Cmime&iiurlwidth=400&format=json",
-    "content_type": "application/json",
-    "bytes": 11176,
-    "file": "fetched/api_commons_logo_colgate.json"
-  },
-  {
-    "name": "api_commons_logo_molfix",
-    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Molfix%20logo&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Csize%7Cmime&iiurlwidth=400&format=json",
-    "status": 200,
-    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Molfix%20logo&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Csize%7Cmime&iiurlwidth=400&format=json",
-    "content_type": "application/json",
-    "bytes": 20,
-    "file": "fetched/api_commons_logo_molfix.json"
-  },
-  {
-    "name": "api_commons_logo_hayat",
-    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Hayat%20Kimya%20logo&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Csize%7Cmime&iiurlwidth=400&format=json",
-    "status": 200,
-    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Hayat%20Kimya%20logo&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Csize%7Cmime&iiurlwidth=400&format=json",
-    "content_type": "application/json",
-    "bytes": 3814,
-    "file": "fetched/api_commons_logo_hayat.json"
-  },
-  {
-    "name": "api_commons_logo_pigeon",
-    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Pigeon%20Corporation%20logo&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Csize%7Cmime&iiurlwidth=400&format=json",
-    "status": 200,
-    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Pigeon%20Corporation%20logo&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Csize%7Cmime&iiurlwidth=400&format=json",
-    "content_type": "application/json",
-    "bytes": 13568,
-    "file": "fetched/api_commons_logo_pigeon.json"
-  },
-  {
-    "name": "api_commons_logo_hamdard",
-    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Hamdard%20logo&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Csize%7Cmime&iiurlwidth=400&format=json",
-    "status": 200,
-    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Hamdard%20logo&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Csize%7Cmime&iiurlwidth=400&format=json",
-    "content_type": "application/json",
-    "bytes": 21823,
-    "file": "fetched/api_commons_logo_hamdard.json"
-  },
-  {
-    "name": "api_commons_logo_engelhard",
-    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Engelhard%20Arzneimittel%20logo&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Csize%7Cmime&iiurlwidth=400&format=json",
-    "status": 200,
-    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Engelhard%20Arzneimittel%20logo&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Csize%7Cmime&iiurlwidth=400&format=json",
-    "content_type": "application/json",
-    "bytes": 1631,
-    "file": "fetched/api_commons_logo_engelhard.json"
-  },
-  {
-    "name": "api_commons_logo_getz",
-    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Getz%20Pharma%20logo&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Csize%7Cmime&iiurlwidth=400&format=json",
-    "status": 200,
-    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Getz%20Pharma%20logo&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Csize%7Cmime&iiurlwidth=400&format=json",
-    "content_type": "application/json",
-    "bytes": 20,
-    "file": "fetched/api_commons_logo_getz.json"
-  },
-  {
-    "name": "api_commons_logo_searle",
-    "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Searle%20Company%20logo&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Csize%7Cmime&iiurlwidth=400&format=json",
-    "status": 200,
-    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Searle%20Company%20logo&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Csize%7Cmime&iiurlwidth=400&format=json",
-    "content_type": "application/json",
-    "bytes": 14483,
-    "file": "fetched/api_commons_logo_searle.json"
-  },
-  {
-    "name": "logo_getz",
-    "url": "https://getzpharma.com/",
-    "status": 200,
-    "final_url": "https://getzpharma.com/",
-    "candidates": [
-      "https://getzpharma.com/wp-content/themes/gp-child/media/images/web/Getz-Logo.svg",
-      "https://getzpharma.com/wp-content/themes/gp-child/media/images/web/Getz-Logo-footer.svg",
-      "https://getzpharma.com/wp-content/themes/gp-child/media/images/web/medonelogofooter.svg",
-      "https://getzpharma.com/wp-content/uploads/2025/02/cropped-getzicon-180x180.png",
-      "https://getzpharma.com/wp-content/uploads/2025/02/cropped-getzicon-32x32.png",
-      "https://getzpharma.com/wp-content/uploads/2025/01/ogimage.png"
-    ],
-    "image": "https://getzpharma.com/wp-content/themes/gp-child/media/images/web/Getz-Logo.svg",
-    "image_type": "image/svg+xml",
-    "bytes": 8900,
-    "file": "fetched/img_logo_getz.svg"
-  },
-  {
-    "name": "logo_searle",
-    "url": "https://searlecompany.com/",
-    "status": 200,
-    "final_url": "https://searlecompany.com/",
-    "candidates": [
-      "https://searlecompany.com/wp-content/uploads/2022/06/searle-logo-1.png",
-      "https://searlecompany.com/wp-content/uploads/2021/04/favicon.png"
-    ],
-    "image": "https://searlecompany.com/wp-content/uploads/2022/06/searle-logo-1.png",
-    "image_type": "image/png",
-    "bytes": 83861,
-    "file": "fetched/img_logo_searle.png"
-  },
-  {
-    "name": "logo_martindow",
-    "url": "https://www.martindow.com/",
-    "status": 200,
-    "final_url": "https://www.martindow.com/",
-    "candidates": [
-      "https://www.martindow.com/assets/images/svg-icons/Martin_Dow_White_Logo_1.svg",
-      "https://www.martindow.com/assets/images/Martin_Dow_Limited%2C_Seatle__Group.svg",
-      "https://www.martindow.com/assets/images/Martin_Dow_Marker-purple.svg",
-      "https://www.martindow.com/assets/images/Martin_Dow_Specialties_Pvt_Ltd.svg",
-      "https://www.martindow.com/assets/images/Welnox-logo-1.svg",
-      "https://www.martindow.com/assets/images/svg-icons/Martin_Dow_Blue_Logo_1.svg",
-      "https://www.martindow.com/assets/images/favicon/apple-touch-icon.png",
-      "https://www.martindow.com/assets/images/mdg-og-logo.png"
-    ],
-    "image": "https://www.martindow.com/assets/images/svg-icons/Martin_Dow_White_Logo_1.svg",
-    "image_type": "image/svg+xml",
-    "bytes": 15915,
+    "final_url": "https://www.martindow.com/assets/images/svg-icons/Martin_Dow_Blue_Logo_1.svg",
+    "content_type": "image/svg+xml",
+    "bytes": 22522,
     "file": "fetched/img_logo_martindow.svg"
   },
   {
-    "name": "logo_sami",
-    "url": "https://samipharmapk.com/",
+    "name": "img_logo_sami",
+    "url": "https://samipharma.com/wp-content/uploads/2024/03/sami-logo-black.png",
     "status": 200,
-    "final_url": "https://samipharma.com/",
-    "candidates": [
-      "https://samipharma.com/wp-content/uploads/2024/03/sami-logo-white.png",
-      "https://samipharma.com/wp-content/uploads/2024/03/sami-logo-black.png",
-      "https://samipharma.com/wp-content/uploads/2026/07/50Y-Logo-final.png",
-      "https://samipharma.com/wp-content/uploads/2024/04/cropped-sami-icon-180x180.png",
-      "https://samipharma.com/wp-content/uploads/2024/04/cropped-sami-icon-32x32.png"
-    ],
-    "image": "https://samipharma.com/wp-content/uploads/2024/03/sami-logo-white.png",
-    "image_type": "image/png",
-    "bytes": 1868,
+    "final_url": "https://samipharma.com/wp-content/uploads/2024/03/sami-logo-black.png",
+    "content_type": "image/png",
+    "bytes": 1880,
     "file": "fetched/img_logo_sami.png"
   },
   {
-    "name": "logo_hilton",
-    "url": "https://www.hiltonpharma.com/",
+    "name": "logo_nestle",
+    "url": "https://www.nestle.pk/",
+    "status": 403,
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "name": "logo_reckitt",
+    "url": "https://www.reckitt.com/",
     "status": 200,
-    "final_url": "https://hiltonpharma.com/",
+    "final_url": "https://www.reckitt.com/",
     "candidates": [
-      "https://hiltonpharma.com/wp-content/uploads/2020/09/logo.png",
-      "https://hiltonpharma.com/wp-content/themes/hilton/assets/images/logo_footer.png",
-      "https://hiltonpharma.com/wp-content/uploads/2020/09/cropped-logo-180x180.png",
-      "https://hiltonpharma.com/wp-content/uploads/2020/09/cropped-logo-32x32.png"
+      "https://www.reckitt.com/icons/icon-48x48.png?v=fe5a19c3c0212dac49cab0e121d364e7",
+      "https://www.reckitt.com/favicon-32x32.png?v=fe5a19c3c0212dac49cab0e121d364e7",
+      "https://eu-images.contentstack.com/v3/assets/blt93c8bc7a598af9f0/bltfc04b6a9a1031ecf/69e5d6ed660a4b958f8a5df7/130126_Reckitt_CF_Location..jpg"
     ],
-    "image": "https://hiltonpharma.com/wp-content/uploads/2020/09/logo.png",
+    "image": "https://www.reckitt.com/icons/icon-48x48.png?v=fe5a19c3c0212dac49cab0e121d364e7",
     "image_type": "image/png",
-    "bytes": 3693,
-    "file": "fetched/img_logo_hilton.png"
+    "bytes": 3139,
+    "file": "fetched/img_logo_reckitt.png"
   },
   {
-    "name": "logo_highnoon",
-    "url": "https://highnoon-labs.com/",
+    "name": "logo_leo",
+    "url": "https://www.leo-pharma.com/",
     "status": 200,
-    "final_url": "https://highnoon-labs.com/",
-    "candidates": [
-      "https://highnoon-labs.com/wp-content/themes/high/img/LogoHighnoon.png",
-      "https://highnoon-labs.com/wp-content/themes/high/img/sub.png",
-      "https://secureservercdn.net/160.153.138.53/k7i.db4.myftpupload.com/wp-content/uploads/2021/03/newlogo_rem-240x240.png",
-      "https://secureservercdn.net/160.153.138.53/k7i.db4.myftpupload.com/wp-content/uploads/2021/03/newlogo_rem-70x70.png",
-      "https://highnoon-labs.com/wp-content/themes/high/img/banners/Environmental.png"
-    ],
-    "image": "https://highnoon-labs.com/wp-content/themes/high/img/LogoHighnoon.png",
-    "image_type": "image/webp",
-    "bytes": 3692,
-    "file": "fetched/img_logo_highnoon.webp"
-  },
-  {
-    "name": "logo_brookes",
-    "url": "https://www.brookes.com.pk/",
-    "status": 200,
-    "final_url": "https://www.brookes.com.pk/",
-    "candidates": [
-      "https://www.brookes.com.pk/wp-content/themes/brookes/images/logo.svg",
-      "https://www.brookes.com.pk/wp-content/themes/brookes/images/logo-white.svg",
-      "https://www.brookes.com.pk/wp-content/themes/brookes/images/favicon/apple-touch-icon.png",
-      "https://www.brookes.com.pk/wp-content/themes/brookes/images/og-logo.jpg"
-    ],
-    "image": "https://www.brookes.com.pk/wp-content/themes/brookes/images/logo.svg",
-    "image_type": "image/svg+xml",
-    "bytes": 7398,
-    "file": "fetched/img_logo_brookes.svg"
-  },
-  {
-    "name": "logo_hamdard",
-    "url": "https://www.hamdard.com.pk/",
-    "status": 200,
-    "final_url": "https://www.hamdard.com.pk/",
-    "candidates": [
-      "https://www.hamdard.com.pk/logo192.png",
-      "https://www.hamdard.com.pk/favicon.ico"
-    ],
-    "image": "https://www.hamdard.com.pk/logo192.png",
-    "image_type": "image/png",
-    "bytes": 71877,
-    "file": "fetched/img_logo_hamdard.png"
-  },
-  {
-    "name": "logo_qarshi",
-    "url": "https://qarshi.com/",
-    "status": 200,
-    "final_url": "https://qarshi.com/",
-    "candidates": [
-      "https://qarshi.com/wp-content/uploads/2021/02/qarshi-logo-3-3-158x79.png",
-      "https://qarshi.com/wp-content/uploads/2021/02/qarshi-logo.png",
-      "https://qarshi.com/wp-content/uploads/2021/02/qarshi-logo-150x79.png"
-    ],
-    "image": "https://qarshi.com/wp-content/uploads/2021/02/qarshi-logo-3-3-158x79.png",
-    "image_type": "image/png",
-    "bytes": 3957,
-    "file": "fetched/img_logo_qarshi.png"
-  },
-  {
-    "name": "logo_pigeon",
-    "url": "https://pigeon.com.pk/",
-    "status": 200,
-    "final_url": "https://pigeon.com.pk/",
-    "candidates": [
-      "https://pigeon.com.pk/cdn/shop/files/pigeon-logo-2-1400x396_250x@2x.png?v=1742890978",
-      "https://pigeon.com.pk/cdn/shop/files/pigeon-logo-2-1400x396_200x@2x.png?v=1742890978",
-      "https://pigeon.com.pk/cdn/shop/files/cropped-cropped-P-pigeon_152x.png?v=1743129700",
-      "https://pigeon.com.pk/cdn/shop/files/cropped-cropped-P-pigeon_32x.png?v=1743129700",
-      "http://pigeon.com.pk/cdn/shop/files/pigeon-logo-2-1400x396_e17887a1-e64f-41bf-a1e7-928e49ee74eb.png?v=1743039637"
-    ],
-    "image": "https://pigeon.com.pk/cdn/shop/files/pigeon-logo-2-1400x396_250x@2x.png?v=1742890978",
-    "image_type": "image/png",
-    "bytes": 12392,
-    "file": "fetched/img_logo_pigeon.png"
-  },
-  {
-    "name": "logo_engelhard",
-    "url": "https://www.engelhard.de/",
-    "status": 200,
-    "final_url": "https://www.engelhard.de/",
-    "candidates": [
-      "https://www.engelhard.de/apple-touch-icon.png"
-    ],
-    "image": "https://www.engelhard.de/apple-touch-icon.png",
-    "image_type": "image/png",
-    "bytes": 2023,
-    "file": "fetched/img_logo_engelhard.png"
-  },
-  {
-    "name": "logo_hayat",
-    "url": "https://www.molfix.com/",
-    "status": null,
-    "error": "URLError: <urlopen error timed out>"
+    "final_url": "https://leo-pharma.com/",
+    "candidates": []
   }
 ]
