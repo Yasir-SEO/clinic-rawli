@@ -1,62 +1,124 @@
 [
   {
-    "name": "img_montiget-4mg-granules",
-    "url": "https://getzpharma.com/wp-content/uploads/2020/01/Montiget-4mg_1-scaled.jpg",
+    "name": "img_pigeon-silicone-nipple",
+    "url": "https://cdn.shopify.com/s/files/1/0621/2786/5954/files/StandardNeckTeatsPigeonPk-2.webp?v=1759232186",
     "status": 200,
-    "final_url": "https://getzpharma.com/wp-content/uploads/2020/01/Montiget-4mg_1-scaled.jpg",
+    "final_url": "https://cdn.shopify.com/s/files/1/0621/2786/5954/files/StandardNeckTeatsPigeonPk-2.webp?v=1759232186",
     "content_type": "image/jpeg",
-    "bytes": 191397,
-    "file": "fetched/img_montiget-4mg-granules.jpg"
+    "bytes": 36088,
+    "file": "fetched/img_pigeon-silicone-nipple.jpg"
   },
   {
-    "name": "img_montiget-5mg-chewable",
-    "url": "https://getzpharma.com/wp-content/uploads/2020/01/Montiget-5mg_1-scaled.jpg",
+    "name": "img_pigeon-baby-wipes",
+    "url": "https://cdn.shopify.com/s/files/1/0621/2786/5954/files/baby-wipes-p78101.jpg?v=1759226158",
     "status": 200,
-    "final_url": "https://getzpharma.com/wp-content/uploads/2020/01/Montiget-5mg_1-scaled.jpg",
+    "final_url": "https://cdn.shopify.com/s/files/1/0621/2786/5954/files/baby-wipes-p78101.jpg?v=1759226158",
+    "content_type": "image/webp",
+    "bytes": 50510,
+    "file": "fetched/img_pigeon-baby-wipes.webp"
+  },
+  {
+    "name": "img_pigeon-baby-powder",
+    "url": "https://cdn.shopify.com/s/files/1/0621/2786/5954/files/BABY-POWDER-78415.jpg?v=1758958063",
+    "status": 200,
+    "final_url": "https://cdn.shopify.com/s/files/1/0621/2786/5954/files/BABY-POWDER-78415.jpg?v=1758958063",
+    "content_type": "image/webp",
+    "bytes": 27520,
+    "file": "fetched/img_pigeon-baby-powder.webp"
+  },
+  {
+    "name": "img_leflox-500mg",
+    "url": "https://getzpharma.com/wp-content/uploads/2018/03/Leflox-500mg_2-scaled.jpg",
+    "status": 200,
+    "final_url": "https://getzpharma.com/wp-content/uploads/2018/03/Leflox-500mg_2-scaled.jpg",
     "content_type": "image/jpeg",
-    "bytes": 236788,
-    "file": "fetched/img_montiget-5mg-chewable.jpg"
+    "bytes": 240260,
+    "file": "fetched/img_leflox-500mg.jpg"
   },
   {
-    "name": "api_pigeon_products",
-    "url": "https://pigeon.com.pk/products.json?limit=250",
+    "name": "img_leflox-500mg-alt",
+    "url": "https://getzpharma.com/wp-content/uploads/2018/03/Leflox-500mg1_1.jpg",
     "status": 200,
-    "final_url": "https://pigeon.com.pk/products.json?limit=250",
-    "content_type": "application/json",
-    "bytes": 825902,
-    "file": "fetched/api_pigeon_products.json"
+    "final_url": "https://getzpharma.com/wp-content/uploads/2018/03/Leflox-500mg1_1.jpg",
+    "content_type": "image/jpeg",
+    "bytes": 178762,
+    "file": "fetched/img_leflox-500mg-alt.jpg"
   },
   {
-    "name": "photo_leflox-500mg",
-    "url": "https://getzpharma.com/product/leflox/",
+    "name": "photo_omron-m2-basic-bp-monitor",
+    "url": "https://www.omronhealthcare-ap.com/ap/product/1717-hem-7121j-e",
     "status": 200,
-    "final_url": "https://getzpharma.com/product/leflox/",
-    "title": "Getz Pharma - We Care For Your\u00a0Health",
+    "final_url": "https://www.omronhealthcare-ap.com/ap/product/1717-hem-7121j-e",
+    "title": "M2 Basic (HEM-7121J-E) - Blood Pressure Monitors (Upper Arm) - Omron Healthcare Asia Pacific",
     "candidates": [
-      "https://getzpharma.com/wp-content/uploads/2025/01/ogimage.png",
-      "https://getzpharma.com/wp-content/themes/gp-child/media/icons/base/breadcrumbicon.png",
-      "https://getzpharma.com/wp-content/uploads/2018/03/Leflox-250mg_1.jpg",
-      "https://getzpharma.com/wp-content/uploads/2018/03/Leflox-750mg_3-scaled.jpg",
-      "https://getzpharma.com/wp-content/uploads/2018/03/Leflox-750mg_1.jpg",
-      "https://getzpharma.com/wp-content/uploads/2018/03/Leflox-500mg2_3.jpg",
-      "https://getzpharma.com/wp-content/uploads/2018/03/Leflox-500mg2_1-scaled.jpg",
-      "https://getzpharma.com/wp-content/uploads/2018/03/Leflox-500mg1_5-scaled.jpg",
-      "https://getzpharma.com/wp-content/uploads/2018/03/Leflox-500mg1_2.jpg",
-      "https://getzpharma.com/wp-content/uploads/2018/03/Leflox-500mg1_1.jpg",
-      "https://getzpharma.com/wp-content/uploads/2018/03/Leflox-500mg_4-scaled.jpg",
-      "https://getzpharma.com/wp-content/uploads/2018/03/Leflox-500mg_2-scaled.jpg",
-      "https://getzpharma.com/wp-content/uploads/2018/03/Leflox-500mg_1-scaled.jpg",
-      "https://getzpharma.com/wp-content/uploads/2018/03/Leflox-250mg_2-scaled.jpg",
-      "https://getzpharma.com/wp-content/themes/gp-child/media/images/products/adbanner.png",
-      "https://getzpharma.com/wp-content/themes/gp-child/media/images/web/facebook.png",
-      "https://getzpharma.com/wp-content/themes/gp-child/media/images/web/vfacebook.png",
-      "https://getzpharma.com/wp-content/themes/gp-child/media/images/web/twitter.png",
-      "https://getzpharma.com/wp-content/themes/gp-child/media/images/web/vtwitter.png",
-      "https://getzpharma.com/wp-content/themes/gp-child/media/images/web/linkedin.png"
+      "https://www.omronhealthcare-ap.com/Content/images/ot_persistent_cookie_icon.png",
+      "https://www.omronhealthcare-ap.com/Content/images/menu_close-white.png",
+      "https://www.omronhealthcare-ap.com/Content/uploads/products/ef543f9b321149f6926e70d6a3d0224c.png",
+      "https://www.omronhealthcare-ap.com/Content/uploads/products/d1fe30ea79554b85bee8dad0e08abd63.jpg",
+      "https://www.omronhealthcare-ap.com/Content/uploads/products/ad01041b3f24411a966e05cbd2cc9663.png",
+      "https://www.omronhealthcare-ap.com/Content/uploads/products/d7b60569215d480bb04e1087e88c2ab8.png",
+      "https://www.omronhealthcare-ap.com/Content/uploads/products/03b59712ee8a4461823abf58a1a8d6c5.png",
+      "https://www.omronhealthcare-ap.com/Content/uploads/2fafd66ced9c4cc4b055f75d7a280ba8.png",
+      "https://www.omronhealthcare-ap.com/Content/uploads/products/acdf17807f68470eb18593450f90c986.png",
+      "https://www.omronhealthcare-ap.com/Content/uploads/ProductAccessories/457aef42-f3f6-4c15-b241-e2ac680a023d.jpg",
+      "https://www.omronhealthcare-ap.com/Content/uploads/ProductAccessories/86341ef2-d06f-4691-8a91-c2374a909cfd.png",
+      "https://www.omronhealthcare-ap.com/Content/uploads/ProductAccessories/48aa1568-729a-4717-8789-c7996589231c.jpg",
+      "https://www.omronhealthcare-ap.com/Content/images/faq/bpm1.png"
     ],
-    "image": "https://getzpharma.com/wp-content/uploads/2025/01/ogimage.png",
-    "image_type": "image/webp",
-    "bytes": 6050,
-    "file": "fetched/img_leflox-500mg.webp"
+    "image": "https://www.omronhealthcare-ap.com/Content/images/ot_persistent_cookie_icon.png",
+    "image_type": "image/png",
+    "bytes": 5670,
+    "file": "fetched/img_omron-m2-basic-bp-monitor.png"
+  },
+  {
+    "name": "photo_accu-chek-instant-meter",
+    "url": "https://www.accu-cheklatam.com/en/products/blood-glucose-monitoring/meters-test-strips/instant",
+    "status": 403,
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "name": "photo_glucerna-vanilla-400g",
+    "url": "https://abbottfamily.com.sg/products/page/glucerna-triple-care",
+    "status": 404,
+    "final_url": "https://www.family.abbott/sg-en/glucerna/products/glucerna-triple-care.html",
+    "title": "Glucerna\u00ae Triple Care - Abbott Family",
+    "candidates": [
+      "https://www.family.abbott/etc.clientlibs/abbott-platform/clientlibs/clientlib-site/resources/images/abbott-logo.png",
+      "https://www.family.abbott/adobe/dynamicmedia/deliver/dm-aid--6679d46c-5e57-46d7-ac1a-ecd42791f3c7/glucerna-vanilla-800g-packshot-front-removebg-preview.png?preferwebp=true&quality=85",
+      "https://www.family.abbott/adobe/dynamicmedia/deliver/dm-aid--d6df7439-6bdd-424a-a4e8-7a8f9dc1e9df/glucerna-vanilla-800g-packshot-back-removebg-preview.png?preferwebp=true&quality=85",
+      "https://www.family.abbott/adobe/dynamicmedia/deliver/dm-aid--4b91c5ab-99d0-44f1-b14a-157f85514245/glucerna-vanilla-800g-packshot-side-removebg-preview.png?preferwebp=true&quality=85",
+      "https://www.family.abbott/adobe/dynamicmedia/deliver/dm-aid--0812daeb-ec20-446e-af70-5143cd733014/flavour---vanilla.png?preferwebp=true&quality=85",
+      "https://www.family.abbott/adobe/dynamicmedia/deliver/dm-aid--36f83159-d1ee-45c9-9dd1-e6f38a39a45f/flavour-wheat.png?preferwebp=true&quality=85",
+      "https://www.family.abbott/adobe/dynamicmedia/deliver/dm-aid--b32616c9-0ed4-4917-80db-fce70ddcf66b/flavour---chocolate.png?preferwebp=true&quality=85",
+      "https://www.family.abbott/sg-en/glucerna/products/glucerna-triple-care/_jcr_content/root/container_73840106/productsection_copy_/product-section-image.coreimg.jpeg/1664272403807/rtb-1--1-.jpeg",
+      "https://www.family.abbott/sg-en/glucerna/products/glucerna-triple-care/_jcr_content/root/container_73840106/productsection_copy__1754158312/product-section-image.coreimg.jpeg/1664272411087/rtb-2--1-.jpeg",
+      "https://www.family.abbott/sg-en/glucerna/products/glucerna-triple-care/_jcr_content/root/container_73840106/productsection_copy__263188189/product-section-image.coreimg.jpeg/1664272414979/rtb-3--1-.jpeg",
+      "https://www.family.abbott/adobe/dynamicmedia/deliver/dm-aid--a81f51d0-6e94-4fde-8604-73c3988e7013/use-it-right-overweight-obese.png?preferwebp=true&quality=85",
+      "https://www.family.abbott/content/dam/an/familyabbott/sg-en/glucerna/products/glucerna-master/Use_it_Right_Overweight_Obese_mobile.png",
+      "https://www.family.abbott/adobe/dynamicmedia/deliver/dm-aid--b08bec9e-9614-4a5d-93d0-19d8ee76c3c7/use-it-right-underweight-malnourished.png?preferwebp=true&quality=85",
+      "https://www.family.abbott/content/dam/an/familyabbott/sg-en/glucerna/products/glucerna-master/Use_it_Right_Underweight_Malnourished_mobile.png",
+      "https://www.family.abbott/content/dam/an/familyabbott/sg-en/glucerna/managing-diabetes-made-easy/guides-to-managing-type-2-diabetes/healthy-diet/recipes/black-sesame-drink/SN275_Thumbnail.jpg",
+      "https://www.family.abbott/content/dam/an/familyabbott/sg-en/glucerna/managing-diabetes-made-easy/guides-to-managing-type-2-diabetes/healthy-diet/recipes/dragonfruit-and-berries-smoothie-bowl/SN277_Thumbnail.jpg",
+      "https://www.family.abbott/content/dam/an/familyabbott/sg-en/glucerna/managing-diabetes-made-easy/guides-to-managing-type-2-diabetes/healthy-diet/recipes/green-tea-popsicle/SN286_Thumbnail.jpg",
+      "https://www.family.abbott/adobe/dynamicmedia/deliver/dm-aid--bbfb5f97-c134-4c24-8d26-ae938e0bc0e9/fairprice-online.jpg?preferwebp=true&quality=85",
+      "https://www.family.abbott/adobe/dynamicmedia/deliver/dm-aid--fbc9a50a-cc78-4494-9927-1dd8d1a89b95/lazada.jpg?preferwebp=true&quality=85",
+      "https://www.family.abbott/adobe/dynamicmedia/deliver/dm-aid--774ad6ea-9e44-4860-bba1-9e9b50e68b45/shopee.jpg?preferwebp=true&quality=85"
+    ],
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "name": "img_molfix-size-3",
+    "url": "https://cdn.hayat.com.tr/images/52f85e4e-d3c2-40e3-b627-b0d9e9595c27.jpg",
+    "status": null,
+    "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>"
+  },
+  {
+    "name": "img_molfix-size-3-alt",
+    "url": "https://www.molfix.com/dist/media/img/product-detail/products-tr/taped-3d-newborn.png",
+    "status": 200,
+    "final_url": "https://www.molfix.com/dist/media/img/product-detail/products-tr/taped-3d-newborn.png",
+    "content_type": "image/png",
+    "bytes": 209814,
+    "file": "fetched/img_molfix-size-3-alt.png"
   }
 ]
