@@ -271,9 +271,47 @@ const versionAssets = (html) =>
 const LAYOUT = read("src/layout.html");
 const builtPages = [];
 
+/* ---------- Paused mode ---------- */
+// "paused": true in site.config.json replaces every page with a short notice
+// (no shop, no prices, no ordering). Set it back to false and rebuild to restore the site.
+const PAUSED = config.paused === true;
+let pausedPages = 0;
+function pausedHtml(root) {
+  const name = esc(config.businessName);
+  return `<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Temporarily paused | ${name}</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="${root}assets/favicon.svg" type="image/svg+xml">
+  <style>
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 24px; box-sizing: border-box;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: #10302d; background: #f4faf8; text-align: center; }
+    main { max-width: 32rem; }
+    h1 { font-size: 1.6rem; margin: 16px 0 10px; }
+    p { color: #4a6461; margin: 0 0 10px; line-height: 1.6; }
+    p[lang="ur"] { font-size: 1.1rem; }
+    img { margin: 0 auto; }
+  </style>
+</head>
+<body>
+  <main>
+    <img src="${root}assets/favicon.svg" alt="" width="64" height="64">
+    <h1>${name}</h1>
+    <p>Our website is temporarily paused. Please check back soon.</p>
+    <p lang="ur" dir="rtl">ہماری ویب سائٹ عارضی طور پر بند ہے۔ براہِ کرم کچھ دیر بعد دوبارہ تشریف لائیں۔</p>
+  </main>
+</body>
+</html>
+`;
+}
+
 function page({ path: outPath, title, description, content, jsonLd = "", robots = "index, follow", bodyClass = "", scripts = [], styles = [], ogType = "website", ogImage = "", current = "", vars = {}, sitemap = true, priority = "0.6" }) {
   const depth = outPath.split("/").length - 1;
   const root = depth ? "../".repeat(depth) : "";
+  if (PAUSED) { write(outPath, pausedHtml(root)); pausedPages++; return; }
   const base = {
     root,
     siteUrl: SITE,
@@ -801,5 +839,6 @@ Allow: /
 Sitemap: ${SITE}sitemap.xml
 `);
 
-console.log(`Built ${builtPages.length + 2} pages: ${DATA.products.length} products, ` +
+if (PAUSED) console.log(`Site is PAUSED: wrote the "temporarily paused" notice to ${pausedPages} pages. Set "paused": false in site.config.json and rebuild to restore it.`);
+else console.log(`Built ${builtPages.length + 2} pages: ${DATA.products.length} products, ` +
   `${DATA.categories.length} categories, ${brandsShown.length} brands, ${Object.keys(IMAGES).length} product photos.`);

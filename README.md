@@ -134,6 +134,8 @@ python3 -m http.server 8000     # then open http://localhost:8000
 
 **Using your own domain?** Change `siteUrl` in `site.config.json`, rebuild, and update the `/clinic-rawli/` paths in `404.html`.
 
+**Pausing the site.** Set `"paused": true` in `site.config.json`, run `node scripts/build.mjs`, then commit and push. Every page then shows a short "temporarily paused" notice (English and Urdu) with no shop or ordering, and the sitemap is emptied. To bring the site back, set `"paused": false`, rebuild, commit and push. To take it offline completely instead, use **Settings → Pages → Unpublish site** (you will need to pick the branch again to republish).
+
 ## Local SEO checklist
 
 - Create or claim a **Google Business Profile** for "Adil Child Care Clinic & Pharmacy" (category *Pharmacy*, plus *Pediatrician* / *Medical clinic*) and link it to the website.
